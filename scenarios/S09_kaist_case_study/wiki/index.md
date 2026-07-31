@@ -25,3 +25,13 @@
 - 공개자료 → REQ-20260725-tesla-zara-deliverable-update
 - 불확실성 → REQ-20260725-tesla-zara-deliverable-update
 - deliverable_patch → REQ-20260725-tesla-zara-deliverable-update
+- Tesla → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- Zara → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 공급망 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 수직계열화 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 수요예측 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 5 Forces → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- VRIO → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 단위경제 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 비교분석 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- cross-module → REQ-20260725-tesla-zara-supply-chain-demand-forecast
