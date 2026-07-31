@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "live-1785477069932",
+    "mode": "live",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-07-31T05:48:21.344Z",
+    "finished_at": "2026-07-31T05:51:09.932Z",
+    "duration_ms": 168588
+  },
+  "trigger": {
+    "source": "teams(daily digest)",
+    "requestor": "(digest: 김PM, 박선임)",
+    "received_at": "2026-07-31T05:48:21.334Z",
+    "scenario_id": null,
+    "domain": null
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T03:54:39.421Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T03:54:39.421Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:T5",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T03:54:39.734Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "EXISTS"
+    },
+    {
+      "ts": "2026-07-31T03:54:39.989Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 3676
+    },
+    {
+      "ts": "2026-07-31T05:51:09.921Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 0
+    },
+    "semantic_audit": {
+      "attempts": 0
+    },
+    "devils_advocate": {
+      "attempts": 0,
+      "score": 5,
+      "verdict": "진행 가능하나, RE 오더 타입 범위와 이동유형 641 영향 범위를 먼저 확정한 뒤 크로스모듈/회계 영향까지 포함해 보완하는 것이 안전합니다."
+    },
+    "escalated_any": false
+  },
+  "deliverable": {
+    "req_id": "REQ-20250308-sd-mm-fi-update-returns-641",
+    "requirement": "SD 반품 프로세스를 우선 반영하고 RE 오더 타입 적용 검토와 MM 이동유형 641 영향 범위를 크로스모듈로 보완한다.",
+    "keywords": [
+      "SD",
+      "반품",
+      "RE 오더 타입",
+      "MM",
+      "이동유형 641",
+      "재고평가",
+      "크로스모듈",
+      "테스트 시나리오"
+    ],
+    "wiki_files": [
+      "wiki/requirements/REQ-20250308-sd-mm-fi-update-returns-641.md",
+      "wiki/decisions.md",
+      "wiki/index.md",
+      "wiki/logs/runs.md"
+    ],
+    "commit_hash": "5d49b31",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/5d49b316fdde04bf02571f6f5bfb729cc7a66347"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
