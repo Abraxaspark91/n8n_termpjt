@@ -211,3 +211,18 @@
 - 라이선스 → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
 - 산출물 갱신 → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
 - CTO실 → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
+- 전사 AI 아키텍처 → REQ-20250214-cto-ai-architecture-selection
+- AWS → REQ-20250214-cto-ai-architecture-selection
+- Azure → REQ-20250214-cto-ai-architecture-selection
+- GCP → REQ-20250214-cto-ai-architecture-selection
+- GPU Serving → REQ-20250214-cto-ai-architecture-selection
+- 클라우드 GPU → REQ-20250214-cto-ai-architecture-selection
+- 자체구축 → REQ-20250214-cto-ai-architecture-selection
+- TCO → REQ-20250214-cto-ai-architecture-selection
+- SAP HANA → REQ-20250214-cto-ai-architecture-selection
+- Oracle → REQ-20250214-cto-ai-architecture-selection
+- PoC → REQ-20250214-cto-ai-architecture-selection
+- 벤치마크 → REQ-20250214-cto-ai-architecture-selection
+- 보안·규정 준수 → REQ-20250214-cto-ai-architecture-selection
+- 운영 RACI → REQ-20250214-cto-ai-architecture-selection
+- 요구사항 추적 → REQ-20250214-cto-ai-architecture-selection
