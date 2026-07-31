@@ -64,3 +64,21 @@
 - 운영 책임 → REQ-20250214-cto-ai-architecture-approval-payload
 - 라이선스 → REQ-20250214-cto-ai-architecture-approval-payload
 - CTO실 → REQ-20250214-cto-ai-architecture-approval-payload
+- 전사 AI 아키텍처 → REQ-20250214-cto-ai-architecture-approval-execution
+- AWS → REQ-20250214-cto-ai-architecture-approval-execution
+- Azure → REQ-20250214-cto-ai-architecture-approval-execution
+- GCP → REQ-20250214-cto-ai-architecture-approval-execution
+- AI Serving → REQ-20250214-cto-ai-architecture-approval-execution
+- GPU 자체구축 → REQ-20250214-cto-ai-architecture-approval-execution
+- 클라우드 GPU → REQ-20250214-cto-ai-architecture-approval-execution
+- SAP HANA → REQ-20250214-cto-ai-architecture-approval-execution
+- Oracle → REQ-20250214-cto-ai-architecture-approval-execution
+- TCO → REQ-20250214-cto-ai-architecture-approval-execution
+- 보안 → REQ-20250214-cto-ai-architecture-approval-execution
+- 규정 준수 → REQ-20250214-cto-ai-architecture-approval-execution
+- 데이터 거버넌스 → REQ-20250214-cto-ai-architecture-approval-execution
+- PoC → REQ-20250214-cto-ai-architecture-approval-execution
+- 벤치마크 → REQ-20250214-cto-ai-architecture-approval-execution
+- 운영 SLA → REQ-20250214-cto-ai-architecture-approval-execution
+- 라이선스 → REQ-20250214-cto-ai-architecture-approval-execution
+- CTO실 → REQ-20250214-cto-ai-architecture-approval-execution
