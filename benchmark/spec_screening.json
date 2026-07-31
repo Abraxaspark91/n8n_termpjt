@@ -1,0 +1,1625 @@
+{
+ "run_mode": "screening",
+ "specs": [
+  {
+   "scenario_id": "S01-B00000",
+   "sid": "S01",
+   "domain": "Enterprise Architecture",
+   "scenario_type": "B00000",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "CTO실",
+   "source": "bench:S01:B00000",
+   "original_input": "CTO실 요청: 전사 AI 도입 아키텍처 확정이 필요합니다. 클라우드는 AWS와 Azure, GCP를 비교해 선정하고, AI Serving 하드웨어는 GPU 서버 자체구축과 클라우드 GPU 임차를 비교하십시오. DB는 SAP HANA와 Oracle 중 결정하되 라이선스 비용을 포함해 검토 바랍니다.",
+   "gold": [
+    "AWS",
+    "Azure",
+    "GPU 서버",
+    "SAP HANA"
+   ],
+   "decoys": []
+  },
+  {
+   "scenario_id": "S01-B10000",
+   "sid": "S01",
+   "domain": "Enterprise Architecture",
+   "scenario_type": "B10000",
+   "branch_bits": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "CTO실",
+   "source": "bench:S01:B10000",
+   "original_input": "지난 24시간 Teams 메시지 digest(잡담 혼재):\n\n[09:12] CTO실: CTO실 요청: 전사 AI 도입 아키텍처 확정이 필요합니다. 클라우드는 AWS와 Azure, GCP를 비교해 선정하고, AI Serving 하드웨어는 GPU 서버 자체구축과 클라우드 GPU 임차를 비교하십시오. DB는 SAP HANA와 Oracle 중 결정하되 라이선스 비용을 포함해 검토 바랍니다.\n[11:02] 박대리: 점심 구내식당 ㄱㄱ ㅋㅋ\n[11:03] 팀장: 콜\n[15:20] 신입: 주말에 비 온대요 ☔ 우산 챙기세요~\n[16:05] 박대리: 담주 월요일 회식 어때요",
+   "gold": [
+    "AWS",
+    "Azure",
+    "GPU 서버",
+    "SAP HANA"
+   ],
+   "decoys": [
+    "구내식당",
+    "우산 챙기세요",
+    "월요일 회식"
+   ]
+  },
+  {
+   "scenario_id": "S01-B01000",
+   "sid": "S01",
+   "domain": "Enterprise Architecture",
+   "scenario_type": "B01000",
+   "branch_bits": [
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "CTO실",
+   "source": "bench:S01:B01000",
+   "original_input": "제목: [요청] Enterprise Architecture 요건 반영\n본문: CTO실 요청: 전사 AI 도입 아키텍처 확정이 필요합니다. 클라우드는 AWS와 Azure, GCP를 비교해 선정하고, AI Serving 하드웨어는 GPU 서버 자체구축과 클라우드 GPU 임차를 비교하십시오. DB는 SAP HANA와 Oracle 중 결정하되 라이선스 비용을 포함해 검토 바랍니다.\n\n── 첨부파일(TCO_비교표.xlsx) 파싱 결과 ──\n── 3년 TCO 비교 ──\n항목: 클라우드 3년 총비용, 자체구축 3년 총비용, 감가상각\n결론: TCO 관점 클라우드 GPU가 12% 우위",
+   "gold": [
+    "AWS",
+    "Azure",
+    "GPU 서버",
+    "SAP HANA",
+    "3년 TCO",
+    "감가상각"
+   ],
+   "decoys": []
+  },
+  {
+   "scenario_id": "S01-B00100",
+   "sid": "S01",
+   "domain": "Enterprise Architecture",
+   "scenario_type": "B00100",
+   "branch_bits": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "CTO실",
+   "source": "bench:S01:B00100",
+   "original_input": "CTO실 요청: 전사 AI 도입 아키텍처 확정이 필요합니다. 클라우드는 AWS와 Azure, GCP를 비교해 선정하고, AI Serving 하드웨어는 GPU 서버 자체구축과 클라우드 GPU 임차를 비교하십시오. DB는 SAP HANA와 Oracle 중 결정하되 라이선스 비용을 포함해 검토 바랍니다.",
+   "gold": [
+    "AWS",
+    "Azure",
+    "GPU 서버",
+    "SAP HANA"
+   ],
+   "decoys": [
+    "토너 교체"
+   ]
+  },
+  {
+   "scenario_id": "S01-B00010",
+   "sid": "S01",
+   "domain": "Enterprise Architecture",
+   "scenario_type": "B00010",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "CTO실",
+   "source": "bench:S01:B00010",
+   "original_input": "CTO실 요청: 전사 AI 도입 아키텍처 확정이 필요합니다. 클라우드는 AWS와 Azure, GCP를 비교해 선정하고, AI Serving 하드웨어는 GPU 서버 자체구축과 클라우드 GPU 임차를 비교하십시오. DB는 SAP HANA와 Oracle 중 결정하되 라이선스 비용을 포함해 검토 바랍니다.",
+   "gold": [
+    "AWS",
+    "Azure",
+    "GPU 서버",
+    "SAP HANA"
+   ],
+   "decoys": [
+    "메타버스"
+   ]
+  },
+  {
+   "scenario_id": "S01-B00001",
+   "sid": "S01",
+   "domain": "Enterprise Architecture",
+   "scenario_type": "B00001",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "CTO실",
+   "source": "bench:S01:B00001",
+   "original_input": "CTO실 요청: 전사 AI 도입 아키텍처 확정이 필요합니다. 클라우드는 AWS와 Azure, GCP를 비교해 선정하고, AI Serving 하드웨어는 GPU 서버 자체구축과 클라우드 GPU 임차를 비교하십시오. DB는 SAP HANA와 Oracle 중 결정하되 라이선스 비용을 포함해 검토 바랍니다.",
+   "gold": [
+    "AWS",
+    "Azure",
+    "GPU 서버",
+    "SAP HANA"
+   ],
+   "decoys": [
+    "Exadata"
+   ]
+  },
+  {
+   "scenario_id": "S02-B00000",
+   "sid": "S02",
+   "domain": "Process Innovation(총원가)",
+   "scenario_type": "B00000",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "PI팀 이과장",
+   "source": "bench:S02:B00000",
+   "original_input": "PI팀 이과장: 수작업 관리연결결산을 폐지하고 삼성방식 총원가 개념으로 전환합니다. 원가추적번호로 전 법인의 물동을 추적하고, 간접비 배부와 법인간 비용배분까지 포함한 실시간 원가 추적 체계를 설계해 주세요.",
+   "gold": [
+    "총원가",
+    "원가추적번호",
+    "간접비 배부",
+    "법인간 비용배분"
+   ],
+   "decoys": []
+  },
+  {
+   "scenario_id": "S02-B10000",
+   "sid": "S02",
+   "domain": "Process Innovation(총원가)",
+   "scenario_type": "B10000",
+   "branch_bits": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "PI팀 이과장",
+   "source": "bench:S02:B10000",
+   "original_input": "지난 24시간 Teams 메시지 digest(잡담 혼재):\n\n[09:12] PI팀 이과장: PI팀 이과장: 수작업 관리연결결산을 폐지하고 삼성방식 총원가 개념으로 전환합니다. 원가추적번호로 전 법인의 물동을 추적하고, 간접비 배부와 법인간 비용배분까지 포함한 실시간 원가 추적 체계를 설계해 주세요.\n[11:02] 박대리: 점심 구내식당 ㄱㄱ ㅋㅋ\n[11:03] 팀장: 콜\n[15:20] 신입: 주말에 비 온대요 ☔ 우산 챙기세요~\n[16:05] 박대리: 담주 월요일 회식 어때요",
+   "gold": [
+    "총원가",
+    "원가추적번호",
+    "간접비 배부",
+    "법인간 비용배분"
+   ],
+   "decoys": [
+    "구내식당",
+    "우산 챙기세요",
+    "월요일 회식"
+   ]
+  },
+  {
+   "scenario_id": "S02-B01000",
+   "sid": "S02",
+   "domain": "Process Innovation(총원가)",
+   "scenario_type": "B01000",
+   "branch_bits": [
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "PI팀 이과장",
+   "source": "bench:S02:B01000",
+   "original_input": "제목: [요청] Process Innovation(총원가) 요건 반영\n본문: PI팀 이과장: 수작업 관리연결결산을 폐지하고 삼성방식 총원가 개념으로 전환합니다. 원가추적번호로 전 법인의 물동을 추적하고, 간접비 배부와 법인간 비용배분까지 포함한 실시간 원가 추적 체계를 설계해 주세요.\n\n── 첨부파일(물동흐름_정의.docx) 파싱 결과 ──\n── 물동 흐름 정의 ──\n판매법인→생산법인 이전가격 구간별로 원가차이 배부 규칙을 정의하며, 미실현이익 제거 로직을 포함한다.",
+   "gold": [
+    "총원가",
+    "원가추적번호",
+    "간접비 배부",
+    "법인간 비용배분",
+    "이전가격",
+    "미실현이익"
+   ],
+   "decoys": []
+  },
+  {
+   "scenario_id": "S02-B00100",
+   "sid": "S02",
+   "domain": "Process Innovation(총원가)",
+   "scenario_type": "B00100",
+   "branch_bits": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "PI팀 이과장",
+   "source": "bench:S02:B00100",
+   "original_input": "PI팀 이과장: 수작업 관리연결결산을 폐지하고 삼성방식 총원가 개념으로 전환합니다. 원가추적번호로 전 법인의 물동을 추적하고, 간접비 배부와 법인간 비용배분까지 포함한 실시간 원가 추적 체계를 설계해 주세요.",
+   "gold": [
+    "총원가",
+    "원가추적번호",
+    "간접비 배부",
+    "법인간 비용배분"
+   ],
+   "decoys": [
+    "토너 교체"
+   ]
+  },
+  {
+   "scenario_id": "S02-B00010",
+   "sid": "S02",
+   "domain": "Process Innovation(총원가)",
+   "scenario_type": "B00010",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "PI팀 이과장",
+   "source": "bench:S02:B00010",
+   "original_input": "PI팀 이과장: 수작업 관리연결결산을 폐지하고 삼성방식 총원가 개념으로 전환합니다. 원가추적번호로 전 법인의 물동을 추적하고, 간접비 배부와 법인간 비용배분까지 포함한 실시간 원가 추적 체계를 설계해 주세요.",
+   "gold": [
+    "총원가",
+    "원가추적번호",
+    "간접비 배부",
+    "법인간 비용배분"
+   ],
+   "decoys": [
+    "메타버스"
+   ]
+  },
+  {
+   "scenario_id": "S02-B00001",
+   "sid": "S02",
+   "domain": "Process Innovation(총원가)",
+   "scenario_type": "B00001",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "PI팀 이과장",
+   "source": "bench:S02:B00001",
+   "original_input": "PI팀 이과장: 수작업 관리연결결산을 폐지하고 삼성방식 총원가 개념으로 전환합니다. 원가추적번호로 전 법인의 물동을 추적하고, 간접비 배부와 법인간 비용배분까지 포함한 실시간 원가 추적 체계를 설계해 주세요.",
+   "gold": [
+    "총원가",
+    "원가추적번호",
+    "간접비 배부",
+    "법인간 비용배분"
+   ],
+   "decoys": [
+    "월배치"
+   ]
+  },
+  {
+   "scenario_id": "S03-B00000",
+   "sid": "S03",
+   "domain": "SAP FI 연결결산",
+   "scenario_type": "B00000",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "재무 최부장",
+   "source": "bench:S03:B00000",
+   "original_input": "재무 최부장: FI 연결결산 구조 개선 요청입니다. 서로 떨어져 있는 내부거래대사 키 매핑 구조를 구현하고, 결산리포트에서 대사결과 확인을 효율화해 주세요.",
+   "gold": [
+    "연결결산",
+    "내부거래대사",
+    "키 매핑",
+    "결산리포트"
+   ],
+   "decoys": []
+  },
+  {
+   "scenario_id": "S03-B10000",
+   "sid": "S03",
+   "domain": "SAP FI 연결결산",
+   "scenario_type": "B10000",
+   "branch_bits": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "재무 최부장",
+   "source": "bench:S03:B10000",
+   "original_input": "지난 24시간 Teams 메시지 digest(잡담 혼재):\n\n[09:12] 재무 최부장: 재무 최부장: FI 연결결산 구조 개선 요청입니다. 서로 떨어져 있는 내부거래대사 키 매핑 구조를 구현하고, 결산리포트에서 대사결과 확인을 효율화해 주세요.\n[11:02] 박대리: 점심 구내식당 ㄱㄱ ㅋㅋ\n[11:03] 팀장: 콜\n[15:20] 신입: 주말에 비 온대요 ☔ 우산 챙기세요~\n[16:05] 박대리: 담주 월요일 회식 어때요",
+   "gold": [
+    "연결결산",
+    "내부거래대사",
+    "키 매핑",
+    "결산리포트"
+   ],
+   "decoys": [
+    "구내식당",
+    "우산 챙기세요",
+    "월요일 회식"
+   ]
+  },
+  {
+   "scenario_id": "S03-B01000",
+   "sid": "S03",
+   "domain": "SAP FI 연결결산",
+   "scenario_type": "B01000",
+   "branch_bits": [
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "재무 최부장",
+   "source": "bench:S03:B01000",
+   "original_input": "제목: [요청] SAP FI 연결결산 요건 반영\n본문: 재무 최부장: FI 연결결산 구조 개선 요청입니다. 서로 떨어져 있는 내부거래대사 키 매핑 구조를 구현하고, 결산리포트에서 대사결과 확인을 효율화해 주세요.\n\n── 첨부파일(대사불일치_목록.xlsx) 파싱 결과 ──\n── 대사 불일치 상위 ──\n미착상품 계정 불일치 12건, 환율차이 기인 7건. 파트너사 코드 미매핑이 주원인.",
+   "gold": [
+    "연결결산",
+    "내부거래대사",
+    "키 매핑",
+    "결산리포트",
+    "미착상품",
+    "파트너사 코드"
+   ],
+   "decoys": []
+  },
+  {
+   "scenario_id": "S03-B00100",
+   "sid": "S03",
+   "domain": "SAP FI 연결결산",
+   "scenario_type": "B00100",
+   "branch_bits": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "재무 최부장",
+   "source": "bench:S03:B00100",
+   "original_input": "재무 최부장: FI 연결결산 구조 개선 요청입니다. 서로 떨어져 있는 내부거래대사 키 매핑 구조를 구현하고, 결산리포트에서 대사결과 확인을 효율화해 주세요.",
+   "gold": [
+    "연결결산",
+    "내부거래대사",
+    "키 매핑",
+    "결산리포트"
+   ],
+   "decoys": [
+    "토너 교체"
+   ]
+  },
+  {
+   "scenario_id": "S03-B00010",
+   "sid": "S03",
+   "domain": "SAP FI 연결결산",
+   "scenario_type": "B00010",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "재무 최부장",
+   "source": "bench:S03:B00010",
+   "original_input": "재무 최부장: FI 연결결산 구조 개선 요청입니다. 서로 떨어져 있는 내부거래대사 키 매핑 구조를 구현하고, 결산리포트에서 대사결과 확인을 효율화해 주세요.",
+   "gold": [
+    "연결결산",
+    "내부거래대사",
+    "키 매핑",
+    "결산리포트"
+   ],
+   "decoys": [
+    "메타버스"
+   ]
+  },
+  {
+   "scenario_id": "S03-B00001",
+   "sid": "S03",
+   "domain": "SAP FI 연결결산",
+   "scenario_type": "B00001",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "재무 최부장",
+   "source": "bench:S03:B00001",
+   "original_input": "재무 최부장: FI 연결결산 구조 개선 요청입니다. 서로 떨어져 있는 내부거래대사 키 매핑 구조를 구현하고, 결산리포트에서 대사결과 확인을 효율화해 주세요.",
+   "gold": [
+    "연결결산",
+    "내부거래대사",
+    "키 매핑",
+    "결산리포트"
+   ],
+   "decoys": [
+    "수기 엑셀"
+   ]
+  },
+  {
+   "scenario_id": "S04-B00000",
+   "sid": "S04",
+   "domain": "SAP CO-PA 손익구조",
+   "scenario_type": "B00000",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "경영관리 김PM",
+   "source": "bench:S04:B00000",
+   "original_input": "경영관리 김PM: CO-PA 리포트 구조 개선입니다. Marketing Funnel 방식으로 판관비를 구조화한 손익계산서를 설계해 주세요. 단계별 기여손익이 드러나야 합니다.",
+   "gold": [
+    "CO-PA",
+    "Marketing Funnel",
+    "판관비",
+    "손익계산서"
+   ],
+   "decoys": []
+  },
+  {
+   "scenario_id": "S04-B10000",
+   "sid": "S04",
+   "domain": "SAP CO-PA 손익구조",
+   "scenario_type": "B10000",
+   "branch_bits": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "경영관리 김PM",
+   "source": "bench:S04:B10000",
+   "original_input": "지난 24시간 Teams 메시지 digest(잡담 혼재):\n\n[09:12] 경영관리 김PM: 경영관리 김PM: CO-PA 리포트 구조 개선입니다. Marketing Funnel 방식으로 판관비를 구조화한 손익계산서를 설계해 주세요. 단계별 기여손익이 드러나야 합니다.\n[11:02] 박대리: 점심 구내식당 ㄱㄱ ㅋㅋ\n[11:03] 팀장: 콜\n[15:20] 신입: 주말에 비 온대요 ☔ 우산 챙기세요~\n[16:05] 박대리: 담주 월요일 회식 어때요",
+   "gold": [
+    "CO-PA",
+    "Marketing Funnel",
+    "판관비",
+    "손익계산서"
+   ],
+   "decoys": [
+    "구내식당",
+    "우산 챙기세요",
+    "월요일 회식"
+   ]
+  },
+  {
+   "scenario_id": "S04-B01000",
+   "sid": "S04",
+   "domain": "SAP CO-PA 손익구조",
+   "scenario_type": "B01000",
+   "branch_bits": [
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "경영관리 김PM",
+   "source": "bench:S04:B01000",
+   "original_input": "제목: [요청] SAP CO-PA 손익구조 요건 반영\n본문: 경영관리 김PM: CO-PA 리포트 구조 개선입니다. Marketing Funnel 방식으로 판관비를 구조화한 손익계산서를 설계해 주세요. 단계별 기여손익이 드러나야 합니다.\n\n── 첨부파일(계정계층_초안.docx) 파싱 결과 ──\n── 계정 계층 초안 ──\n인지→고려→전환 단계에 광고선전비와 판매촉진비를 매핑하고, 공통비는 기여이익 하단에 배치한다.",
+   "gold": [
+    "CO-PA",
+    "Marketing Funnel",
+    "판관비",
+    "손익계산서",
+    "광고선전비",
+    "기여이익"
+   ],
+   "decoys": []
+  },
+  {
+   "scenario_id": "S04-B00100",
+   "sid": "S04",
+   "domain": "SAP CO-PA 손익구조",
+   "scenario_type": "B00100",
+   "branch_bits": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "경영관리 김PM",
+   "source": "bench:S04:B00100",
+   "original_input": "경영관리 김PM: CO-PA 리포트 구조 개선입니다. Marketing Funnel 방식으로 판관비를 구조화한 손익계산서를 설계해 주세요. 단계별 기여손익이 드러나야 합니다.",
+   "gold": [
+    "CO-PA",
+    "Marketing Funnel",
+    "판관비",
+    "손익계산서"
+   ],
+   "decoys": [
+    "토너 교체"
+   ]
+  },
+  {
+   "scenario_id": "S04-B00010",
+   "sid": "S04",
+   "domain": "SAP CO-PA 손익구조",
+   "scenario_type": "B00010",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "경영관리 김PM",
+   "source": "bench:S04:B00010",
+   "original_input": "경영관리 김PM: CO-PA 리포트 구조 개선입니다. Marketing Funnel 방식으로 판관비를 구조화한 손익계산서를 설계해 주세요. 단계별 기여손익이 드러나야 합니다.",
+   "gold": [
+    "CO-PA",
+    "Marketing Funnel",
+    "판관비",
+    "손익계산서"
+   ],
+   "decoys": [
+    "메타버스"
+   ]
+  },
+  {
+   "scenario_id": "S04-B00001",
+   "sid": "S04",
+   "domain": "SAP CO-PA 손익구조",
+   "scenario_type": "B00001",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "경영관리 김PM",
+   "source": "bench:S04:B00001",
+   "original_input": "경영관리 김PM: CO-PA 리포트 구조 개선입니다. Marketing Funnel 방식으로 판관비를 구조화한 손익계산서를 설계해 주세요. 단계별 기여손익이 드러나야 합니다.",
+   "gold": [
+    "CO-PA",
+    "Marketing Funnel",
+    "판관비",
+    "손익계산서"
+   ],
+   "decoys": [
+    "단순합산"
+   ]
+  },
+  {
+   "scenario_id": "S05-B00000",
+   "sid": "S05",
+   "domain": "AI 경비처리 자동화",
+   "scenario_type": "B00000",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "총무 박대리",
+   "source": "bench:S05:B00000",
+   "original_input": "총무 박대리: 여비교통비 자동화 요청입니다. 비용증빙은 OCR로 읽어 처리하고, 여비교통비 규정은 multi-hop으로 읽어 위반여부를 판단하는 파이프라인이 필요합니다.",
+   "gold": [
+    "여비교통비",
+    "OCR",
+    "multi-hop",
+    "위반여부"
+   ],
+   "decoys": []
+  },
+  {
+   "scenario_id": "S05-B10000",
+   "sid": "S05",
+   "domain": "AI 경비처리 자동화",
+   "scenario_type": "B10000",
+   "branch_bits": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "총무 박대리",
+   "source": "bench:S05:B10000",
+   "original_input": "지난 24시간 Teams 메시지 digest(잡담 혼재):\n\n[09:12] 총무 박대리: 총무 박대리: 여비교통비 자동화 요청입니다. 비용증빙은 OCR로 읽어 처리하고, 여비교통비 규정은 multi-hop으로 읽어 위반여부를 판단하는 파이프라인이 필요합니다.\n[11:02] 박대리: 점심 구내식당 ㄱㄱ ㅋㅋ\n[11:03] 팀장: 콜\n[15:20] 신입: 주말에 비 온대요 ☔ 우산 챙기세요~\n[16:05] 박대리: 담주 월요일 회식 어때요",
+   "gold": [
+    "여비교통비",
+    "OCR",
+    "multi-hop",
+    "위반여부"
+   ],
+   "decoys": [
+    "구내식당",
+    "우산 챙기세요",
+    "월요일 회식"
+   ]
+  },
+  {
+   "scenario_id": "S05-B01000",
+   "sid": "S05",
+   "domain": "AI 경비처리 자동화",
+   "scenario_type": "B01000",
+   "branch_bits": [
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "총무 박대리",
+   "source": "bench:S05:B01000",
+   "original_input": "제목: [요청] AI 경비처리 자동화 요건 반영\n본문: 총무 박대리: 여비교통비 자동화 요청입니다. 비용증빙은 OCR로 읽어 처리하고, 여비교통비 규정은 multi-hop으로 읽어 위반여부를 판단하는 파이프라인이 필요합니다.\n\n── 첨부파일(규정_발췌.docx) 파싱 결과 ──\n── 규정 발췌 ──\n숙박비 상한은 직급별 차등 적용하며, 국외 출장은 일비 기준을 별도 표에 따른다.",
+   "gold": [
+    "여비교통비",
+    "OCR",
+    "multi-hop",
+    "위반여부",
+    "숙박비 상한",
+    "일비"
+   ],
+   "decoys": []
+  },
+  {
+   "scenario_id": "S05-B00100",
+   "sid": "S05",
+   "domain": "AI 경비처리 자동화",
+   "scenario_type": "B00100",
+   "branch_bits": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "총무 박대리",
+   "source": "bench:S05:B00100",
+   "original_input": "총무 박대리: 여비교통비 자동화 요청입니다. 비용증빙은 OCR로 읽어 처리하고, 여비교통비 규정은 multi-hop으로 읽어 위반여부를 판단하는 파이프라인이 필요합니다.",
+   "gold": [
+    "여비교통비",
+    "OCR",
+    "multi-hop",
+    "위반여부"
+   ],
+   "decoys": [
+    "토너 교체"
+   ]
+  },
+  {
+   "scenario_id": "S05-B00010",
+   "sid": "S05",
+   "domain": "AI 경비처리 자동화",
+   "scenario_type": "B00010",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "총무 박대리",
+   "source": "bench:S05:B00010",
+   "original_input": "총무 박대리: 여비교통비 자동화 요청입니다. 비용증빙은 OCR로 읽어 처리하고, 여비교통비 규정은 multi-hop으로 읽어 위반여부를 판단하는 파이프라인이 필요합니다.",
+   "gold": [
+    "여비교통비",
+    "OCR",
+    "multi-hop",
+    "위반여부"
+   ],
+   "decoys": [
+    "메타버스"
+   ]
+  },
+  {
+   "scenario_id": "S05-B00001",
+   "sid": "S05",
+   "domain": "AI 경비처리 자동화",
+   "scenario_type": "B00001",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "총무 박대리",
+   "source": "bench:S05:B00001",
+   "original_input": "총무 박대리: 여비교통비 자동화 요청입니다. 비용증빙은 OCR로 읽어 처리하고, 여비교통비 규정은 multi-hop으로 읽어 위반여부를 판단하는 파이프라인이 필요합니다.",
+   "gold": [
+    "여비교통비",
+    "OCR",
+    "multi-hop",
+    "위반여부"
+   ],
+   "decoys": [
+    "수기 검토"
+   ]
+  },
+  {
+   "scenario_id": "S06-B00000",
+   "sid": "S06",
+   "domain": "VLB ICO 마케팅",
+   "scenario_type": "B00000",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "마케팅 리드",
+   "source": "bench:S06:B00000",
+   "original_input": "마케팅 리드: 러시아 ETH 기반 VLB ICO 마케팅 실행계획이 필요합니다. 백서 배포 채널과 KYC 절차 안내, 토큰 세일 일정 커뮤니케이션을 포함하세요.",
+   "gold": [
+    "ETH",
+    "VLB",
+    "KYC",
+    "토큰 세일"
+   ],
+   "decoys": []
+  },
+  {
+   "scenario_id": "S06-B10000",
+   "sid": "S06",
+   "domain": "VLB ICO 마케팅",
+   "scenario_type": "B10000",
+   "branch_bits": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "마케팅 리드",
+   "source": "bench:S06:B10000",
+   "original_input": "지난 24시간 Teams 메시지 digest(잡담 혼재):\n\n[09:12] 마케팅 리드: 마케팅 리드: 러시아 ETH 기반 VLB ICO 마케팅 실행계획이 필요합니다. 백서 배포 채널과 KYC 절차 안내, 토큰 세일 일정 커뮤니케이션을 포함하세요.\n[11:02] 박대리: 점심 구내식당 ㄱㄱ ㅋㅋ\n[11:03] 팀장: 콜\n[15:20] 신입: 주말에 비 온대요 ☔ 우산 챙기세요~\n[16:05] 박대리: 담주 월요일 회식 어때요",
+   "gold": [
+    "ETH",
+    "VLB",
+    "KYC",
+    "토큰 세일"
+   ],
+   "decoys": [
+    "구내식당",
+    "우산 챙기세요",
+    "월요일 회식"
+   ]
+  },
+  {
+   "scenario_id": "S06-B01000",
+   "sid": "S06",
+   "domain": "VLB ICO 마케팅",
+   "scenario_type": "B01000",
+   "branch_bits": [
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "마케팅 리드",
+   "source": "bench:S06:B01000",
+   "original_input": "제목: [요청] VLB ICO 마케팅 요건 반영\n본문: 마케팅 리드: 러시아 ETH 기반 VLB ICO 마케팅 실행계획이 필요합니다. 백서 배포 채널과 KYC 절차 안내, 토큰 세일 일정 커뮤니케이션을 포함하세요.\n\n── 첨부파일(백서_요약.pptx) 파싱 결과 ──\n── 백서 요약 ──\n하드캡 도달 시 조기 종료 조항과 락업 스케줄을 명시. 상장 거래소 후보 2곳.",
+   "gold": [
+    "ETH",
+    "VLB",
+    "KYC",
+    "토큰 세일",
+    "하드캡",
+    "락업"
+   ],
+   "decoys": []
+  },
+  {
+   "scenario_id": "S06-B00100",
+   "sid": "S06",
+   "domain": "VLB ICO 마케팅",
+   "scenario_type": "B00100",
+   "branch_bits": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "마케팅 리드",
+   "source": "bench:S06:B00100",
+   "original_input": "마케팅 리드: 러시아 ETH 기반 VLB ICO 마케팅 실행계획이 필요합니다. 백서 배포 채널과 KYC 절차 안내, 토큰 세일 일정 커뮤니케이션을 포함하세요.",
+   "gold": [
+    "ETH",
+    "VLB",
+    "KYC",
+    "토큰 세일"
+   ],
+   "decoys": [
+    "토너 교체"
+   ]
+  },
+  {
+   "scenario_id": "S06-B00010",
+   "sid": "S06",
+   "domain": "VLB ICO 마케팅",
+   "scenario_type": "B00010",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "마케팅 리드",
+   "source": "bench:S06:B00010",
+   "original_input": "마케팅 리드: 러시아 ETH 기반 VLB ICO 마케팅 실행계획이 필요합니다. 백서 배포 채널과 KYC 절차 안내, 토큰 세일 일정 커뮤니케이션을 포함하세요.",
+   "gold": [
+    "ETH",
+    "VLB",
+    "KYC",
+    "토큰 세일"
+   ],
+   "decoys": [
+    "메타버스"
+   ]
+  },
+  {
+   "scenario_id": "S06-B00001",
+   "sid": "S06",
+   "domain": "VLB ICO 마케팅",
+   "scenario_type": "B00001",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "마케팅 리드",
+   "source": "bench:S06:B00001",
+   "original_input": "마케팅 리드: 러시아 ETH 기반 VLB ICO 마케팅 실행계획이 필요합니다. 백서 배포 채널과 KYC 절차 안내, 토큰 세일 일정 커뮤니케이션을 포함하세요.",
+   "gold": [
+    "ETH",
+    "VLB",
+    "KYC",
+    "토큰 세일"
+   ],
+   "decoys": [
+    "프리세일 배너"
+   ]
+  },
+  {
+   "scenario_id": "S07-B00000",
+   "sid": "S07",
+   "domain": "투자 Dashboard",
+   "scenario_type": "B00000",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "리서치 담당",
+   "source": "bench:S07:B00000",
+   "original_input": "리서치 담당: 투자 대시보드 제작 요청입니다. 거시경제 현황 패널과 개별 종목 펀더멘털 분석 패널을 나누고, 지표 갱신 주기를 정의해 주세요.",
+   "gold": [
+    "대시보드",
+    "거시경제",
+    "펀더멘털",
+    "갱신 주기"
+   ],
+   "decoys": []
+  },
+  {
+   "scenario_id": "S07-B10000",
+   "sid": "S07",
+   "domain": "투자 Dashboard",
+   "scenario_type": "B10000",
+   "branch_bits": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "리서치 담당",
+   "source": "bench:S07:B10000",
+   "original_input": "지난 24시간 Teams 메시지 digest(잡담 혼재):\n\n[09:12] 리서치 담당: 리서치 담당: 투자 대시보드 제작 요청입니다. 거시경제 현황 패널과 개별 종목 펀더멘털 분석 패널을 나누고, 지표 갱신 주기를 정의해 주세요.\n[11:02] 박대리: 점심 구내식당 ㄱㄱ ㅋㅋ\n[11:03] 팀장: 콜\n[15:20] 신입: 주말에 비 온대요 ☔ 우산 챙기세요~\n[16:05] 박대리: 담주 월요일 회식 어때요",
+   "gold": [
+    "대시보드",
+    "거시경제",
+    "펀더멘털",
+    "갱신 주기"
+   ],
+   "decoys": [
+    "구내식당",
+    "우산 챙기세요",
+    "월요일 회식"
+   ]
+  },
+  {
+   "scenario_id": "S07-B01000",
+   "sid": "S07",
+   "domain": "투자 Dashboard",
+   "scenario_type": "B01000",
+   "branch_bits": [
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "리서치 담당",
+   "source": "bench:S07:B01000",
+   "original_input": "제목: [요청] 투자 Dashboard 요건 반영\n본문: 리서치 담당: 투자 대시보드 제작 요청입니다. 거시경제 현황 패널과 개별 종목 펀더멘털 분석 패널을 나누고, 지표 갱신 주기를 정의해 주세요.\n\n── 첨부파일(지표목록.xlsx) 파싱 결과 ──\n── 지표 목록 ──\nPER, PBR, 부채비율, 잉여현금흐름을 종목 패널 기본 지표로 한다.",
+   "gold": [
+    "대시보드",
+    "거시경제",
+    "펀더멘털",
+    "갱신 주기",
+    "PER",
+    "부채비율"
+   ],
+   "decoys": []
+  },
+  {
+   "scenario_id": "S07-B00100",
+   "sid": "S07",
+   "domain": "투자 Dashboard",
+   "scenario_type": "B00100",
+   "branch_bits": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "리서치 담당",
+   "source": "bench:S07:B00100",
+   "original_input": "리서치 담당: 투자 대시보드 제작 요청입니다. 거시경제 현황 패널과 개별 종목 펀더멘털 분석 패널을 나누고, 지표 갱신 주기를 정의해 주세요.",
+   "gold": [
+    "대시보드",
+    "거시경제",
+    "펀더멘털",
+    "갱신 주기"
+   ],
+   "decoys": [
+    "토너 교체"
+   ]
+  },
+  {
+   "scenario_id": "S07-B00010",
+   "sid": "S07",
+   "domain": "투자 Dashboard",
+   "scenario_type": "B00010",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "리서치 담당",
+   "source": "bench:S07:B00010",
+   "original_input": "리서치 담당: 투자 대시보드 제작 요청입니다. 거시경제 현황 패널과 개별 종목 펀더멘털 분석 패널을 나누고, 지표 갱신 주기를 정의해 주세요.",
+   "gold": [
+    "대시보드",
+    "거시경제",
+    "펀더멘털",
+    "갱신 주기"
+   ],
+   "decoys": [
+    "메타버스"
+   ]
+  },
+  {
+   "scenario_id": "S07-B00001",
+   "sid": "S07",
+   "domain": "투자 Dashboard",
+   "scenario_type": "B00001",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "리서치 담당",
+   "source": "bench:S07:B00001",
+   "original_input": "리서치 담당: 투자 대시보드 제작 요청입니다. 거시경제 현황 패널과 개별 종목 펀더멘털 분석 패널을 나누고, 지표 갱신 주기를 정의해 주세요.",
+   "gold": [
+    "대시보드",
+    "거시경제",
+    "펀더멘털",
+    "갱신 주기"
+   ],
+   "decoys": [
+    "수동 갱신"
+   ]
+  },
+  {
+   "scenario_id": "S08-B00000",
+   "sid": "S08",
+   "domain": "AI 저널 레코더 런칭",
+   "scenario_type": "B00000",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "PO",
+   "source": "bench:S08:B00000",
+   "original_input": "PO: AI driven journal recorder 디바이스의 와디즈 런칭 준비입니다. 리워드 구성과 얼리버드 물량, 스토리 페이지 구조를 확정해 주세요.",
+   "gold": [
+    "와디즈",
+    "리워드",
+    "얼리버드",
+    "스토리 페이지"
+   ],
+   "decoys": []
+  },
+  {
+   "scenario_id": "S08-B10000",
+   "sid": "S08",
+   "domain": "AI 저널 레코더 런칭",
+   "scenario_type": "B10000",
+   "branch_bits": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "PO",
+   "source": "bench:S08:B10000",
+   "original_input": "지난 24시간 Teams 메시지 digest(잡담 혼재):\n\n[09:12] PO: PO: AI driven journal recorder 디바이스의 와디즈 런칭 준비입니다. 리워드 구성과 얼리버드 물량, 스토리 페이지 구조를 확정해 주세요.\n[11:02] 박대리: 점심 구내식당 ㄱㄱ ㅋㅋ\n[11:03] 팀장: 콜\n[15:20] 신입: 주말에 비 온대요 ☔ 우산 챙기세요~\n[16:05] 박대리: 담주 월요일 회식 어때요",
+   "gold": [
+    "와디즈",
+    "리워드",
+    "얼리버드",
+    "스토리 페이지"
+   ],
+   "decoys": [
+    "구내식당",
+    "우산 챙기세요",
+    "월요일 회식"
+   ]
+  },
+  {
+   "scenario_id": "S08-B01000",
+   "sid": "S08",
+   "domain": "AI 저널 레코더 런칭",
+   "scenario_type": "B01000",
+   "branch_bits": [
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "PO",
+   "source": "bench:S08:B01000",
+   "original_input": "제목: [요청] AI 저널 레코더 런칭 요건 반영\n본문: PO: AI driven journal recorder 디바이스의 와디즈 런칭 준비입니다. 리워드 구성과 얼리버드 물량, 스토리 페이지 구조를 확정해 주세요.\n\n── 첨부파일(일정표.xlsx) 파싱 결과 ──\n── 런칭 일정 ──\n오픈예정 알림신청 2주 운영 후 본 펀딩 4주. 시제품 검수는 오픈 10일 전 완료.",
+   "gold": [
+    "와디즈",
+    "리워드",
+    "얼리버드",
+    "스토리 페이지",
+    "알림신청",
+    "시제품 검수"
+   ],
+   "decoys": []
+  },
+  {
+   "scenario_id": "S08-B00100",
+   "sid": "S08",
+   "domain": "AI 저널 레코더 런칭",
+   "scenario_type": "B00100",
+   "branch_bits": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "PO",
+   "source": "bench:S08:B00100",
+   "original_input": "PO: AI driven journal recorder 디바이스의 와디즈 런칭 준비입니다. 리워드 구성과 얼리버드 물량, 스토리 페이지 구조를 확정해 주세요.",
+   "gold": [
+    "와디즈",
+    "리워드",
+    "얼리버드",
+    "스토리 페이지"
+   ],
+   "decoys": [
+    "토너 교체"
+   ]
+  },
+  {
+   "scenario_id": "S08-B00010",
+   "sid": "S08",
+   "domain": "AI 저널 레코더 런칭",
+   "scenario_type": "B00010",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "PO",
+   "source": "bench:S08:B00010",
+   "original_input": "PO: AI driven journal recorder 디바이스의 와디즈 런칭 준비입니다. 리워드 구성과 얼리버드 물량, 스토리 페이지 구조를 확정해 주세요.",
+   "gold": [
+    "와디즈",
+    "리워드",
+    "얼리버드",
+    "스토리 페이지"
+   ],
+   "decoys": [
+    "메타버스"
+   ]
+  },
+  {
+   "scenario_id": "S08-B00001",
+   "sid": "S08",
+   "domain": "AI 저널 레코더 런칭",
+   "scenario_type": "B00001",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "PO",
+   "source": "bench:S08:B00001",
+   "original_input": "PO: AI driven journal recorder 디바이스의 와디즈 런칭 준비입니다. 리워드 구성과 얼리버드 물량, 스토리 페이지 구조를 확정해 주세요.",
+   "gold": [
+    "와디즈",
+    "리워드",
+    "얼리버드",
+    "스토리 페이지"
+   ],
+   "decoys": [
+    "텀블벅"
+   ]
+  },
+  {
+   "scenario_id": "S09-B00000",
+   "sid": "S09",
+   "domain": "Biz Case Study(Tesla·Zara)",
+   "scenario_type": "B00000",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "IMMS 조교",
+   "source": "bench:S09:B00000",
+   "original_input": "IMMS 조교: Tesla와 Zara 케이스 스터디 산출물 요청입니다. 수직계열화 관점의 공급망 비교와 수요예측 방식 차이를 분석 프레임에 담아 주세요.",
+   "gold": [
+    "Tesla",
+    "Zara",
+    "수직계열화",
+    "수요예측"
+   ],
+   "decoys": []
+  },
+  {
+   "scenario_id": "S09-B10000",
+   "sid": "S09",
+   "domain": "Biz Case Study(Tesla·Zara)",
+   "scenario_type": "B10000",
+   "branch_bits": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "IMMS 조교",
+   "source": "bench:S09:B10000",
+   "original_input": "지난 24시간 Teams 메시지 digest(잡담 혼재):\n\n[09:12] IMMS 조교: IMMS 조교: Tesla와 Zara 케이스 스터디 산출물 요청입니다. 수직계열화 관점의 공급망 비교와 수요예측 방식 차이를 분석 프레임에 담아 주세요.\n[11:02] 박대리: 점심 구내식당 ㄱㄱ ㅋㅋ\n[11:03] 팀장: 콜\n[15:20] 신입: 주말에 비 온대요 ☔ 우산 챙기세요~\n[16:05] 박대리: 담주 월요일 회식 어때요",
+   "gold": [
+    "Tesla",
+    "Zara",
+    "수직계열화",
+    "수요예측"
+   ],
+   "decoys": [
+    "구내식당",
+    "우산 챙기세요",
+    "월요일 회식"
+   ]
+  },
+  {
+   "scenario_id": "S09-B01000",
+   "sid": "S09",
+   "domain": "Biz Case Study(Tesla·Zara)",
+   "scenario_type": "B01000",
+   "branch_bits": [
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "IMMS 조교",
+   "source": "bench:S09:B01000",
+   "original_input": "제목: [요청] Biz Case Study(Tesla·Zara) 요건 반영\n본문: IMMS 조교: Tesla와 Zara 케이스 스터디 산출물 요청입니다. 수직계열화 관점의 공급망 비교와 수요예측 방식 차이를 분석 프레임에 담아 주세요.\n\n── 첨부파일(프레임워크.pptx) 파싱 결과 ──\n── 분석 프레임 ──\n5 Forces와 VRIO를 병행 적용하고, 단위경제 비교표를 부록에 둔다.",
+   "gold": [
+    "Tesla",
+    "Zara",
+    "수직계열화",
+    "수요예측",
+    "5 Forces",
+    "VRIO"
+   ],
+   "decoys": []
+  },
+  {
+   "scenario_id": "S09-B00100",
+   "sid": "S09",
+   "domain": "Biz Case Study(Tesla·Zara)",
+   "scenario_type": "B00100",
+   "branch_bits": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "IMMS 조교",
+   "source": "bench:S09:B00100",
+   "original_input": "IMMS 조교: Tesla와 Zara 케이스 스터디 산출물 요청입니다. 수직계열화 관점의 공급망 비교와 수요예측 방식 차이를 분석 프레임에 담아 주세요.",
+   "gold": [
+    "Tesla",
+    "Zara",
+    "수직계열화",
+    "수요예측"
+   ],
+   "decoys": [
+    "토너 교체"
+   ]
+  },
+  {
+   "scenario_id": "S09-B00010",
+   "sid": "S09",
+   "domain": "Biz Case Study(Tesla·Zara)",
+   "scenario_type": "B00010",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "IMMS 조교",
+   "source": "bench:S09:B00010",
+   "original_input": "IMMS 조교: Tesla와 Zara 케이스 스터디 산출물 요청입니다. 수직계열화 관점의 공급망 비교와 수요예측 방식 차이를 분석 프레임에 담아 주세요.",
+   "gold": [
+    "Tesla",
+    "Zara",
+    "수직계열화",
+    "수요예측"
+   ],
+   "decoys": [
+    "메타버스"
+   ]
+  },
+  {
+   "scenario_id": "S09-B00001",
+   "sid": "S09",
+   "domain": "Biz Case Study(Tesla·Zara)",
+   "scenario_type": "B00001",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "IMMS 조교",
+   "source": "bench:S09:B00001",
+   "original_input": "IMMS 조교: Tesla와 Zara 케이스 스터디 산출물 요청입니다. 수직계열화 관점의 공급망 비교와 수요예측 방식 차이를 분석 프레임에 담아 주세요.",
+   "gold": [
+    "Tesla",
+    "Zara",
+    "수직계열화",
+    "수요예측"
+   ],
+   "decoys": [
+    "구판 교재"
+   ]
+  },
+  {
+   "scenario_id": "S10-B00000",
+   "sid": "S10",
+   "domain": "선관위 사무보조",
+   "scenario_type": "B00000",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "관리계 주무관",
+   "source": "bench:S10:B00000",
+   "original_input": "관리계 주무관: 선거 사무 지원 체계화 요청입니다. 관리계는 선거비용 실사 보조 절차를, 지도계는 민원문의 대응과 유권해석 필요시 escalate 기준을 문서화해 주세요.",
+   "gold": [
+    "선거비용",
+    "실사",
+    "민원문의",
+    "유권해석"
+   ],
+   "decoys": []
+  },
+  {
+   "scenario_id": "S10-B10000",
+   "sid": "S10",
+   "domain": "선관위 사무보조",
+   "scenario_type": "B10000",
+   "branch_bits": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "관리계 주무관",
+   "source": "bench:S10:B10000",
+   "original_input": "지난 24시간 Teams 메시지 digest(잡담 혼재):\n\n[09:12] 관리계 주무관: 관리계 주무관: 선거 사무 지원 체계화 요청입니다. 관리계는 선거비용 실사 보조 절차를, 지도계는 민원문의 대응과 유권해석 필요시 escalate 기준을 문서화해 주세요.\n[11:02] 박대리: 점심 구내식당 ㄱㄱ ㅋㅋ\n[11:03] 팀장: 콜\n[15:20] 신입: 주말에 비 온대요 ☔ 우산 챙기세요~\n[16:05] 박대리: 담주 월요일 회식 어때요",
+   "gold": [
+    "선거비용",
+    "실사",
+    "민원문의",
+    "유권해석"
+   ],
+   "decoys": [
+    "구내식당",
+    "우산 챙기세요",
+    "월요일 회식"
+   ]
+  },
+  {
+   "scenario_id": "S10-B01000",
+   "sid": "S10",
+   "domain": "선관위 사무보조",
+   "scenario_type": "B01000",
+   "branch_bits": [
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "관리계 주무관",
+   "source": "bench:S10:B01000",
+   "original_input": "제목: [요청] 선관위 사무보조 요건 반영\n본문: 관리계 주무관: 선거 사무 지원 체계화 요청입니다. 관리계는 선거비용 실사 보조 절차를, 지도계는 민원문의 대응과 유권해석 필요시 escalate 기준을 문서화해 주세요.\n\n── 첨부파일(민원유형.xlsx) 파싱 결과 ──\n── 민원 유형 상위 ──\n현수막 규격 문의, 기부행위 해당여부 문의가 다수. 처리기한 3일 원칙.",
+   "gold": [
+    "선거비용",
+    "실사",
+    "민원문의",
+    "유권해석",
+    "현수막 규격",
+    "기부행위"
+   ],
+   "decoys": []
+  },
+  {
+   "scenario_id": "S10-B00100",
+   "sid": "S10",
+   "domain": "선관위 사무보조",
+   "scenario_type": "B00100",
+   "branch_bits": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "관리계 주무관",
+   "source": "bench:S10:B00100",
+   "original_input": "관리계 주무관: 선거 사무 지원 체계화 요청입니다. 관리계는 선거비용 실사 보조 절차를, 지도계는 민원문의 대응과 유권해석 필요시 escalate 기준을 문서화해 주세요.",
+   "gold": [
+    "선거비용",
+    "실사",
+    "민원문의",
+    "유권해석"
+   ],
+   "decoys": [
+    "토너 교체"
+   ]
+  },
+  {
+   "scenario_id": "S10-B00010",
+   "sid": "S10",
+   "domain": "선관위 사무보조",
+   "scenario_type": "B00010",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "관리계 주무관",
+   "source": "bench:S10:B00010",
+   "original_input": "관리계 주무관: 선거 사무 지원 체계화 요청입니다. 관리계는 선거비용 실사 보조 절차를, 지도계는 민원문의 대응과 유권해석 필요시 escalate 기준을 문서화해 주세요.",
+   "gold": [
+    "선거비용",
+    "실사",
+    "민원문의",
+    "유권해석"
+   ],
+   "decoys": [
+    "메타버스"
+   ]
+  },
+  {
+   "scenario_id": "S10-B00001",
+   "sid": "S10",
+   "domain": "선관위 사무보조",
+   "scenario_type": "B00001",
+   "branch_bits": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "repeat_idx": 1,
+   "repeats": 1,
+   "requestor": "관리계 주무관",
+   "source": "bench:S10:B00001",
+   "original_input": "관리계 주무관: 선거 사무 지원 체계화 요청입니다. 관리계는 선거비용 실사 보조 절차를, 지도계는 민원문의 대응과 유권해석 필요시 escalate 기준을 문서화해 주세요.",
+   "gold": [
+    "선거비용",
+    "실사",
+    "민원문의",
+    "유권해석"
+   ],
+   "decoys": [
+    "팩스 접수"
+   ]
+  }
+ ]
+}
