@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "live-1785481750522",
+    "mode": "live",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-07-31T07:04:53.369Z",
+    "finished_at": "2026-07-31T07:09:10.522Z",
+    "duration_ms": 257153
+  },
+  "trigger": {
+    "source": "outlook(demo, 첨부파일 파싱됨)",
+    "requestor": "홍길동(고객사) <abraxaspark91@gmail.com>",
+    "received_at": "2026-07-31T07:04:53.369Z",
+    "scenario_id": null,
+    "domain": null
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T03:54:39.421Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T03:54:39.421Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:T5",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T03:54:39.734Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "EXISTS"
+    },
+    {
+      "ts": "2026-07-31T03:54:39.989Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 3676
+    },
+    {
+      "ts": "2026-07-31T07:09:10.508Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 0
+    },
+    "semantic_audit": {
+      "attempts": 0
+    },
+    "devils_advocate": {
+      "attempts": 0,
+      "score": 5,
+      "verdict": "핵심 데이터 계약과 개인정보·컴플라이언스 검토, 전 시스템 영향분석, 구체적 테스트·승인·롤백 기준을 확정한 후 진행을 권고한다."
+    },
+    "escalated_any": false
+  },
+  "deliverable": {
+    "req_id": "REQ-20250308-sd-fi-w102-kna1",
+    "requirement": "다음 릴리즈를 목표로 SD-FI 통합테스트 3차에 케이스 5건을 추가하고 WRICEF W-102에 KNA1 신규 필드 매핑 및 영향범위를 반영한다.",
+    "keywords": [
+      "SD-FI",
+      "billing",
+      "회계전표",
+      "통합테스트",
+      "WRICEF",
+      "W-102",
+      "KNA1",
+      "고객 마스터",
+      "인터페이스 매핑",
+      "회귀검증",
+      "재처리",
+      "대사",
+      "중복 전표 방지",
+      "다음 릴리즈"
+    ],
+    "wiki_files": [
+      "wiki/requirements/REQ-20250308-sd-fi-w102-kna1.md",
+      "wiki/decisions.md",
+      "wiki/index.md",
+      "wiki/logs/runs.md"
+    ],
+    "commit_hash": "c43ffcb",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/c43ffcb0d7f07f1566c224223a0ca6cb6cec4086"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
