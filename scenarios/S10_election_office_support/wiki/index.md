@@ -1,14 +1,7 @@
-# Keyword Index
-- SD → REQ-SEED-1
-- 반품 → REQ-SEED-1
-- RE 오더 → REQ-SEED-1
-- 관리계 → REQ-20250308-election-support-escalation
-- 지도계 → REQ-20250308-election-support-escalation
-- 선거비용 실사 → REQ-20250308-election-support-escalation
-- 민원 대응 → REQ-20250308-election-support-escalation
-- 유권해석 → REQ-20250308-election-support-escalation
-- 에스컬레이션 → REQ-20250308-election-support-escalation
-- RACI → REQ-20250308-election-support-escalation
-- 개인정보 보호 → REQ-20250308-election-support-escalation
-- 기록관리 → REQ-20250308-election-support-escalation
-- 문서엔진 → REQ-20250308-election-support-escalation
+- 선거 사무 지원 승인 → REQ-20250308-election-support-escalation-approval
+- 산출물 갱신 → REQ-20250308-election-support-escalation-approval
+- 민감정보 처리 → REQ-20250308-election-support-escalation-approval
+- SLA 미확정 → REQ-20250308-election-support-escalation-approval
+- 승인권자 미확정 → REQ-20250308-election-support-escalation-approval
+- 법적 근거 미확정 → REQ-20250308-election-support-escalation-approval
+- 대외 답변 품질관리 → REQ-20250308-election-support-escalation-approval
