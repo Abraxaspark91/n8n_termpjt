@@ -129,3 +129,29 @@
 - 라이선스 → REQ-20250214-cto-ai-architecture-approval-execution-result-v2
 - CTO실 → REQ-20250214-cto-ai-architecture-approval-execution-result-v2
 - 산출물 갱신 → REQ-20250214-cto-ai-architecture-approval-execution-result-v2
+- 전사 AI 아키텍처 → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- AWS → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- Azure → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- GCP → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- AI Serving → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- GPU 자체구축 → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- 클라우드 GPU → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- SAP HANA → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- Oracle → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- TCO → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- 민감도 분석 → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- 손익분기 → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- 보안 → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- 법무 검토 → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- 규정 준수 → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- 데이터 거버넌스 → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- PoC → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- 벤치마크 → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- 운영 책임 → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- 운영 RACI → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- 운영 SLA → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- MLOps → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- DR → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- 라이선스 → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- CTO실 → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
+- 산출물 갱신 → REQ-20250214-cto-ai-architecture-approval-execution-result-v3
