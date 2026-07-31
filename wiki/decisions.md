@@ -5,3 +5,4 @@
 - [2025-03-08] REQ-20250308-fi-2step-approval | 최부장 | FI 전표의 2단계 순차 승인과 2차 승인 완료 전 후속 처리 차단을 승인하고, 승인 정책·적용 범위·전환·감사 증적 기준은 TBD로 관리한다. | keywords: FI,전표 승인,2단계 승인,순차 승인,내부감사,반려,재상신,권한 통제,감사 로그,미결 전표 전환 → requirements/REQ-20250308-fi-2step-approval.md
 - [2025-03-08] REQ-20250308-sd-returns-re-order | 김PM | SD 반품 프로세스 및 RE 오더 타입 적용 승인 | keywords: SD, Returns, RE Order Type → requirements/REQ-20250308-sd-returns-re-order.md
 - [2025-03-08] REQ-20250308-sd-mm-fi-update | Teams 24h digest | SD 반품/RE, MM 안전재고-MRP, FI 2단계 승인 변경을 승인하되 일부 기준은 TBD로 유지 | keywords: SD,반품,RE 오더 타입,MM,MRP,안전재고,재고부족,FI,전표 승인,2단계 승인,순차 승인 → requirements/REQ-20250308-sd-mm-fi-update.md
+- [2025-03-08] REQ-20250308-sd-mm-fi-update-returns-641 | 김PM, 박선임 | SD 반품 우선 반영을 승인하되 RE 오더 타입 정합성과 MM 이동유형 641 영향은 후속 크로스모듈 검토로 관리 | keywords: SD,반품,RE 오더 타입,MM,이동유형 641,재고평가,크로스모듈,테스트 시나리오 → requirements/REQ-20250308-sd-mm-fi-update-returns-641.md
