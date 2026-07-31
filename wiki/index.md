@@ -114,3 +114,15 @@
 - PoC → REQ-20250308-enterprise-ai-architecture-selection-execution | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution.md
 - 크로스모듈 → REQ-20250308-enterprise-ai-architecture-selection-execution | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution.md
 - 단계적 도입 → REQ-20250308-enterprise-ai-architecture-selection-execution | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution.md
+- 전사 AI 아키텍처 실행 확인 → REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation.md
+- 클라우드 플랫폼 평가 → REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation | requirements/REQ-20250308-enterprise-ai-architecture-selection-confirmation.md
+- AI Serving 실행 → REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation.md
+- GPU 자체구축 → REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation.md
+- 클라우드 GPU → REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation.md
+- SAP HANA → REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation.md
+- Oracle → REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation.md
+- TCO 및 라이선스 → REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation.md
+- 규정 준수 및 보안 → REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation.md
+- 독립 PoC → REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation.md
+- 크로스모듈 검증 → REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation.md
+- 단계적 도입 → REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation.md
