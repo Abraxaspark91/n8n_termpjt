@@ -1,1 +1,2 @@
 # Runs (n8n processing log mirror)
+- [2026-07-31T15:00:23.029Z] REQ-20260725-investment-dashboard-macro-fundamentals | source=bench:S07:B00000 | mode=bench | requestor=리서치 담당
