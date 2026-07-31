@@ -1,16 +1,16 @@
 {
   "summary": {
-    "generated_at": "2026-07-31T12:36:29.498Z",
-    "total_runs": 4,
-    "overall_success_rate": 0.5,
-    "robust_cases": 2,
+    "generated_at": "2026-07-31T17:25:03.473Z",
+    "total_runs": 60,
+    "overall_success_rate": 0.95,
+    "robust_cases": 57,
     "flaky_cases": 0,
-    "total_cases": 4,
+    "total_cases": 60,
     "decoy_leak_runs": 0,
-    "escalation_runs": 0,
-    "patch_spec_valid_rate": 0.75,
-    "avg_patch_targeted": 2.8,
-    "avg_duration_ms": 121838
+    "escalation_runs": 1,
+    "patch_spec_valid_rate": 0.967,
+    "avg_patch_targeted": 2,
+    "avg_duration_ms": 151663
   },
   "perCase": [
     {
@@ -29,7 +29,7 @@
       "successes": 1,
       "failures": {},
       "durations": [
-        133046
+        117795
       ],
       "recalls": [
         1
@@ -38,6 +38,84 @@
       "robust": true,
       "flaky": false,
       "avg_recall": 1
+    },
+    {
+      "scenario_id": "S01-B00001",
+      "sid": "S01",
+      "domain": "Enterprise Architecture",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        114663
+      ],
+      "recalls": [
+        0.75
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 0.75
+    },
+    {
+      "scenario_id": "S01-B00010",
+      "sid": "S01",
+      "domain": "Enterprise Architecture",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        175578
+      ],
+      "recalls": [
+        0.75
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 0.75
+    },
+    {
+      "scenario_id": "S01-B00100",
+      "sid": "S01",
+      "domain": "Enterprise Architecture",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        120711
+      ],
+      "recalls": [
+        0.75
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 0.75
     },
     {
       "scenario_id": "S01-B01000",
@@ -52,39 +130,10 @@
         0
       ],
       "k": 1,
-      "successes": 0,
-      "failures": {
-        "hallucinated_entities": 1,
-        "patch_spec_invalid": 1
-      },
-      "durations": [
-        113628
-      ],
-      "recalls": [
-        1
-      ],
-      "rate": 0,
-      "robust": false,
-      "flaky": false,
-      "avg_recall": 1
-    },
-    {
-      "scenario_id": "S01-B10101",
-      "sid": "S01",
-      "domain": "Enterprise Architecture",
-      "scenario_type": "B10101",
-      "branch_bits": [
-        1,
-        0,
-        1,
-        0,
-        1
-      ],
-      "k": 1,
       "successes": 1,
       "failures": {},
       "durations": [
-        136097
+        119865
       ],
       "recalls": [
         1
@@ -95,24 +144,1170 @@
       "avg_recall": 1
     },
     {
-      "scenario_id": "S01-B11111",
+      "scenario_id": "S01-B10000",
       "sid": "S01",
       "domain": "Enterprise Architecture",
-      "scenario_type": "B11111",
+      "scenario_type": "B10000",
       "branch_bits": [
         1,
-        1,
-        1,
-        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        231864
+      ],
+      "recalls": [
         1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S02-B00000",
+      "sid": "S02",
+      "domain": "Process Innovation(총원가)",
+      "scenario_type": "B00000",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        124116
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S02-B00001",
+      "sid": "S02",
+      "domain": "Process Innovation(총원가)",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        145681
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S02-B00010",
+      "sid": "S02",
+      "domain": "Process Innovation(총원가)",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        158607
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S02-B00100",
+      "sid": "S02",
+      "domain": "Process Innovation(총원가)",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        144014
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S02-B01000",
+      "sid": "S02",
+      "domain": "Process Innovation(총원가)",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        171300
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S02-B10000",
+      "sid": "S02",
+      "domain": "Process Innovation(총원가)",
+      "scenario_type": "B10000",
+      "branch_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        139476
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S03-B00000",
+      "sid": "S03",
+      "domain": "SAP FI 연결결산",
+      "scenario_type": "B00000",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        126975
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S03-B00001",
+      "sid": "S03",
+      "domain": "SAP FI 연결결산",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        162903
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S03-B00010",
+      "sid": "S03",
+      "domain": "SAP FI 연결결산",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        140519
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S03-B00100",
+      "sid": "S03",
+      "domain": "SAP FI 연결결산",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        142743
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S03-B01000",
+      "sid": "S03",
+      "domain": "SAP FI 연결결산",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        155085
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S03-B10000",
+      "sid": "S03",
+      "domain": "SAP FI 연결결산",
+      "scenario_type": "B10000",
+      "branch_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        132030
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S04-B00000",
+      "sid": "S04",
+      "domain": "SAP CO-PA 손익구조",
+      "scenario_type": "B00000",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        112465
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S04-B00001",
+      "sid": "S04",
+      "domain": "SAP CO-PA 손익구조",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        112745
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S04-B00010",
+      "sid": "S04",
+      "domain": "SAP CO-PA 손익구조",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        113299
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S04-B00100",
+      "sid": "S04",
+      "domain": "SAP CO-PA 손익구조",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        178740
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S04-B01000",
+      "sid": "S04",
+      "domain": "SAP CO-PA 손익구조",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        198624
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S04-B10000",
+      "sid": "S04",
+      "domain": "SAP CO-PA 손익구조",
+      "scenario_type": "B10000",
+      "branch_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        131423
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S05-B00000",
+      "sid": "S05",
+      "domain": "AI 경비처리 자동화",
+      "scenario_type": "B00000",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        149896
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S05-B00001",
+      "sid": "S05",
+      "domain": "AI 경비처리 자동화",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        226054
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S05-B00010",
+      "sid": "S05",
+      "domain": "AI 경비처리 자동화",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        158343
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S05-B00100",
+      "sid": "S05",
+      "domain": "AI 경비처리 자동화",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        132397
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S05-B01000",
+      "sid": "S05",
+      "domain": "AI 경비처리 자동화",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        147925
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S05-B10000",
+      "sid": "S05",
+      "domain": "AI 경비처리 자동화",
+      "scenario_type": "B10000",
+      "branch_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        169768
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S06-B00000",
+      "sid": "S06",
+      "domain": "VLB ICO 마케팅",
+      "scenario_type": "B00000",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        150680
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S06-B00001",
+      "sid": "S06",
+      "domain": "VLB ICO 마케팅",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        141861
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S06-B00010",
+      "sid": "S06",
+      "domain": "VLB ICO 마케팅",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        150592
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S06-B00100",
+      "sid": "S06",
+      "domain": "VLB ICO 마케팅",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        138423
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S06-B01000",
+      "sid": "S06",
+      "domain": "VLB ICO 마케팅",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        178393
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S06-B10000",
+      "sid": "S06",
+      "domain": "VLB ICO 마케팅",
+      "scenario_type": "B10000",
+      "branch_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        146915
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S07-B00000",
+      "sid": "S07",
+      "domain": "투자 Dashboard",
+      "scenario_type": "B00000",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        182471
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S07-B00010",
+      "sid": "S07",
+      "domain": "투자 Dashboard",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        146560
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S07-B00100",
+      "sid": "S07",
+      "domain": "투자 Dashboard",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        128370
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S07-B01000",
+      "sid": "S07",
+      "domain": "투자 Dashboard",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
       ],
       "k": 1,
       "successes": 0,
       "failures": {
-        "hallucinated_entities": 1
+        "gold_recall_low": 1
       },
       "durations": [
-        104580
+        161726
+      ],
+      "recalls": [
+        0.67
+      ],
+      "rate": 0,
+      "robust": false,
+      "flaky": false,
+      "avg_recall": 0.67
+    },
+    {
+      "scenario_id": "S07-B10000",
+      "sid": "S07",
+      "domain": "투자 Dashboard",
+      "scenario_type": "B10000",
+      "branch_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        149822
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S07-B00001",
+      "sid": "S07",
+      "domain": "투자 Dashboard",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        113330
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S08-B00000",
+      "sid": "S08",
+      "domain": "AI 저널 레코더 런칭",
+      "scenario_type": "B00000",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        129343
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S08-B10000",
+      "sid": "S08",
+      "domain": "AI 저널 레코더 런칭",
+      "scenario_type": "B10000",
+      "branch_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        137269
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S08-B01000",
+      "sid": "S08",
+      "domain": "AI 저널 레코더 런칭",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        218323
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S08-B00100",
+      "sid": "S08",
+      "domain": "AI 저널 레코더 런칭",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        168715
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S08-B00010",
+      "sid": "S08",
+      "domain": "AI 저널 레코더 런칭",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        179200
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S08-B00001",
+      "sid": "S08",
+      "domain": "AI 저널 레코더 런칭",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        153214
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S09-B00000",
+      "sid": "S09",
+      "domain": "Biz Case Study(Tesla·Zara)",
+      "scenario_type": "B00000",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        140275
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S09-B10000",
+      "sid": "S09",
+      "domain": "Biz Case Study(Tesla·Zara)",
+      "scenario_type": "B10000",
+      "branch_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 0,
+      "failures": {
+        "patch_spec_invalid": 1
+      },
+      "durations": [
+        138772
       ],
       "recalls": [
         1
@@ -121,44 +1316,381 @@
       "robust": false,
       "flaky": false,
       "avg_recall": 1
+    },
+    {
+      "scenario_id": "S09-B01000",
+      "sid": "S09",
+      "domain": "Biz Case Study(Tesla·Zara)",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        163054
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S09-B00100",
+      "sid": "S09",
+      "domain": "Biz Case Study(Tesla·Zara)",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        157266
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S09-B00010",
+      "sid": "S09",
+      "domain": "Biz Case Study(Tesla·Zara)",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        181365
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S09-B00001",
+      "sid": "S09",
+      "domain": "Biz Case Study(Tesla·Zara)",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "k": 1,
+      "successes": 0,
+      "failures": {
+        "pipeline_crashed": 1
+      },
+      "durations": [],
+      "recalls": [
+        0
+      ],
+      "rate": 0,
+      "robust": false,
+      "flaky": false,
+      "avg_recall": 0
+    },
+    {
+      "scenario_id": "S10-B00000",
+      "sid": "S10",
+      "domain": "선관위 사무보조",
+      "scenario_type": "B00000",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        135864
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S10-B10000",
+      "sid": "S10",
+      "domain": "선관위 사무보조",
+      "scenario_type": "B10000",
+      "branch_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        170784
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S10-B01000",
+      "sid": "S10",
+      "domain": "선관위 사무보조",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        156212
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S10-B00100",
+      "sid": "S10",
+      "domain": "선관위 사무보조",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        164327
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S10-B00010",
+      "sid": "S10",
+      "domain": "선관위 사무보조",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        189314
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S10-B00001",
+      "sid": "S10",
+      "domain": "선관위 사무보조",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        120074
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
     }
   ],
   "perScenario": [
     {
       "key": "S01",
       "label": "Enterprise Architecture",
-      "k": 4,
-      "successes": 2,
-      "rate": 0.5
+      "k": 6,
+      "successes": 6,
+      "rate": 1
+    },
+    {
+      "key": "S02",
+      "label": "Process Innovation(총원가)",
+      "k": 6,
+      "successes": 6,
+      "rate": 1
+    },
+    {
+      "key": "S03",
+      "label": "SAP FI 연결결산",
+      "k": 6,
+      "successes": 6,
+      "rate": 1
+    },
+    {
+      "key": "S04",
+      "label": "SAP CO-PA 손익구조",
+      "k": 6,
+      "successes": 6,
+      "rate": 1
+    },
+    {
+      "key": "S05",
+      "label": "AI 경비처리 자동화",
+      "k": 6,
+      "successes": 6,
+      "rate": 1
+    },
+    {
+      "key": "S06",
+      "label": "VLB ICO 마케팅",
+      "k": 6,
+      "successes": 6,
+      "rate": 1
+    },
+    {
+      "key": "S07",
+      "label": "투자 Dashboard",
+      "k": 6,
+      "successes": 5,
+      "rate": 0.8333333333333334
+    },
+    {
+      "key": "S08",
+      "label": "AI 저널 레코더 런칭",
+      "k": 6,
+      "successes": 6,
+      "rate": 1
+    },
+    {
+      "key": "S09",
+      "label": "Biz Case Study(Tesla·Zara)",
+      "k": 6,
+      "successes": 4,
+      "rate": 0.6666666666666666
+    },
+    {
+      "key": "S10",
+      "label": "선관위 사무보조",
+      "k": 6,
+      "successes": 6,
+      "rate": 1
     }
   ],
   "perBranch": [
     {
-      "key": "B01000",
-      "label": "B01000",
-      "k": 1,
-      "successes": 0,
-      "rate": 0
+      "key": "B00001",
+      "label": "B00001",
+      "k": 10,
+      "successes": 9,
+      "rate": 0.9
     },
     {
-      "key": "B11111",
-      "label": "B11111",
-      "k": 1,
-      "successes": 0,
-      "rate": 0
+      "key": "B01000",
+      "label": "B01000",
+      "k": 10,
+      "successes": 9,
+      "rate": 0.9
+    },
+    {
+      "key": "B10000",
+      "label": "B10000",
+      "k": 10,
+      "successes": 9,
+      "rate": 0.9
     },
     {
       "key": "B00000",
       "label": "B00000",
-      "k": 1,
-      "successes": 1,
+      "k": 10,
+      "successes": 10,
       "rate": 1
     },
     {
-      "key": "B10101",
-      "label": "B10101",
-      "k": 1,
-      "successes": 1,
+      "key": "B00010",
+      "label": "B00010",
+      "k": 10,
+      "successes": 10,
+      "rate": 1
+    },
+    {
+      "key": "B00100",
+      "label": "B00100",
+      "k": 10,
+      "successes": 10,
       "rate": 1
     }
   ],
@@ -166,93 +1698,412 @@
     {
       "factor": "F1 잡담 혼입",
       "idx": 0,
-      "k_on": 2,
-      "k_off": 2,
-      "rate_on": 0.5,
-      "rate_off": 0.5,
-      "delta": 0
+      "k_on": 10,
+      "k_off": 50,
+      "rate_on": 0.9,
+      "rate_off": 0.96,
+      "delta": -0.06
     },
     {
       "factor": "F2 이메일 첨부",
       "idx": 1,
-      "k_on": 2,
-      "k_off": 2,
-      "rate_on": 0,
-      "rate_off": 1,
-      "delta": -1
+      "k_on": 10,
+      "k_off": 50,
+      "rate_on": 0.9,
+      "rate_off": 0.96,
+      "delta": -0.06
     },
     {
       "factor": "F3 위키 Bloat",
       "idx": 2,
-      "k_on": 2,
-      "k_off": 2,
-      "rate_on": 0.5,
-      "rate_off": 0.5,
-      "delta": 0
+      "k_on": 10,
+      "k_off": 50,
+      "rate_on": 1,
+      "rate_off": 0.94,
+      "delta": 0.06
     },
     {
       "factor": "F4 AI 저밀도 자료",
       "idx": 3,
-      "k_on": 1,
-      "k_off": 3,
-      "rate_on": 0,
-      "rate_off": 0.6666666666666666,
-      "delta": -0.667
+      "k_on": 10,
+      "k_off": 50,
+      "rate_on": 1,
+      "rate_off": 0.94,
+      "delta": 0.06
     },
     {
       "factor": "F5 Stale 정보",
       "idx": 4,
-      "k_on": 2,
-      "k_off": 2,
-      "rate_on": 0.5,
-      "rate_off": 0.5,
-      "delta": 0
+      "k_on": 10,
+      "k_off": 50,
+      "rate_on": 0.9,
+      "rate_off": 0.96,
+      "delta": -0.06
     }
   ],
   "scenarioFactor": [
     {
       "sid": "S01",
-      "factor": 1,
-      "k": 2,
-      "successes": 0,
-      "rate": 0
-    },
-    {
-      "sid": "S01",
-      "factor": 0,
-      "k": 2,
-      "successes": 1,
-      "rate": 0.5
-    },
-    {
-      "sid": "S01",
-      "factor": 2,
-      "k": 2,
-      "successes": 1,
-      "rate": 0.5
-    },
-    {
-      "sid": "S01",
       "factor": 4,
-      "k": 2,
+      "k": 1,
       "successes": 1,
-      "rate": 0.5
+      "rate": 1
     },
     {
       "sid": "S01",
       "factor": 3,
       "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S01",
+      "factor": 2,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S01",
+      "factor": 1,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S01",
+      "factor": 0,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S02",
+      "factor": 4,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S02",
+      "factor": 3,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S02",
+      "factor": 2,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S02",
+      "factor": 1,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S02",
+      "factor": 0,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S03",
+      "factor": 4,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S03",
+      "factor": 3,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S03",
+      "factor": 2,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S03",
+      "factor": 1,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S03",
+      "factor": 0,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S04",
+      "factor": 4,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S04",
+      "factor": 3,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S04",
+      "factor": 2,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S04",
+      "factor": 1,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S04",
+      "factor": 0,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S05",
+      "factor": 4,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S05",
+      "factor": 3,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S05",
+      "factor": 2,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S05",
+      "factor": 1,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S05",
+      "factor": 0,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S06",
+      "factor": 4,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S06",
+      "factor": 3,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S06",
+      "factor": 2,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S06",
+      "factor": 1,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S06",
+      "factor": 0,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S07",
+      "factor": 3,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S07",
+      "factor": 2,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S07",
+      "factor": 1,
+      "k": 1,
       "successes": 0,
       "rate": 0
+    },
+    {
+      "sid": "S07",
+      "factor": 0,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S07",
+      "factor": 4,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S08",
+      "factor": 0,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S08",
+      "factor": 1,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S08",
+      "factor": 2,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S08",
+      "factor": 3,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S08",
+      "factor": 4,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S09",
+      "factor": 0,
+      "k": 1,
+      "successes": 0,
+      "rate": 0
+    },
+    {
+      "sid": "S09",
+      "factor": 1,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S09",
+      "factor": 2,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S09",
+      "factor": 3,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S09",
+      "factor": 4,
+      "k": 1,
+      "successes": 0,
+      "rate": 0
+    },
+    {
+      "sid": "S10",
+      "factor": 0,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S10",
+      "factor": 1,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S10",
+      "factor": 2,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S10",
+      "factor": 3,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S10",
+      "factor": 4,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
     }
   ],
   "pareto": [
     {
-      "cause": "hallucinated_entities",
-      "count": 2
+      "cause": "gold_recall_low",
+      "count": 1
     },
     {
       "cause": "patch_spec_invalid",
+      "count": 1
+    },
+    {
+      "cause": "pipeline_crashed",
       "count": 1
     }
   ],
@@ -277,7 +2128,44 @@
         "gold_recall": 1,
         "hallucinated": [],
         "leaked_decoys": [],
-        "entities_count": 13,
+        "entities_count": null,
+        "attempts": {
+          "r1": 1,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 3,
+        "patch_targeted": 0,
+        "duration_ms": 117795,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785502352981
+      }
+    },
+    {
+      "scenario_id": "S01-B00001",
+      "sid": "S01",
+      "domain": "Enterprise Architecture",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 0.75,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
         "attempts": {
           "r1": 1,
           "r2": 1,
@@ -288,7 +2176,84 @@
         "patch_valid": true,
         "patch_ops": 6,
         "patch_targeted": 3,
-        "duration_ms": 133046
+        "duration_ms": 114663,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785503441499
+      }
+    },
+    {
+      "scenario_id": "S01-B00010",
+      "sid": "S01",
+      "domain": "Enterprise Architecture",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 0.75,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 3,
+          "r2": 2,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 8,
+        "patch_targeted": 5,
+        "duration_ms": 175578,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785503261280
+      }
+    },
+    {
+      "scenario_id": "S01-B00100",
+      "sid": "S01",
+      "domain": "Enterprise Architecture",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 0.75,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 1,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 5,
+        "patch_targeted": 2,
+        "duration_ms": 120711,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785503012592
       }
     },
     {
@@ -305,18 +2270,13 @@
       ],
       "repeat_idx": 1,
       "repeats": 1,
-      "success": false,
-      "failures": [
-        "hallucinated_entities",
-        "patch_spec_invalid"
-      ],
+      "success": true,
+      "failures": [],
       "metrics": {
         "gold_recall": 1,
-        "hallucinated": [
-          "클라우드 GPU 12% 우위"
-        ],
+        "hallucinated": [],
         "leaked_decoys": [],
-        "entities_count": 18,
+        "entities_count": null,
         "attempts": {
           "r1": 1,
           "r2": 1,
@@ -324,21 +2284,98 @@
         },
         "da_score": 5,
         "escalated": false,
-        "patch_valid": false,
-        "patch_ops": 3,
-        "patch_targeted": 0,
-        "duration_ms": 113628
+        "patch_valid": true,
+        "patch_ops": 7,
+        "patch_targeted": 4,
+        "duration_ms": 119865,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785502824851
       }
     },
     {
-      "scenario_id": "S01-B10101",
+      "scenario_id": "S01-B10000",
       "sid": "S01",
       "domain": "Enterprise Architecture",
-      "scenario_type": "B10101",
+      "scenario_type": "B10000",
       "branch_bits": [
         1,
         0,
-        1,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 7,
+        "patch_targeted": 4,
+        "duration_ms": 231864,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785502644161
+      }
+    },
+    {
+      "scenario_id": "S02-B00000",
+      "sid": "S02",
+      "domain": "Process Innovation(총원가)",
+      "scenario_type": "B00000",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 1,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 4,
+        "patch_targeted": 1,
+        "duration_ms": 124116,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785503626569
+      }
+    },
+    {
+      "scenario_id": "S02-B00001",
+      "sid": "S02",
+      "domain": "Process Innovation(총원가)",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
         0,
         1
       ],
@@ -350,7 +2387,192 @@
         "gold_recall": 1,
         "hallucinated": [],
         "leaked_decoys": [],
-        "entities_count": 12,
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 4,
+        "patch_targeted": 1,
+        "duration_ms": 145681,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785504699133
+      }
+    },
+    {
+      "scenario_id": "S02-B00010",
+      "sid": "S02",
+      "domain": "Process Innovation(총원가)",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 4,
+        "patch_targeted": 1,
+        "duration_ms": 158607,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785504492391
+      }
+    },
+    {
+      "scenario_id": "S02-B00100",
+      "sid": "S02",
+      "domain": "Process Innovation(총원가)",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 3,
+        "patch_targeted": 0,
+        "duration_ms": 144014,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785504263167
+      }
+    },
+    {
+      "scenario_id": "S02-B01000",
+      "sid": "S02",
+      "domain": "Process Innovation(총원가)",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 5,
+        "patch_targeted": 2,
+        "duration_ms": 171300,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785504058407
+      }
+    },
+    {
+      "scenario_id": "S02-B10000",
+      "sid": "S02",
+      "domain": "Process Innovation(총원가)",
+      "scenario_type": "B10000",
+      "branch_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 5,
+        "patch_targeted": 2,
+        "duration_ms": 139476,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785503826993
+      }
+    },
+    {
+      "scenario_id": "S03-B00000",
+      "sid": "S03",
+      "domain": "SAP FI 연결결산",
+      "scenario_type": "B00000",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
         "attempts": {
           "r1": 1,
           "r2": 1,
@@ -359,36 +2581,479 @@
         "da_score": 5,
         "escalated": false,
         "patch_valid": true,
-        "patch_ops": 8,
-        "patch_targeted": 5,
-        "duration_ms": 136097
+        "patch_ops": 5,
+        "patch_targeted": 2,
+        "duration_ms": 126975,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785504890647
       }
     },
     {
-      "scenario_id": "S01-B11111",
-      "sid": "S01",
-      "domain": "Enterprise Architecture",
-      "scenario_type": "B11111",
+      "scenario_id": "S03-B00001",
+      "sid": "S03",
+      "domain": "SAP FI 연결결산",
+      "scenario_type": "B00001",
       "branch_bits": [
-        1,
-        1,
-        1,
-        1,
+        0,
+        0,
+        0,
+        0,
         1
       ],
       "repeat_idx": 1,
       "repeats": 1,
-      "success": false,
-      "failures": [
-        "hallucinated_entities"
-      ],
+      "success": true,
+      "failures": [],
       "metrics": {
         "gold_recall": 1,
-        "hallucinated": [
-          "TCO 관점 클라우드 GPU 12% 우위"
-        ],
+        "hallucinated": [],
         "leaked_decoys": [],
-        "entities_count": 18,
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 162903,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785505932388
+      }
+    },
+    {
+      "scenario_id": "S03-B00010",
+      "sid": "S03",
+      "domain": "SAP FI 연결결산",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 5,
+        "patch_targeted": 2,
+        "duration_ms": 140519,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785505703361
+      }
+    },
+    {
+      "scenario_id": "S03-B00100",
+      "sid": "S03",
+      "domain": "SAP FI 연결결산",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 142743,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785505503674
+      }
+    },
+    {
+      "scenario_id": "S03-B01000",
+      "sid": "S03",
+      "domain": "SAP FI 연결결산",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 155085,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785505299161
+      }
+    },
+    {
+      "scenario_id": "S03-B10000",
+      "sid": "S03",
+      "domain": "SAP FI 연결결산",
+      "scenario_type": "B10000",
+      "branch_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 132030,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785505084864
+      }
+    },
+    {
+      "scenario_id": "S04-B00000",
+      "sid": "S04",
+      "domain": "SAP CO-PA 손익구조",
+      "scenario_type": "B00000",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 1,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 4,
+        "patch_targeted": 1,
+        "duration_ms": 112465,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785506106544
+      }
+    },
+    {
+      "scenario_id": "S04-B00001",
+      "sid": "S04",
+      "domain": "SAP CO-PA 손익구조",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 1,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 5,
+        "patch_targeted": 2,
+        "duration_ms": 112745,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785507140765
+      }
+    },
+    {
+      "scenario_id": "S04-B00010",
+      "sid": "S04",
+      "domain": "SAP CO-PA 손익구조",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 1,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 5,
+        "patch_targeted": 2,
+        "duration_ms": 113299,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785506967139
+      }
+    },
+    {
+      "scenario_id": "S04-B00100",
+      "sid": "S04",
+      "domain": "SAP CO-PA 손익구조",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 3,
+        "patch_targeted": 0,
+        "duration_ms": 178740,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785506792641
+      }
+    },
+    {
+      "scenario_id": "S04-B01000",
+      "sid": "S04",
+      "domain": "SAP CO-PA 손익구조",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 4,
+          "r2": 2,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 5,
+        "patch_targeted": 2,
+        "duration_ms": 198624,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785506554626
+      }
+    },
+    {
+      "scenario_id": "S04-B10000",
+      "sid": "S04",
+      "domain": "SAP CO-PA 손익구조",
+      "scenario_type": "B10000",
+      "branch_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 5,
+        "patch_targeted": 2,
+        "duration_ms": 131423,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785506294490
+      }
+    },
+    {
+      "scenario_id": "S05-B00000",
+      "sid": "S05",
+      "domain": "AI 경비처리 자동화",
+      "scenario_type": "B00000",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 2,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 149896,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785507349527
+      }
+    },
+    {
+      "scenario_id": "S05-B00001",
+      "sid": "S05",
+      "domain": "AI 경비처리 자동화",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
         "attempts": {
           "r1": 1,
           "r2": 1,
@@ -399,7 +3064,1213 @@
         "patch_valid": true,
         "patch_ops": 6,
         "patch_targeted": 3,
-        "duration_ms": 104580
+        "duration_ms": 226054,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785508497929
+      }
+    },
+    {
+      "scenario_id": "S05-B00010",
+      "sid": "S05",
+      "domain": "AI 경비처리 자동화",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 3,
+          "r2": 2,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 158343,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785508202310
+      }
+    },
+    {
+      "scenario_id": "S05-B00100",
+      "sid": "S05",
+      "domain": "AI 경비처리 자동화",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 132397,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785507981803
+      }
+    },
+    {
+      "scenario_id": "S05-B01000",
+      "sid": "S05",
+      "domain": "AI 경비처리 자동화",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 4,
+        "patch_targeted": 1,
+        "duration_ms": 147925,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785507789974
+      }
+    },
+    {
+      "scenario_id": "S05-B10000",
+      "sid": "S05",
+      "domain": "AI 경비처리 자동화",
+      "scenario_type": "B10000",
+      "branch_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 169768,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785507580341
+      }
+    },
+    {
+      "scenario_id": "S06-B00000",
+      "sid": "S06",
+      "domain": "VLB ICO 마케팅",
+      "scenario_type": "B00000",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 2,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 5,
+        "patch_targeted": 2,
+        "duration_ms": 150680,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785508710019
+      }
+    },
+    {
+      "scenario_id": "S06-B00001",
+      "sid": "S06",
+      "domain": "VLB ICO 마케팅",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 5,
+        "patch_targeted": 2,
+        "duration_ms": 141861,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785509783172
+      }
+    },
+    {
+      "scenario_id": "S06-B00010",
+      "sid": "S06",
+      "domain": "VLB ICO 마케팅",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 5,
+        "patch_targeted": 2,
+        "duration_ms": 150592,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785509575649
+      }
+    },
+    {
+      "scenario_id": "S06-B00100",
+      "sid": "S06",
+      "domain": "VLB ICO 마케팅",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 5,
+        "patch_targeted": 2,
+        "duration_ms": 138423,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785509362533
+      }
+    },
+    {
+      "scenario_id": "S06-B01000",
+      "sid": "S06",
+      "domain": "VLB ICO 마케팅",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 3,
+          "r2": 2,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 7,
+        "patch_targeted": 4,
+        "duration_ms": 178393,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785509161036
+      }
+    },
+    {
+      "scenario_id": "S06-B10000",
+      "sid": "S06",
+      "domain": "VLB ICO 마케팅",
+      "scenario_type": "B10000",
+      "branch_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 4,
+        "patch_targeted": 1,
+        "duration_ms": 146915,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785508919621
+      }
+    },
+    {
+      "scenario_id": "S07-B00000",
+      "sid": "S07",
+      "domain": "투자 Dashboard",
+      "scenario_type": "B00000",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 2,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 5,
+        "patch_targeted": 2,
+        "duration_ms": 182471,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785510030153
+      }
+    },
+    {
+      "scenario_id": "S07-B00010",
+      "sid": "S07",
+      "domain": "투자 Dashboard",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 3,
+        "patch_targeted": 0,
+        "duration_ms": 146560,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785512501004
+      }
+    },
+    {
+      "scenario_id": "S07-B00100",
+      "sid": "S07",
+      "domain": "투자 Dashboard",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 5,
+        "patch_targeted": 2,
+        "duration_ms": 128370,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785510651191
+      }
+    },
+    {
+      "scenario_id": "S07-B01000",
+      "sid": "S07",
+      "domain": "투자 Dashboard",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": false,
+      "failures": [
+        "gold_recall_low"
+      ],
+      "metrics": {
+        "gold_recall": 0.67,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 5,
+        "patch_targeted": 2,
+        "duration_ms": 161726,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785510466896
+      }
+    },
+    {
+      "scenario_id": "S07-B10000",
+      "sid": "S07",
+      "domain": "투자 Dashboard",
+      "scenario_type": "B10000",
+      "branch_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": null,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 5,
+        "patch_targeted": 2,
+        "duration_ms": 149822,
+        "reconstructed": true,
+        "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+        "source_audit_ts": 1785510247933
+      }
+    },
+    {
+      "scenario_id": "S07-B00001",
+      "sid": "S07",
+      "domain": "투자 Dashboard",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 4,
+        "attempts": {
+          "r1": 1,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 4,
+        "patch_targeted": 1,
+        "duration_ms": 113330
+      }
+    },
+    {
+      "scenario_id": "S08-B00000",
+      "sid": "S08",
+      "domain": "AI 저널 레코더 런칭",
+      "scenario_type": "B00000",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 6,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 129343
+      }
+    },
+    {
+      "scenario_id": "S08-B10000",
+      "sid": "S08",
+      "domain": "AI 저널 레코더 런칭",
+      "scenario_type": "B10000",
+      "branch_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 6,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 137269
+      }
+    },
+    {
+      "scenario_id": "S08-B01000",
+      "sid": "S08",
+      "domain": "AI 저널 레코더 런칭",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 10,
+        "attempts": {
+          "r1": 4,
+          "r2": 3,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": true,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 218323
+      }
+    },
+    {
+      "scenario_id": "S08-B00100",
+      "sid": "S08",
+      "domain": "AI 저널 레코더 런칭",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 7,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 4,
+        "patch_targeted": 1,
+        "duration_ms": 168715
+      }
+    },
+    {
+      "scenario_id": "S08-B00010",
+      "sid": "S08",
+      "domain": "AI 저널 레코더 런칭",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 6,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 4,
+        "patch_targeted": 1,
+        "duration_ms": 179200
+      }
+    },
+    {
+      "scenario_id": "S08-B00001",
+      "sid": "S08",
+      "domain": "AI 저널 레코더 런칭",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 6,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 4,
+        "patch_targeted": 1,
+        "duration_ms": 153214
+      }
+    },
+    {
+      "scenario_id": "S09-B00000",
+      "sid": "S09",
+      "domain": "Biz Case Study(Tesla·Zara)",
+      "scenario_type": "B00000",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 7,
+        "attempts": {
+          "r1": 2,
+          "r2": 2,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 5,
+        "patch_targeted": 2,
+        "duration_ms": 140275
+      }
+    },
+    {
+      "scenario_id": "S09-B10000",
+      "sid": "S09",
+      "domain": "Biz Case Study(Tesla·Zara)",
+      "scenario_type": "B10000",
+      "branch_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": false,
+      "failures": [
+        "patch_spec_invalid"
+      ],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 10,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": false,
+        "patch_ops": 3,
+        "patch_targeted": 0,
+        "duration_ms": 138772
+      }
+    },
+    {
+      "scenario_id": "S09-B01000",
+      "sid": "S09",
+      "domain": "Biz Case Study(Tesla·Zara)",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 12,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 163054
+      }
+    },
+    {
+      "scenario_id": "S09-B00100",
+      "sid": "S09",
+      "domain": "Biz Case Study(Tesla·Zara)",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 8,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 157266
+      }
+    },
+    {
+      "scenario_id": "S09-B00010",
+      "sid": "S09",
+      "domain": "Biz Case Study(Tesla·Zara)",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 8,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 181365
+      }
+    },
+    {
+      "scenario_id": "S09-B00001",
+      "sid": "S09",
+      "domain": "Biz Case Study(Tesla·Zara)",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": false,
+      "failures": [
+        "pipeline_crashed"
+      ],
+      "metrics": {
+        "gold_recall": 0,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 0,
+        "attempts": null,
+        "da_score": null,
+        "escalated": false,
+        "patch_valid": false,
+        "patch_ops": null,
+        "patch_targeted": null,
+        "duration_ms": null
+      }
+    },
+    {
+      "scenario_id": "S10-B00000",
+      "sid": "S10",
+      "domain": "선관위 사무보조",
+      "scenario_type": "B00000",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 8,
+        "attempts": {
+          "r1": 1,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 4,
+        "patch_targeted": 1,
+        "duration_ms": 135864
+      }
+    },
+    {
+      "scenario_id": "S10-B10000",
+      "sid": "S10",
+      "domain": "선관위 사무보조",
+      "scenario_type": "B10000",
+      "branch_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 8,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 170784
+      }
+    },
+    {
+      "scenario_id": "S10-B01000",
+      "sid": "S10",
+      "domain": "선관위 사무보조",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 13,
+        "attempts": {
+          "r1": 1,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 4,
+        "patch_targeted": 1,
+        "duration_ms": 156212
+      }
+    },
+    {
+      "scenario_id": "S10-B00100",
+      "sid": "S10",
+      "domain": "선관위 사무보조",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 8,
+        "attempts": {
+          "r1": 3,
+          "r2": 2,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 4,
+        "patch_targeted": 1,
+        "duration_ms": 164327
+      }
+    },
+    {
+      "scenario_id": "S10-B00010",
+      "sid": "S10",
+      "domain": "선관위 사무보조",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 8,
+        "attempts": {
+          "r1": 3,
+          "r2": 2,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 4,
+        "patch_targeted": 1,
+        "duration_ms": 189314
+      }
+    },
+    {
+      "scenario_id": "S10-B00001",
+      "sid": "S10",
+      "domain": "선관위 사무보조",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 7,
+        "attempts": {
+          "r1": 1,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 5,
+        "patch_targeted": 2,
+        "duration_ms": 120074
       }
     }
   ]
