@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "S05-B01000-r1-1785507789974",
+    "mode": "bench",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-07-31T14:20:42.049Z",
+    "finished_at": "2026-07-31T14:23:09.974Z",
+    "duration_ms": 147925
+  },
+  "trigger": {
+    "source": "bench:S05:B01000",
+    "requestor": "총무 박대리",
+    "received_at": "2026-07-31T14:20:42.049Z",
+    "scenario_id": "S05-B01000",
+    "domain": "AI 경비처리 자동화"
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T14:20:42.049Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T14:20:42.049Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:S05:B01000",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T14:20:42.361Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "EXISTS"
+    },
+    {
+      "ts": "2026-07-31T14:20:42.865Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 1539
+    },
+    {
+      "ts": "2026-07-31T14:21:11.878Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "FAIL",
+      "escalated": false,
+      "missing_count": 1
+    },
+    {
+      "ts": "2026-07-31T14:21:36.776Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T14:21:44.634Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T14:22:03.806Z",
+      "stage": "quality_review",
+      "actor": "auto(bench)",
+      "decision": "APPROVE"
+    },
+    {
+      "ts": "2026-07-31T14:22:26.550Z",
+      "stage": "devils_advocate",
+      "actor": "DA+MathThreshold",
+      "decision": "PASS",
+      "score": 5,
+      "escalated": false
+    },
+    {
+      "ts": "2026-07-31T14:22:26.582Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": "승인(bench auto)"
+    },
+    {
+      "ts": "2026-07-31T14:22:26.597Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "FINAL_APPROVE"
+    },
+    {
+      "ts": "2026-07-31T14:23:02.786Z",
+      "stage": "wiki_librarian",
+      "actor": "Wiki Librarian agent",
+      "decision": "ENTRY_OK",
+      "files": [
+        "requirements/REQ-20260725-여비교통비-규정준수-자동화-승인-반영.md",
+        "decisions.md",
+        "index.md",
+        "logs/runs.md"
+      ]
+    },
+    {
+      "ts": "2026-07-31T14:23:03.136Z",
+      "stage": "wiki_write_prepare",
+      "actor": "system",
+      "files": [
+        "requirements/REQ-20260725-여비교통비-규정준수-자동화-승인-반영.md(new)",
+        "decisions.md(update)",
+        "index.md(update)",
+        "logs/runs.md(update)"
+      ]
+    },
+    {
+      "ts": "2026-07-31T14:23:09.931Z",
+      "stage": "wiki_commit",
+      "actor": "GitHub Contents API",
+      "decision": "COMMITTED",
+      "files_committed": 4,
+      "files_failed": 0,
+      "hash": "ec7ac22"
+    },
+    {
+      "ts": "2026-07-31T14:23:09.952Z",
+      "stage": "quality_assurance",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": ""
+    },
+    {
+      "ts": "2026-07-31T14:23:09.964Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 2
+    },
+    "semantic_audit": {
+      "attempts": 1
+    },
+    "devils_advocate": {
+      "attempts": 1,
+      "score": 5,
+      "verdict": "보완 권고: 공식 규정 기준과 데이터·권한·감사·운영 전환 기준을 확정하고 연계 모듈 및 회귀 테스트까지 추적한 후 진행하십시오."
+    },
+    "escalated_any": false
+  },
+  "deliverable": {
+    "req_id": "REQ-20260725-여비교통비-규정준수-자동화-승인-반영",
+    "requirement": "여비교통비 비용증빙 OCR·multi-hop 규정 검색·위반 판단 파이프라인의 요구사항과 검토 범위를 승인하고 관련 산출물 변경을 추적한다.",
+    "keywords": [
+      "여비교통비",
+      "규정준수",
+      "비용증빙",
+      "OCR",
+      "multi-hop",
+      "규정검색",
+      "위반판단",
+      "사람검토",
+      "감사추적",
+      "요구사항추적",
+      "산출물변경"
+    ],
+    "wiki_files": [
+      "scenarios/S05_ai_expense_automation/wiki/requirements/REQ-20260725-여비교통비-규정준수-자동화-승인-반영.md",
+      "scenarios/S05_ai_expense_automation/wiki/decisions.md",
+      "scenarios/S05_ai_expense_automation/wiki/index.md",
+      "scenarios/S05_ai_expense_automation/wiki/logs/runs.md"
+    ],
+    "commit_hash": "ec7ac22",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/ec7ac226d7567ae33a2d99cdb36d4b49c09c8e9e"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
