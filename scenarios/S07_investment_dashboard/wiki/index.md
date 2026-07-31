@@ -1,40 +1,13 @@
-# Keyword Index
-- SD → REQ-SEED-1
-- 반품 → REQ-SEED-1
-- RE 오더 → REQ-SEED-1
-- 투자 대시보드 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 거시경제 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 펀더멘털 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 데이터 갱신 주기 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 데이터 출처 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 기준 시각 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 지연 데이터 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 테스트 시나리오 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 투자 대시보드 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 거시경제 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 개별 종목 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 펀더멘털 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 지표 갱신 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 기준 시각 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 데이터 출처 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 데이터 지연 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 패널 분리 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 테스트 시나리오 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 투자 대시보드 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 거시경제 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 개별 종목 펀더멘털 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 지표 갱신 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 데이터 신선도 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 기준 시각 → REQ-20260725-investment-dashboard-macro-fundamentals
-- deliverable_patch → REQ-20260725-investment-dashboard-macro-fundamentals
-- 요구사항 추적 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 투자 대시보드 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 거시경제 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 개별 종목 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 펀더멘털 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 지표 갱신 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 데이터 신선도 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 기준 시각 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 테스트 시나리오 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 데이터 출처 → REQ-20260725-investment-dashboard-macro-fundamentals
-- 공통 데이터 모델 → REQ-20260725-investment-dashboard-macro-fundamentals
+- 투자 대시보드 → REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update
+- 거시경제 → REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update
+- 개별 종목 펀더멘털 → REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update
+- 패널 분리 → REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update
+- 지표 갱신 → REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update
+- 데이터 신선도 → REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update
+- 기준 시각 → REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update
+- 데이터 출처 → REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update
+- 데이터 지연 → REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update
+- 공통 데이터 모델 → REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update
+- SLA → REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update
+- 컴플라이언스 → REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update
+- deliverable_patch → REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update
