@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "S03-B01000-r1-1785505299161",
+    "mode": "bench",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-07-31T13:39:04.076Z",
+    "finished_at": "2026-07-31T13:41:39.161Z",
+    "duration_ms": 155085
+  },
+  "trigger": {
+    "source": "bench:S03:B01000",
+    "requestor": "재무 최부장",
+    "received_at": "2026-07-31T13:39:04.076Z",
+    "scenario_id": "S03-B01000",
+    "domain": "SAP FI 연결결산"
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T13:39:04.076Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T13:39:04.076Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:S03:B01000",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T13:39:04.395Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "EXISTS"
+    },
+    {
+      "ts": "2026-07-31T13:39:04.709Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 2031
+    },
+    {
+      "ts": "2026-07-31T13:39:29.360Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "FAIL",
+      "escalated": false,
+      "missing_count": 1
+    },
+    {
+      "ts": "2026-07-31T13:39:49.233Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T13:39:59.382Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T13:40:30.702Z",
+      "stage": "quality_review",
+      "actor": "auto(bench)",
+      "decision": "APPROVE"
+    },
+    {
+      "ts": "2026-07-31T13:40:50.968Z",
+      "stage": "devils_advocate",
+      "actor": "DA+MathThreshold",
+      "decision": "PASS",
+      "score": 5,
+      "escalated": false
+    },
+    {
+      "ts": "2026-07-31T13:40:50.992Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": "승인(bench auto)"
+    },
+    {
+      "ts": "2026-07-31T13:40:51.003Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "FINAL_APPROVE"
+    },
+    {
+      "ts": "2026-07-31T13:41:32.048Z",
+      "stage": "wiki_librarian",
+      "actor": "Wiki Librarian agent",
+      "decision": "ENTRY_OK",
+      "files": [
+        "requirements/REQ-20260725-fi-internal-trade-key-mapping-execution.md",
+        "decisions.md",
+        "index.md",
+        "logs/runs.md"
+      ]
+    },
+    {
+      "ts": "2026-07-31T13:41:32.388Z",
+      "stage": "wiki_write_prepare",
+      "actor": "system",
+      "files": [
+        "requirements/REQ-20260725-fi-internal-trade-key-mapping-execution.md(new)",
+        "decisions.md(update)",
+        "index.md(update)",
+        "logs/runs.md(update)"
+      ]
+    },
+    {
+      "ts": "2026-07-31T13:41:39.120Z",
+      "stage": "wiki_commit",
+      "actor": "GitHub Contents API",
+      "decision": "COMMITTED",
+      "files_committed": 4,
+      "files_failed": 0,
+      "hash": "1d43d50"
+    },
+    {
+      "ts": "2026-07-31T13:41:39.140Z",
+      "stage": "quality_assurance",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": ""
+    },
+    {
+      "ts": "2026-07-31T13:41:39.151Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 2
+    },
+    "semantic_audit": {
+      "attempts": 1
+    },
+    "devils_advocate": {
+      "attempts": 1,
+      "score": 5,
+      "verdict": "보완 권고: 확정 범위·데이터 근거·cross-module 영향·재현성 및 권한/감사/마이그레이션 통제를 구체화하고 증적을 확보한 뒤 진행하라."
+    },
+    "escalated_any": false
+  },
+  "deliverable": {
+    "req_id": "REQ-20260725-fi-internal-trade-key-mapping-execution",
+    "requirement": "FI 연결결산 표준 키 매핑 및 결산리포트 개선 승인사항을 관련 산출물과 검증·추적 체계에 반영한다.",
+    "keywords": [
+      "FI 연결결산",
+      "내부거래대사",
+      "키 매핑",
+      "표준 매핑",
+      "결산리포트",
+      "대사결과",
+      "권한통제",
+      "감사로그",
+      "cross-module 영향",
+      "시점별 재현성",
+      "마이그레이션",
+      "롤백",
+      "대량 조회",
+      "요구사항 추적",
+      "검증 데이터"
+    ],
+    "wiki_files": [
+      "scenarios/S03_sap_fi_consolidation/wiki/requirements/REQ-20260725-fi-internal-trade-key-mapping-execution.md",
+      "scenarios/S03_sap_fi_consolidation/wiki/decisions.md",
+      "scenarios/S03_sap_fi_consolidation/wiki/index.md",
+      "scenarios/S03_sap_fi_consolidation/wiki/logs/runs.md"
+    ],
+    "commit_hash": "1d43d50",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/1d43d505f5d288c40fadbbb822777d3751925e62"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
