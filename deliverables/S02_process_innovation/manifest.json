@@ -1,0 +1,9 @@
+{
+  "schema": "deliverable_manifest/v1",
+  "scenario_id": "S02",
+  "docx": "총원가_PI_설계서.docx",
+  "xlsx": "배부기준_물동추적_시트.xlsx",
+  "pptx": "PI_과제보고_덱.pptx",
+  "rtm_sheet": "RTM",
+  "notes": "seed by claude-code"
+}
