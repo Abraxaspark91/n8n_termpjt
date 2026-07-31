@@ -5,3 +5,11 @@
 - 승인권자 미확정 → REQ-20250308-election-support-escalation-approval
 - 법적 근거 미확정 → REQ-20250308-election-support-escalation-approval
 - 대외 답변 품질관리 → REQ-20250308-election-support-escalation-approval
+- 선관위 → REQ-20260731-S10-B01000-2359
+- 사무보조 → REQ-20260731-S10-B01000-2359
+- 관리계 → REQ-20260731-S10-B01000-2359
+- 주무관 → REQ-20260731-S10-B01000-2359
+- 선거 사무 지원 체계화 → REQ-20260731-S10-B01000-2359
+- 선거비용 실사 보조 절차 → REQ-20260731-S10-B01000-2359
+- 지도계 → REQ-20260731-S10-B01000-2359
+- 민원문의 대응 → REQ-20260731-S10-B01000-2359
