@@ -4,3 +4,15 @@
 - 권한 → REQ-20260725-marketing-funnel-copa-execution
 - 컴플라이언스 → REQ-20260725-marketing-funnel-copa-execution
 - cross-module → REQ-20260725-marketing-funnel-copa-execution
+- SAP CO-PA → REQ-20260725-marketing-funnel-copa-execution
+- Marketing Funnel → REQ-20260725-marketing-funnel-copa-execution
+- 인지·고려·전환 → REQ-20260725-marketing-funnel-copa-execution
+- 단계별 기여손익 → REQ-20260725-marketing-funnel-copa-execution
+- 공통 판관비 → REQ-20260725-marketing-funnel-copa-execution
+- 직접비·공통비 → REQ-20260725-marketing-funnel-copa-execution
+- 비용 배부 → REQ-20260725-marketing-funnel-copa-execution
+- 손익 대사 → REQ-20260725-marketing-funnel-copa-execution
+- CO-PA 매핑 → REQ-20260725-marketing-funnel-copa-execution
+- 테스트 시나리오 → REQ-20260725-marketing-funnel-copa-execution
+- 권한·컴플라이언스 → REQ-20260725-marketing-funnel-copa-execution
+- cross-module → REQ-20260725-marketing-funnel-copa-execution
