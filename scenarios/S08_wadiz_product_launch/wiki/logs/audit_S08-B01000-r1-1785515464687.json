@@ -1,0 +1,227 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "S08-B01000-r1-1785515464687",
+    "mode": "bench",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-07-31T16:27:26.364Z",
+    "finished_at": "2026-07-31T16:31:04.687Z",
+    "duration_ms": 218323
+  },
+  "trigger": {
+    "source": "bench:S08:B01000",
+    "requestor": "PO",
+    "received_at": "2026-07-31T16:27:26.364Z",
+    "scenario_id": "S08-B01000",
+    "domain": "AI 저널 레코더 런칭"
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T16:27:26.364Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T16:27:26.364Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:S08:B01000",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T16:27:26.714Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "EXISTS"
+    },
+    {
+      "ts": "2026-07-31T16:27:26.998Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 2031
+    },
+    {
+      "ts": "2026-07-31T16:27:57.735Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "FAIL",
+      "escalated": false,
+      "missing_count": 1
+    },
+    {
+      "ts": "2026-07-31T16:28:21.184Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T16:28:31.667Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "FAIL",
+      "escalated": false,
+      "missing_count": 1
+    },
+    {
+      "ts": "2026-07-31T16:28:54.639Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T16:29:05.338Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "FAIL",
+      "escalated": false,
+      "missing_count": 1
+    },
+    {
+      "ts": "2026-07-31T16:29:26.576Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T16:29:37.741Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "PASS",
+      "escalated": true,
+      "missing_count": 1
+    },
+    {
+      "ts": "2026-07-31T16:29:37.760Z",
+      "stage": "human_escalation",
+      "actor": "auto(bench)",
+      "decision": "CONTINUE",
+      "note": "승인(bench auto)"
+    },
+    {
+      "ts": "2026-07-31T16:29:55.827Z",
+      "stage": "quality_review",
+      "actor": "auto(bench)",
+      "decision": "APPROVE"
+    },
+    {
+      "ts": "2026-07-31T16:30:15.743Z",
+      "stage": "devils_advocate",
+      "actor": "DA+MathThreshold",
+      "decision": "PASS",
+      "score": 5,
+      "escalated": false
+    },
+    {
+      "ts": "2026-07-31T16:30:15.764Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": "승인(bench auto)"
+    },
+    {
+      "ts": "2026-07-31T16:30:15.782Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "FINAL_APPROVE"
+    },
+    {
+      "ts": "2026-07-31T16:30:57.505Z",
+      "stage": "wiki_librarian",
+      "actor": "Wiki Librarian agent",
+      "decision": "ENTRY_OK",
+      "files": [
+        "requirements/REQ-20250308-wadiz-launch-approval-gates.md",
+        "decisions.md",
+        "index.md",
+        "logs/runs.md"
+      ]
+    },
+    {
+      "ts": "2026-07-31T16:30:57.806Z",
+      "stage": "wiki_write_prepare",
+      "actor": "system",
+      "files": [
+        "requirements/REQ-20250308-wadiz-launch-approval-gates.md(new)",
+        "decisions.md(update)",
+        "index.md(update)",
+        "logs/runs.md(update)"
+      ]
+    },
+    {
+      "ts": "2026-07-31T16:31:04.642Z",
+      "stage": "wiki_commit",
+      "actor": "GitHub Contents API",
+      "decision": "COMMITTED",
+      "files_committed": 4,
+      "files_failed": 0,
+      "hash": "5bc1f0b"
+    },
+    {
+      "ts": "2026-07-31T16:31:04.666Z",
+      "stage": "quality_assurance",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": ""
+    },
+    {
+      "ts": "2026-07-31T16:31:04.677Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 4
+    },
+    "semantic_audit": {
+      "attempts": 3
+    },
+    "devils_advocate": {
+      "attempts": 1,
+      "score": 5,
+      "verdict": "보완 권고: 승인 상태를 조건부 승인으로 명확히 낮추고, 의사결정권자·기한·의존성·컴플라이언스 게이트·검수 합격 기준과 실패 시 대응을 확정한 뒤 진행하라."
+    },
+    "escalated_any": true
+  },
+  "deliverable": {
+    "req_id": "REQ-20250308-wadiz-launch-approval-gates",
+    "requirement": "AI driven journal recorder의 와디즈 런칭 요건과 영향 산출물에 승인 상태, 일정, 미확정 의사결정 및 검수·컴플라이언스 게이트를 반영한다.",
+    "keywords": [
+      "AI driven journal recorder",
+      "와디즈",
+      "크라우드펀딩 런칭",
+      "리워드 구성",
+      "얼리버드 물량",
+      "스토리 페이지 구조",
+      "오픈예정 알림신청",
+      "본 펀딩",
+      "시제품 검수",
+      "승인(bench auto)",
+      "조건부 승인",
+      "산출물 추적",
+      "컴플라이언스 게이트"
+    ],
+    "wiki_files": [
+      "scenarios/S08_wadiz_product_launch/wiki/requirements/REQ-20250308-wadiz-launch-approval-gates.md",
+      "scenarios/S08_wadiz_product_launch/wiki/decisions.md",
+      "scenarios/S08_wadiz_product_launch/wiki/index.md",
+      "scenarios/S08_wadiz_product_launch/wiki/logs/runs.md"
+    ],
+    "commit_hash": "5bc1f0b",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/5bc1f0b905b71799ed19bb7075ff63a48c8f8c4e"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
