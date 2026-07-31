@@ -1,0 +1,75 @@
+{
+  "schema": "deliverable_patch/v2",
+  "run_id": "live-1785481750522",
+  "ts": "2026-07-31T07:09:43.429Z",
+  "req_id": "REQ-20250308-sd-fi-w102-kna1",
+  "requestor": "홍길동(고객사) <abraxaspark91@gmail.com>",
+  "source": "outlook(demo, 첨부파일 파싱됨)",
+  "entry": "form",
+  "decision": "SD-FI billing-회계전표 통합테스트 5건과 W-102 KNA1 신규 필드 매핑 변경을 승인한다. 담당자는 홍길동으로 지정하고, 필드 계약·개인정보 및 컴플라이언스 검토·회귀검증·승인·재처리·롤백 기준과 정확한 배포일은 추가 확정사항으로 관리한다.",
+  "summary": "SD-FI 통합테스트 5건과 WRICEF W-102 KNA1 신규 필드 매핑 변경을 승인하고 다음 릴리즈 반영을 관리한다.",
+  "da_score": 5,
+  "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/c43ffcb0d7f07f1566c224223a0ca6cb6cec4086",
+  "wiki_files": [
+    "wiki/requirements/REQ-20250308-sd-fi-w102-kna1.md",
+    "wiki/decisions.md",
+    "wiki/index.md",
+    "wiki/logs/runs.md"
+  ],
+  "ops": [
+    {
+      "target": "docx",
+      "op": "append_changelog",
+      "bullets": [
+        "통합테스트 3차 범위에 SD-FI billing→회계전표 통합테스트 케이스 5건을 추가한다.",
+        "billing 생성부터 회계전표 생성까지 정상 연계 및 주요 오류·검증 흐름을 반영한다.",
+        "WRICEF W-102 인터페이스 매핑에 고객 마스터 KNA1 신규 필드의 송수신 및 매핑 항목을 추가한다.",
+        "W-102 변경에 따른 billing·회계전표 생성 영향과 기존 인터페이스 회귀검증 범위를 테스트 시나리오에 반영한다.",
+        "담당자를 홍길동으로 지정하고 목표 기한을 다음 릴리즈로 관리한다."
+      ],
+      "risks": [
+        "KNA1 신규 필드의 값 형식·필수 여부·변환 규칙이 확정되지 않으면 W-102 매핑 오류나 인터페이스 재처리가 발생할 수 있다.",
+        "SD-FI 연계 변경으로 billing과 회계전표 간 고객 정보 불일치 또는 전표 생성 누락이 발생할 수 있다.",
+        "기존 W-102 소비 시스템과의 호환성 저하 및 회귀 결함이 발생할 수 있다.",
+        "추가 테스트 5건과 매핑 변경 검증이 다음 릴리즈 일정에 영향을 줄 수 있다."
+      ],
+      "open_questions": [
+        "추가할 SD-FI 통합테스트 5건의 구체적인 업무 조건과 기대 결과를 확정했는가?",
+        "KNA1 신규 필드의 정확한 필드명, 데이터 형식, 필수 여부, 허용값 및 W-102 매핑 방향은 무엇인가?",
+        "신규 필드가 billing 문서와 회계전표에 모두 반영되어야 하는지, 또는 인터페이스 검증용으로만 사용되는지 확인이 필요한가?",
+        "SD-FI 인터페이스 오류 시 재처리·대사·중복 전표 방지 기준을 기존 정책과 동일하게 적용하는가?",
+        "다음 릴리즈의 정확한 배포일과 홍길동 외 검토·승인 담당자를 지정해야 하는가?"
+      ],
+      "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/c43ffcb0d7f07f1566c224223a0ca6cb6cec4086"
+    },
+    {
+      "target": "xlsx",
+      "op": "append_row",
+      "sheet": "RTM",
+      "values": [
+        "REQ-20250308-sd-fi-w102-kna1",
+        "2026-07-31T16:09:35.343+09:00",
+        "홍길동(고객사) <abraxaspark91@gmail.com>",
+        "outlook(demo, 첨부파일 파싱됨)",
+        "SD-FI billing-회계전표 통합테스트 5건과 W-102 KNA1 신규 필드 매핑 변경을 승인한다. 담당자는 홍길동으로 지정하고, 필드 계약·개인정보 및 컴플라이언스 검토·회귀검증·승인·재처리·롤백 기준과 정확한 배포일은 추가 확정사항으로 관리한다.",
+        "통합테스트 3차에 SD-FI billing→회계전표 케이스 5건을 추가하고, WRICEF W-102에 고객 마스터 KNA1 신규 필드 송수신·매핑 항목 및 관련 영향·회귀검증 범위를 반영한다. 다음 릴리즈 목표이며 담당자는 홍길동이다.",
+        "통합테스트 시나리오; WRICEF W-102 인터페이스 매핑",
+        "modify",
+        "5",
+        "https://github.com/Abraxaspark91/n8n_termpjt/commit/c43ffcb0d7f07f1566c224223a0ca6cb6cec4086"
+      ]
+    },
+    {
+      "target": "pptx",
+      "op": "append_changelog_slide",
+      "title": "SD-FI 및 W-102 KNA1 변경 승인",
+      "bullets": [
+        "SD-FI billing→회계전표 통합테스트 5건을 통합테스트 3차 범위에 추가",
+        "WRICEF W-102에 고객 마스터 KNA1 신규 필드 송수신·매핑 항목 반영",
+        "billing·회계전표 영향 및 기존 인터페이스 회귀검증 범위 반영",
+        "담당자: 홍길동, 목표: 다음 릴리즈",
+        "필드 계약·개인정보 및 컴플라이언스·재처리·롤백 기준과 정확한 배포일은 추가 확정"
+      ]
+    }
+  ]
+}
