@@ -6,3 +6,4 @@
 - [2025-03-08] REQ-20250308-sd-returns-re-order | 김PM | SD 반품 프로세스 및 RE 오더 타입 적용 승인 | keywords: SD, Returns, RE Order Type → requirements/REQ-20250308-sd-returns-re-order.md
 - [2025-03-08] REQ-20250308-sd-mm-fi-update | Teams 24h digest | SD 반품/RE, MM 안전재고-MRP, FI 2단계 승인 변경을 승인하되 일부 기준은 TBD로 유지 | keywords: SD,반품,RE 오더 타입,MM,MRP,안전재고,재고부족,FI,전표 승인,2단계 승인,순차 승인 → requirements/REQ-20250308-sd-mm-fi-update.md
 - [2025-03-08] REQ-20250308-sd-mm-fi-update-returns-641 | 김PM, 박선임 | SD 반품 우선 반영을 승인하되 RE 오더 타입 정합성과 MM 이동유형 641 영향은 후속 크로스모듈 검토로 관리 | keywords: SD,반품,RE 오더 타입,MM,이동유형 641,재고평가,크로스모듈,테스트 시나리오 → requirements/REQ-20250308-sd-mm-fi-update-returns-641.md
+- [2025-03-08] REQ-20250308-sd-fi-w102-kna1 | 홍길동(고객사) <abraxaspark91@gmail.com> | SD-FI billing-회계전표 통합테스트 5건과 WRICEF W-102 KNA1 신규 필드 매핑 변경을 다음 릴리즈 목표로 승인하되 필드 계약·컴플라이언스·회귀검증·승인·롤백 기준은 추가 확정사항으로 관리 | keywords: SD-FI,billing,회계전표,통합테스트,WRICEF,W-102,KNA1,인터페이스 매핑,회귀검증 → requirements/REQ-20250308-sd-fi-w102-kna1.md
