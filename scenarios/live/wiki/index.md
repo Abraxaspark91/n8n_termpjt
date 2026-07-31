@@ -2,3 +2,16 @@
 - SD → REQ-SEED-1
 - 반품 → REQ-SEED-1
 - RE 오더 → REQ-SEED-1
+- SD-FI → REQ-20260725-SD-FI-KNA1-승인게이트
+- billing → REQ-20260725-SD-FI-KNA1-승인게이트
+- 회계전표 → REQ-20260725-SD-FI-KNA1-승인게이트
+- KNA1 → REQ-20260725-SD-FI-KNA1-승인게이트
+- WRICEF W-102 → REQ-20260725-SD-FI-KNA1-승인게이트
+- 통합테스트 → REQ-20260725-SD-FI-KNA1-승인게이트
+- 개인정보 → REQ-20260725-SD-FI-KNA1-승인게이트
+- 접근권한 → REQ-20260725-SD-FI-KNA1-승인게이트
+- 멱등성 → REQ-20260725-SD-FI-KNA1-승인게이트
+- 재처리 → REQ-20260725-SD-FI-KNA1-승인게이트
+- 승인 게이트 → REQ-20260725-SD-FI-KNA1-승인게이트
+- 변경관리 → REQ-20260725-SD-FI-KNA1-승인게이트
+- 릴리즈 → REQ-20260725-SD-FI-KNA1-승인게이트
