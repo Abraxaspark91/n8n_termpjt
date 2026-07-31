@@ -58,3 +58,14 @@
 - 성능 수용기준 → REQ-20260725-fi-internal-trade-key-mapping-execution-result
 - 마이그레이션 롤백 → REQ-20260725-fi-internal-trade-key-mapping-execution-result
 - 요구사항-설계-테스트 추적 → REQ-20260725-fi-internal-trade-key-mapping-execution-result
+- FI 연결결산 실행 결과 승인 확인 → REQ-20260725-fi-internal-trade-key-mapping-approval-execution-confirmation
+- 내부거래대사 키 표준화 실행 확인 → REQ-20260725-fi-internal-trade-key-mapping-approval-execution-confirmation
+- 7개 영향 산출물 변경 → REQ-20260725-fi-internal-trade-key-mapping-approval-execution-confirmation
+- 산출물 동기화 실행 결과 → REQ-20260725-fi-internal-trade-key-mapping-approval-execution-confirmation
+- DOCX XLSX PPTX 문서엔진 갱신 → REQ-20260725-fi-internal-trade-key-mapping-approval-execution-confirmation
+- 권한·감사통제 후속 확정 → REQ-20260725-fi-internal-trade-key-mapping-approval-execution-confirmation
+- 기준 시점별 재현성 → REQ-20260725-fi-internal-trade-key-mapping-approval-execution-confirmation
+- cross-module 인터페이스 계약 → REQ-20260725-fi-internal-trade-key-mapping-approval-execution-confirmation
+- 성능 수용기준 → REQ-20260725-fi-internal-trade-key-mapping-approval-execution-confirmation
+- 마이그레이션 롤백 검증 → REQ-20260725-fi-internal-trade-key-mapping-approval-execution-confirmation
+- 요구사항-설계-테스트 추적 → REQ-20260725-fi-internal-trade-key-mapping-approval-execution-confirmation
