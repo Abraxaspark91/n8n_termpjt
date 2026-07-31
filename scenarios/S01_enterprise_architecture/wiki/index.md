@@ -189,3 +189,25 @@
 - 라이선스 → REQ-20250214-cto-ai-architecture-approval-execution-result-v4
 - CTO실 → REQ-20250214-cto-ai-architecture-approval-execution-result-v4
 - 산출물 갱신 → REQ-20250214-cto-ai-architecture-approval-execution-result-v4
+- 전사 AI 아키텍처 → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
+- AWS → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
+- Azure → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
+- GCP → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
+- AI Serving → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
+- GPU 자체구축 → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
+- 클라우드 GPU → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
+- SAP HANA → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
+- Oracle → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
+- TCO → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
+- 보안 → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
+- 규정 준수 → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
+- 데이터 거버넌스 → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
+- PoC → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
+- 벤치마크 → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
+- 운영 책임 → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
+- 운영 RACI → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
+- 운영 SLA → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
+- DR → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
+- 라이선스 → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
+- 산출물 갱신 → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
+- CTO실 → REQ-20250214-cto-ai-architecture-approval-execution-result-v5
