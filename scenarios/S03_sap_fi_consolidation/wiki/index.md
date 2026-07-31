@@ -2,3 +2,16 @@
 - SD → REQ-SEED-1
 - 반품 → REQ-SEED-1
 - RE 오더 → REQ-SEED-1
+- FI 연결결산 → REQ-20260725-fi-internal-trade-key-mapping
+- 내부거래대사 → REQ-20260725-fi-internal-trade-key-mapping
+- 키 매핑 → REQ-20260725-fi-internal-trade-key-mapping
+- 표준 매핑 → REQ-20260725-fi-internal-trade-key-mapping
+- 결산리포트 → REQ-20260725-fi-internal-trade-key-mapping
+- 대사결과 → REQ-20260725-fi-internal-trade-key-mapping
+- drill-down → REQ-20260725-fi-internal-trade-key-mapping
+- 호환성 → REQ-20260725-fi-internal-trade-key-mapping
+- 변경 이력 → REQ-20260725-fi-internal-trade-key-mapping
+- 감사통제 → REQ-20260725-fi-internal-trade-key-mapping
+- 마이그레이션 → REQ-20260725-fi-internal-trade-key-mapping
+- 대량 조회 → REQ-20260725-fi-internal-trade-key-mapping
+- 테스트 → REQ-20260725-fi-internal-trade-key-mapping
