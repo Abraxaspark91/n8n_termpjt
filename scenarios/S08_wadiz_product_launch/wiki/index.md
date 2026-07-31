@@ -19,3 +19,14 @@
 - 규제 → REQ-20250308-wadiz-approved-deliverables
 - 승인 게이트 → REQ-20250308-wadiz-approved-deliverables
 - 산출물 추적 → REQ-20250308-wadiz-approved-deliverables
+- 와디즈 런칭 실행 기록 → REQ-20250308-wadiz-approval-execution-record
+- 7개 산출물 승인 변경 → REQ-20250308-wadiz-approval-execution-record
+- 문서엔진 갱신 완료 → REQ-20250308-wadiz-approval-execution-record
+- 가격·수량 미확정 → REQ-20250308-wadiz-approval-execution-record
+- 최종 문구·공개 사양 미확정 → REQ-20250308-wadiz-approval-execution-record
+- 런칭 일정 승인 게이트 → REQ-20250308-wadiz-approval-execution-record
+- 원가·마진 검증 → REQ-20250308-wadiz-approval-execution-record
+- 생산·재고 검증 → REQ-20250308-wadiz-approval-execution-record
+- 개인정보·규제 통제 → REQ-20250308-wadiz-approval-execution-record
+- 시제품 검수 → REQ-20250308-wadiz-approval-execution-record
+- 담당자·승인 기한 → REQ-20250308-wadiz-approval-execution-record
