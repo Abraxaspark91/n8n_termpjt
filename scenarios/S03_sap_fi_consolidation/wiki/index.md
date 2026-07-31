@@ -34,3 +34,16 @@
 - 마이그레이션 검증 → REQ-20260725-fi-internal-trade-key-mapping-execution
 - 롤백 기준 → REQ-20260725-fi-internal-trade-key-mapping-execution
 - 요구사항-설계-테스트 추적 → REQ-20260725-fi-internal-trade-key-mapping-execution
+- 산출물 동기화 → REQ-20260725-fi-internal-trade-key-mapping-deliverable-sync
+- 승인 페이로드 실행 결과 → REQ-20260725-fi-internal-trade-key-mapping-deliverable-sync
+- 표준 매핑 산출물 → REQ-20260725-fi-internal-trade-key-mapping-deliverable-sync
+- 결산리포트 개선 산출물 → REQ-20260725-fi-internal-trade-key-mapping-deliverable-sync
+- 검증 데이터 19건 → REQ-20260725-fi-internal-trade-key-mapping-deliverable-sync
+- 미착상품 계정 불일치 12건 → REQ-20260725-fi-internal-trade-key-mapping-deliverable-sync
+- 환율차이 기인 7건 → REQ-20260725-fi-internal-trade-key-mapping-deliverable-sync
+- 문서엔진 갱신 → REQ-20260725-fi-internal-trade-key-mapping-deliverable-sync
+- 적용 범위 후속 확정 → REQ-20260725-fi-internal-trade-key-mapping-deliverable-sync
+- 기준 시점별 재현성 → REQ-20260725-fi-internal-trade-key-mapping-deliverable-sync
+- cross-module 계약 → REQ-20260725-fi-internal-trade-key-mapping-deliverable-sync
+- 성능 수용기준 → REQ-20260725-fi-internal-trade-key-mapping-deliverable-sync
+- 마이그레이션 롤백 수용기준 → REQ-20260725-fi-internal-trade-key-mapping-deliverable-sync
