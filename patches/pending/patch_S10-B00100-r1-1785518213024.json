@@ -1,0 +1,82 @@
+{
+  "schema": "deliverable_patch/v2",
+  "run_id": "S10-B00100-r1-1785518213024",
+  "ts": "2026-07-31T17:17:30.722Z",
+  "req_id": "REQ-20250308-election-support-escalation-execution",
+  "requestor": "관리계 주무관",
+  "source": "bench:S10:B00100",
+  "entry": "bench",
+  "deliverable_dir": "scenarios/S10_election_office_support/deliverables",
+  "decision": "신규 절차서·업무분장 기준서·팀 채널 공지문 초안을 추가하고 통합 산출물 3종을 갱신한 결과를 승인한다. 승인권자·법적 근거·RACI·SLA·개인정보 통제 세부사항은 후속 확정 및 시행 전 검증 대상으로 유지한다.",
+  "summary": "선거비용 실사 보조·민원 대응·관리계·지도계 협업 기준을 통합 산출물에 반영하고 후속 확정사항을 기록한다.",
+  "da_score": 5,
+  "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/6a1b3feaf898fdbfc2f65161cb2a2a2e556a9ff8",
+  "wiki_files": [
+    "scenarios/S10_election_office_support/wiki/requirements/REQ-20250308-election-support-escalation-execution.md",
+    "scenarios/S10_election_office_support/wiki/decisions.md",
+    "scenarios/S10_election_office_support/wiki/index.md",
+    "scenarios/S10_election_office_support/wiki/logs/runs.md"
+  ],
+  "ops": [
+    {
+      "target": "docx",
+      "op": "append_changelog",
+      "bullets": [
+        "관리계 선거비용 실사 보조 업무의 범위·절차·역할·기록·보고 기준과 공식 판단·조치의 권한 경계를 문서화",
+        "지도계 민원 접수·분류·답변 및 유권해석 에스컬레이션 기준에 현수막 규격 문의와 기부행위 해당 여부 문의를 반영",
+        "관리계·지도계 간 업무 인계·협업·기록 공유·책임 분담 및 개인정보·민감정보 처리 통제를 반영",
+        "민원 처리 3일 원칙과 기산 시점·적용 범위·예외, 최종 승인권자·법적 근거·RACI·SLA·보존기간·접근권한을 후속 확정사항으로 기록"
+      ],
+      "risks": [
+        "보조 업무와 공식 판단·조치의 경계가 불명확하면 책임 범위 오인이나 부적절한 공식 조치가 발생할 수 있다.",
+        "유권해석 에스컬레이션 기준이나 공식 접수처가 불명확하면 민원 처리 지연 또는 담당자의 독자적 판단이 발생할 수 있다.",
+        "처리기한 3일 원칙의 기산 시점과 적용 범위가 불명확하면 SLA 준수 여부와 답변 품질에 편차가 생길 수 있다.",
+        "최종 승인권자·보고 기준·세부 RACI 및 개인정보 통제가 미확정이면 책임소재 불명확, 보고 누락 또는 민감정보 과다 노출이 발생할 수 있다."
+      ],
+      "open_questions": [
+        "선거비용 실사 보조 절차의 최종 승인권자와 상위 부서·관련 기관 보고 기준은 무엇인가?",
+        "유권해석 요청의 공식 접수처와 에스컬레이션 승인권자는 누구인가?",
+        "민원 접수일 기준 처리기한 3일 원칙의 기산 시점, 적용 범위 및 예외는 무엇인가?",
+        "민원 및 실사 자료의 보존기간과 접근권한은 어떻게 정할 것인가?",
+        "적용할 법적 근거와 공식 판단·조치의 최종 책임 주체는 누구인가?",
+        "관리계·지도계 간 세부 RACI와 대외 답변 품질관리 책임자는 누구인가?"
+      ],
+      "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/6a1b3feaf898fdbfc2f65161cb2a2a2e556a9ff8"
+    },
+    {
+      "target": "docx",
+      "op": "append_after_heading",
+      "heading": "4. 처리기한 및 보고체계",
+      "text": "현수막 규격 문의와 기부행위 해당 여부 문의를 포함한 민원은 접수 시점을 기준으로 3일 이내 처리를 원칙으로 한다. 다만 기산 시점, 적용 범위, 예외, 완료 정의 및 유권해석 에스컬레이션 목표 SLA는 공식 승인권자와 접수처 확정 후 정합화한다. 최종 승인권자·상위 부서 또는 관련 기관 보고 기준·법적 근거·세부 RACI·대외 답변 품질관리 책임은 후속 확정사항으로 관리한다.",
+      "style": null
+    },
+    {
+      "target": "xlsx",
+      "op": "append_row",
+      "sheet": "RTM",
+      "values": [
+        "REQ-20250308-election-support-escalation-execution",
+        "2026-08-01T02:17:17.513+09:00",
+        "관리계 주무관",
+        "bench:S10:B00100",
+        "신규 절차서·업무분장 기준서·팀 채널 공지문 초안을 추가하고 통합 산출물 3종을 갱신한 결과를 승인한다. 승인권자·법적 근거·RACI·SLA·개인정보 통제 세부사항은 후속 확정 및 시행 전 검증 대상으로 유지한다.",
+        "관리계 선거비용 실사 보조 범위·처리 절차·역할·기록·보고 기준, 지도계 민원 접수·분류·답변·유권해석 에스컬레이션 기준, 현수막 규격·기부행위 해당 여부 문의, 관리계·지도계 인계·협업·기록 공유·개인정보 통제를 반영한다.",
+        "관리계 선거비용 실사 보조 절차서; 지도계 민원문의 대응 및 유권해석 에스컬레이션 기준서; 선거 사무 지원 업무분장 및 연계 기준; 산출물_설계서.docx; 요구사항_추적표.xlsx; 보고_장표.pptx; 팀 채널 공지문 초안",
+        "add;modify",
+        5,
+        "https://github.com/Abraxaspark91/n8n_termpjt/commit/6a1b3feaf898fdbfc2f65161cb2a2a2e556a9ff8"
+      ]
+    },
+    {
+      "target": "pptx",
+      "op": "append_changelog_slide",
+      "title": "변경 이력: 승인 페이로드 실행 반영",
+      "bullets": [
+        "관리계 선거비용 실사 보조 범위·절차·역할·기록·보고 기준과 공식 판단·조치의 권한 경계를 반영",
+        "지도계 민원 대응 및 유권해석 에스컬레이션 기준에 현수막 규격·기부행위 해당 여부 문의를 반영",
+        "민원 처리 3일 원칙과 관리계·지도계 인계·협업·기록 공유·개인정보 통제를 반영",
+        "최종 승인권자·법적 근거·RACI·SLA·보존기간·접근권한·대외 답변 품질관리 책임은 후속 확정 및 시행 전 검증 대상으로 유지"
+      ]
+    }
+  ]
+}
