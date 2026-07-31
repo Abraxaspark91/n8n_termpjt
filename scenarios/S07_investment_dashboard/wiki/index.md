@@ -11,3 +11,13 @@
 - SLA → REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update
 - 컴플라이언스 → REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update
 - deliverable_patch → REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update
+- 투자 대시보드 승인 실행 → REQ-20260725-investment-dashboard-approval-execution
+- 거시경제 패널 승인 실행 → REQ-20260725-investment-dashboard-approval-execution
+- 개별 종목 펀더멘털 패널 승인 실행 → REQ-20260725-investment-dashboard-approval-execution
+- 패널 분리 승인 실행 → REQ-20260725-investment-dashboard-approval-execution
+- 지표 갱신 정책 승인 실행 → REQ-20260725-investment-dashboard-approval-execution
+- 데이터 신선도 승인 실행 → REQ-20260725-investment-dashboard-approval-execution
+- 기준 시각 승인 실행 → REQ-20260725-investment-dashboard-approval-execution
+- 데이터 계약 후속 승인 → REQ-20260725-investment-dashboard-approval-execution
+- SLA 후속 승인 → REQ-20260725-investment-dashboard-approval-execution
+- 컴플라이언스 승인 게이트 → REQ-20260725-investment-dashboard-approval-execution
