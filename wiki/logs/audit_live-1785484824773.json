@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "live-1785484824773",
+    "mode": "live",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-07-31T07:55:05.004Z",
+    "finished_at": "2026-07-31T08:00:24.773Z",
+    "duration_ms": 319769
+  },
+  "trigger": {
+    "source": "outlook(demo, 첨부파일 파싱됨)",
+    "requestor": "홍길동(고객사) <abraxaspark91@gmail.com>",
+    "received_at": "2026-07-31T07:55:05.004Z",
+    "scenario_id": null,
+    "domain": null
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T03:54:39.421Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T03:54:39.421Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:T5",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T03:54:39.734Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "EXISTS"
+    },
+    {
+      "ts": "2026-07-31T03:54:39.989Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 3676
+    },
+    {
+      "ts": "2026-07-31T08:00:24.759Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 0
+    },
+    "semantic_audit": {
+      "attempts": 0
+    },
+    "devils_advocate": {
+      "attempts": 0,
+      "score": 5,
+      "verdict": "보완 권고: 필드 계약, 영향 시스템별 회귀 기준, 멱등성·롤백 절차, 컴플라이언스 승인 및 책임·배포 일정을 확정한 뒤 진행하십시오."
+    },
+    "escalated_any": false
+  },
+  "deliverable": {
+    "req_id": "REQ-20250308-sd-fi-w102-kna1-execution",
+    "requirement": "다음 릴리즈를 목표로 SD-FI 통합테스트 5건과 WRICEF W-102의 KNA1 신규 필드 매핑 변경을 반영하고 관련 산출물을 갱신한다.",
+    "keywords": [
+      "SD-FI",
+      "billing",
+      "회계전표",
+      "통합테스트",
+      "WRICEF",
+      "W-102",
+      "KNA1",
+      "고객 마스터",
+      "인터페이스 매핑",
+      "회귀검증",
+      "재처리",
+      "멱등성",
+      "중복 전표 방지",
+      "컴플라이언스",
+      "롤백",
+      "다음 릴리즈"
+    ],
+    "wiki_files": [
+      "wiki/requirements/REQ-20250308-sd-fi-w102-kna1-execution.md",
+      "wiki/decisions.md",
+      "wiki/index.md",
+      "wiki/logs/runs.md"
+    ],
+    "commit_hash": "166e626",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/166e626392726cf8b8e064e1b323ed4193d2fee4"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
