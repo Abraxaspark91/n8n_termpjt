@@ -1,15 +1,8 @@
-- 선거 사무 지원 승인 → REQ-20250308-election-support-escalation-approval
-- 산출물 갱신 → REQ-20250308-election-support-escalation-approval
-- 민감정보 처리 → REQ-20250308-election-support-escalation-approval
-- SLA 미확정 → REQ-20250308-election-support-escalation-approval
-- 승인권자 미확정 → REQ-20250308-election-support-escalation-approval
-- 법적 근거 미확정 → REQ-20250308-election-support-escalation-approval
-- 대외 답변 품질관리 → REQ-20250308-election-support-escalation-approval
-- 선관위 → REQ-20260731-S10-B01000-2359
-- 사무보조 → REQ-20260731-S10-B01000-2359
-- 관리계 → REQ-20260731-S10-B01000-2359
-- 주무관 → REQ-20260731-S10-B01000-2359
-- 선거 사무 지원 체계화 → REQ-20260731-S10-B01000-2359
-- 선거비용 실사 보조 절차 → REQ-20260731-S10-B01000-2359
-- 지도계 → REQ-20260731-S10-B01000-2359
-- 민원문의 대응 → REQ-20260731-S10-B01000-2359
+- 선거비용 실사 보조 절차 갱신 → REQ-20250308-election-support-escalation-execution
+- 민원문의 대응 갱신 → REQ-20250308-election-support-escalation-execution
+- 유권해석 에스컬레이션 갱신 → REQ-20250308-election-support-escalation-execution
+- 업무분장 및 연계 기준 → REQ-20250308-election-support-escalation-execution
+- 3일 처리 원칙 → REQ-20250308-election-support-escalation-execution
+- 개인정보·민감정보 통제 → REQ-20250308-election-support-escalation-execution
+- 산출물 갱신 완료 → REQ-20250308-election-support-escalation-execution
+- 시행 전 검증 → REQ-20250308-election-support-escalation-execution
