@@ -1,0 +1,89 @@
+{
+  "schema": "deliverable_patch/v2",
+  "run_id": "S04-B01000-r1-1785506554626",
+  "ts": "2026-07-31T14:03:12.659Z",
+  "req_id": "REQ-20260725-marketing-funnel-copa-execution",
+  "requestor": "경영관리 김PM",
+  "source": "bench:S04:B01000",
+  "entry": "bench",
+  "deliverable_dir": "scenarios/S04_sap_copa_report/deliverables",
+  "decision": "Marketing Funnel 단계별 손익 구조, 직접비·공통 판관비 구분 및 배부, 단계별·누적 기여손익, CO-PA 매핑·대사·검증 기준을 승인하고 관련 산출물 갱신을 진행한다. 단계 정의, 배부 기준, 대사 허용오차, 권한·컴플라이언스 및 cross-module 인터페이스의 세부 기준은 후속 확정 과제로 관리한다.",
+  "summary": "Marketing Funnel 단계별 CO-PA 손익 구조와 직접비·공통비·기여손익·대사·검증 기준을 관련 산출물에 반영한다.",
+  "da_score": 5,
+  "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/5c7c903f380e1adc55fb94dfd9b6288da8dc6d6e",
+  "wiki_files": [
+    "scenarios/S04_sap_copa_report/wiki/requirements/REQ-20260725-marketing-funnel-copa-execution.md",
+    "scenarios/S04_sap_copa_report/wiki/decisions.md",
+    "scenarios/S04_sap_copa_report/wiki/index.md",
+    "scenarios/S04_sap_copa_report/wiki/logs/runs.md"
+  ],
+  "ops": [
+    {
+      "target": "docx",
+      "op": "append_changelog",
+      "bullets": [
+        "Marketing Funnel 단계별 CO-PA 손익 구조, 매출·매출원가·직접비·공통 판관비 및 단계별·누적 기여손익 산출 기준을 승인 반영",
+        "CO-PA 특성·값필드 매핑, 조회 차원, 공통 판관비 배부 및 기존 손익과의 대사 기준을 설계 범위에 추가",
+        "단계 정의, 배부 기준, 대사 허용오차, 권한·컴플라이언스 및 cross-module 인터페이스 세부 기준은 후속 확정 과제로 관리"
+      ],
+      "risks": [
+        "Marketing Funnel 단계 정의가 기존 CO-PA 수익성 세그먼트와 불일치할 수 있음",
+        "공통 판관비 배부 기준이 불명확하면 단계별 기여손익의 신뢰성이 저하될 수 있음",
+        "퍼널 단계 정보 또는 CO-PA 비용 귀속 데이터 부족으로 추정·별도 집계가 필요할 수 있음",
+        "기존 CO-PA 손익과 신규 퍼널 손익의 집계 기준 차이로 금액 차이와 사용자 혼선이 발생할 수 있음",
+        "데이터 접근 권한, 컴플라이언스 및 cross-module 영향 검증 미흡 시 운영·감사 리스크가 발생할 수 있음"
+      ],
+      "open_questions": [
+        "Marketing Funnel 표준 단계와 전환·비용 귀속 기준 최종 확정 여부",
+        "광고선전비와 판매촉진비의 단계별 직접 귀속 및 공통비 구분 기준",
+        "공통 판관비 배부 기준으로 적용할 지표",
+        "기여손익 비용 범위와 최종 영업이익까지의 표시 수준",
+        "기존 CO-PA 리포트와 신규 퍼널 손익계산서 병행 운영 기간 및 대사 허용오차",
+        "데이터 완전성, 사용자 권한, 컴플라이언스 및 cross-module 영향 검증 기준"
+      ],
+      "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/5c7c903f380e1adc55fb94dfd9b6288da8dc6d6e"
+    },
+    {
+      "target": "xlsx",
+      "op": "append_row",
+      "sheet": "RTM",
+      "values": [
+        "REQ-20260725-marketing-funnel-copa-execution",
+        "2026-07-31T23:02:59.066+09:00",
+        "경영관리 김PM",
+        "bench:S04:B01000",
+        "Marketing Funnel 단계별 손익 구조, 직접비·공통 판관비 구분 및 배부, 단계별·누적 기여손익, CO-PA 매핑·대사·검증 기준을 승인하고 관련 산출물 갱신을 진행한다. 단계 정의, 배부 기준, 대사 허용오차, 권한·컴플라이언스 및 cross-module 인터페이스의 세부 기준은 후속 확정 과제로 관리한다.",
+        "SAP CO-PA 손익계산서를 인지·고려·전환의 Marketing Funnel 단계별 구조로 개편하고 매출·매출원가·직접비·공통 판관비, 단계별·누적 기여손익, CO-PA 매핑·대사·검증 기준을 반영한다.",
+        "CO-PA 리포트 구조 정의서; Marketing Funnel 손익계산서 설계서; 단계별 기여손익 산출 로직 및 테스트 시나리오; 산출물_설계서.docx; 요구사항_추적표.xlsx; 보고_장표.pptx",
+        "modify/add",
+        "5",
+        "https://github.com/Abraxaspark91/n8n_termpjt/commit/5c7c903f380e1adc55fb94dfd9b6288da8dc6d6e"
+      ]
+    },
+    {
+      "target": "pptx",
+      "op": "append_changelog_slide",
+      "title": "변경 이력: Marketing Funnel 단계별 CO-PA 손익 구조",
+      "bullets": [
+        "인지-관심-전환-유지 단계별 매출, 매출원가, 직접비 및 공통 판관비를 구분",
+        "단계별 기여손익과 단계 간 누적 기여손익을 산출·표시",
+        "광고선전비·판매촉진비의 직접 귀속 및 공통비 분류와 공통비 하단 배치 반영",
+        "CO-PA 특성·값필드 매핑, 조회 차원, 공통비 배부, 기존 손익과의 대사 기준 및 검증 시나리오 추가",
+        "단계 정의, 배부 기준, 대사 허용오차, 권한·컴플라이언스 및 cross-module 기준은 후속 확정"
+      ]
+    },
+    {
+      "target": "docx",
+      "op": "append_after_heading",
+      "heading": "4. 리포트 화면 설계",
+      "text": "손익계산서는 인지·관심·전환·유지 단계별로 매출, 매출원가, 단계별 직접비, 기여이익, 공통 판관비 배부액 및 단계별 기여손익을 구분 표시한다. 공통 판관비는 기여이익 하단에 배치하며, 단계별 기여손익과 단계 간 누적 기여손익을 함께 산출한다. 광고선전비와 판매촉진비는 단계별 직접 귀속비 또는 공통비로 분류하고, 공통비는 승인된 배부 기준에 따라 배부한다. 기간·조직·상품·서비스·고객·채널 차원의 조회와 CO-PA 특성·값필드 및 손익계산서 항목 간 매핑을 지원한다. 기존 CO-PA 손익과 신규 퍼널 손익은 정의된 대사 기준과 허용오차로 비교하며, 데이터 완전성·누락·추정 데이터·권한·컴플라이언스 검증 결과를 확인할 수 있도록 설계한다.",
+      "style": null
+    },
+    {
+      "target": "pptx",
+      "op": "replace_text",
+      "match": "퍼널단계 × 손익항목 매트릭스",
+      "new_text": "퍼널단계 × 손익항목 매트릭스: 매출·매출원가·직접비·공통 판관비·단계별 및 누적 기여손익 표시"
+    }
+  ]
+}
