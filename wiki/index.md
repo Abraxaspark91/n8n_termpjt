@@ -31,3 +31,6 @@
 - 권한 통제 → REQ-20250308-fi-2step-approval ([요건](requirements/REQ-20250308-fi-2step-approval.md))
 - 감사 로그 → REQ-20250308-fi-2step-approval ([요건](requirements/REQ-20250308-fi-2step-approval.md))
 - 미결 전표 전환 → REQ-20250308-fi-2step-approval ([요건](requirements/REQ-20250308-fi-2step-approval.md))
+- SD → REQ-20250308-sd-returns-re-order.md
+- Returns → REQ-20250308-sd-returns-re-order.md
+- RE Order Type → REQ-20250308-sd-returns-re-order.md
