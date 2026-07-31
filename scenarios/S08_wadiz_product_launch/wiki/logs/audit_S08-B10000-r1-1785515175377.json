@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "S08-B10000-r1-1785515175377",
+    "mode": "bench",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-07-31T16:23:58.108Z",
+    "finished_at": "2026-07-31T16:26:15.377Z",
+    "duration_ms": 137269
+  },
+  "trigger": {
+    "source": "bench:S08:B10000",
+    "requestor": "PO",
+    "received_at": "2026-07-31T16:23:58.108Z",
+    "scenario_id": "S08-B10000",
+    "domain": "AI 저널 레코더 런칭"
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T16:23:58.108Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T16:23:58.108Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:S08:B10000",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T16:23:58.584Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "EXISTS"
+    },
+    {
+      "ts": "2026-07-31T16:23:58.849Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 1013
+    },
+    {
+      "ts": "2026-07-31T16:24:18.480Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "FAIL",
+      "escalated": false,
+      "missing_count": 1
+    },
+    {
+      "ts": "2026-07-31T16:24:42.843Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T16:24:50.079Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T16:25:05.993Z",
+      "stage": "quality_review",
+      "actor": "auto(bench)",
+      "decision": "APPROVE"
+    },
+    {
+      "ts": "2026-07-31T16:25:25.587Z",
+      "stage": "devils_advocate",
+      "actor": "DA+MathThreshold",
+      "decision": "PASS",
+      "score": 5,
+      "escalated": false
+    },
+    {
+      "ts": "2026-07-31T16:25:25.619Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": "승인(bench auto)"
+    },
+    {
+      "ts": "2026-07-31T16:25:25.643Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "FINAL_APPROVE"
+    },
+    {
+      "ts": "2026-07-31T16:26:08.178Z",
+      "stage": "wiki_librarian",
+      "actor": "Wiki Librarian agent",
+      "decision": "ENTRY_OK",
+      "files": [
+        "requirements/REQ-20250308-wadiz-approval-deliverable-gates.md",
+        "decisions.md",
+        "index.md",
+        "logs/runs.md"
+      ]
+    },
+    {
+      "ts": "2026-07-31T16:26:08.555Z",
+      "stage": "wiki_write_prepare",
+      "actor": "system",
+      "files": [
+        "requirements/REQ-20250308-wadiz-approval-deliverable-gates.md(new)",
+        "decisions.md(update)",
+        "index.md(update)",
+        "logs/runs.md(update)"
+      ]
+    },
+    {
+      "ts": "2026-07-31T16:26:15.335Z",
+      "stage": "wiki_commit",
+      "actor": "GitHub Contents API",
+      "decision": "COMMITTED",
+      "files_committed": 4,
+      "files_failed": 0,
+      "hash": "5f4aad9"
+    },
+    {
+      "ts": "2026-07-31T16:26:15.358Z",
+      "stage": "quality_assurance",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": ""
+    },
+    {
+      "ts": "2026-07-31T16:26:15.368Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 2
+    },
+    "semantic_audit": {
+      "attempts": 1
+    },
+    "devils_advocate": {
+      "attempts": 1,
+      "score": 5,
+      "verdict": "핵심 검증 조건의 담당자·증빙·승인 게이트와 개인정보·규제·생산·고객 커뮤니케이션 기준을 보완한 후 진행 권고"
+    },
+    "escalated_any": false
+  },
+  "deliverable": {
+    "req_id": "REQ-20250308-wadiz-approval-deliverable-gates",
+    "requirement": "승인된 와디즈 런칭 기획 방향과 검증 조건을 7개 영향 산출물에 반영하고 문서엔진 갱신 및 추적을 기록한다.",
+    "keywords": [
+      "와디즈",
+      "AI driven journal recorder",
+      "크라우드펀딩 런칭",
+      "리워드 구성",
+      "얼리버드",
+      "재고 운영",
+      "스토리 페이지",
+      "산출물 설계서",
+      "요구사항 추적표",
+      "보고 장표",
+      "원가·마진 검증",
+      "생산·배송",
+      "개인정보 보호",
+      "규제 검토",
+      "승인 게이트"
+    ],
+    "wiki_files": [
+      "scenarios/S08_wadiz_product_launch/wiki/requirements/REQ-20250308-wadiz-approval-deliverable-gates.md",
+      "scenarios/S08_wadiz_product_launch/wiki/decisions.md",
+      "scenarios/S08_wadiz_product_launch/wiki/index.md",
+      "scenarios/S08_wadiz_product_launch/wiki/logs/runs.md"
+    ],
+    "commit_hash": "5f4aad9",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/5f4aad96fd8e6dfb56a5b9c7614a1c90660b21db"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
