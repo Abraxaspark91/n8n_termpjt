@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "S02-B10000-r1-1785503826993",
+    "mode": "bench",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-07-31T13:14:47.517Z",
+    "finished_at": "2026-07-31T13:17:06.993Z",
+    "duration_ms": 139476
+  },
+  "trigger": {
+    "source": "bench:S02:B10000",
+    "requestor": "PI팀 이과장",
+    "received_at": "2026-07-31T13:14:47.517Z",
+    "scenario_id": "S02-B10000",
+    "domain": "Process Innovation(총원가)"
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T13:14:47.517Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T13:14:47.517Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:S02:B10000",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T13:14:47.808Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "EXISTS"
+    },
+    {
+      "ts": "2026-07-31T13:14:48.079Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 861
+    },
+    {
+      "ts": "2026-07-31T13:15:08.487Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "FAIL",
+      "escalated": false,
+      "missing_count": 1
+    },
+    {
+      "ts": "2026-07-31T13:15:27.485Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T13:15:35.663Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T13:16:04.120Z",
+      "stage": "quality_review",
+      "actor": "auto(bench)",
+      "decision": "APPROVE"
+    },
+    {
+      "ts": "2026-07-31T13:16:21.634Z",
+      "stage": "devils_advocate",
+      "actor": "DA+MathThreshold",
+      "decision": "PASS",
+      "score": 5,
+      "escalated": false
+    },
+    {
+      "ts": "2026-07-31T13:16:21.658Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": "승인(bench auto)"
+    },
+    {
+      "ts": "2026-07-31T13:16:21.670Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "FINAL_APPROVE"
+    },
+    {
+      "ts": "2026-07-31T13:16:59.843Z",
+      "stage": "wiki_librarian",
+      "actor": "Wiki Librarian agent",
+      "decision": "ENTRY_OK",
+      "files": [
+        "requirements/REQ-20250308-총원가-원가추적-전환-승인.md",
+        "decisions.md",
+        "index.md",
+        "logs/runs.md"
+      ]
+    },
+    {
+      "ts": "2026-07-31T13:17:00.162Z",
+      "stage": "wiki_write_prepare",
+      "actor": "system",
+      "files": [
+        "requirements/REQ-20250308-총원가-원가추적-전환-승인.md(new)",
+        "decisions.md(update)",
+        "index.md(update)",
+        "logs/runs.md(update)"
+      ]
+    },
+    {
+      "ts": "2026-07-31T13:17:06.943Z",
+      "stage": "wiki_commit",
+      "actor": "GitHub Contents API",
+      "decision": "COMMITTED",
+      "files_committed": 4,
+      "files_failed": 0,
+      "hash": "d9f80ac"
+    },
+    {
+      "ts": "2026-07-31T13:17:06.969Z",
+      "stage": "quality_assurance",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": ""
+    },
+    {
+      "ts": "2026-07-31T13:17:06.982Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 2
+    },
+    "semantic_audit": {
+      "attempts": 1
+    },
+    "devils_advocate": {
+      "attempts": 1,
+      "score": 5,
+      "verdict": "보완 권고: 핵심 산식·컴플라이언스 통제·시스템 책임경계·병행운영 및 롤백 기준을 확정하고 영향평가와 파일럿 검증 후 수작업 결산 폐지를 진행하라."
+    },
+    "escalated_any": false
+  },
+  "deliverable": {
+    "req_id": "REQ-20250308-총원가-원가추적-전환-승인",
+    "requirement": "수작업 관리연결결산을 폐지하고 원가추적번호 기반 전사 총원가 관리체계로 전환하며 관련 설계서·시스템 요구사항·테스트 시나리오를 갱신한다.",
+    "keywords": [
+      "총원가",
+      "관리연결결산",
+      "원가추적번호",
+      "간접비 배부",
+      "법인간 비용배분",
+      "실시간 원가",
+      "전사 원가관리",
+      "데이터 이관",
+      "대사",
+      "테스트",
+      "승인"
+    ],
+    "wiki_files": [
+      "scenarios/S02_process_innovation/wiki/requirements/REQ-20250308-총원가-원가추적-전환-승인.md",
+      "scenarios/S02_process_innovation/wiki/decisions.md",
+      "scenarios/S02_process_innovation/wiki/index.md",
+      "scenarios/S02_process_innovation/wiki/logs/runs.md"
+    ],
+    "commit_hash": "d9f80ac",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/d9f80ac42fb78f0ce93785c303294b6c875b720a"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
