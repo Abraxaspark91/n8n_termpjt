@@ -1,1 +1,2 @@
 req_id,일시,요청자,소스,결정,요약,영향 산출물,변경유형,DA점수,위키 커밋
+REQ-20250308-wadiz-journal-rewards-earlybird-story,2026-08-01T01:23:21.073+09:00,PO,bench:S08:B00000,"원가·마진·생산능력·배송·AI 기능·개인정보 처리 및 규제 검토를 후속 검증 조건으로 두고, 리워드·얼리버드·스토리 페이지 기획 방향과 관련 산출물 업데이트를 승인한다.","AI driven journal recorder 와디즈 런칭을 위한 리워드 구성, 얼리버드 운영안, 스토리 페이지 구조 확정 및 관련 산출물 업데이트",와디즈 캠페인 기획서; 리워드 구성안; 얼리버드 운영안; 와디즈 스토리 페이지 기획서,modify/add,5,https://github.com/Abraxaspark91/n8n_termpjt/commit/c128698c6376c118643d312a5ee69f7ed40832ad
