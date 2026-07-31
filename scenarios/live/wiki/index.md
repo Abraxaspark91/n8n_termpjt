@@ -15,3 +15,14 @@
 - 승인 게이트 → REQ-20260725-SD-FI-KNA1-승인게이트
 - 변경관리 → REQ-20260725-SD-FI-KNA1-승인게이트
 - 릴리즈 → REQ-20260725-SD-FI-KNA1-승인게이트
+- 반품 → REQ-20260725-SD-MM-FI-MRP-통합승인게이트
+- MM → REQ-20260725-SD-MM-FI-MRP-통합승인게이트
+- MRP → REQ-20260725-SD-MM-FI-MRP-통합승인게이트
+- MD04 → REQ-20260725-SD-MM-FI-MRP-통합승인게이트
+- 재고부족 알림 → REQ-20260725-SD-MM-FI-MRP-통합승인게이트
+- FI 승인 워크플로 → REQ-20260725-SD-MM-FI-MRP-통합승인게이트
+- 직무분리 → REQ-20260725-SD-MM-FI-MRP-통합승인게이트
+- 감사로그 → REQ-20260725-SD-MM-FI-MRP-통합승인게이트
+- 개인정보 → REQ-20260725-SD-MM-FI-MRP-통합승인게이트
+- 운영전환 → REQ-20260725-SD-MM-FI-MRP-통합승인게이트
+- 승인 게이트 → REQ-20260725-SD-MM-FI-MRP-통합승인게이트
