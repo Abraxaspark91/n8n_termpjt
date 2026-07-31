@@ -47,3 +47,14 @@
 - cross-module 계약 → REQ-20260725-fi-internal-trade-key-mapping-deliverable-sync
 - 성능 수용기준 → REQ-20260725-fi-internal-trade-key-mapping-deliverable-sync
 - 마이그레이션 롤백 수용기준 → REQ-20260725-fi-internal-trade-key-mapping-deliverable-sync
+- 실행 결과 기록 → REQ-20260725-fi-internal-trade-key-mapping-execution-result
+- 7개 영향 산출물 → REQ-20260725-fi-internal-trade-key-mapping-execution-result
+- 산출물 동기화 결과 → REQ-20260725-fi-internal-trade-key-mapping-execution-result
+- 문서엔진 갱신 → REQ-20260725-fi-internal-trade-key-mapping-execution-result
+- 권한통제 후속 확정 → REQ-20260725-fi-internal-trade-key-mapping-execution-result
+- 감사로그 후속 확정 → REQ-20260725-fi-internal-trade-key-mapping-execution-result
+- 시점별 재현성 → REQ-20260725-fi-internal-trade-key-mapping-execution-result
+- cross-module 인터페이스 → REQ-20260725-fi-internal-trade-key-mapping-execution-result
+- 성능 수용기준 → REQ-20260725-fi-internal-trade-key-mapping-execution-result
+- 마이그레이션 롤백 → REQ-20260725-fi-internal-trade-key-mapping-execution-result
+- 요구사항-설계-테스트 추적 → REQ-20260725-fi-internal-trade-key-mapping-execution-result
