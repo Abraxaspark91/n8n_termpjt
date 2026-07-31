@@ -8,3 +8,14 @@
 - 생산·재고 시나리오 → REQ-20250308-wadiz-approval-execution
 - 개인정보·규제 검토 → REQ-20250308-wadiz-approval-execution
 - 담당자·증빙·승인 게이트 → REQ-20250308-wadiz-approval-execution
+- 와디즈 → REQ-20250308-wadiz-approved-deliverables
+- 크라우드펀딩 → REQ-20250308-wadiz-approved-deliverables
+- 리워드 → REQ-20250308-wadiz-approved-deliverables
+- 얼리버드 → REQ-20250308-wadiz-approved-deliverables
+- 스토리 페이지 → REQ-20250308-wadiz-approved-deliverables
+- 재무 검증 → REQ-20250308-wadiz-approved-deliverables
+- 재고 검증 → REQ-20250308-wadiz-approved-deliverables
+- 개인정보 → REQ-20250308-wadiz-approved-deliverables
+- 규제 → REQ-20250308-wadiz-approved-deliverables
+- 승인 게이트 → REQ-20250308-wadiz-approved-deliverables
+- 산출물 추적 → REQ-20250308-wadiz-approved-deliverables
