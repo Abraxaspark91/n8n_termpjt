@@ -15,8 +15,9 @@
 | 신상품 출시 리드타임(주) | 2 | 8 | 산업분석자료(가정치)
 | 연간 신상품 회전수 | 20 | 4 | 산업분석자료(가정치)
 | 재고회전율 | 12 | 6 | 산업분석자료(가정치)
-## Sheet: RTM (4행 × 10열)
+## Sheet: RTM (5행 × 10열)
 | req_id | 일시 | 요청자 | 소스 | 결정 | 요약 | 영향 산출물 | 변경유형
-| REQ-20260725-tesla-zara- | 2026-08-01T01:46:17.211+ | IMMS 조교 | bench:S09:B00000 | Tesla의 생산·배터리·소프트웨어 통합과  | Tesla와 Zara의 수직계열화 기반 공급 | Tesla·Zara 케이스 스터디 문서; 케 | modify
+| REQ-20260725-tesla-zara- | 2026-08-01T01:46:17.211+ | IMMS 조교 | bench:S09:B00000 | 승인. 비교 지표의 정의·동등성 기준, 공개 | Tesla와 Zara의 수직계열화 기반 공급 | Tesla·Zara 케이스 스터디 문서; 케 | modify
 | REQ-20260725-tesla-zara- | 2026-07-31T16:49:51.109Z | IMMS 조교 | bench:S09:B10000 | 승인된 비교분석 프레임과 한계·출처 기준을  | Tesla·Zara 케이스 스터디와 관련 설 | Tesla·Zara 케이스 스터디 문서; 케 | modify; modify; modify; 
 | REQ-20260725-tesla-zara- | 2026-08-01T01:53:22.187+ | IMMS 조교 | bench:S09:B01000 | 공급망·수요예측 비교 범위, 지표 정의, 공 | Tesla·Zara의 수직계열화·수요예측 비 | Tesla·Zara 케이스 스터디 문서; 케 | modify; modify; modify; 
+| REQ-20260725-tesla-zara- | 2026-08-01T01:57:08.822+ | IMMS 조교 | bench:S09:B00100 | 승인. 비교 지표의 정의·동등성 기준, 공개 | Tesla·Zara 케이스 스터디에 수직계열 | Tesla·Zara 케이스 스터디 문서; 케 | modify; modify; modify; 
