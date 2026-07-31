@@ -2,3 +2,13 @@
 - SD → REQ-SEED-1
 - 반품 → REQ-SEED-1
 - RE 오더 → REQ-SEED-1
+- 관리계 → REQ-20250308-election-support-escalation
+- 지도계 → REQ-20250308-election-support-escalation
+- 선거비용 실사 → REQ-20250308-election-support-escalation
+- 민원 대응 → REQ-20250308-election-support-escalation
+- 유권해석 → REQ-20250308-election-support-escalation
+- 에스컬레이션 → REQ-20250308-election-support-escalation
+- RACI → REQ-20250308-election-support-escalation
+- 개인정보 보호 → REQ-20250308-election-support-escalation
+- 기록관리 → REQ-20250308-election-support-escalation
+- 문서엔진 → REQ-20250308-election-support-escalation
