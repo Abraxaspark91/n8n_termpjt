@@ -1,0 +1,84 @@
+{
+  "schema": "deliverable_patch/v2",
+  "run_id": "S04-B00100-r1-1785506792641",
+  "ts": "2026-07-31T14:07:11.929Z",
+  "req_id": "REQ-20260725-marketing-funnel-copa-approval-execution",
+  "requestor": "경영관리 김PM",
+  "source": "bench:S04:B00100",
+  "entry": "bench",
+  "deliverable_dir": "scenarios/S04_sap_copa_report/deliverables",
+  "decision": "CO-PA 리포트 개편 및 관련 설계서·추적표·경영 보고 장표 갱신을 승인하고, 단계 정의·비용 배부·대사·데이터·권한·컴플라이언스 기준은 후속 확정 과제로 관리한다.",
+  "summary": "승인 페이로드에 따라 Marketing Funnel 단계별 CO-PA 기여손익 구조와 관련 산출물 갱신 결과를 승인 상태로 기록한다.",
+  "da_score": 5,
+  "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/dcf27687957235fa832d4ecce9af2b7211f346a5",
+  "wiki_files": [
+    "scenarios/S04_sap_copa_report/wiki/requirements/REQ-20260725-marketing-funnel-copa-approval-execution.md",
+    "scenarios/S04_sap_copa_report/wiki/decisions.md",
+    "scenarios/S04_sap_copa_report/wiki/index.md",
+    "scenarios/S04_sap_copa_report/wiki/logs/runs.md"
+  ],
+  "ops": [
+    {
+      "target": "docx",
+      "op": "append_changelog",
+      "bullets": [
+        "CO-PA 리포트를 Marketing Funnel의 인지·고려·전환 단계별 구조로 개편한다.",
+        "각 퍼널 단계에 매출, 매출원가, 단계별 직접비, 공통 판관비 배부액을 구분 표시한다.",
+        "단계별 기여손익과 단계 간 누적 기여손익을 산출·표시하는 손익계산서 설계서를 신규 작성한다.",
+        "광고선전비와 판매촉진비를 퍼널 단계별 직접 귀속비 또는 공통비로 분류하고, 공통비는 기여이익 하단에 배치한다.",
+        "공통 판관비의 귀속·배부 기준과 기존 CO-PA 손익 및 신규 퍼널 손익 간 대사 기준을 문서화한다.",
+        "CO-PA 특성·값필드와 손익계산서 항목 간 매핑 및 기간·조직·상품·서비스·고객·채널별 조회 차원을 정의한다.",
+        "단계별 기여손익 계산, 직접비·공통비 구분, 데이터 완전성, 누락·추정 데이터, 권한·컴플라이언스 검증을 테스트 시나리오에 반영한다.",
+        "변경된 손익 구조와 영향 범위를 설계서, 요구사항 추적표, 경영 보고 장표에 반영한다."
+      ],
+      "risks": [
+        "Marketing Funnel 단계 정의가 기존 CO-PA 수익성 세그먼트와 불일치하면 단계별 손익 비교와 추세 분석의 일관성이 저하될 수 있다.",
+        "공통 판관비 배부 기준이 불명확하면 단계별 기여손익이 임의 배부 결과로 인식될 수 있다.",
+        "퍼널 단계 정보 또는 CO-PA 비용 귀속 데이터가 부족하면 일부 비용의 추정 또는 별도 집계가 필요할 수 있다.",
+        "기존 CO-PA 손익과 신규 퍼널 손익의 집계 기준 차이로 금액 차이와 사용자 혼선이 발생할 수 있다.",
+        "데이터 접근 권한, 컴플라이언스 및 cross-module 영향 검증이 미흡하면 운영·감사 리스크가 발생할 수 있다."
+      ],
+      "open_questions": [
+        "Marketing Funnel의 표준 단계 정의와 단계 간 전환 기준을 확정해야 한다.",
+        "광고선전비·판매촉진비의 직접비와 공통비 구분 기준을 확정해야 한다.",
+        "공통 판관비의 귀속·배부 기준과 배부 주기를 확정해야 한다.",
+        "단계별 기여손익에 포함할 비용 범위를 확정해야 한다.",
+        "기존 CO-PA와 신규 퍼널 손익의 병행 운영 기간 및 대사 허용오차를 확정해야 한다.",
+        "누락·추정 데이터 처리 기준과 데이터 완전성 검증 기준을 확정해야 한다.",
+        "관련 시스템 간 인터페이스(cross-module) 검증 기준과 권한·컴플라이언스 통제 기준을 확정해야 한다."
+      ],
+      "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/dcf27687957235fa832d4ecce9af2b7211f346a5"
+    },
+    {
+      "target": "xlsx",
+      "op": "append_row",
+      "sheet": "RTM",
+      "values": [
+        "REQ-20260725-marketing-funnel-copa-approval-execution",
+        "2026-07-31T14:07:11.929Z",
+        "경영관리 김PM",
+        "bench:S04:B00100",
+        "CO-PA 리포트 개편 및 관련 설계서·추적표·경영 보고 장표 갱신을 승인하고, 단계 정의·비용 배부·대사·데이터·권한·컴플라이언스 기준은 후속 확정 과제로 관리한다.",
+        "승인 페이로드에 따라 Marketing Funnel 단계별 CO-PA 기여손익 구조와 관련 산출물 갱신 결과를 승인 상태로 기록한다.",
+        "CO-PA 리포트 구조 정의서; Marketing Funnel 손익계산서 설계서; 단계별 기여손익 산출 로직 및 테스트 시나리오; 산출물_설계서.docx; 요구사항_추적표.xlsx; 보고_장표.pptx",
+        "modify; add; add; modify; modify; modify",
+        5,
+        "https://github.com/Abraxaspark91/n8n_termpjt/commit/dcf27687957235fa832d4ecce9af2b7211f346a5"
+      ]
+    },
+    {
+      "target": "pptx",
+      "op": "append_changelog_slide",
+      "title": "변경사항 — REQ-20260725-marketing-funnel-copa-approval-execution",
+      "bullets": [
+        "요청자: 경영관리 김PM · 결정: CO-PA 리포트 개편 및 관련 설계서·추적표·경영 보고 장표 갱신을 승인하고, 단계 정의·비용 배부·대사·데이터·권한·컴플라이언스 기준은 후속 확정 과제로 관리한다.",
+        "• CO-PA 리포트를 Marketing Funnel의 인지·고려·전환 단계별 구조로 개편한다.",
+        "• 각 퍼널 단계에 매출, 매출원가, 단계별 직접비, 공통 판관비 배부액을 구분 표시한다.",
+        "• 단계별 기여손익과 단계 간 누적 기여손익을 산출·표시하는 손익계산서 설계서를 신규 작성한다.",
+        "• 광고선전비와 판매촉진비를 퍼널 단계별 직접 귀속비 또는 공통비로 분류하고, 공통비는 기여이익 하단에 배치한다.",
+        "• 공통 판관비의 귀속·배부 기준과 기존 CO-PA 손익 및 신규 퍼널 손익 간 대사 기준을 문서화한다.",
+        "• CO-PA 특성·값필드와 손익계산서 항목 간 매핑 및 기간·조직·상품·서비스·고객·채널별 조회 차원을 정의한다."
+      ]
+    }
+  ]
+}
