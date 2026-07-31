@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "D01-T1-r1-1785460793303",
+    "mode": "bench",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-07-31T01:17:46.685Z",
+    "finished_at": "2026-07-31T01:19:53.303Z",
+    "duration_ms": 126618
+  },
+  "trigger": {
+    "source": "bench:T1",
+    "requestor": "김PM",
+    "received_at": "2026-07-31T01:17:46.685Z",
+    "scenario_id": "D01-T1",
+    "domain": "SAP ERP"
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T01:17:46.685Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T01:17:46.685Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:T1",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T01:17:47.084Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "EXISTS"
+    },
+    {
+      "ts": "2026-07-31T01:17:47.336Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 255
+    },
+    {
+      "ts": "2026-07-31T01:17:56.570Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "FAIL",
+      "escalated": false,
+      "missing_count": 4
+    },
+    {
+      "ts": "2026-07-31T01:18:08.766Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "FAIL",
+      "escalated": false,
+      "missing_count": 1
+    },
+    {
+      "ts": "2026-07-31T01:18:19.599Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T01:18:24.150Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T01:18:38.472Z",
+      "stage": "quality_review",
+      "actor": "auto(bench)",
+      "decision": "APPROVE"
+    },
+    {
+      "ts": "2026-07-31T01:19:03.810Z",
+      "stage": "devils_advocate",
+      "actor": "DA+MathThreshold",
+      "decision": "PASS",
+      "score": 5,
+      "escalated": false
+    },
+    {
+      "ts": "2026-07-31T01:19:03.835Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "FINAL_APPROVE"
+    },
+    {
+      "ts": "2026-07-31T01:19:46.268Z",
+      "stage": "wiki_librarian",
+      "actor": "Wiki Librarian agent",
+      "decision": "ENTRY_OK",
+      "files": [
+        "requirements/REQ-20250308-sd-returns-re-order.md",
+        "decisions.md",
+        "index.md",
+        "logs/runs.md"
+      ]
+    },
+    {
+      "ts": "2026-07-31T01:19:46.575Z",
+      "stage": "wiki_write_prepare",
+      "actor": "system",
+      "files": [
+        "requirements/REQ-20250308-sd-returns-re-order.md(new)",
+        "decisions.md(update)",
+        "index.md(update)",
+        "logs/runs.md(update)"
+      ]
+    },
+    {
+      "ts": "2026-07-31T01:19:53.276Z",
+      "stage": "wiki_commit",
+      "actor": "GitHub Contents API",
+      "decision": "COMMITTED",
+      "files_committed": 4,
+      "files_failed": 0,
+      "hash": "0af0301"
+    },
+    {
+      "ts": "2026-07-31T01:19:53.294Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 3
+    },
+    "semantic_audit": {
+      "attempts": 1
+    },
+    "devils_advocate": {
+      "attempts": 1,
+      "score": 5,
+      "verdict": "점수 기준은 통과했으나 핵심 정책 확정과 SD·MM·FI·QM 및 외부 연계 영향 분석, 통제·컴플라이언스·예외 테스트를 보완한 뒤 진행할 것을 권고한다."
+    },
+    "escalated_any": false
+  },
+  "deliverable": {
+    "req_id": "REQ-20250308-sd-returns-re-order",
+    "requirement": "SD 고객 반품 프로세스 요건과 RE 반품 오더 적용 검토 결과를 BBP·기능정의서·테스트 시나리오에 반영한다.",
+    "keywords": [
+      "SD",
+      "반품 프로세스",
+      "RE 오더",
+      "반품 입고",
+      "환불",
+      "대체 출하",
+      "BBP",
+      "기능정의서",
+      "테스트 시나리오"
+    ],
+    "wiki_files": [
+      "wiki/requirements/REQ-20250308-sd-returns-re-order.md",
+      "wiki/decisions.md",
+      "wiki/index.md",
+      "wiki/logs/runs.md"
+    ],
+    "commit_hash": "0af0301",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/0af0301205d24b7795b053809aa3b692173f5487"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
