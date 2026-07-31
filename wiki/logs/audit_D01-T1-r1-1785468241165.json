@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "D01-T1-r1-1785468241165",
+    "mode": "bench",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-07-31T03:09:01.248Z",
+    "finished_at": "2026-07-31T03:24:01.165Z",
+    "duration_ms": 899917
+  },
+  "trigger": {
+    "source": "bench:T1",
+    "requestor": "김PM",
+    "received_at": "2026-07-31T03:09:01.248Z",
+    "scenario_id": "D01-T1",
+    "domain": "SAP ERP"
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T03:09:01.248Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T03:09:01.248Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:T1",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T03:09:01.533Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "EXISTS"
+    },
+    {
+      "ts": "2026-07-31T03:09:01.774Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 3502
+    },
+    {
+      "ts": "2026-07-31T03:12:45.394Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "FAIL",
+      "escalated": false,
+      "missing_count": 4
+    },
+    {
+      "ts": "2026-07-31T03:14:08.336Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "FAIL",
+      "escalated": false,
+      "missing_count": 1
+    },
+    {
+      "ts": "2026-07-31T03:15:50.229Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": true,
+      "missing_count": 1
+    },
+    {
+      "ts": "2026-07-31T03:16:38.385Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "FAIL",
+      "escalated": false,
+      "missing_count": 1
+    },
+    {
+      "ts": "2026-07-31T03:18:11.866Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": true,
+      "missing_count": 1
+    },
+    {
+      "ts": "2026-07-31T03:20:17.858Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T03:21:16.086Z",
+      "stage": "quality_review",
+      "actor": "auto(bench)",
+      "decision": "APPROVE"
+    },
+    {
+      "ts": "2026-07-31T03:22:25.534Z",
+      "stage": "devils_advocate",
+      "actor": "DA+MathThreshold",
+      "decision": "PASS",
+      "score": 5,
+      "escalated": false
+    },
+    {
+      "ts": "2026-07-31T03:22:25.557Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "FINAL_APPROVE"
+    },
+    {
+      "ts": "2026-07-31T03:23:54.116Z",
+      "stage": "wiki_librarian",
+      "actor": "Wiki Librarian agent",
+      "decision": "ENTRY_OK",
+      "files": [
+        "requirements/REQ-20250308-sd-returns-re-order.md",
+        "decisions.md",
+        "index.md",
+        "logs/runs.md"
+      ]
+    },
+    {
+      "ts": "2026-07-31T03:23:54.473Z",
+      "stage": "wiki_write_prepare",
+      "actor": "system",
+      "files": [
+        "requirements/REQ-20250308-sd-returns-re-order.md(update)",
+        "decisions.md(update)",
+        "index.md(update)",
+        "logs/runs.md(update)"
+      ]
+    },
+    {
+      "ts": "2026-07-31T03:24:01.136Z",
+      "stage": "wiki_commit",
+      "actor": "GitHub Contents API",
+      "decision": "COMMITTED",
+      "files_committed": 4,
+      "files_failed": 0,
+      "hash": "d497c85"
+    },
+    {
+      "ts": "2026-07-31T03:24:01.156Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 4
+    },
+    "semantic_audit": {
+      "attempts": 2
+    },
+    "devils_advocate": {
+      "attempts": 1,
+      "score": 5,
+      "verdict": "보완 권고: 타 모듈(FI, MM, QM)과의 인터페이스 영향도를 구체화하고 리스크 완화 방안을 명시할 것"
+    },
+    "escalated_any": true
+  },
+  "deliverable": {
+    "req_id": "REQ-20250308-sd-returns-re-order",
+    "requirement": "SD 출하 프로세스 내 반품 시나리오 추가 및 RE 오더 타입 적용 검토",
+    "keywords": [
+      "SD",
+      "Returns",
+      "RE Order Type",
+      "Sales & Distribution"
+    ],
+    "wiki_files": [
+      "wiki/requirements/REQ-20250308-sd-returns-re-order.md",
+      "wiki/decisions.md",
+      "wiki/index.md",
+      "wiki/logs/runs.md"
+    ],
+    "commit_hash": "d497c85",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/d497c855968473fa5d9b17a7e84d64681934118f"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
