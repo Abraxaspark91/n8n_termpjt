@@ -54,7 +54,10 @@ def collect_audits():
     out = {}
     for key, (ts, p) in best.items():
         try:
-            out[key] = (ts, json.loads(p.read_text(encoding="utf-8")))
+            j = json.loads(p.read_text(encoding="utf-8"))
+            if not isinstance(j, dict):
+                raise ValueError("not an object")
+            out[key] = (ts, j)
         except Exception as e:
             print(f"warn: audit unreadable {p.name}: {e}")
     return out
@@ -65,9 +68,13 @@ def collect_patches():
     out = {}
     for sub in ("applied", "pending"):
         for p in sorted(ROOT.glob(f"patches/{sub}/patch_*.json")):
+            if p.name.endswith(".result.json"):
+                continue                      # CI 엔진의 op 결과 로그(리스트) — 패치 아님
             try:
                 j = json.loads(p.read_text(encoding="utf-8"))
             except Exception:
+                continue
+            if not isinstance(j, dict):
                 continue
             rid = j.get("req_id")
             if rid and rid not in out:
