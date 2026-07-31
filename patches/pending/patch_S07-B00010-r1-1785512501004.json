@@ -1,0 +1,82 @@
+{
+  "schema": "deliverable_patch/v2",
+  "run_id": "S07-B00010-r1-1785512501004",
+  "ts": "2026-07-31T15:42:15.767Z",
+  "req_id": "REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update",
+  "requestor": "리서치 담당",
+  "source": "bench:S07:B00010",
+  "entry": "bench",
+  "deliverable_dir": "scenarios/S07_investment_dashboard/deliverables",
+  "decision": "승인된 변경사항을 투자 대시보드·데이터·테스트·통합 산출물·추적표·보고 장표에 반영했으며, 대상 범위·산식·데이터 권리·컴플라이언스·공통 모델·SLA는 후속 확정한다.",
+  "summary": "승인된 투자 대시보드 패널 분리와 지표 갱신·신선도 요구사항을 관련 산출물의 변경 이력과 추적표에 반영한다.",
+  "da_score": 5,
+  "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/fa8192b5c83d510ea8900022ca875715fee7df3a",
+  "wiki_files": [
+    "scenarios/S07_investment_dashboard/wiki/requirements/REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update.md",
+    "scenarios/S07_investment_dashboard/wiki/decisions.md",
+    "scenarios/S07_investment_dashboard/wiki/index.md",
+    "scenarios/S07_investment_dashboard/wiki/logs/runs.md"
+  ],
+  "ops": [
+    {
+      "target": "docx",
+      "op": "append_changelog",
+      "bullets": [
+        "거시경제 현황 패널과 개별 종목 펀더멘털 분석 패널을 독립 구성한다.",
+        "거시경제 패널에 금리·물가·환율·주요 지수 등 시장 전반 지표를 배치한다.",
+        "개별 종목 패널에 PER·PBR·부채비율·잉여현금흐름을 기본 지표로 제공하고 재무·밸류에이션·실적·컨센서스 지표로 확장 가능한 구조를 반영한다.",
+        "지표 갱신 유형을 실시간·일중·일간·주간·월간·발표 시점으로 구분하고, 기준 시각·최종 갱신 시각·데이터 출처·지연 여부를 표시한다.",
+        "패널별 데이터 로딩 실패·지연 데이터·서로 다른 기준일 데이터 혼재 및 사용자 경고 처리를 검증하는 테스트 시나리오를 추가한다.",
+        "대상 시장·자산군·세부 산식·데이터 제공업체·라이선스·허용 지연 시간·공통 데이터 모델은 후속 확정 사항으로 추적한다."
+      ],
+      "risks": [
+        "지표별 발표 주기와 데이터 지연 차이로 패널 간 기준 시각이 일관되지 않을 수 있다.",
+        "실시간 또는 고빈도 갱신 적용 시 데이터 제공 비용과 시스템 부하가 증가할 수 있다.",
+        "지표 산식과 데이터 출처 미확정으로 동일 지표의 값이나 갱신 시점이 달라질 수 있다.",
+        "공시·컨센서스 반영 지연으로 화면 표시값이 최신 투자 판단과 차이 날 수 있다.",
+        "패널 분리로 거시경제와 개별 종목 간 연관성이 과도하게 단순화될 수 있다.",
+        "대상 국가·시장·자산군과 라이선스 요건 확정 전에는 데이터 범위와 구현 일정이 변경될 수 있다."
+      ],
+      "open_questions": [
+        "거시경제 지표의 대상 국가와 시장 범위는 무엇인가?",
+        "지원할 대상 자산군과 개별 종목 시장 범위는 어디까지인가?",
+        "재무·밸류에이션·실적·컨센서스 지표의 우선순위와 추가 지표는 무엇인가?",
+        "각 지표의 목표 갱신 주기와 허용 데이터 지연 시간(SLA)은 얼마인가?",
+        "데이터 제공업체, 출처 표기 기준, 라이선스 및 컴플라이언스 요건은 무엇인가?",
+        "지표 산식, 기준일, 타임존, 발표 후 갱신 및 재처리 기준은 무엇인가?",
+        "공통 데이터 모델과 지표 사전, 데이터 신선도 UX 및 연관 모듈 영향 범위는 어떻게 확정할 것인가?",
+        "고객 고지 및 투자정보 관련 컴플라이언스 검증 범위는 무엇인가?"
+      ],
+      "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/fa8192b5c83d510ea8900022ca875715fee7df3a"
+    },
+    {
+      "target": "xlsx",
+      "op": "append_row",
+      "sheet": "RTM",
+      "values": [
+        "REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update",
+        "2026-08-01T00:42:05.492+09:00",
+        "리서치 담당",
+        "bench:S07:B00010",
+        "승인된 변경사항을 투자 대시보드·데이터·테스트·통합 산출물·추적표·보고 장표에 반영했으며, 대상 범위·산식·데이터 권리·컴플라이언스·공통 모델·SLA는 후속 확정한다.",
+        "투자 대시보드의 거시경제·개별 종목 펀더멘털 패널 분리와 데이터 갱신·신선도 표시 요구사항을 반영했으며, 세부 범위와 SLA는 후속 확정이 필요합니다.",
+        "투자 대시보드 기능정의서; 지표 갱신 정책서; 데이터 요구사항 정의서; 테스트 시나리오; 산출물_설계서.docx; 요구사항_추적표.xlsx; 보고_장표.pptx",
+        "add/modify",
+        5,
+        "https://github.com/Abraxaspark91/n8n_termpjt/commit/fa8192b5c83d510ea8900022ca875715fee7df3a"
+      ]
+    },
+    {
+      "target": "pptx",
+      "op": "append_changelog_slide",
+      "title": "변경 이력: 투자 대시보드 패널 분리 및 데이터 신선도",
+      "bullets": [
+        "거시경제 현황 패널과 개별 종목 펀더멘털 분석 패널을 독립 구성",
+        "거시경제 지표로 금리·물가·환율·주요 지수를 배치하고 종목 기본 지표로 PER·PBR·부채비율·잉여현금흐름을 제공",
+        "실시간·일중·일간·주간·월간·발표 시점 갱신 유형과 기준 시각·최종 갱신 시각·출처·지연 여부 표시",
+        "패널별 로딩 실패·지연 데이터·기준일 혼재 및 사용자 경고 처리 검증 시나리오 추가",
+        "대상 범위·산식·데이터 권리·컴플라이언스·공통 데이터 모델·SLA는 후속 확정"
+      ]
+    }
+  ]
+}
