@@ -1,4 +1,10 @@
-# Keyword Index
-- SD → REQ-SEED-1
-- 반품 → REQ-SEED-1
-- RE 오더 → REQ-SEED-1
+- AI driven journal recorder → REQ-20250308-wadiz-journal-rewards-earlybird-story
+- 와디즈 → REQ-20250308-wadiz-journal-rewards-earlybird-story
+- 크라우드펀딩 런칭 → REQ-20250308-wadiz-journal-rewards-earlybird-story
+- 리워드 구성 → REQ-20250308-wadiz-journal-rewards-earlybird-story
+- 얼리버드 → REQ-20250308-wadiz-journal-rewards-earlybird-story
+- 재고 운영 → REQ-20250308-wadiz-journal-rewards-earlybird-story
+- 스토리 페이지 → REQ-20250308-wadiz-journal-rewards-earlybird-story
+- AI 기능 → REQ-20250308-wadiz-journal-rewards-earlybird-story
+- 개인정보 보호 → REQ-20250308-wadiz-journal-rewards-earlybird-story
+- 생산·배송 → REQ-20250308-wadiz-journal-rewards-earlybird-story
