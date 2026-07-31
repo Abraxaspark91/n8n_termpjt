@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "live-1785476817991",
+    "mode": "live",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-07-31T05:40:23.504Z",
+    "finished_at": "2026-07-31T05:46:57.991Z",
+    "duration_ms": 394487
+  },
+  "trigger": {
+    "source": "teams(demo digest)",
+    "requestor": "(Teams 24h digest)",
+    "received_at": "2026-07-31T05:40:23.504Z",
+    "scenario_id": null,
+    "domain": null
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T03:54:39.421Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T03:54:39.421Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:T5",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T03:54:39.734Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "EXISTS"
+    },
+    {
+      "ts": "2026-07-31T03:54:39.989Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 3676
+    },
+    {
+      "ts": "2026-07-31T05:46:57.978Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 0
+    },
+    "semantic_audit": {
+      "attempts": 0
+    },
+    "devils_advocate": {
+      "attempts": 0,
+      "score": 5,
+      "verdict": "진행 가능하나, RE/MD04/FI 승인 기준과 소급 적용 정책을 먼저 확정한 뒤 설계를 보완하는 것이 안전하다."
+    },
+    "escalated_any": false
+  },
+  "deliverable": {
+    "req_id": "REQ-20250308-sd-mm-fi-update",
+    "requirement": "SD 반품/RE, MM 안전재고-MRP/MD04 알림, FI 2단계 승인 변경을 반영하는 다영역 요구사항 업데이트",
+    "keywords": [
+      "SD",
+      "반품",
+      "RE 오더 타입",
+      "MM",
+      "MRP",
+      "안전재고",
+      "재고부족",
+      "FI",
+      "전표 승인",
+      "2단계 승인",
+      "순차 승인",
+      "감사 로그",
+      "권한 통제"
+    ],
+    "wiki_files": [
+      "wiki/requirements/REQ-20250308-sd-mm-fi-update.md",
+      "wiki/decisions.md",
+      "wiki/index.md",
+      "wiki/logs/runs.md"
+    ],
+    "commit_hash": "bd1f0f4",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/bd1f0f4a916f169f930b913b8bbe5a130439b456"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
