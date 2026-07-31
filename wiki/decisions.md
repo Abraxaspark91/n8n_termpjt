@@ -4,3 +4,4 @@
 - [2025-03-08] REQ-20250308-mm-mrp-safety-stock-fi-linkage | 이과장 | 안전재고의 MRP 반영과 영향분석은 승인하되 FI 회계 개념·자동 전표 여부·적용 범위를 확정한 후 비표준 MM-FI 연계를 설계한다. | keywords: MM,MRP,FI,안전재고,재고부족,대손충당,재고평가손실,MM-FI 연계,계정결정,통합테스트 → requirements/REQ-20250308-mm-mrp-safety-stock-fi-linkage.md
 - [2025-03-08] REQ-20250308-fi-2step-approval | 최부장 | FI 전표의 2단계 순차 승인과 2차 승인 완료 전 후속 처리 차단을 승인하고, 승인 정책·적용 범위·전환·감사 증적 기준은 TBD로 관리한다. | keywords: FI,전표 승인,2단계 승인,순차 승인,내부감사,반려,재상신,권한 통제,감사 로그,미결 전표 전환 → requirements/REQ-20250308-fi-2step-approval.md
 - [2025-03-08] REQ-20250308-sd-returns-re-order | 김PM | SD 반품 프로세스 및 RE 오더 타입 적용 승인 | keywords: SD, Returns, RE Order Type → requirements/REQ-20250308-sd-returns-re-order.md
+- [2025-03-08] REQ-20250308-sd-mm-fi-update | Teams 24h digest | SD 반품/RE, MM 안전재고-MRP, FI 2단계 승인 변경을 승인하되 일부 기준은 TBD로 유지 | keywords: SD,반품,RE 오더 타입,MM,MRP,안전재고,재고부족,FI,전표 승인,2단계 승인,순차 승인 → requirements/REQ-20250308-sd-mm-fi-update.md
