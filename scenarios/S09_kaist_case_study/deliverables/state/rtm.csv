@@ -1,1 +1,2 @@
 req_id,일시,요청자,소스,결정,요약,영향 산출물,변경유형,DA점수,위키 커밋
+REQ-20260725-tesla-zara-supply-chain-demand-forecast,2026-08-01T01:46:17.211+09:00,IMMS 조교,bench:S09:B00000,"Tesla의 생산·배터리·소프트웨어 통합과 Zara의 생산·유통 통제 및 협력 네트워크를 비교하고, 수요예측·리드타임·재고·시장 대응 속도 지표와 공개자료의 기준 시점·출처·비교 한계를 관련 산출물에 반영하기로 승인했다.",Tesla와 Zara의 수직계열화 기반 공급망 및 수요예측 방식 차이와 성과 영향을 비교한다.,Tesla·Zara 케이스 스터디 문서; 케이스 스터디 분석 프레임,modify,5,https://github.com/Abraxaspark91/n8n_termpjt/commit/a79f54f3172beaecdbe161186ec9f2db84cac9c5
