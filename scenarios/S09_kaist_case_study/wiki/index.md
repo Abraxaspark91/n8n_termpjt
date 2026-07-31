@@ -35,3 +35,15 @@
 - 단위경제 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
 - 비교분석 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
 - cross-module → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- Tesla → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- Zara → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 수직계열화 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 공급망 통합 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 수요예측 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 5 Forces → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- VRIO → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 비교분석 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- cross-module → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 근거 수준 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 한계 고지 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 추적성 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
