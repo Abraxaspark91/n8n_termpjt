@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "S10-B00100-r1-1785518213024",
+    "mode": "bench",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-07-31T17:14:08.697Z",
+    "finished_at": "2026-07-31T17:16:53.024Z",
+    "duration_ms": 164327
+  },
+  "trigger": {
+    "source": "bench:S10:B00100",
+    "requestor": "관리계 주무관",
+    "received_at": "2026-07-31T17:14:08.697Z",
+    "scenario_id": "S10-B00100",
+    "domain": "선관위 사무보조"
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T17:14:08.697Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T17:14:08.697Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:S10:B00100",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T17:14:09.006Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "EXISTS"
+    },
+    {
+      "ts": "2026-07-31T17:14:09.262Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 2204
+    },
+    {
+      "ts": "2026-07-31T17:14:33.034Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "FAIL",
+      "escalated": false,
+      "missing_count": 1
+    },
+    {
+      "ts": "2026-07-31T17:14:52.594Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T17:15:02.414Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "FAIL",
+      "escalated": false,
+      "missing_count": 2
+    },
+    {
+      "ts": "2026-07-31T17:15:20.372Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T17:15:28.022Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T17:15:48.009Z",
+      "stage": "quality_review",
+      "actor": "auto(bench)",
+      "decision": "APPROVE"
+    },
+    {
+      "ts": "2026-07-31T17:16:04.244Z",
+      "stage": "devils_advocate",
+      "actor": "DA+MathThreshold",
+      "decision": "PASS",
+      "score": 5,
+      "escalated": false
+    },
+    {
+      "ts": "2026-07-31T17:16:04.270Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": "승인(bench auto)"
+    },
+    {
+      "ts": "2026-07-31T17:16:04.284Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "FINAL_APPROVE"
+    },
+    {
+      "ts": "2026-07-31T17:16:45.996Z",
+      "stage": "wiki_librarian",
+      "actor": "Wiki Librarian agent",
+      "decision": "ENTRY_OK",
+      "files": [
+        "requirements/REQ-20250308-election-support-escalation-execution.md",
+        "decisions.md",
+        "index.md",
+        "logs/runs.md"
+      ]
+    },
+    {
+      "ts": "2026-07-31T17:16:46.310Z",
+      "stage": "wiki_write_prepare",
+      "actor": "system",
+      "files": [
+        "requirements/REQ-20250308-election-support-escalation-execution.md(new)",
+        "decisions.md(update)",
+        "index.md(update)",
+        "logs/runs.md(update)"
+      ]
+    },
+    {
+      "ts": "2026-07-31T17:16:52.988Z",
+      "stage": "wiki_commit",
+      "actor": "GitHub Contents API",
+      "decision": "COMMITTED",
+      "files_committed": 4,
+      "files_failed": 0,
+      "hash": "6a1b3fe"
+    },
+    {
+      "ts": "2026-07-31T17:16:53.006Z",
+      "stage": "quality_assurance",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": ""
+    },
+    {
+      "ts": "2026-07-31T17:16:53.015Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 3
+    },
+    "semantic_audit": {
+      "attempts": 2
+    },
+    "devils_advocate": {
+      "attempts": 1,
+      "score": 5,
+      "verdict": "보완 권고: 승인권자·법적 근거·RACI·SLA·개인정보 통제를 확정하고 전 산출물 간 일관성 및 시행 전 검증을 완료한 뒤 진행하십시오."
+    },
+    "escalated_any": false
+  },
+  "deliverable": {
+    "req_id": "REQ-20250308-election-support-escalation-execution",
+    "requirement": "관리계·지도계 선거 사무 지원 절차와 관련 산출물 갱신 결과를 승인 기록으로 남긴다.",
+    "keywords": [
+      "관리계",
+      "지도계",
+      "선거비용 실사",
+      "민원 대응",
+      "유권해석",
+      "에스컬레이션",
+      "RACI",
+      "SLA",
+      "개인정보 보호",
+      "산출물 갱신",
+      "시행 전 검증"
+    ],
+    "wiki_files": [
+      "scenarios/S10_election_office_support/wiki/requirements/REQ-20250308-election-support-escalation-execution.md",
+      "scenarios/S10_election_office_support/wiki/decisions.md",
+      "scenarios/S10_election_office_support/wiki/index.md",
+      "scenarios/S10_election_office_support/wiki/logs/runs.md"
+    ],
+    "commit_hash": "6a1b3fe",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/6a1b3feaf898fdbfc2f65161cb2a2a2e556a9ff8"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
