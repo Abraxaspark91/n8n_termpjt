@@ -1,2 +1,3 @@
 # Decisions (append-only)
 - [2026-07-25] REQ-SEED-1 | 김PM | SD 반품은 표준 RE 오더 타입 사용으로 결정 | keywords: SD,반품,RE 오더 → requirements/REQ-SEED-1.md
+- [2026-07-25] REQ-20260725-여비교통비-규정준수-자동화 | 총무 박대리 | 구축·실행은 확정하지 않고 여비교통비 증빙 OCR, multi-hop 규정 탐색·연결, 위반 판단, 신뢰도·근거 저장, 사람 검토 전환을 요구사항 및 검토 대상 범위로 승인 (DA: 보완 권고, score 5) | keywords: 여비교통비,규정준수,비용증빙,OCR,multi-hop,규정검색,위반판단,사람검토,감사추적 → requirements/REQ-20260725-여비교통비-규정준수-자동화.md
