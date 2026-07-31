@@ -170,3 +170,22 @@
 - PoC → REQ-20250214-cto-ai-architecture-selection
 - 벤치마크 → REQ-20250214-cto-ai-architecture-selection
 - CTO 의사결정 → REQ-20250214-cto-ai-architecture-selection
+- 전사 AI 아키텍처 → REQ-20250214-cto-ai-architecture-approval-execution-result-v4
+- AWS → REQ-20250214-cto-ai-architecture-approval-execution-result-v4
+- Azure → REQ-20250214-cto-ai-architecture-approval-execution-result-v4
+- GCP → REQ-20250214-cto-ai-architecture-approval-execution-result-v4
+- AI Serving → REQ-20250214-cto-ai-architecture-approval-execution-result-v4
+- GPU 자체구축 → REQ-20250214-cto-ai-architecture-approval-execution-result-v4
+- 클라우드 GPU → REQ-20250214-cto-ai-architecture-approval-execution-result-v4
+- SAP HANA → REQ-20250214-cto-ai-architecture-approval-execution-result-v4
+- Oracle → REQ-20250214-cto-ai-architecture-approval-execution-result-v4
+- TCO → REQ-20250214-cto-ai-architecture-approval-execution-result-v4
+- 보안 → REQ-20250214-cto-ai-architecture-approval-execution-result-v4
+- 규정 준수 → REQ-20250214-cto-ai-architecture-approval-execution-result-v4
+- 데이터 거버넌스 → REQ-20250214-cto-ai-architecture-approval-execution-result-v4
+- PoC → REQ-20250214-cto-ai-architecture-approval-execution-result-v4
+- 벤치마크 → REQ-20250214-cto-ai-architecture-approval-execution-result-v4
+- 운영 책임 → REQ-20250214-cto-ai-architecture-approval-execution-result-v4
+- 라이선스 → REQ-20250214-cto-ai-architecture-approval-execution-result-v4
+- CTO실 → REQ-20250214-cto-ai-architecture-approval-execution-result-v4
+- 산출물 갱신 → REQ-20250214-cto-ai-architecture-approval-execution-result-v4
