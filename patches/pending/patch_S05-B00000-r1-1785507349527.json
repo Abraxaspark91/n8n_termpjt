@@ -1,0 +1,99 @@
+{
+  "schema": "deliverable_patch/v2",
+  "run_id": "S05-B00000-r1-1785507349527",
+  "ts": "2026-07-31T14:16:29.237Z",
+  "req_id": "REQ-20260725-여비교통비-규정준수-자동화",
+  "requestor": "총무 박대리",
+  "source": "bench:S05:B00000",
+  "entry": "bench",
+  "deliverable_dir": "scenarios/S05_ai_expense_automation/deliverables",
+  "decision": "구축 및 실행은 확정하지 않고, 비용증빙 OCR·multi-hop 규정 검색·위반 판단·신뢰도 및 근거 저장·사람 검토 전환을 요구사항과 검토 대상 파이프라인 범위로 승인한다.",
+  "summary": "여비교통비 규정 준수 자동화 요구사항과 검토 대상 OCR·multi-hop 판단 파이프라인 범위를 산출물에 반영한다.",
+  "da_score": 5,
+  "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/faf870feb7bcc772aa8db8f33fe3c581f5821bf8",
+  "wiki_files": [
+    "scenarios/S05_ai_expense_automation/wiki/requirements/REQ-20260725-여비교통비-규정준수-자동화.md",
+    "scenarios/S05_ai_expense_automation/wiki/decisions.md",
+    "scenarios/S05_ai_expense_automation/wiki/index.md",
+    "scenarios/S05_ai_expense_automation/wiki/logs/runs.md"
+  ],
+  "ops": [
+    {
+      "target": "docx",
+      "op": "append_changelog",
+      "bullets": [
+        "비용증빙 OCR 추출 항목과 신뢰도·근거 저장 요구사항을 요구사항 범위로 명시했다.",
+        "multi-hop 규정 탐색·연결 및 관련 조항·예외 조건 수집 단계를 정의했다.",
+        "증빙 정보와 규정 근거를 대조해 위반 여부·적용 규정·판단 근거를 산출하는 검토 대상 파이프라인을 정의했다.",
+        "불확실하거나 규정 해석이 필요한 건은 사람 검토로 전환하도록 범위를 설정했다.",
+        "구축 및 실행을 확정하지 않고 요구사항과 검토 대상 파이프라인 범위로 승인했다."
+      ],
+      "risks": [
+        "저화질·훼손·비정형 증빙으로 인해 OCR 추출 오류가 발생할 수 있다.",
+        "규정 문서의 개정 이력, 예외 조항, 적용 조건을 잘못 연결하면 위반 여부를 오판할 수 있다.",
+        "multi-hop 검색 결과가 충분한 근거를 확보하지 못하거나 관련 없는 조항을 연결할 수 있다.",
+        "자동 판단 결과가 회계·감사 기준과 불일치할 경우 비용 승인 및 사후 감사 리스크가 발생할 수 있다.",
+        "민감한 비용증빙 정보의 저장·처리 과정에서 개인정보 및 접근권한 관리 리스크가 있다."
+      ],
+      "open_questions": [
+        "적용할 여비교통비 규정의 원문, 개정 이력, 적용 조직·직급·지역 범위는 무엇인가?",
+        "OCR로 추출해야 하는 필수 증빙 유형과 필드, 허용 오차 및 최소 인식 신뢰도 기준은 무엇인가?",
+        "위반 판단 결과를 자동 승인·반려까지 연결할지, 검토자에게 판단 보조 정보만 제공할지 결정이 필요한가?",
+        "규정 근거와 판단 결과의 감사 추적을 위해 보관해야 하는 데이터와 보관 기간은 무엇인가?",
+        "OCR 오류 또는 규정 판단 불확실 시 사람 검토로 전환하는 기준과 담당자는 누구인가?",
+        "연동 대상 비용·회계 시스템과 입력·출력 인터페이스가 정해져 있는가?"
+      ],
+      "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/faf870feb7bcc772aa8db8f33fe3c581f5821bf8"
+    },
+    {
+      "target": "xlsx",
+      "op": "append_row",
+      "sheet": "RTM",
+      "values": [
+        "REQ-20260725-여비교통비-규정준수-자동화",
+        "2026-07-31T23:16:14.366+09:00",
+        "총무 박대리",
+        "bench:S05:B00000",
+        "구축 및 실행은 확정하지 않고, 비용증빙 OCR·multi-hop 규정 검색·위반 판단·신뢰도 및 근거 저장·사람 검토 전환을 요구사항과 검토 대상 파이프라인 범위로 승인한다.",
+        "비용증빙 OCR 추출, multi-hop 규정 검색·연결, 위반 판단 및 불확실 건 사람 검토 전환 요구사항 정의",
+        "기능정의서(여비교통비 자동화); 파이프라인 설계서(OCR·규정 검색·위반 판단); 테스트 시나리오(비용증빙 OCR 및 규정 준수 판단)",
+        "add",
+        5,
+        "https://github.com/Abraxaspark91/n8n_termpjt/commit/faf870feb7bcc772aa8db8f33fe3c581f5821bf8"
+      ]
+    },
+    {
+      "target": "pptx",
+      "op": "append_changelog_slide",
+      "title": "변경 승인: 여비교통비 규정 준수 자동화 요구사항",
+      "bullets": [
+        "비용증빙 이미지에서 금액·일자·사용처·교통수단 등 판단 필드를 OCR 추출",
+        "multi-hop 방식으로 규정 조항과 예외 조건을 탐색·연결",
+        "증빙 정보와 규정 근거를 대조해 위반 여부·적용 규정·판단 근거 산출",
+        "OCR 신뢰도와 규정 판단 근거를 저장하고 불확실 건은 사람 검토로 전환",
+        "구축 및 실행이 아닌 요구사항과 검토 대상 파이프라인 범위로 승인"
+      ]
+    },
+    {
+      "target": "docx",
+      "op": "append_after_heading",
+      "heading": "2.1 Multi-hop 규정판독 로직",
+      "text": "본 승인 범위에서는 규정 원문과 개정 이력, 적용 조직·직급·지역 범위를 확인한 뒤 관련 조항과 예외 조건을 multi-hop으로 탐색·연결하는 요구사항을 정의한다. 각 hop의 검색 결과와 인용 근거를 저장하고, 근거가 부족하거나 규정 해석이 필요한 경우 자동 판단을 확정하지 않고 사람 검토 대상으로 전환한다.",
+      "style": null
+    },
+    {
+      "target": "docx",
+      "op": "append_after_heading",
+      "heading": "3. 증빙 OCR 처리 흐름",
+      "text": "OCR 요구사항은 비용증빙 이미지에서 금액·일자·사용처·교통수단 등 여비교통비 판단에 필요한 필드를 추출하고, 증빙 유형별 필수 항목·허용 오차·최소 인식 신뢰도 기준을 검토 대상으로 관리하는 것이다. 추출 결과에는 필드별 신뢰도와 원본 증빙 참조를 함께 저장한다.",
+      "style": null
+    },
+    {
+      "target": "docx",
+      "op": "append_after_heading",
+      "heading": "3.1 예외처리 및 에스컬레이션",
+      "text": "OCR 신뢰도가 기준 미만이거나 규정 검색·판단 근거가 불충분하고 해석이 필요한 건은 자동 승인·반려하지 않고 사람 검토 큐로 전환한다. 검토 전환 기준, 담당자, 감사 추적을 위한 보관 데이터와 보관 기간은 후속 결정 사항으로 남긴다.",
+      "style": null
+    }
+  ]
+}
