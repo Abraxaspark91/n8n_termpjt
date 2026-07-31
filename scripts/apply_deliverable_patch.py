@@ -1,29 +1,26 @@
 # -*- coding: utf-8 -*-
 """
-apply_deliverable_patch.py — W3 산출물 동기화 엔진 v2 (GitHub Actions에서 실행)
+apply_deliverable_patch.py — W3 산출물 동기화 엔진 v3 (GitHub Actions에서 실행)
 
-역할 분리(하이브리드):
-  * 판단(무엇을 어떻게 고칠지)  = n8n 안의 Deliverable Patch Agent(LLM + 상태읽기 툴)
-  * 조립(zip/OOXML 기계적 반영) = 이 스크립트 (지능 0, 조립 100)
+v3 핵심: **시나리오별 산출물 디렉토리** 지원 + **파일명 비의존**.
+Claude Code(Sonnet)가 어떤 파일명·구조로 산출물을 만들어도 대응한다:
+  1) <dir>/manifest.json 이 있으면 그 경로를 신뢰 (계약)
+  2) 없으면 <dir> 안의 *.docx / *.xlsx / *.pptx 를 자동 탐색 (정렬 후 첫 파일)
+  3) 그래도 없으면 기본 파일명으로 부트스트랩 생성 + manifest 기록 (멱등)
 
-입력: deliverables/patches/pending/patch_*.json
-  - deliverable_patch/v2 : ops[] 기반 타깃 편집 (아래 OPS 어휘)
-  - deliverable_patch/v1 : 구버전 append-only — 하위호환 유지(regression 방지)
+패치 스키마:
+  deliverable_patch/v2 : {deliverable_dir?, ops[]}  ← n8n Parse Patch Spec 산출
+  deliverable_patch/v1 : 구버전 루트 파일 append — 하위호환 유지
 
-v2 ops 어휘 (n8n 'Parse Patch Spec' 검증기와 1:1 동일해야 함):
-  docx.append_changelog      {title?, bullets[], risks[], open_questions[], wiki_commit_url?}
-  docx.append_after_heading  {heading, text, style?('List Bullet'|null)}
-  docx.replace_paragraph     {match, new_text}          # match=기존 문단 '전체 텍스트' 정확일치
-  xlsx.append_row            {sheet?='RTM', values[]}
-  xlsx.update_by_req_id      {req_id, column, value}    # RTM에서 req_id 행 탐색, column=헤더명
-  xlsx.update_cell           {sheet?='RTM', cell, value} # 예: cell='F3'
-  pptx.append_changelog_slide{title, bullets[]}
-  pptx.replace_text          {match, new_text}          # 전 슬라이드 문단 전체 텍스트 정확일치
+ops 어휘 (n8n 검증기와 1:1):
+  docx.append_changelog / docx.append_after_heading / docx.replace_paragraph
+  xlsx.append_row(RTM) / xlsx.update_by_req_id / xlsx.update_cell
+  pptx.append_changelog_slide / pptx.replace_text
+RTM 시트는 어떤 워크북에든 없으면 생성한다(기존 시트 불변).
 
-안전 규칙: 삭제 없음 / 미일치 match·미지 op는 skip 후 로그 / 파일 없으면 부트스트랩 생성(멱등).
-적용 후 상태 추출본을 deliverables/state/ 에 내보낸다(n8n 에이전트가 읽는 원천):
-  산출물_설계서.md · 요구사항_추적표.csv · 보고_장표.md
-결과 로그: applied/patch_<name>.result.json
+상태 추출본(에이전트가 읽는 원천, 파일명 고정): <dir>/state/
+  docx.md · rtm.csv · xlsx_overview.md · pptx.md
+CLI: --export-state-all  → 패치 없이 deliverables/*/ 전 디렉토리 상태본만 재생성
 """
 import csv
 import io
@@ -42,62 +39,85 @@ ROOT = Path(__file__).resolve().parents[1]
 DELIV = ROOT / "deliverables"
 PENDING = DELIV / "patches" / "pending"
 APPLIED = DELIV / "patches" / "applied"
-STATE = DELIV / "state"
-
-DOCX = DELIV / "산출물_설계서.docx"
-XLSX = DELIV / "요구사항_추적표.xlsx"
-PPTX = DELIV / "보고_장표.pptx"
 
 RTM_HEADER = ["req_id", "일시", "요청자", "소스", "결정", "요약",
               "영향 산출물", "변경유형", "DA점수", "위키 커밋"]
 MAX_OPS = 12
+DEFAULTS = {"docx": "산출물_설계서.docx", "xlsx": "요구사항_추적표.xlsx", "pptx": "보고_장표.pptx"}
 
 
-# ── 부트스트랩 ────────────────────────────────────────────────────────
-def ensure_docx() -> Document:
-    if DOCX.exists():
-        return Document(str(DOCX))
+# ── 파일 결정: manifest → 자동 탐색 → 부트스트랩 ─────────────────────
+def discover(dirpath: Path, ext: str):
+    hits = sorted(p for p in dirpath.glob(f"*.{ext}") if not p.name.startswith("~$"))
+    return hits[0] if hits else None
+
+
+def resolve_files(dirpath: Path):
+    dirpath.mkdir(parents=True, exist_ok=True)
+    mf_path = dirpath / "manifest.json"
+    mf = {}
+    if mf_path.exists():
+        try:
+            mf = json.loads(mf_path.read_text(encoding="utf-8"))
+        except Exception as e:
+            print(f"warn: manifest unreadable in {dirpath}: {e}")
+    files, changed = {}, False
+    for kind in ("docx", "xlsx", "pptx"):
+        cand = mf.get(kind)
+        p = (dirpath / cand) if cand and (dirpath / cand).exists() else None
+        if p is None:
+            p = discover(dirpath, kind)               # Sonnet이 만든 임의 파일명 대응
+        if p is None:
+            p = dirpath / DEFAULTS[kind]              # 부트스트랩 예정
+        if mf.get(kind) != p.name:
+            mf[kind] = p.name
+            changed = True
+        files[kind] = p
+    mf.setdefault("schema", "deliverable_manifest/v1")
+    mf.setdefault("rtm_sheet", "RTM")
+    if changed or not mf_path.exists():
+        mf_path.write_text(json.dumps(mf, ensure_ascii=False, indent=2), encoding="utf-8")
+    return files, mf
+
+
+def open_docx(p: Path) -> Document:
+    if p.exists():
+        return Document(str(p))
     doc = Document()
-    doc.add_heading("산출물 설계서", level=0)
-    doc.add_paragraph("W3 Agentic Organization 파이프라인이 관리하는 설계 문서입니다. "
-                      "승인된 요건은 '변경 이력' 절과 본문 타깃 편집으로 자동 반영됩니다.")
+    doc.add_heading(p.stem, level=0)
+    doc.add_paragraph("W3 파이프라인 관리 문서. 승인 요건이 자동 반영됩니다.")
     doc.add_heading("변경 이력", level=1)
     return doc
 
 
-def ensure_xlsx():
-    if XLSX.exists():
-        wb = load_workbook(str(XLSX))
-    else:
-        wb = Workbook()
+def open_xlsx(p: Path):
+    wb = load_workbook(str(p)) if p.exists() else Workbook()
+    if not p.exists():
         wb.active.title = "RTM"
-    if "RTM" not in wb.sheetnames:
+    if "RTM" not in wb.sheetnames:                    # Sonnet 시트 구성 무관 — RTM만 보장
         wb.create_sheet("RTM")
     ws = wb["RTM"]
     if ws.max_row == 1 and all(c.value is None for c in ws[1]):
         for col, h in enumerate(RTM_HEADER, start=1):
             ws.cell(row=1, column=col, value=h)
-    return wb, ws
+    return wb
 
 
-def ensure_pptx() -> Presentation:
-    if PPTX.exists():
-        return Presentation(str(PPTX))
+def open_pptx(p: Path) -> Presentation:
+    if p.exists():
+        return Presentation(str(p))
     prs = Presentation()
-    slide = prs.slides.add_slide(prs.slide_layouts[0])
-    slide.shapes.title.text = "W3 프로젝트 보고 장표"
-    if len(slide.placeholders) > 1:
-        slide.placeholders[1].text = "변경사항이 파이프라인에 의해 자동 반영됩니다."
+    s = prs.slides.add_slide(prs.slide_layouts[0])
+    s.shapes.title.text = p.stem
     return prs
 
 
-# ── docx ops ─────────────────────────────────────────────────────────
+# ── ops 구현 (v3.2와 동일 어휘) ──────────────────────────────────────
 def docx_append_changelog(doc, p, op):
     doc.add_heading(op.get("title") or f"[{p.get('req_id', '-')}] {p.get('summary', '')[:60]}", level=2)
     meta = doc.add_paragraph()
-    run = meta.add_run(f"일시 {p.get('ts', '-')} · 요청자 {p.get('requestor', '-')} · "
-                       f"소스 {p.get('source', '-')} · 결정 {p.get('decision', '-')} · DA {p.get('da_score', '-')}")
-    run.font.size = Pt(9)
+    meta.add_run(f"일시 {p.get('ts', '-')} · 요청자 {p.get('requestor', '-')} · 소스 {p.get('source', '-')} "
+                 f"· 결정 {p.get('decision', '-')} · DA {p.get('da_score', '-')}").font.size = Pt(9)
     for b in op.get("bullets") or []:
         doc.add_paragraph(str(b), style="List Bullet")
     if op.get("risks"):
@@ -119,7 +139,7 @@ def docx_append_after_heading(doc, p, op):
         if para.style.name.lower().startswith("heading") and para.text.strip() == target:
             style = op.get("style") if op.get("style") in ("List Bullet", "Intense Quote") else None
             new = doc.add_paragraph(str(op.get("text", "")), style=style)
-            para._p.addnext(new._p)          # heading 바로 뒤로 이동
+            para._p.addnext(new._p)
             return "applied"
     return f"skipped: heading not found ({target})"
 
@@ -135,9 +155,9 @@ def docx_replace_paragraph(doc, p, op):
     return "skipped: paragraph not found"
 
 
-# ── xlsx ops ─────────────────────────────────────────────────────────
 def xlsx_append_row(wb, p, op):
-    ws = wb[op.get("sheet") or "RTM"] if (op.get("sheet") or "RTM") in wb.sheetnames else wb["RTM"]
+    sheet = op.get("sheet") or "RTM"
+    ws = wb[sheet] if sheet in wb.sheetnames else wb["RTM"]
     ws.append([("" if v is None else v) for v in (op.get("values") or [])])
     return "applied"
 
@@ -167,7 +187,6 @@ def xlsx_update_cell(wb, p, op):
         return f"skipped: bad cell ({e})"
 
 
-# ── pptx ops ─────────────────────────────────────────────────────────
 def pptx_append_changelog_slide(prs, p, op):
     layout = prs.slide_layouts[1] if len(prs.slide_layouts) > 1 else prs.slide_layouts[0]
     slide = prs.slides.add_slide(layout)
@@ -217,12 +236,11 @@ OPS = {
 
 
 def v1_to_ops(p):
-    """v1 패치(하위호환)를 baseline 3-ops로 변환."""
     ads = p.get("affected_deliverables") or [{}]
     return [
-        {"target": "docx", "op": "append_changelog",
-         "bullets": p.get("changes", []), "risks": p.get("risks", []),
-         "open_questions": p.get("open_questions", []), "wiki_commit_url": p.get("wiki_commit_url", "")},
+        {"target": "docx", "op": "append_changelog", "bullets": p.get("changes", []),
+         "risks": p.get("risks", []), "open_questions": p.get("open_questions", []),
+         "wiki_commit_url": p.get("wiki_commit_url", "")},
         {"target": "xlsx", "op": "append_row", "sheet": "RTM", "values": [
             p.get("req_id", "-"), p.get("ts", "-"), p.get("requestor", "-"), p.get("source", "-"),
             p.get("decision", "-"), (p.get("summary", "") or "")[:200],
@@ -236,33 +254,48 @@ def v1_to_ops(p):
     ]
 
 
-# ── 상태 추출본 (n8n 에이전트가 읽는 원천) ────────────────────────────
-def export_state(doc, wb, prs):
-    STATE.mkdir(parents=True, exist_ok=True)
+# ── 상태 추출본 ───────────────────────────────────────────────────────
+def export_state(dirpath: Path, doc, wb, prs):
+    st = dirpath / "state"
+    st.mkdir(parents=True, exist_ok=True)
     lines = []
     for para in doc.paragraphs:
-        st, tx = para.style.name, para.text
+        s, tx = para.style.name, para.text
         if not tx.strip():
             continue
-        if st == "Title":
+        if s == "Title":
             lines.append(f"# {tx}")
-        elif st.lower().startswith("heading"):
+        elif s.lower().startswith("heading"):
             try:
-                lv = int(st.split()[-1])
+                lv = int(s.split()[-1])
             except Exception:
                 lv = 1
             lines.append("#" * min(6, lv + 1) + f" {tx}")
-        elif st == "List Bullet":
+        elif s == "List Bullet":
             lines.append(f"- {tx}")
         else:
             lines.append(tx)
-    (STATE / "산출물_설계서.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (st / "docx.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     buf = io.StringIO()
     w = csv.writer(buf)
-    for row in wb["RTM"].iter_rows(values_only=True):
-        w.writerow(["" if v is None else v for v in row])
-    (STATE / "요구사항_추적표.csv").write_text(buf.getvalue(), encoding="utf-8")
+    if "RTM" in wb.sheetnames:
+        for row in wb["RTM"].iter_rows(values_only=True):
+            w.writerow(["" if v is None else v for v in row])
+    else:
+        w.writerow(RTM_HEADER)
+    (st / "rtm.csv").write_text(buf.getvalue(), encoding="utf-8")
+
+    ov = []
+    for name in wb.sheetnames:
+        ws = wb[name]
+        ov.append(f"## Sheet: {name} ({ws.max_row}행 × {ws.max_column}열)")
+        for r, row in enumerate(ws.iter_rows(values_only=True), start=1):
+            if r > 5:
+                ov.append("…")
+                break
+            ov.append("| " + " | ".join(str(v)[:24] if v is not None else "" for v in row[:8]))
+    (st / "xlsx_overview.md").write_text("\n".join(ov) + "\n", encoding="utf-8")
 
     out = []
     for i, slide in enumerate(prs.slides, start=1):
@@ -273,19 +306,46 @@ def export_state(doc, wb, prs):
                 for para in shape.text_frame.paragraphs:
                     if para.text.strip():
                         out.append(f"- {para.text}")
-    (STATE / "보고_장표.md").write_text("\n".join(out) + "\n", encoding="utf-8")
+    (st / "pptx.md").write_text("\n".join(out) + "\n", encoding="utf-8")
+
+
+def load_bundle(dirpath: Path):
+    files, _ = resolve_files(dirpath)
+    return files, {"doc": open_docx(files["docx"]), "wb": open_xlsx(files["xlsx"]), "prs": open_pptx(files["pptx"])}
+
+
+def save_bundle(files, ctx):
+    ctx["doc"].save(str(files["docx"]))
+    ctx["wb"].save(str(files["xlsx"]))
+    ctx["prs"].save(str(files["pptx"]))
+
+
+def export_state_all():
+    n = 0
+    for d in sorted(p for p in DELIV.iterdir() if p.is_dir() and p.name not in ("patches",)):
+        if not ((d / "manifest.json").exists() or any(discover(d, e) for e in ("docx", "xlsx", "pptx"))):
+            continue
+        files, ctx = load_bundle(d)
+        export_state(d, ctx["doc"], ctx["wb"], ctx["prs"])
+        n += 1
+        print(f"state exported: {d.name}")
+    print(f"export-state-all: {n} dir(s)")
 
 
 def main() -> int:
+    DELIV.mkdir(parents=True, exist_ok=True)
+    if "--export-state-all" in sys.argv:
+        export_state_all()
+        return 0
+
     PENDING.mkdir(parents=True, exist_ok=True)
     APPLIED.mkdir(parents=True, exist_ok=True)
     patches = sorted(PENDING.glob("patch_*.json"))
+    if not patches:
+        print("no pending patches")
+        return 0
 
-    doc = ensure_docx()
-    wb, ws = ensure_xlsx()
-    prs = ensure_pptx()
-    ctx = {"doc": doc, "wb": wb, "prs": prs}
-
+    bundles = {}   # dir → (files, ctx)  — 여러 패치가 같은 디렉토리를 공유해도 1회 로드
     done = []
     for path in patches:
         try:
@@ -295,15 +355,23 @@ def main() -> int:
             continue
         schema = p.get("schema")
         if schema == "deliverable_patch/v2":
-            ops = p.get("ops") or []
+            ops = (p.get("ops") or [])[:MAX_OPS]
+            dirpath = ROOT / str(p.get("deliverable_dir") or "deliverables/live")
         elif schema == "deliverable_patch/v1":
             ops = v1_to_ops(p)
+            dirpath = DELIV                                   # v1 루트 파일 하위호환
         else:
             print(f"skip (unknown schema): {path.name}")
             continue
+        if not str(dirpath.resolve()).startswith(str(DELIV.resolve())) and dirpath != DELIV:
+            print(f"skip (dir outside deliverables/): {path.name}")
+            continue
+        if dirpath not in bundles:
+            bundles[dirpath] = load_bundle(dirpath)
+        files, ctx = bundles[dirpath]
 
         results = []
-        for op in ops[:MAX_OPS]:
+        for op in ops:
             key = (op.get("target"), op.get("op"))
             if key not in OPS:
                 results.append({"op": op, "result": f"skipped: unknown op {key}"})
@@ -314,14 +382,12 @@ def main() -> int:
             except Exception as e:
                 results.append({"op": op, "result": f"skipped: error {e}"})
         done.append((path, results))
-        print(f"processed {path.name}: "
+        print(f"processed {path.name} → {dirpath.name}: "
               f"{sum(1 for r in results if r['result'] == 'applied')}/{len(results)} ops applied")
 
-    if done:
-        doc.save(str(DOCX))
-        wb.save(str(XLSX))
-        prs.save(str(PPTX))
-    export_state(doc, wb, prs)          # 패치가 없어도 상태본은 최신화(멱등)
+    for dirpath, (files, ctx) in bundles.items():
+        save_bundle(files, ctx)
+        export_state(dirpath if dirpath != DELIV else DELIV, ctx["doc"], ctx["wb"], ctx["prs"])
     for path, results in done:
         (APPLIED / (path.stem + ".result.json")).write_text(
             json.dumps(results, ensure_ascii=False, indent=2), encoding="utf-8")
