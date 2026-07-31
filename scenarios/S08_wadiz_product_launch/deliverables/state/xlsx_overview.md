@@ -17,8 +17,9 @@
 | 핵심기능 | 차별점 전달 | 온디바이스 프라이버시 보호 | 스펙 인포그래픽
 | 팀소개 | 신뢰 형성 | 개발 히스토리 | 사진+텍스트
 …
-## Sheet: RTM (4행 × 10열)
+## Sheet: RTM (5행 × 10열)
 | req_id | 일시 | 요청자 | 소스 | 결정 | 요약 | 영향 산출물 | 변경유형
 | REQ-20250308-wadiz-journ | 2026-08-01T01:23:21.073+ | PO | bench:S08:B00000 | 원가·마진·생산능력·배송·AI 기능·개인정보 | AI driven journal record | 와디즈 캠페인 기획서; 리워드 구성안; 얼리 | modify/add
 | REQ-20250308-wadiz-appro | 2026-08-01T01:26:40.846+ | PO | bench:S08:B10000 | 리워드·얼리버드·스토리 페이지 및 관련 문서 | AI driven journal record | 와디즈 캠페인 기획서; 리워드 구성안; 얼리 | modify
 | REQ-20250308-wadiz-launc | 2026-08-01T01:31:33.221+ | PO | bench:S08:B01000 | 승인(bench auto)을 런칭 요건 반영 | AI driven journal record | 와디즈 런칭 기획서; 와디즈 스토리 페이지  | modify
+| REQ-20250308-wadiz-appro | 2026-08-01T01:35:23.095+ | PO | bench:S08:B00100 | 와디즈 런칭 방향과 영향 산출물 갱신 범위는 | AI driven journal record | 와디즈 캠페인 기획서; 리워드 구성안; 얼리 | modify
