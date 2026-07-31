@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "D01-T2-r1-1785460911654",
+    "mode": "bench",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-07-31T01:19:54.337Z",
+    "finished_at": "2026-07-31T01:21:51.654Z",
+    "duration_ms": 117317
+  },
+  "trigger": {
+    "source": "bench:T2",
+    "requestor": "이과장",
+    "received_at": "2026-07-31T01:19:54.337Z",
+    "scenario_id": "D01-T2",
+    "domain": "SAP ERP"
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T01:19:54.337Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T01:19:54.337Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:T2",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T01:19:54.614Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "EXISTS"
+    },
+    {
+      "ts": "2026-07-31T01:19:54.873Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 1407
+    },
+    {
+      "ts": "2026-07-31T01:20:05.208Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "FAIL",
+      "escalated": false,
+      "missing_count": 4
+    },
+    {
+      "ts": "2026-07-31T01:20:14.908Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T01:20:17.732Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T01:20:36.208Z",
+      "stage": "quality_review",
+      "actor": "auto(bench)",
+      "decision": "APPROVE"
+    },
+    {
+      "ts": "2026-07-31T01:20:56.894Z",
+      "stage": "devils_advocate",
+      "actor": "DA+MathThreshold",
+      "decision": "PASS",
+      "score": 5,
+      "escalated": false
+    },
+    {
+      "ts": "2026-07-31T01:20:56.919Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "FINAL_APPROVE"
+    },
+    {
+      "ts": "2026-07-31T01:21:44.360Z",
+      "stage": "wiki_librarian",
+      "actor": "Wiki Librarian agent",
+      "decision": "ENTRY_OK",
+      "files": [
+        "requirements/REQ-20250308-mm-mrp-safety-stock-fi-linkage.md",
+        "decisions.md",
+        "index.md",
+        "logs/runs.md"
+      ]
+    },
+    {
+      "ts": "2026-07-31T01:21:44.839Z",
+      "stage": "wiki_write_prepare",
+      "actor": "system",
+      "files": [
+        "requirements/REQ-20250308-mm-mrp-safety-stock-fi-linkage.md(new)",
+        "decisions.md(update)",
+        "index.md(update)",
+        "logs/runs.md(update)"
+      ]
+    },
+    {
+      "ts": "2026-07-31T01:21:51.628Z",
+      "stage": "wiki_commit",
+      "actor": "GitHub Contents API",
+      "decision": "COMMITTED",
+      "files_committed": 4,
+      "files_failed": 0,
+      "hash": "f2d0dd9"
+    },
+    {
+      "ts": "2026-07-31T01:21:51.646Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 2
+    },
+    "semantic_audit": {
+      "attempts": 1
+    },
+    "devils_advocate": {
+      "attempts": 1,
+      "score": 5,
+      "verdict": "임계값은 통과했으나 회계 개념과 범위를 확정하고 크로스모듈·컴플라이언스·운영 통제를 보완한 뒤 진행할 것을 권고한다."
+    },
+    "escalated_any": false
+  },
+  "deliverable": {
+    "req_id": "REQ-20250308-mm-mrp-safety-stock-fi-linkage",
+    "requirement": "MM 자재별 안전재고를 MRP에 반영하고 재고부족과 FI 대손충당 로직 간 연계 타당성 및 산출물 영향을 정의한다.",
+    "keywords": [
+      "MM",
+      "MRP",
+      "FI",
+      "안전재고",
+      "재고부족",
+      "대손충당",
+      "재고평가손실",
+      "MM-FI 연계",
+      "계정결정",
+      "통합테스트"
+    ],
+    "wiki_files": [
+      "wiki/requirements/REQ-20250308-mm-mrp-safety-stock-fi-linkage.md",
+      "wiki/decisions.md",
+      "wiki/index.md",
+      "wiki/logs/runs.md"
+    ],
+    "commit_hash": "f2d0dd9",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/f2d0dd95eb30a52b71755daa1573c511a570c744"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
