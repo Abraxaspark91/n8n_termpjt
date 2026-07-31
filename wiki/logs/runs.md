@@ -5,3 +5,4 @@
 - [2026-07-31T03:23:54.116Z] REQ-20250308-sd-returns-re-order | source=bench:T1 | mode=bench | requestor=김PM
 - [2026-07-31T05:46:00.658Z] REQ-20250308-sd-mm-fi-update | source=teams(demo digest) | mode=live | requestor=Teams 24h digest
 - [2026-07-31T05:50:57.430Z] REQ-20250308-sd-mm-fi-update-returns-641 | source=teams(daily digest) | mode=live | requestor=김PM, 박선임
+- [2026-07-31T07:08:25.438Z] REQ-20250308-sd-fi-w102-kna1 | source=outlook(demo, 첨부파일 파싱됨) | mode=live | requestor=홍길동(고객사) <abraxaspark91@gmail.com>
