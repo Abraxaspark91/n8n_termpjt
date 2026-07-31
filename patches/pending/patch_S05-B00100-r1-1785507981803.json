@@ -1,0 +1,95 @@
+{
+  "schema": "deliverable_patch/v2",
+  "run_id": "S05-B00100-r1-1785507981803",
+  "ts": "2026-07-31T14:27:02.565Z",
+  "req_id": "REQ-20260725-여비교통비-규정준수-자동화",
+  "requestor": "총무 박대리",
+  "source": "bench:S05:B00100",
+  "entry": "bench",
+  "deliverable_dir": "scenarios/S05_ai_expense_automation/deliverables",
+  "decision": "요구사항 정의 및 검토 대상 파이프라인 변경을 승인하며, 실제 구축·운영·자동 승인/반려·비용/회계 시스템 연동은 후속 결정 사항으로 남긴다.",
+  "summary": "여비교통비 증빙 OCR·multi-hop 규정 판단 파이프라인과 검토 범위를 산출물에 반영한다.",
+  "da_score": 5,
+  "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/661c8547b17879fa115d056cdbeecda4f7b0e686",
+  "wiki_files": [
+    "scenarios/S05_ai_expense_automation/wiki/requirements/REQ-20260725-여비교통비-규정준수-자동화.md",
+    "scenarios/S05_ai_expense_automation/wiki/decisions.md",
+    "scenarios/S05_ai_expense_automation/wiki/index.md",
+    "scenarios/S05_ai_expense_automation/wiki/logs/runs.md"
+  ],
+  "ops": [
+    {
+      "target": "docx",
+      "op": "append_changelog",
+      "bullets": [
+        "비용증빙 OCR 필드 추출, multi-hop 규정·예외 탐색 및 근거 대조 흐름을 요구사항 정의에 반영",
+        "OCR 신뢰도와 규정 판단 불확실성에 따른 사람 검토 전환 조건 및 감사 추적 저장 범위를 명시",
+        "현재 범위를 요구사항 정의와 검토 대상 파이프라인으로 한정하고 실제 구축·운영·자동 승인/반려·비용/회계 시스템 연동은 후속 결정 사항으로 관리"
+      ],
+      "risks": [
+        "저화질·훼손·비정형 증빙으로 OCR 추출 오류가 발생할 수 있음",
+        "규정 개정 이력·예외 조항·조직·직급·지역별 조건 연결 오류로 위반 여부를 오판할 수 있음",
+        "multi-hop 검색 실패 또는 관련 없는 조항 연결로 판단 근거가 부족할 수 있음",
+        "자동 판단 결과가 회계·감사 기준과 불일치할 경우 승인 및 사후 감사 리스크가 발생할 수 있음",
+        "개인정보·민감 정보 처리 과정에서 접근권한과 보관 관리 리스크가 발생할 수 있음",
+        "사람 검토 전환 기준 미정으로 처리 지연과 판단 일관성 저하가 발생할 수 있음"
+      ],
+      "open_questions": [
+        "적용할 여비교통비 규정 원문과 개정 이력, 적용 조직·직급·지역 범위는 무엇인가?",
+        "OCR 대상 증빙 유형, 필수 추출 필드, 허용 오차 및 최소 인식 신뢰도 기준은 무엇인가?",
+        "위반 판단을 자동 승인·반려까지 연결할 것인가, 아니면 판단 보조 정보만 제공할 것인가?",
+        "규정 근거와 판단 결과의 감사 추적을 위해 어떤 데이터를 얼마 동안 보관할 것인가?",
+        "OCR 오류 또는 규정 판단 불확실 시 사람 검토로 전환하는 기준과 담당자는 누구인가?",
+        "연동할 비용·회계 시스템과 입력·출력 인터페이스가 필요한가?"
+      ],
+      "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/661c8547b17879fa115d056cdbeecda4f7b0e686"
+    },
+    {
+      "target": "xlsx",
+      "op": "append_row",
+      "sheet": "RTM",
+      "values": [
+        "REQ-20260725-여비교통비-규정준수-자동화",
+        "2026-07-31T23:26:47.593+09:00",
+        "총무 박대리",
+        "bench:S05:B00100",
+        "요구사항 정의 및 검토 대상 파이프라인 변경을 승인하며, 실제 구축·운영·자동 승인/반려·비용/회계 시스템 연동은 후속 결정 사항으로 남긴다.",
+        "비용증빙 OCR, multi-hop 규정·예외 탐색, 근거 대조, 불확실성 사람 검토 전환 및 감사 추적 저장 요구사항 반영",
+        "기능정의서; 파이프라인 설계서; 테스트 시나리오; 요구사항 추적표; 산출물_설계서; 보고_장표",
+        "modify",
+        5,
+        "https://github.com/Abraxaspark91/n8n_termpjt/commit/661c8547b17879fa115d056cdbeecda4f7b0e686"
+      ]
+    },
+    {
+      "target": "pptx",
+      "op": "append_changelog_slide",
+      "title": "변경 이력: OCR·규정 준수 판단 범위",
+      "bullets": [
+        "증빙 입력 → OCR 추출 → 규정 조항·예외 multi-hop 탐색 → 근거 대조 → 판단·감사 추적 저장 → 필요 시 사람 검토 흐름 반영",
+        "OCR 오류·규정 해석 불확실성·검색 실패 시 사람 검토 전환 기준을 검토 범위에 추가",
+        "실제 구축·운영·자동 승인/반려·비용/회계 시스템 연동은 후속 결정 사항으로 유지"
+      ]
+    },
+    {
+      "target": "docx",
+      "op": "replace_paragraph",
+      "match": "한도 초과 시 자동 반려 및 사유 안내",
+      "new_text": "한도 초과 여부, 적용 규정 및 판단 근거를 산출하며 자동 승인·반려 연계 여부는 후속 결정 사항으로 관리한다."
+    },
+    {
+      "target": "docx",
+      "op": "append_after_heading",
+      "heading": "3. 증빙 OCR 처리 흐름",
+      "text": "증빙 입력부터 판단 결과 저장까지의 검토 대상 파이프라인은 증빙 입력 → OCR 추출 → 규정 조항·예외 조건의 multi-hop 탐색·연결 → OCR 결과와 규정 근거 대조 → 위반 여부·적용 규정·판단 근거 및 감사 추적 저장 → 필요 시 사람 검토 전환의 순서로 정의한다. OCR은 금액, 일자, 사용처, 교통수단 등 필수 필드를 추출하고 필드별 신뢰도를 저장한다. OCR 불확실성, 저화질·비정형 증빙, 규정 해석 필요, 검색 실패 또는 판단 근거 부족 시 사람 검토로 전환한다.",
+      "style": null
+    },
+    {
+      "target": "docx",
+      "op": "append_after_heading",
+      "heading": "5. 기대효과 및 리스크",
+      "text": "본 변경의 범위는 요구사항 정의와 검토 대상 파이프라인으로 한정한다. 실제 구축·운영, 자동 승인·반려, 비용·회계 시스템 연동은 후속 결정 사항으로 남긴다. 규정 데이터 거버넌스, 개정 이력 관리, OCR 기준, 증빙 보관·접근권한, 승인 워크플로 및 연동 인터페이스는 오픈 질문으로 관리한다.",
+      "style": null
+    }
+  ]
+}
