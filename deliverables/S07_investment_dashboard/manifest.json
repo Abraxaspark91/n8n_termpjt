@@ -1,0 +1,9 @@
+{
+  "schema": "deliverable_manifest/v1",
+  "scenario_id": "S07",
+  "docx": "투자대시보드_기획서.docx",
+  "xlsx": "지표정의_화면구성_시트.xlsx",
+  "pptx": "투자대시보드_기획_덱.pptx",
+  "rtm_sheet": "RTM",
+  "notes": "seed by claude-code"
+}
