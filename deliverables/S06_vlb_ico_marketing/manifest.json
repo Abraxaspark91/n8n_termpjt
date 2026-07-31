@@ -1,0 +1,9 @@
+{
+  "schema": "deliverable_manifest/v1",
+  "scenario_id": "S06",
+  "docx": "VLB_ICO_실행계획서.docx",
+  "xlsx": "채널전략_일정_시트.xlsx",
+  "pptx": "VLB_ICO_IR_덱.pptx",
+  "rtm_sheet": "RTM",
+  "notes": "seed by claude-code"
+}

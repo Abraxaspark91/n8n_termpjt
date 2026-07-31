@@ -1,0 +1,9 @@
+{
+  "schema": "deliverable_manifest/v1",
+  "scenario_id": "S03",
+  "docx": "SAP_FI_연결결산_대사효율화_설계서.docx",
+  "xlsx": "대사현황_키매핑_시트.xlsx",
+  "pptx": "FI_대사효율화_개선안_덱.pptx",
+  "rtm_sheet": "RTM",
+  "notes": "seed by claude-code"
+}

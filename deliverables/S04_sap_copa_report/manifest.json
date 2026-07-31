@@ -1,0 +1,9 @@
+{
+  "schema": "deliverable_manifest/v1",
+  "scenario_id": "S04",
+  "docx": "COPA_마케팅퍼널_손익_설계서.docx",
+  "xlsx": "계정매핑_퍼널단계_시트.xlsx",
+  "pptx": "COPA_리포트_목업_덱.pptx",
+  "rtm_sheet": "RTM",
+  "notes": "seed by claude-code"
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "deliverable_manifest/v1",
+  "scenario_id": "S01",
+  "docx": "전사AI_플랫폼_EA_정의서.docx",
+  "xlsx": "TCO_벤더평가_시트.xlsx",
+  "pptx": "EA_킥오프_덱.pptx",
+  "rtm_sheet": "RTM",
+  "notes": "seed by claude-code"
+}
