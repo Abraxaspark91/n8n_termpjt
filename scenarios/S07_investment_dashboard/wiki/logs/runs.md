@@ -4,3 +4,4 @@
 - [2026-07-31T15:07:39.643Z] REQ-20260725-investment-dashboard-macro-fundamentals | source=bench:S07:B01000 | mode=bench | requestor=리서치 담당
 - [2026-07-31T15:10:43.286Z] REQ-20260725-investment-dashboard-macro-fundamentals | source=bench:S07:B00100 | mode=bench | requestor=리서치 담당
 - [2026-07-31T15:41:33.917Z] REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update | source=bench:S07:B00010 | mode=bench | requestor=리서치 담당
+- [2026-07-31T16:19:42.050Z] REQ-20260725-investment-dashboard-approval-execution | source=bench:S07:B00001 | mode=bench | requestor=리서치 담당
