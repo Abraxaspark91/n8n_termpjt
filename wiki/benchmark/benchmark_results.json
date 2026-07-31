@@ -1,0 +1,257 @@
+{
+  "summary": {
+    "generated_at": "2026-07-31T01:16:19.374Z",
+    "total_runs": 5,
+    "overall_success_rate": 0,
+    "robust_cases": 0,
+    "flaky_cases": 0,
+    "total_cases": 5,
+    "escalation_runs": 0,
+    "avg_duration_ms": null
+  },
+  "perScenario": [
+    {
+      "scenario_id": "D01-T1",
+      "domain": "SAP ERP",
+      "scenario_type": "T1",
+      "k": 1,
+      "successes": 0,
+      "failures": {
+        "pipeline_crashed": 1
+      },
+      "durations": [],
+      "recalls": [
+        0
+      ],
+      "rate": 0,
+      "robust": false,
+      "flaky": false,
+      "avg_duration_ms": null,
+      "avg_recall": 0
+    },
+    {
+      "scenario_id": "D01-T2",
+      "domain": "SAP ERP",
+      "scenario_type": "T2",
+      "k": 1,
+      "successes": 0,
+      "failures": {
+        "pipeline_crashed": 1
+      },
+      "durations": [],
+      "recalls": [
+        0
+      ],
+      "rate": 0,
+      "robust": false,
+      "flaky": false,
+      "avg_duration_ms": null,
+      "avg_recall": 0
+    },
+    {
+      "scenario_id": "D01-T3",
+      "domain": "SAP ERP",
+      "scenario_type": "T3",
+      "k": 1,
+      "successes": 0,
+      "failures": {
+        "pipeline_crashed": 1
+      },
+      "durations": [],
+      "recalls": [
+        0
+      ],
+      "rate": 0,
+      "robust": false,
+      "flaky": false,
+      "avg_duration_ms": null,
+      "avg_recall": 0
+    },
+    {
+      "scenario_id": "D01-T4",
+      "domain": "SAP ERP",
+      "scenario_type": "T4",
+      "k": 1,
+      "successes": 0,
+      "failures": {
+        "pipeline_crashed": 1
+      },
+      "durations": [],
+      "recalls": [
+        0
+      ],
+      "rate": 0,
+      "robust": false,
+      "flaky": false,
+      "avg_duration_ms": null,
+      "avg_recall": 0
+    },
+    {
+      "scenario_id": "D01-T5",
+      "domain": "SAP ERP",
+      "scenario_type": "T5",
+      "k": 1,
+      "successes": 0,
+      "failures": {
+        "pipeline_crashed": 1
+      },
+      "durations": [],
+      "recalls": [
+        0
+      ],
+      "rate": 0,
+      "robust": false,
+      "flaky": false,
+      "avg_duration_ms": null,
+      "avg_recall": 0
+    }
+  ],
+  "perDomain": [
+    {
+      "key": "SAP ERP",
+      "k": 5,
+      "successes": 0,
+      "rate": 0
+    }
+  ],
+  "perType": [
+    {
+      "key": "T1",
+      "k": 1,
+      "successes": 0,
+      "rate": 0
+    },
+    {
+      "key": "T2",
+      "k": 1,
+      "successes": 0,
+      "rate": 0
+    },
+    {
+      "key": "T3",
+      "k": 1,
+      "successes": 0,
+      "rate": 0
+    },
+    {
+      "key": "T4",
+      "k": 1,
+      "successes": 0,
+      "rate": 0
+    },
+    {
+      "key": "T5",
+      "k": 1,
+      "successes": 0,
+      "rate": 0
+    }
+  ],
+  "pareto": [
+    {
+      "cause": "pipeline_crashed",
+      "count": 5
+    }
+  ],
+  "runs": [
+    {
+      "scenario_id": "D01-T1",
+      "domain": "SAP ERP",
+      "scenario_type": "T1",
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": false,
+      "failures": [
+        "pipeline_crashed"
+      ],
+      "metrics": {
+        "gold_recall": 0,
+        "hallucinated": [],
+        "entities_count": 0,
+        "attempts": null,
+        "da_score": null,
+        "escalated": false,
+        "duration_ms": null
+      }
+    },
+    {
+      "scenario_id": "D01-T2",
+      "domain": "SAP ERP",
+      "scenario_type": "T2",
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": false,
+      "failures": [
+        "pipeline_crashed"
+      ],
+      "metrics": {
+        "gold_recall": 0,
+        "hallucinated": [],
+        "entities_count": 0,
+        "attempts": null,
+        "da_score": null,
+        "escalated": false,
+        "duration_ms": null
+      }
+    },
+    {
+      "scenario_id": "D01-T3",
+      "domain": "SAP ERP",
+      "scenario_type": "T3",
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": false,
+      "failures": [
+        "pipeline_crashed"
+      ],
+      "metrics": {
+        "gold_recall": 0,
+        "hallucinated": [],
+        "entities_count": 0,
+        "attempts": null,
+        "da_score": null,
+        "escalated": false,
+        "duration_ms": null
+      }
+    },
+    {
+      "scenario_id": "D01-T4",
+      "domain": "SAP ERP",
+      "scenario_type": "T4",
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": false,
+      "failures": [
+        "pipeline_crashed"
+      ],
+      "metrics": {
+        "gold_recall": 0,
+        "hallucinated": [],
+        "entities_count": 0,
+        "attempts": null,
+        "da_score": null,
+        "escalated": false,
+        "duration_ms": null
+      }
+    },
+    {
+      "scenario_id": "D01-T5",
+      "domain": "SAP ERP",
+      "scenario_type": "T5",
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": false,
+      "failures": [
+        "pipeline_crashed"
+      ],
+      "metrics": {
+        "gold_recall": 0,
+        "hallucinated": [],
+        "entities_count": 0,
+        "attempts": null,
+        "da_score": null,
+        "escalated": false,
+        "duration_ms": null
+      }
+    }
+  ]
+}
