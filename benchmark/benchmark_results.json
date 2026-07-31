@@ -1,0 +1,406 @@
+{
+  "summary": {
+    "generated_at": "2026-07-31T12:36:29.498Z",
+    "total_runs": 4,
+    "overall_success_rate": 0.5,
+    "robust_cases": 2,
+    "flaky_cases": 0,
+    "total_cases": 4,
+    "decoy_leak_runs": 0,
+    "escalation_runs": 0,
+    "patch_spec_valid_rate": 0.75,
+    "avg_patch_targeted": 2.8,
+    "avg_duration_ms": 121838
+  },
+  "perCase": [
+    {
+      "scenario_id": "S01-B00000",
+      "sid": "S01",
+      "domain": "Enterprise Architecture",
+      "scenario_type": "B00000",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        133046
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S01-B01000",
+      "sid": "S01",
+      "domain": "Enterprise Architecture",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 0,
+      "failures": {
+        "hallucinated_entities": 1,
+        "patch_spec_invalid": 1
+      },
+      "durations": [
+        113628
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 0,
+      "robust": false,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S01-B10101",
+      "sid": "S01",
+      "domain": "Enterprise Architecture",
+      "scenario_type": "B10101",
+      "branch_bits": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        136097
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S01-B11111",
+      "sid": "S01",
+      "domain": "Enterprise Architecture",
+      "scenario_type": "B11111",
+      "branch_bits": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "k": 1,
+      "successes": 0,
+      "failures": {
+        "hallucinated_entities": 1
+      },
+      "durations": [
+        104580
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 0,
+      "robust": false,
+      "flaky": false,
+      "avg_recall": 1
+    }
+  ],
+  "perScenario": [
+    {
+      "key": "S01",
+      "label": "Enterprise Architecture",
+      "k": 4,
+      "successes": 2,
+      "rate": 0.5
+    }
+  ],
+  "perBranch": [
+    {
+      "key": "B01000",
+      "label": "B01000",
+      "k": 1,
+      "successes": 0,
+      "rate": 0
+    },
+    {
+      "key": "B11111",
+      "label": "B11111",
+      "k": 1,
+      "successes": 0,
+      "rate": 0
+    },
+    {
+      "key": "B00000",
+      "label": "B00000",
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "key": "B10101",
+      "label": "B10101",
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    }
+  ],
+  "perFactor": [
+    {
+      "factor": "F1 잡담 혼입",
+      "idx": 0,
+      "k_on": 2,
+      "k_off": 2,
+      "rate_on": 0.5,
+      "rate_off": 0.5,
+      "delta": 0
+    },
+    {
+      "factor": "F2 이메일 첨부",
+      "idx": 1,
+      "k_on": 2,
+      "k_off": 2,
+      "rate_on": 0,
+      "rate_off": 1,
+      "delta": -1
+    },
+    {
+      "factor": "F3 위키 Bloat",
+      "idx": 2,
+      "k_on": 2,
+      "k_off": 2,
+      "rate_on": 0.5,
+      "rate_off": 0.5,
+      "delta": 0
+    },
+    {
+      "factor": "F4 AI 저밀도 자료",
+      "idx": 3,
+      "k_on": 1,
+      "k_off": 3,
+      "rate_on": 0,
+      "rate_off": 0.6666666666666666,
+      "delta": -0.667
+    },
+    {
+      "factor": "F5 Stale 정보",
+      "idx": 4,
+      "k_on": 2,
+      "k_off": 2,
+      "rate_on": 0.5,
+      "rate_off": 0.5,
+      "delta": 0
+    }
+  ],
+  "scenarioFactor": [
+    {
+      "sid": "S01",
+      "factor": 1,
+      "k": 2,
+      "successes": 0,
+      "rate": 0
+    },
+    {
+      "sid": "S01",
+      "factor": 0,
+      "k": 2,
+      "successes": 1,
+      "rate": 0.5
+    },
+    {
+      "sid": "S01",
+      "factor": 2,
+      "k": 2,
+      "successes": 1,
+      "rate": 0.5
+    },
+    {
+      "sid": "S01",
+      "factor": 4,
+      "k": 2,
+      "successes": 1,
+      "rate": 0.5
+    },
+    {
+      "sid": "S01",
+      "factor": 3,
+      "k": 1,
+      "successes": 0,
+      "rate": 0
+    }
+  ],
+  "pareto": [
+    {
+      "cause": "hallucinated_entities",
+      "count": 2
+    },
+    {
+      "cause": "patch_spec_invalid",
+      "count": 1
+    }
+  ],
+  "runs": [
+    {
+      "scenario_id": "S01-B00000",
+      "sid": "S01",
+      "domain": "Enterprise Architecture",
+      "scenario_type": "B00000",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 13,
+        "attempts": {
+          "r1": 1,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 133046
+      }
+    },
+    {
+      "scenario_id": "S01-B01000",
+      "sid": "S01",
+      "domain": "Enterprise Architecture",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": false,
+      "failures": [
+        "hallucinated_entities",
+        "patch_spec_invalid"
+      ],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [
+          "클라우드 GPU 12% 우위"
+        ],
+        "leaked_decoys": [],
+        "entities_count": 18,
+        "attempts": {
+          "r1": 1,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": false,
+        "patch_ops": 3,
+        "patch_targeted": 0,
+        "duration_ms": 113628
+      }
+    },
+    {
+      "scenario_id": "S01-B10101",
+      "sid": "S01",
+      "domain": "Enterprise Architecture",
+      "scenario_type": "B10101",
+      "branch_bits": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 12,
+        "attempts": {
+          "r1": 1,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 8,
+        "patch_targeted": 5,
+        "duration_ms": 136097
+      }
+    },
+    {
+      "scenario_id": "S01-B11111",
+      "sid": "S01",
+      "domain": "Enterprise Architecture",
+      "scenario_type": "B11111",
+      "branch_bits": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": false,
+      "failures": [
+        "hallucinated_entities"
+      ],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [
+          "TCO 관점 클라우드 GPU 12% 우위"
+        ],
+        "leaked_decoys": [],
+        "entities_count": 18,
+        "attempts": {
+          "r1": 1,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 104580
+      }
+    }
+  ]
+}
