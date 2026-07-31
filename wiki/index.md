@@ -126,3 +126,21 @@
 - 독립 PoC → REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation.md
 - 크로스모듈 검증 → REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation.md
 - 단계적 도입 → REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-confirmation.md
+- 전사 AI 아키텍처 → REQ-20250308-enterprise-ai-architecture-selection-execution-result | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-result.md
+- AWS → REQ-20250308-enterprise-ai-architecture-selection-execution-result | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-result.md
+- Azure → REQ-20250308-enterprise-ai-architecture-selection-execution-result | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-result.md
+- GCP → REQ-20250308-enterprise-ai-architecture-selection-execution-result | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-result.md
+- 클라우드 플랫폼 → REQ-20250308-enterprise-ai-architecture-selection-execution-result | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-result.md
+- AI Serving → REQ-20250308-enterprise-ai-architecture-selection-execution-result | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-result.md
+- GPU 자체구축 → REQ-20250308-enterprise-ai-architecture-selection-execution-result | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-result.md
+- 클라우드 GPU → REQ-20250308-enterprise-ai-architecture-selection-execution-result | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-result.md
+- SAP HANA → REQ-20250308-enterprise-ai-architecture-selection-execution-result | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-result.md
+- Oracle → REQ-20250308-enterprise-ai-architecture-selection-execution-result | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-result.md
+- TCO → REQ-20250308-enterprise-ai-architecture-selection-execution-result | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-result.md
+- 라이선스 → REQ-20250308-enterprise-ai-architecture-selection-execution-result | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-result.md
+- 보안 → REQ-20250308-enterprise-ai-architecture-selection-execution-result | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-result.md
+- 규정 준수 → REQ-20250308-enterprise-ai-architecture-selection-execution-result | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-result.md
+- PoC → REQ-20250308-enterprise-ai-architecture-selection-execution-result | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-result.md
+- 크로스모듈 → REQ-20250308-enterprise-ai-architecture-selection-execution-result | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-result.md
+- 단계적 도입 → REQ-20250308-enterprise-ai-architecture-selection-execution-result | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-result.md
+- 산출물 추적 → REQ-20250308-enterprise-ai-architecture-selection-execution-result | requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-result.md
