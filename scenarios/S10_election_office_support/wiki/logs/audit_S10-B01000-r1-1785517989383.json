@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "S10-B01000-r1-1785517989383",
+    "mode": "bench",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-07-31T17:10:33.171Z",
+    "finished_at": "2026-07-31T17:13:09.383Z",
+    "duration_ms": 156212
+  },
+  "trigger": {
+    "source": "bench:S10:B01000",
+    "requestor": "관리계 주무관",
+    "received_at": "2026-07-31T17:10:33.171Z",
+    "scenario_id": "S10-B01000",
+    "domain": "선관위 사무보조"
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T17:10:33.171Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T17:10:33.171Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:S10:B01000",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T17:10:33.486Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "EXISTS"
+    },
+    {
+      "ts": "2026-07-31T17:10:33.750Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 1253
+    },
+    {
+      "ts": "2026-07-31T17:11:09.039Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T17:11:21.993Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T17:11:52.604Z",
+      "stage": "quality_review",
+      "actor": "auto(bench)",
+      "decision": "APPROVE"
+    },
+    {
+      "ts": "2026-07-31T17:12:07.756Z",
+      "stage": "devils_advocate",
+      "actor": "DA+MathThreshold",
+      "decision": "PASS",
+      "score": 5,
+      "escalated": false
+    },
+    {
+      "ts": "2026-07-31T17:12:07.774Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": "승인(bench auto)"
+    },
+    {
+      "ts": "2026-07-31T17:12:07.783Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "FINAL_APPROVE"
+    },
+    {
+      "ts": "2026-07-31T17:13:02.359Z",
+      "stage": "wiki_librarian",
+      "actor": "Wiki Librarian agent",
+      "decision": "FALLBACK_ENTRY",
+      "files": [
+        "requirements/REQ-20260731-S10-B01000-2359.md",
+        "decisions.md",
+        "index.md",
+        "logs/runs.md"
+      ]
+    },
+    {
+      "ts": "2026-07-31T17:13:02.659Z",
+      "stage": "wiki_write_prepare",
+      "actor": "system",
+      "files": [
+        "requirements/REQ-20260731-S10-B01000-2359.md(new)",
+        "decisions.md(update)",
+        "index.md(update)",
+        "logs/runs.md(update)"
+      ]
+    },
+    {
+      "ts": "2026-07-31T17:13:09.348Z",
+      "stage": "wiki_commit",
+      "actor": "GitHub Contents API",
+      "decision": "COMMITTED",
+      "files_committed": 4,
+      "files_failed": 0,
+      "hash": "e9a66f7"
+    },
+    {
+      "ts": "2026-07-31T17:13:09.365Z",
+      "stage": "quality_assurance",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": ""
+    },
+    {
+      "ts": "2026-07-31T17:13:09.374Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 1
+    },
+    "semantic_audit": {
+      "attempts": 1
+    },
+    "devils_advocate": {
+      "attempts": 1,
+      "score": 5,
+      "verdict": "보완 권고: 승인권자·법적 근거·SLA/RACI·개인정보 통제를 확정하고 관련 산출물 간 일관성 및 공지 배포 전 검토를 완료한 뒤 진행하라."
+    },
+    "escalated_any": false
+  },
+  "deliverable": {
+    "req_id": "REQ-20260731-S10-B01000-2359",
+    "requirement": "REQ-1: 관리계의 선거 사무 지원 체계를 체계화한다.; REQ-2: 관리계의 선거비용 실사 보조 절차를 문서화한다.; REQ-3: 지도계의 민원문의 대응 절차와 유권해석 필요 시 에스컬레이션 기준을 문서화한다.; REQ-4: 민원 유형 중 현수막 규격 문의와 기부행위 해당여부 문의를 반영하고, 처리기한 3일 원칙을 적용한다.",
+    "keywords": [
+      "선관위",
+      "사무보조",
+      "관리계",
+      "주무관",
+      "선거 사무 지원 체계화",
+      "선거비용 실사 보조 절차",
+      "지도계",
+      "민원문의 대응"
+    ],
+    "wiki_files": [
+      "scenarios/S10_election_office_support/wiki/requirements/REQ-20260731-S10-B01000-2359.md",
+      "scenarios/S10_election_office_support/wiki/decisions.md",
+      "scenarios/S10_election_office_support/wiki/index.md",
+      "scenarios/S10_election_office_support/wiki/logs/runs.md"
+    ],
+    "commit_hash": "e9a66f7",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/e9a66f7be2508a784d7bd67bef55dd243eac739f"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
