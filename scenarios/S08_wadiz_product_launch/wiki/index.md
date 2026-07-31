@@ -1,32 +1,10 @@
-- AI driven journal recorder → REQ-20250308-wadiz-journal-rewards-earlybird-story
-- 와디즈 → REQ-20250308-wadiz-journal-rewards-earlybird-story
-- 크라우드펀딩 런칭 → REQ-20250308-wadiz-journal-rewards-earlybird-story
-- 리워드 구성 → REQ-20250308-wadiz-journal-rewards-earlybird-story
-- 얼리버드 → REQ-20250308-wadiz-journal-rewards-earlybird-story
-- 재고 운영 → REQ-20250308-wadiz-journal-rewards-earlybird-story
-- 스토리 페이지 → REQ-20250308-wadiz-journal-rewards-earlybird-story
-- AI 기능 → REQ-20250308-wadiz-journal-rewards-earlybird-story
-- 개인정보 보호 → REQ-20250308-wadiz-journal-rewards-earlybird-story
-- 생산·배송 → REQ-20250308-wadiz-journal-rewards-earlybird-story
-- 승인 페이로드 → REQ-20250308-wadiz-approval-deliverable-gates
-- 영향 산출물 갱신 → REQ-20250308-wadiz-approval-deliverable-gates
-- 산출물_설계서.docx → REQ-20250308-wadiz-approval-deliverable-gates
-- 요구사항_추적표.xlsx → REQ-20250308-wadiz-approval-deliverable-gates
-- 보고_장표.pptx → REQ-20250308-wadiz-approval-deliverable-gates
-- 검증 게이트 → REQ-20250308-wadiz-approval-deliverable-gates
-- 담당자·증빙·승인 게이트 → REQ-20250308-wadiz-approval-deliverable-gates
-- 원가·마진 → REQ-20250308-wadiz-approval-deliverable-gates
-- 생산·배송 → REQ-20250308-wadiz-approval-deliverable-gates
-- 개인정보 보호 → REQ-20250308-wadiz-approval-deliverable-gates
-- 규제 검토 → REQ-20250308-wadiz-approval-deliverable-gates
-- AI driven journal recorder 런칭 승인 게이트 → REQ-20250308-wadiz-launch-approval-gates
-- 와디즈 런칭 승인 → REQ-20250308-wadiz-launch-approval-gates
-- 리워드·얼리버드 확정 대기 → REQ-20250308-wadiz-launch-approval-gates
-- 스토리 페이지 구조 확정 대기 → REQ-20250308-wadiz-launch-approval-gates
-- 오픈예정 알림신청 2주 → REQ-20250308-wadiz-launch-approval-gates
-- 본 펀딩 4주 → REQ-20250308-wadiz-launch-approval-gates
-- 시제품 검수 D-10 → REQ-20250308-wadiz-launch-approval-gates
-- 승인(bench auto) → REQ-20250308-wadiz-launch-approval-gates
-- 조건부 승인 → REQ-20250308-wadiz-launch-approval-gates
-- 컴플라이언스 게이트 → REQ-20250308-wadiz-launch-approval-gates
-- 산출물 추적 → REQ-20250308-wadiz-launch-approval-gates
+- 와디즈 런칭 실행 결과 → REQ-20250308-wadiz-approval-execution
+- 영향 산출물 7종 → REQ-20250308-wadiz-approval-execution
+- 리워드 가격·수량 미확정 → REQ-20250308-wadiz-approval-execution
+- 얼리버드 총량 미확정 → REQ-20250308-wadiz-approval-execution
+- 스토리 문구 검증 보류 → REQ-20250308-wadiz-approval-execution
+- 런칭 일정 검증 게이트 → REQ-20250308-wadiz-approval-execution
+- 원가·마진 검증 → REQ-20250308-wadiz-approval-execution
+- 생산·재고 시나리오 → REQ-20250308-wadiz-approval-execution
+- 개인정보·규제 검토 → REQ-20250308-wadiz-approval-execution
+- 담당자·증빙·승인 게이트 → REQ-20250308-wadiz-approval-execution
