@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "S06-B00000-r1-1785508710019",
+    "mode": "bench",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-07-31T14:35:59.339Z",
+    "finished_at": "2026-07-31T14:38:30.019Z",
+    "duration_ms": 150680
+  },
+  "trigger": {
+    "source": "bench:S06:B00000",
+    "requestor": "마케팅 리드",
+    "received_at": "2026-07-31T14:35:59.339Z",
+    "scenario_id": "S06-B00000",
+    "domain": "VLB ICO 마케팅"
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T14:35:59.339Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T14:35:59.339Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:S06:B00000",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T14:35:59.809Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "SEEDING",
+      "files": [
+        "README.md",
+        "decisions.md",
+        "index.md",
+        "requirements/REQ-SEED-1.md",
+        "logs/runs.md"
+      ]
+    },
+    {
+      "ts": "2026-07-31T14:36:09.006Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 255
+    },
+    {
+      "ts": "2026-07-31T14:36:37.928Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T14:36:47.217Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "FAIL",
+      "escalated": false,
+      "missing_count": 2
+    },
+    {
+      "ts": "2026-07-31T14:37:06.453Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T14:37:13.801Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T14:37:28.864Z",
+      "stage": "quality_review",
+      "actor": "auto(bench)",
+      "decision": "APPROVE"
+    },
+    {
+      "ts": "2026-07-31T14:37:44.189Z",
+      "stage": "devils_advocate",
+      "actor": "DA+MathThreshold",
+      "decision": "PASS",
+      "score": 5,
+      "escalated": false
+    },
+    {
+      "ts": "2026-07-31T14:37:44.214Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": "승인(bench auto)"
+    },
+    {
+      "ts": "2026-07-31T14:37:44.228Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "FINAL_APPROVE"
+    },
+    {
+      "ts": "2026-07-31T14:38:22.692Z",
+      "stage": "wiki_librarian",
+      "actor": "Wiki Librarian agent",
+      "decision": "ENTRY_OK",
+      "files": [
+        "requirements/REQ-20250308-RU-ETH-VLB-ICO-PLAN.md",
+        "decisions.md",
+        "index.md",
+        "logs/runs.md"
+      ]
+    },
+    {
+      "ts": "2026-07-31T14:38:23.044Z",
+      "stage": "wiki_write_prepare",
+      "actor": "system",
+      "files": [
+        "requirements/REQ-20250308-RU-ETH-VLB-ICO-PLAN.md(new)",
+        "decisions.md(update)",
+        "index.md(update)",
+        "logs/runs.md(update)"
+      ]
+    },
+    {
+      "ts": "2026-07-31T14:38:29.978Z",
+      "stage": "wiki_commit",
+      "actor": "GitHub Contents API",
+      "decision": "COMMITTED",
+      "files_committed": 4,
+      "files_failed": 0,
+      "hash": "b55a28a"
+    },
+    {
+      "ts": "2026-07-31T14:38:29.999Z",
+      "stage": "quality_assurance",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": ""
+    },
+    {
+      "ts": "2026-07-31T14:38:30.010Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 2
+    },
+    "semantic_audit": {
+      "attempts": 2
+    },
+    "devils_advocate": {
+      "attempts": 1,
+      "score": 5,
+      "verdict": "보완 권고: 관할권·토큰 법적 분류·데이터 처리·교차 모듈 승인과 판매 중지 통제를 확정하고 법률·컴플라이언스 승인 전에는 마케팅 및 세일 공지를 진행하지 말 것."
+    },
+    "escalated_any": false
+  },
+  "deliverable": {
+    "req_id": "REQ-20250308-RU-ETH-VLB-ICO-PLAN",
+    "requirement": "러시아 및 ETH 생태계를 대상으로 한 VLB ICO 실행계획에 마케팅, 백서 배포, KYC/AML 안내, 토큰 세일 일정 커뮤니케이션을 추가하고 관련 규제·보안 통제를 반영한다.",
+    "keywords": [
+      "VLB ICO",
+      "러시아 시장",
+      "ETH",
+      "ICO 마케팅",
+      "백서 배포",
+      "KYC",
+      "AML",
+      "토큰 세일",
+      "규제 검토",
+      "법률 승인",
+      "컴플라이언스",
+      "개인정보",
+      "제재",
+      "피싱",
+      "스마트컨트랙트"
+    ],
+    "wiki_files": [
+      "scenarios/S06_vlb_ico_marketing/wiki/requirements/REQ-20250308-RU-ETH-VLB-ICO-PLAN.md",
+      "scenarios/S06_vlb_ico_marketing/wiki/decisions.md",
+      "scenarios/S06_vlb_ico_marketing/wiki/index.md",
+      "scenarios/S06_vlb_ico_marketing/wiki/logs/runs.md"
+    ],
+    "commit_hash": "b55a28a",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/b55a28a68d86bb7c5173f72c8bc94767ebcf1397"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
