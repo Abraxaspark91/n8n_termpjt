@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "S02-B00000-r1-1785503626569",
+    "mode": "bench",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-07-31T13:11:42.453Z",
+    "finished_at": "2026-07-31T13:13:46.569Z",
+    "duration_ms": 124116
+  },
+  "trigger": {
+    "source": "bench:S02:B00000",
+    "requestor": "PI팀 이과장",
+    "received_at": "2026-07-31T13:11:42.453Z",
+    "scenario_id": "S02-B00000",
+    "domain": "Process Innovation(총원가)"
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T13:11:42.453Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T13:11:42.453Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:S02:B00000",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T13:11:42.742Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "SEEDING",
+      "files": [
+        "README.md",
+        "decisions.md",
+        "index.md",
+        "requirements/REQ-SEED-1.md",
+        "logs/runs.md"
+      ]
+    },
+    {
+      "ts": "2026-07-31T13:11:52.580Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 255
+    },
+    {
+      "ts": "2026-07-31T13:12:12.086Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T13:12:19.263Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T13:12:36.445Z",
+      "stage": "quality_review",
+      "actor": "auto(bench)",
+      "decision": "APPROVE"
+    },
+    {
+      "ts": "2026-07-31T13:12:58.283Z",
+      "stage": "devils_advocate",
+      "actor": "DA+MathThreshold",
+      "decision": "PASS",
+      "score": 5,
+      "escalated": false
+    },
+    {
+      "ts": "2026-07-31T13:12:58.304Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": "승인(bench auto)"
+    },
+    {
+      "ts": "2026-07-31T13:12:58.319Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "FINAL_APPROVE"
+    },
+    {
+      "ts": "2026-07-31T13:13:39.401Z",
+      "stage": "wiki_librarian",
+      "actor": "Wiki Librarian agent",
+      "decision": "ENTRY_OK",
+      "files": [
+        "requirements/REQ-20250308-총원가-원가추적-전환.md",
+        "decisions.md",
+        "index.md",
+        "logs/runs.md"
+      ]
+    },
+    {
+      "ts": "2026-07-31T13:13:39.705Z",
+      "stage": "wiki_write_prepare",
+      "actor": "system",
+      "files": [
+        "requirements/REQ-20250308-총원가-원가추적-전환.md(new)",
+        "decisions.md(update)",
+        "index.md(update)",
+        "logs/runs.md(update)"
+      ]
+    },
+    {
+      "ts": "2026-07-31T13:13:46.527Z",
+      "stage": "wiki_commit",
+      "actor": "GitHub Contents API",
+      "decision": "COMMITTED",
+      "files_committed": 4,
+      "files_failed": 0,
+      "hash": "49cfed8"
+    },
+    {
+      "ts": "2026-07-31T13:13:46.547Z",
+      "stage": "quality_assurance",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": ""
+    },
+    {
+      "ts": "2026-07-31T13:13:46.558Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 1
+    },
+    "semantic_audit": {
+      "attempts": 1
+    },
+    "devils_advocate": {
+      "attempts": 1,
+      "score": 5,
+      "verdict": "핵심 산식·통제·컴플라이언스·단계적 전환 및 롤백 계획을 확정한 뒤 진행하는 보완 권고"
+    },
+    "escalated_any": false
+  },
+  "deliverable": {
+    "req_id": "REQ-20250308-총원가-원가추적-전환",
+    "requirement": "수작업 관리연결결산을 폐지하고 전 법인의 물동·직접원가·간접비·법인간 비용을 원가추적번호 기반으로 실시간 관리하는 삼성방식 총원가 체계로 전환한다.",
+    "keywords": [
+      "총원가",
+      "관리연결결산",
+      "원가추적번호",
+      "간접비 배부",
+      "법인간 비용배분",
+      "실시간 원가",
+      "전사 원가관리",
+      "데이터 이관",
+      "대사",
+      "테스트"
+    ],
+    "wiki_files": [
+      "scenarios/S02_process_innovation/wiki/requirements/REQ-20250308-총원가-원가추적-전환.md",
+      "scenarios/S02_process_innovation/wiki/decisions.md",
+      "scenarios/S02_process_innovation/wiki/index.md",
+      "scenarios/S02_process_innovation/wiki/logs/runs.md"
+    ],
+    "commit_hash": "49cfed8",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/49cfed897a4753b1f533242ad6b60a0ebac0aa56"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
