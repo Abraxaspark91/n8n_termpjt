@@ -69,3 +69,19 @@
 - 대사 → REQ-20250308-sd-fi-w102-kna1 | requirements/REQ-20250308-sd-fi-w102-kna1.md
 - 중복 전표 방지 → REQ-20250308-sd-fi-w102-kna1 | requirements/REQ-20250308-sd-fi-w102-kna1.md
 - 다음 릴리즈 → REQ-20250308-sd-fi-w102-kna1 | requirements/REQ-20250308-sd-fi-w102-kna1.md
+- SD-FI → REQ-20250308-sd-fi-w102-kna1-execution | requirements/REQ-20250308-sd-fi-w102-kna1-execution.md
+- billing → REQ-20250308-sd-fi-w102-kna1-execution | requirements/REQ-20250308-sd-fi-w102-kna1-execution.md
+- 회계전표 → REQ-20250308-sd-fi-w102-kna1-execution | requirements/REQ-20250308-sd-fi-w102-kna1-execution.md
+- 통합테스트 → REQ-20250308-sd-fi-w102-kna1-execution | requirements/REQ-20250308-sd-fi-w102-kna1-execution.md
+- WRICEF → REQ-20250308-sd-fi-w102-kna1-execution | requirements/REQ-20250308-sd-fi-w102-kna1-execution.md
+- W-102 → REQ-20250308-sd-fi-w102-kna1-execution | requirements/REQ-20250308-sd-fi-w102-kna1-execution.md
+- KNA1 → REQ-20250308-sd-fi-w102-kna1-execution | requirements/REQ-20250308-sd-fi-w102-kna1-execution.md
+- 고객 마스터 → REQ-20250308-sd-fi-w102-kna1-execution | requirements/REQ-20250308-sd-fi-w102-kna1-execution.md
+- 인터페이스 매핑 → REQ-20250308-sd-fi-w102-kna1-execution | requirements/REQ-20250308-sd-fi-w102-kna1-execution.md
+- 회귀검증 → REQ-20250308-sd-fi-w102-kna1-execution | requirements/REQ-20250308-sd-fi-w102-kna1-execution.md
+- 재처리 → REQ-20250308-sd-fi-w102-kna1-execution | requirements/REQ-20250308-sd-fi-w102-kna1-execution.md
+- 멱등성 → REQ-20250308-sd-fi-w102-kna1-execution | requirements/REQ-20250308-sd-fi-w102-kna1-execution.md
+- 중복 전표 방지 → REQ-20250308-sd-fi-w102-kna1-execution | requirements/REQ-20250308-sd-fi-w102-kna1-execution.md
+- 컴플라이언스 → REQ-20250308-sd-fi-w102-kna1-execution | requirements/REQ-20250308-sd-fi-w102-kna1-execution.md
+- 롤백 → REQ-20250308-sd-fi-w102-kna1-execution | requirements/REQ-20250308-sd-fi-w102-kna1-execution.md
+- 다음 릴리즈 → REQ-20250308-sd-fi-w102-kna1-execution | requirements/REQ-20250308-sd-fi-w102-kna1-execution.md
