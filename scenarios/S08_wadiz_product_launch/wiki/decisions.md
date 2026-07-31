@@ -1,2 +1,1 @@
-# Decisions (append-only)
-- [2026-07-25] REQ-SEED-1 | 김PM | SD 반품은 표준 RE 오더 타입 사용으로 결정 | keywords: SD,반품,RE 오더 → requirements/REQ-SEED-1.md
+- [2025-03-08] REQ-20250308-wadiz-journal-rewards-earlybird-story | PO | 원가·마진·생산능력·배송·AI 기능·개인정보 처리 및 규제 검토를 후속 검증 조건으로 두고 와디즈 리워드·얼리버드·스토리 페이지 기획 및 관련 산출물 업데이트를 승인 | keywords: AI driven journal recorder,와디즈,크라우드펀딩 런칭,리워드 구성,얼리버드,재고 운영,스토리 페이지,AI 기능,개인정보 보호,생산·배송 → requirements/REQ-20250308-wadiz-journal-rewards-earlybird-story.md
