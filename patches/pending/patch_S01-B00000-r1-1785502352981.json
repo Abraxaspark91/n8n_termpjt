@@ -1,0 +1,85 @@
+{
+  "schema": "deliverable_patch/v2",
+  "run_id": "S01-B00000-r1-1785502352981",
+  "ts": "2026-07-31T12:53:11.248Z",
+  "req_id": "REQ-20250214-cto-ai-architecture-approval-execution-result-v4",
+  "requestor": "CTO실",
+  "source": "bench:S01:B00000",
+  "entry": "bench",
+  "deliverable_dir": "scenarios/S01_enterprise_architecture/deliverables",
+  "decision": "AWS·Azure·GCP, GPU 자체구축·클라우드 임차, SAP HANA·Oracle 비교와 TCO·PoC·보안·규정 준수·운영 책임 검증 항목을 산출물에 반영하며, 클라우드 GPU 3년 TCO 12% 우위는 조건부 권고로 유지한다. 최종 플랫폼·DB 선정은 검증 및 CTO실 승인 이후 확정한다.",
+  "summary": "승인된 전사 AI 아키텍처 비교·선정, GPU Serving 하드웨어, SAP HANA·Oracle DB 검토 및 관련 추적·보고 산출물을 갱신한다.",
+  "da_score": 5,
+  "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/8951bd87d9d3b30ac3c5446b75f3b77517e2ad08",
+  "wiki_files": [
+    "scenarios/S01_enterprise_architecture/wiki/requirements/REQ-20250214-cto-ai-architecture-approval-execution-result-v4.md",
+    "scenarios/S01_enterprise_architecture/wiki/decisions.md",
+    "scenarios/S01_enterprise_architecture/wiki/index.md",
+    "scenarios/S01_enterprise_architecture/wiki/logs/runs.md"
+  ],
+  "ops": [
+    {
+      "target": "docx",
+      "op": "append_changelog",
+      "bullets": [
+        "AWS·Azure·GCP를 비용, AI 서비스·GPU 지원, 보안·규정 준수, 기존 시스템 연계성, 운영 편의성 및 확장성 기준으로 비교한다.",
+        "GPU 서버 자체구축과 클라우드 GPU 임차를 초기 투자비, 운영비, 조달·증설 기간, 성능, 가용성, 보안 및 운영 인력 관점에서 비교한다.",
+        "클라우드 GPU와 자체구축 GPU의 3년 TCO, 감가상각, 사용률·성장률·환율·리전·GPU 사양별 비용 가정을 비교표에 반영한다.",
+        "현행 산정 기준의 클라우드 GPU 3년 TCO 12% 우위는 최종 확정이 아닌 조건부 권고로 표시한다.",
+        "SAP HANA와 Oracle을 기능 적합성, ERP·주변 시스템 연계성, 성능·확장성, 운영 복잡도, 전환 영향, 라이선스·유지보수·마이그레이션 비용을 포함한 TCO 기준으로 비교한다.",
+        "비용·라이선스·보안·규정 준수·운영 책임모델을 검증할 기준과 정량 PoC·벤치마크 성공 기준을 산출물에 추가한다.",
+        "리전, 계약 기간, 환율, GPU 종류·수량, 사용률·성장률, 모델·트래픽, 지연시간, 가용성·DR 목표, 데이터 저장 허용 범위 및 기존 DB 계약을 요구사항 추적표에 등록한다.",
+        "클라우드 GPU 12% 우위와 최종 플랫폼·DB 선정은 PoC·벤치마크, 비용·라이선스 검증, 보안·컴플라이언스 검토 및 운영 책임·장애 대응 체계 확정 이후 CTO실 최종 의사결정 대상으로 관리한다."
+      ],
+      "risks": [
+        "클라우드 GPU TCO 12% 우위가 특정 리전, GPU 사양, 사용률, 환율 및 계약 기간 가정에 의존해 실제 결과와 달라질 수 있다.",
+        "AWS·Azure·GCP의 가격 변동, GPU 공급 부족 및 리전별 서비스 제약으로 비교 결과가 변경될 수 있다.",
+        "SAP HANA·Oracle의 라이선스 측정 방식, 기존 계약·유지보수 조건, 병행운영 및 마이그레이션 비용을 누락하면 DB TCO가 과소 산정될 수 있다.",
+        "모델, 트래픽, 동시 사용자 수, 목표 지연시간, 가용성 및 DR 기준이 확정되지 않으면 GPU 방식의 성능·운영 비교가 불완전할 수 있다.",
+        "개인정보·규제 데이터의 클라우드 저장 허용 범위와 필수 보안 기준이 미확정인 상태에서 플랫폼을 선정하면 보안·규정 준수 위반 위험이 발생할 수 있다.",
+        "클라우드와 자체구축의 운영 주체, 장애 대응 주체 및 비용 책임이 불명확하면 도입 후 서비스 가용성과 대응 품질이 저하될 수 있다."
+      ],
+      "open_questions": [
+        "AWS·Azure·GCP 비교에 적용할 대상 리전, 계약 기간, 환율 및 가격 기준일은 무엇인가?",
+        "GPU 종류·수량, 예상 사용률·성장률, 대상 모델, 예상 트래픽, 동시 사용자 수 및 목표 지연시간은 얼마인가?",
+        "목표 가용성·DR 기준과 개인정보·규제 데이터의 클라우드 저장 허용 범위는 무엇인가?",
+        "SAP HANA·Oracle의 현재 사용 현황, 기존 라이선스·유지보수 계약 및 ERP·주변 시스템 제약은 무엇인가?",
+        "GPU 자체구축과 클라우드 임차의 운영 주체, 장애 대응 주체 및 비용 책임 체계는 어떻게 정할 것인가?",
+        "PoC·벤치마크를 수행할지, 수행한다면 성공 기준·평가 기간·대상 워크로드는 무엇인가?",
+        "최종 클라우드·DB 선정 권한자와 아키텍처 확정 목표일은 언제인가?"
+      ],
+      "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/8951bd87d9d3b30ac3c5446b75f3b77517e2ad08"
+    },
+    {
+      "target": "xlsx",
+      "op": "append_row",
+      "sheet": "RTM",
+      "values": [
+        "REQ-20250214-cto-ai-architecture-approval-execution-result-v4",
+        "2026-07-31T12:53:11.248Z",
+        "CTO실",
+        "bench:S01:B00000",
+        "AWS·Azure·GCP, GPU 자체구축·클라우드 임차, SAP HANA·Oracle 비교와 TCO·PoC·보안·규정 준수·운영 책임 검증 항목을 산출물에 반영하며, 클라우드 GPU 3년 TCO 12% 우위는 조건부 권고로 유지한다. 최종 플랫폼·DB 선정은 검증 및 CTO실 승인 이후 확정한다.",
+        "승인된 전사 AI 아키텍처 비교·선정, GPU Serving 하드웨어, SAP HANA·Oracle DB 검토 및 관련 추적·보고 산출물을 갱신한다.",
+        "전사 AI 아키텍처 비교·선정안; AI Serving 하드웨어 검토서; 데이터베이스 선정 검토서; CTO실 의사결정 보고서; 요구사항 추적표 및 보고 장표; 산출물_설계서.docx; 요구사항_추적표.xlsx; 보고_장표.pptx",
+        "add; add; add; add; modify; modify; modify; modify",
+        5,
+        "https://github.com/Abraxaspark91/n8n_termpjt/commit/8951bd87d9d3b30ac3c5446b75f3b77517e2ad08"
+      ]
+    },
+    {
+      "target": "pptx",
+      "op": "append_changelog_slide",
+      "title": "변경사항 — REQ-20250214-cto-ai-architecture-approval-execution-result-v4",
+      "bullets": [
+        "요청자: CTO실 · 결정: AWS·Azure·GCP, GPU 자체구축·클라우드 임차, SAP HANA·Oracle 비교와 TCO·PoC·보안·규정 준수·운영 책임 검증 항목을 산출물에 반영하며, 클라우드 GPU 3년 TCO 12% 우위는 조건부 권고로 유지한다. 최종 플랫폼·DB 선정은 검증 및 CTO실 승인 이후 확정한다.",
+        "• AWS·Azure·GCP를 비용, AI 서비스·GPU 지원, 보안·규정 준수, 기존 시스템 연계성, 운영 편의성 및 확장성 기준으로 비교한다.",
+        "• GPU 서버 자체구축과 클라우드 GPU 임차를 초기 투자비, 운영비, 조달·증설 기간, 성능, 가용성, 보안 및 운영 인력 관점에서 비교한다.",
+        "• 클라우드 GPU와 자체구축 GPU의 3년 TCO, 감가상각, 사용률·성장률·환율·리전·GPU 사양별 비용 가정을 비교표에 반영한다.",
+        "• 현행 산정 기준의 클라우드 GPU 3년 TCO 12% 우위는 최종 확정이 아닌 조건부 권고로 표시한다.",
+        "• SAP HANA와 Oracle을 기능 적합성, ERP·주변 시스템 연계성, 성능·확장성, 운영 복잡도, 전환 영향, 라이선스·유지보수·마이그레이션 비용을 포함한 TCO 기준으로 비교한다.",
+        "• 비용·라이선스·보안·규정 준수·운영 책임모델을 검증할 기준과 정량 PoC·벤치마크 성공 기준을 산출물에 추가한다."
+      ]
+    }
+  ]
+}
