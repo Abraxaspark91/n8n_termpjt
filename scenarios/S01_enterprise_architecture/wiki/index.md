@@ -286,3 +286,23 @@
 - DR → REQ-20250214-cto-ai-architecture-approval-execution-result-v7
 - 라이선스 → REQ-20250214-cto-ai-architecture-approval-execution-result-v7
 - 산출물 갱신 → REQ-20250214-cto-ai-architecture-approval-execution-result-v7
+- 전사 AI 아키텍처 → REQ-20250214-cto-ai-architecture-approval-execution-result-v8
+- AWS → REQ-20250214-cto-ai-architecture-approval-execution-result-v8
+- Azure → REQ-20250214-cto-ai-architecture-approval-execution-result-v8
+- GCP → REQ-20250214-cto-ai-architecture-approval-execution-result-v8
+- GPU 자체구축 → REQ-20250214-cto-ai-architecture-approval-execution-result-v8
+- 클라우드 GPU → REQ-20250214-cto-ai-architecture-approval-execution-result-v8
+- SAP HANA → REQ-20250214-cto-ai-architecture-approval-execution-result-v8
+- Oracle → REQ-20250214-cto-ai-architecture-approval-execution-result-v8
+- TCO → REQ-20250214-cto-ai-architecture-approval-execution-result-v8
+- 민감도 분석 → REQ-20250214-cto-ai-architecture-approval-execution-result-v8
+- 손익분기 사용률 → REQ-20250214-cto-ai-architecture-approval-execution-result-v8
+- 보안 → REQ-20250214-cto-ai-architecture-approval-execution-result-v8
+- 규정 준수 → REQ-20250214-cto-ai-architecture-approval-execution-result-v8
+- 데이터 거버넌스 → REQ-20250214-cto-ai-architecture-approval-execution-result-v8
+- 운영 RACI → REQ-20250214-cto-ai-architecture-approval-execution-result-v8
+- DR → REQ-20250214-cto-ai-architecture-approval-execution-result-v8
+- 라이선스 → REQ-20250214-cto-ai-architecture-approval-execution-result-v8
+- PoC → REQ-20250214-cto-ai-architecture-approval-execution-result-v8
+- 벤치마크 → REQ-20250214-cto-ai-architecture-approval-execution-result-v8
+- 산출물 갱신 → REQ-20250214-cto-ai-architecture-approval-execution-result-v8
