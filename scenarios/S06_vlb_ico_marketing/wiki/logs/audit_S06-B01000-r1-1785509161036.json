@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "S06-B01000-r1-1785509161036",
+    "mode": "bench",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-07-31T14:43:02.643Z",
+    "finished_at": "2026-07-31T14:46:01.036Z",
+    "duration_ms": 178393
+  },
+  "trigger": {
+    "source": "bench:S06:B01000",
+    "requestor": "마케팅 리드",
+    "received_at": "2026-07-31T14:43:02.643Z",
+    "scenario_id": "S06-B01000",
+    "domain": "VLB ICO 마케팅"
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T14:43:02.643Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T14:43:02.643Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:S06:B01000",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T14:43:03.002Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "EXISTS"
+    },
+    {
+      "ts": "2026-07-31T14:43:03.279Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 1846
+    },
+    {
+      "ts": "2026-07-31T14:43:26.271Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T14:43:36.193Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "FAIL",
+      "escalated": false,
+      "missing_count": 1
+    },
+    {
+      "ts": "2026-07-31T14:44:02.539Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "FAIL",
+      "escalated": false,
+      "missing_count": 2
+    },
+    {
+      "ts": "2026-07-31T14:44:24.985Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T14:44:34.140Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T14:44:52.332Z",
+      "stage": "quality_review",
+      "actor": "auto(bench)",
+      "decision": "APPROVE"
+    },
+    {
+      "ts": "2026-07-31T14:45:12.457Z",
+      "stage": "devils_advocate",
+      "actor": "DA+MathThreshold",
+      "decision": "PASS",
+      "score": 5,
+      "escalated": false
+    },
+    {
+      "ts": "2026-07-31T14:45:12.480Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": "승인(bench auto)"
+    },
+    {
+      "ts": "2026-07-31T14:45:12.492Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "FINAL_APPROVE"
+    },
+    {
+      "ts": "2026-07-31T14:45:53.985Z",
+      "stage": "wiki_librarian",
+      "actor": "Wiki Librarian agent",
+      "decision": "ENTRY_OK",
+      "files": [
+        "requirements/REQ-20250308-RU-ETH-VLB-ICO-APPROVAL-EVIDENCE.md",
+        "decisions.md",
+        "index.md",
+        "logs/runs.md"
+      ]
+    },
+    {
+      "ts": "2026-07-31T14:45:54.287Z",
+      "stage": "wiki_write_prepare",
+      "actor": "system",
+      "files": [
+        "requirements/REQ-20250308-RU-ETH-VLB-ICO-APPROVAL-EVIDENCE.md(new)",
+        "decisions.md(update)",
+        "index.md(update)",
+        "logs/runs.md(update)"
+      ]
+    },
+    {
+      "ts": "2026-07-31T14:46:00.996Z",
+      "stage": "wiki_commit",
+      "actor": "GitHub Contents API",
+      "decision": "COMMITTED",
+      "files_committed": 4,
+      "files_failed": 0,
+      "hash": "c0b177d"
+    },
+    {
+      "ts": "2026-07-31T14:46:01.015Z",
+      "stage": "quality_assurance",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": ""
+    },
+    {
+      "ts": "2026-07-31T14:46:01.026Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 3
+    },
+    "semantic_audit": {
+      "attempts": 2
+    },
+    "devils_advocate": {
+      "attempts": 1,
+      "score": 5,
+      "verdict": "임계값은 통과했지만 핵심 법률·제재·개인정보·운영 통제와 교차 모듈 추적을 확정하고 승인 증적을 확보할 때까지 외부 공개·모집은 보완 권고"
+    },
+    "escalated_any": false
+  },
+  "deliverable": {
+    "req_id": "REQ-20250308-RU-ETH-VLB-ICO-APPROVAL-EVIDENCE",
+    "requirement": "승인 페이로드에 따른 VLB ICO 마케팅·백서·KYC·토큰 세일 커뮤니케이션 변경사항과 7개 영향 산출물의 실행 결과를 기록한다.",
+    "keywords": [
+      "VLB ICO",
+      "러시아 시장",
+      "ETH",
+      "ICO 마케팅",
+      "백서 배포",
+      "KYC",
+      "AML",
+      "토큰 세일",
+      "규제 검토",
+      "법률 승인",
+      "컴플라이언스",
+      "개인정보",
+      "제재",
+      "피싱",
+      "스마트컨트랙트",
+      "산출물 갱신",
+      "승인 게이트",
+      "외부 공개 보류",
+      "하드캡",
+      "락업",
+      "후보 거래소"
+    ],
+    "wiki_files": [
+      "scenarios/S06_vlb_ico_marketing/wiki/requirements/REQ-20250308-RU-ETH-VLB-ICO-APPROVAL-EVIDENCE.md",
+      "scenarios/S06_vlb_ico_marketing/wiki/decisions.md",
+      "scenarios/S06_vlb_ico_marketing/wiki/index.md",
+      "scenarios/S06_vlb_ico_marketing/wiki/logs/runs.md"
+    ],
+    "commit_hash": "c0b177d",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/c0b177db23033bce42c6c54b0a8a19746b7409e8"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
