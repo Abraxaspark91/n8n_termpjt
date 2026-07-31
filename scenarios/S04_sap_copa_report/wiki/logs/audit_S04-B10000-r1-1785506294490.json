@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "S04-B10000-r1-1785506294490",
+    "mode": "bench",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-07-31T13:56:03.067Z",
+    "finished_at": "2026-07-31T13:58:14.490Z",
+    "duration_ms": 131423
+  },
+  "trigger": {
+    "source": "bench:S04:B10000",
+    "requestor": "경영관리 김PM",
+    "received_at": "2026-07-31T13:56:03.067Z",
+    "scenario_id": "S04-B10000",
+    "domain": "SAP CO-PA 손익구조"
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T13:56:03.067Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T13:56:03.067Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:S04:B10000",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T13:56:03.492Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "EXISTS"
+    },
+    {
+      "ts": "2026-07-31T13:56:03.785Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 961
+    },
+    {
+      "ts": "2026-07-31T13:56:26.150Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "FAIL",
+      "escalated": false,
+      "missing_count": 1
+    },
+    {
+      "ts": "2026-07-31T13:56:44.698Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T13:56:52.864Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T13:57:09.312Z",
+      "stage": "quality_review",
+      "actor": "auto(bench)",
+      "decision": "APPROVE"
+    },
+    {
+      "ts": "2026-07-31T13:57:30.188Z",
+      "stage": "devils_advocate",
+      "actor": "DA+MathThreshold",
+      "decision": "PASS",
+      "score": 5,
+      "escalated": false
+    },
+    {
+      "ts": "2026-07-31T13:57:30.216Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": "승인(bench auto)"
+    },
+    {
+      "ts": "2026-07-31T13:57:30.238Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "FINAL_APPROVE"
+    },
+    {
+      "ts": "2026-07-31T13:58:07.224Z",
+      "stage": "wiki_librarian",
+      "actor": "Wiki Librarian agent",
+      "decision": "ENTRY_OK",
+      "files": [
+        "requirements/REQ-20260725-marketing-funnel-copa-execution.md",
+        "decisions.md",
+        "index.md",
+        "logs/runs.md"
+      ]
+    },
+    {
+      "ts": "2026-07-31T13:58:07.581Z",
+      "stage": "wiki_write_prepare",
+      "actor": "system",
+      "files": [
+        "requirements/REQ-20260725-marketing-funnel-copa-execution.md(new)",
+        "decisions.md(update)",
+        "index.md(update)",
+        "logs/runs.md(update)"
+      ]
+    },
+    {
+      "ts": "2026-07-31T13:58:14.425Z",
+      "stage": "wiki_commit",
+      "actor": "GitHub Contents API",
+      "decision": "COMMITTED",
+      "files_committed": 4,
+      "files_failed": 0,
+      "hash": "5a96220"
+    },
+    {
+      "ts": "2026-07-31T13:58:14.456Z",
+      "stage": "quality_assurance",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": ""
+    },
+    {
+      "ts": "2026-07-31T13:58:14.472Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 2
+    },
+    "semantic_audit": {
+      "attempts": 1
+    },
+    "devils_advocate": {
+      "attempts": 1,
+      "score": 5,
+      "verdict": "진행 권고하되, 단계·배부·대사·데이터 거버넌스·권한 및 컴플라이언스 기준을 확정한 후 설계와 운영 승인을 진행할 것을 권고한다."
+    },
+    "escalated_any": false
+  },
+  "deliverable": {
+    "req_id": "REQ-20260725-marketing-funnel-copa-execution",
+    "requirement": "승인된 Marketing Funnel 단계별 CO-PA 기여손익 구조와 판관비 배부·대사·테스트·거버넌스 내용을 관련 산출물에 반영하고 실행 결과를 기록한다.",
+    "keywords": [
+      "CO-PA",
+      "Marketing Funnel",
+      "기여손익",
+      "판관비",
+      "손익계산서",
+      "수익성 분석",
+      "리포팅",
+      "배부 기준",
+      "대사",
+      "테스트",
+      "데이터 거버넌스",
+      "권한",
+      "컴플라이언스",
+      "cross-module"
+    ],
+    "wiki_files": [
+      "scenarios/S04_sap_copa_report/wiki/requirements/REQ-20260725-marketing-funnel-copa-execution.md",
+      "scenarios/S04_sap_copa_report/wiki/decisions.md",
+      "scenarios/S04_sap_copa_report/wiki/index.md",
+      "scenarios/S04_sap_copa_report/wiki/logs/runs.md"
+    ],
+    "commit_hash": "5a96220",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/5a96220adfdb184ec8e07de530097d9b55a9741e"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
