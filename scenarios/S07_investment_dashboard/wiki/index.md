@@ -2,3 +2,11 @@
 - SD → REQ-SEED-1
 - 반품 → REQ-SEED-1
 - RE 오더 → REQ-SEED-1
+- 투자 대시보드 → REQ-20260725-investment-dashboard-macro-fundamentals
+- 거시경제 → REQ-20260725-investment-dashboard-macro-fundamentals
+- 펀더멘털 → REQ-20260725-investment-dashboard-macro-fundamentals
+- 데이터 갱신 주기 → REQ-20260725-investment-dashboard-macro-fundamentals
+- 데이터 출처 → REQ-20260725-investment-dashboard-macro-fundamentals
+- 기준 시각 → REQ-20260725-investment-dashboard-macro-fundamentals
+- 지연 데이터 → REQ-20260725-investment-dashboard-macro-fundamentals
+- 테스트 시나리오 → REQ-20260725-investment-dashboard-macro-fundamentals
