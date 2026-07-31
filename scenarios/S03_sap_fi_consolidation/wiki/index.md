@@ -15,3 +15,10 @@
 - 마이그레이션 → REQ-20260725-fi-internal-trade-key-mapping
 - 대량 조회 → REQ-20260725-fi-internal-trade-key-mapping
 - 테스트 → REQ-20260725-fi-internal-trade-key-mapping
+- 내부거래대사 키 표준화 승인 → REQ-20260725-fi-internal-trade-key-mapping-approval
+- 결산리포트 조회 개선 승인 → REQ-20260725-fi-internal-trade-key-mapping-approval
+- 권한통제 → REQ-20260725-fi-internal-trade-key-mapping-approval
+- 시점별 재현성 → REQ-20260725-fi-internal-trade-key-mapping-approval
+- cross-module 영향 → REQ-20260725-fi-internal-trade-key-mapping-approval
+- 마이그레이션 롤백 → REQ-20260725-fi-internal-trade-key-mapping-approval
+- 대량 조회 성능 → REQ-20260725-fi-internal-trade-key-mapping-approval
