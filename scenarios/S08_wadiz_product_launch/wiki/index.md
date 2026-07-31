@@ -8,3 +8,14 @@
 - AI 기능 → REQ-20250308-wadiz-journal-rewards-earlybird-story
 - 개인정보 보호 → REQ-20250308-wadiz-journal-rewards-earlybird-story
 - 생산·배송 → REQ-20250308-wadiz-journal-rewards-earlybird-story
+- 승인 페이로드 → REQ-20250308-wadiz-approval-deliverable-gates
+- 영향 산출물 갱신 → REQ-20250308-wadiz-approval-deliverable-gates
+- 산출물_설계서.docx → REQ-20250308-wadiz-approval-deliverable-gates
+- 요구사항_추적표.xlsx → REQ-20250308-wadiz-approval-deliverable-gates
+- 보고_장표.pptx → REQ-20250308-wadiz-approval-deliverable-gates
+- 검증 게이트 → REQ-20250308-wadiz-approval-deliverable-gates
+- 담당자·증빙·승인 게이트 → REQ-20250308-wadiz-approval-deliverable-gates
+- 원가·마진 → REQ-20250308-wadiz-approval-deliverable-gates
+- 생산·배송 → REQ-20250308-wadiz-approval-deliverable-gates
+- 개인정보 보호 → REQ-20250308-wadiz-approval-deliverable-gates
+- 규제 검토 → REQ-20250308-wadiz-approval-deliverable-gates
