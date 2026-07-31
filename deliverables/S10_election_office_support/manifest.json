@@ -1,0 +1,9 @@
+{
+  "schema": "deliverable_manifest/v1",
+  "scenario_id": "S10",
+  "docx": "선거비용실사_민원대응_절차서.docx",
+  "xlsx": "민원유형_실사체크리스트_시트.xlsx",
+  "pptx": "선관위_업무브리핑_덱.pptx",
+  "rtm_sheet": "RTM",
+  "notes": "seed by claude-code"
+}
