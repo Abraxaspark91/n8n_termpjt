@@ -20,3 +20,11 @@
 - 데이터 지연 → REQ-20260725-investment-dashboard-macro-fundamentals
 - 패널 분리 → REQ-20260725-investment-dashboard-macro-fundamentals
 - 테스트 시나리오 → REQ-20260725-investment-dashboard-macro-fundamentals
+- 투자 대시보드 → REQ-20260725-investment-dashboard-macro-fundamentals
+- 거시경제 → REQ-20260725-investment-dashboard-macro-fundamentals
+- 개별 종목 펀더멘털 → REQ-20260725-investment-dashboard-macro-fundamentals
+- 지표 갱신 → REQ-20260725-investment-dashboard-macro-fundamentals
+- 데이터 신선도 → REQ-20260725-investment-dashboard-macro-fundamentals
+- 기준 시각 → REQ-20260725-investment-dashboard-macro-fundamentals
+- deliverable_patch → REQ-20260725-investment-dashboard-macro-fundamentals
+- 요구사항 추적 → REQ-20260725-investment-dashboard-macro-fundamentals
