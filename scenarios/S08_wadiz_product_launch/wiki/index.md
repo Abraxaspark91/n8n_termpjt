@@ -19,3 +19,14 @@
 - 생산·배송 → REQ-20250308-wadiz-approval-deliverable-gates
 - 개인정보 보호 → REQ-20250308-wadiz-approval-deliverable-gates
 - 규제 검토 → REQ-20250308-wadiz-approval-deliverable-gates
+- AI driven journal recorder 런칭 승인 게이트 → REQ-20250308-wadiz-launch-approval-gates
+- 와디즈 런칭 승인 → REQ-20250308-wadiz-launch-approval-gates
+- 리워드·얼리버드 확정 대기 → REQ-20250308-wadiz-launch-approval-gates
+- 스토리 페이지 구조 확정 대기 → REQ-20250308-wadiz-launch-approval-gates
+- 오픈예정 알림신청 2주 → REQ-20250308-wadiz-launch-approval-gates
+- 본 펀딩 4주 → REQ-20250308-wadiz-launch-approval-gates
+- 시제품 검수 D-10 → REQ-20250308-wadiz-launch-approval-gates
+- 승인(bench auto) → REQ-20250308-wadiz-launch-approval-gates
+- 조건부 승인 → REQ-20250308-wadiz-launch-approval-gates
+- 컴플라이언스 게이트 → REQ-20250308-wadiz-launch-approval-gates
+- 산출물 추적 → REQ-20250308-wadiz-launch-approval-gates
