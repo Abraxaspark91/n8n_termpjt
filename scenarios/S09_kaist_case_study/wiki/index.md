@@ -2,3 +2,14 @@
 - SD → REQ-SEED-1
 - 반품 → REQ-SEED-1
 - RE 오더 → REQ-SEED-1
+- Tesla → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- Zara → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 공급망 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 수직계열화 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 수요예측 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 비교분석 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 리드타임 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 재고 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- cross-module → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 공개자료 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 불확실성 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
