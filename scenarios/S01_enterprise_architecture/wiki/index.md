@@ -12,3 +12,21 @@
 - 규정 준수 → REQ-20250214-cto-ai-architecture-selection
 - PoC → REQ-20250214-cto-ai-architecture-selection
 - 운영 책임 → REQ-20250214-cto-ai-architecture-selection
+- 전사 AI 아키텍처 → REQ-20250214-cto-ai-architecture-approval-update
+- AWS → REQ-20250214-cto-ai-architecture-approval-update
+- Azure → REQ-20250214-cto-ai-architecture-approval-update
+- GCP → REQ-20250214-cto-ai-architecture-approval-update
+- GPU Serving → REQ-20250214-cto-ai-architecture-approval-update
+- GPU 자체구축 → REQ-20250214-cto-ai-architecture-approval-update
+- 클라우드 GPU → REQ-20250214-cto-ai-architecture-approval-update
+- SAP HANA → REQ-20250214-cto-ai-architecture-approval-update
+- Oracle → REQ-20250214-cto-ai-architecture-approval-update
+- TCO → REQ-20250214-cto-ai-architecture-approval-update
+- 보안 → REQ-20250214-cto-ai-architecture-approval-update
+- 규정 준수 → REQ-20250214-cto-ai-architecture-approval-update
+- 데이터 거버넌스 → REQ-20250214-cto-ai-architecture-approval-update
+- PoC → REQ-20250214-cto-ai-architecture-approval-update
+- 벤치마크 → REQ-20250214-cto-ai-architecture-approval-update
+- 운영 책임 → REQ-20250214-cto-ai-architecture-approval-update
+- 라이선스 → REQ-20250214-cto-ai-architecture-approval-update
+- CTO실 → REQ-20250214-cto-ai-architecture-approval-update
