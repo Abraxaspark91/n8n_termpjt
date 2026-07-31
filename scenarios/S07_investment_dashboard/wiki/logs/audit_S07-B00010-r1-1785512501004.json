@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "S07-B00010-r1-1785512501004",
+    "mode": "bench",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-07-31T15:39:14.444Z",
+    "finished_at": "2026-07-31T15:41:41.004Z",
+    "duration_ms": 146560
+  },
+  "trigger": {
+    "source": "bench:S07:B00010",
+    "requestor": "리서치 담당",
+    "received_at": "2026-07-31T15:39:14.444Z",
+    "scenario_id": "S07-B00010",
+    "domain": "투자 Dashboard"
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T15:39:14.444Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T15:39:14.444Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:S07:B00010",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T15:39:14.824Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "EXISTS"
+    },
+    {
+      "ts": "2026-07-31T15:39:15.191Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 4069
+    },
+    {
+      "ts": "2026-07-31T15:39:37.458Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "FAIL",
+      "escalated": false,
+      "missing_count": 1
+    },
+    {
+      "ts": "2026-07-31T15:39:55.751Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T15:40:03.100Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T15:40:19.398Z",
+      "stage": "quality_review",
+      "actor": "auto(bench)",
+      "decision": "APPROVE"
+    },
+    {
+      "ts": "2026-07-31T15:40:52.892Z",
+      "stage": "devils_advocate",
+      "actor": "DA+MathThreshold",
+      "decision": "PASS",
+      "score": 5,
+      "escalated": false
+    },
+    {
+      "ts": "2026-07-31T15:40:52.918Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": "승인(bench auto)"
+    },
+    {
+      "ts": "2026-07-31T15:40:52.929Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "FINAL_APPROVE"
+    },
+    {
+      "ts": "2026-07-31T15:41:33.917Z",
+      "stage": "wiki_librarian",
+      "actor": "Wiki Librarian agent",
+      "decision": "ENTRY_OK",
+      "files": [
+        "requirements/REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update.md",
+        "decisions.md",
+        "index.md",
+        "logs/runs.md"
+      ]
+    },
+    {
+      "ts": "2026-07-31T15:41:34.238Z",
+      "stage": "wiki_write_prepare",
+      "actor": "system",
+      "files": [
+        "requirements/REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update.md(new)",
+        "decisions.md(update)",
+        "index.md(update)",
+        "logs/runs.md(update)"
+      ]
+    },
+    {
+      "ts": "2026-07-31T15:41:40.964Z",
+      "stage": "wiki_commit",
+      "actor": "GitHub Contents API",
+      "decision": "COMMITTED",
+      "files_committed": 4,
+      "files_failed": 0,
+      "hash": "fa8192b"
+    },
+    {
+      "ts": "2026-07-31T15:41:40.984Z",
+      "stage": "quality_assurance",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": ""
+    },
+    {
+      "ts": "2026-07-31T15:41:40.995Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 2
+    },
+    "semantic_audit": {
+      "attempts": 1
+    },
+    "devils_advocate": {
+      "attempts": 1,
+      "score": 5,
+      "verdict": "보완 권고: 범위·산식·데이터 권리·컴플라이언스·공통 모델을 확정하고 교차 모듈 영향 및 고객 고지 검증을 완료한 뒤 진행하십시오."
+    },
+    "escalated_any": false
+  },
+  "deliverable": {
+    "req_id": "REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update",
+    "requirement": "승인된 투자 대시보드 패널 분리, 지표 갱신·데이터 신선도 표시 요구사항을 관련 산출물에 반영하고 후속 확정 사항을 추적한다.",
+    "keywords": [
+      "투자 대시보드",
+      "거시경제",
+      "개별 종목 펀더멘털",
+      "패널 분리",
+      "지표 갱신",
+      "데이터 신선도",
+      "기준 시각",
+      "데이터 출처",
+      "데이터 지연",
+      "공통 데이터 모델",
+      "SLA",
+      "컴플라이언스",
+      "deliverable_patch"
+    ],
+    "wiki_files": [
+      "scenarios/S07_investment_dashboard/wiki/requirements/REQ-20260725-investment-dashboard-macro-fundamentals-deliverable-update.md",
+      "scenarios/S07_investment_dashboard/wiki/decisions.md",
+      "scenarios/S07_investment_dashboard/wiki/index.md",
+      "scenarios/S07_investment_dashboard/wiki/logs/runs.md"
+    ],
+    "commit_hash": "fa8192b",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/fa8192b5c83d510ea8900022ca875715fee7df3a"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
