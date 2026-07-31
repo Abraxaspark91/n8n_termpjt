@@ -1,0 +1,37 @@
+{
+ "scenario_id": "S05-B00000",
+ "sid": "S05",
+ "domain": "AI 경비처리 자동화",
+ "scenario_type": "B00000",
+ "branch_bits": [
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "repeat_idx": 1,
+ "repeats": 1,
+ "success": true,
+ "failures": [],
+ "metrics": {
+  "gold_recall": 1.0,
+  "hallucinated": [],
+  "leaked_decoys": [],
+  "entities_count": null,
+  "attempts": {
+   "r1": 2,
+   "r2": 2,
+   "da": 1
+  },
+  "da_score": 5,
+  "escalated": false,
+  "patch_valid": true,
+  "patch_ops": 6,
+  "patch_targeted": 3,
+  "duration_ms": 149896,
+  "reconstructed": true,
+  "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+  "source_audit_ts": 1785507349527
+ }
+}

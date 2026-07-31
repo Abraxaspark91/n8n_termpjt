@@ -1,0 +1,37 @@
+{
+ "scenario_id": "S04-B01000",
+ "sid": "S04",
+ "domain": "SAP CO-PA 손익구조",
+ "scenario_type": "B01000",
+ "branch_bits": [
+  0,
+  1,
+  0,
+  0,
+  0
+ ],
+ "repeat_idx": 1,
+ "repeats": 1,
+ "success": true,
+ "failures": [],
+ "metrics": {
+  "gold_recall": 1.0,
+  "hallucinated": [],
+  "leaked_decoys": [],
+  "entities_count": null,
+  "attempts": {
+   "r1": 4,
+   "r2": 2,
+   "da": 1
+  },
+  "da_score": 5,
+  "escalated": false,
+  "patch_valid": true,
+  "patch_ops": 5,
+  "patch_targeted": 2,
+  "duration_ms": 198624,
+  "reconstructed": true,
+  "reconstructed_note": "hallucination/schema 검사는 원본 entities 부재로 검증 불가(통과 처리)",
+  "source_audit_ts": 1785506554626
+ }
+}
