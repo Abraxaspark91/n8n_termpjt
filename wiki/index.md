@@ -85,3 +85,18 @@
 - 컴플라이언스 → REQ-20250308-sd-fi-w102-kna1-execution | requirements/REQ-20250308-sd-fi-w102-kna1-execution.md
 - 롤백 → REQ-20250308-sd-fi-w102-kna1-execution | requirements/REQ-20250308-sd-fi-w102-kna1-execution.md
 - 다음 릴리즈 → REQ-20250308-sd-fi-w102-kna1-execution | requirements/REQ-20250308-sd-fi-w102-kna1-execution.md
+- 전사 AI 아키텍처 → REQ-20250308-enterprise-ai-architecture-selection | requirements/REQ-20250308-enterprise-ai-architecture-selection.md
+- AWS → REQ-20250308-enterprise-ai-architecture-selection | requirements/REQ-20250308-enterprise-ai-architecture-selection.md
+- Azure → REQ-20250308-enterprise-ai-architecture-selection | requirements/REQ-20250308-enterprise-ai-architecture-selection.md
+- GCP → REQ-20250308-enterprise-ai-architecture-selection | requirements/REQ-20250308-enterprise-ai-architecture-selection.md
+- GPU Serving → REQ-20250308-enterprise-ai-architecture-selection | requirements/REQ-20250308-enterprise-ai-architecture-selection.md
+- GPU 자체구축 → REQ-20250308-enterprise-ai-architecture-selection | requirements/REQ-20250308-enterprise-ai-architecture-selection.md
+- 클라우드 GPU → REQ-20250308-enterprise-ai-architecture-selection | requirements/REQ-20250308-enterprise-ai-architecture-selection.md
+- SAP HANA → REQ-20250308-enterprise-ai-architecture-selection | requirements/REQ-20250308-enterprise-ai-architecture-selection.md
+- Oracle → REQ-20250308-enterprise-ai-architecture-selection | requirements/REQ-20250308-enterprise-ai-architecture-selection.md
+- TCO → REQ-20250308-enterprise-ai-architecture-selection | requirements/REQ-20250308-enterprise-ai-architecture-selection.md
+- 라이선스 → REQ-20250308-enterprise-ai-architecture-selection | requirements/REQ-20250308-enterprise-ai-architecture-selection.md
+- 보안 → REQ-20250308-enterprise-ai-architecture-selection | requirements/REQ-20250308-enterprise-ai-architecture-selection.md
+- 규정 준수 → REQ-20250308-enterprise-ai-architecture-selection | requirements/REQ-20250308-enterprise-ai-architecture-selection.md
+- PoC → REQ-20250308-enterprise-ai-architecture-selection | requirements/REQ-20250308-enterprise-ai-architecture-selection.md
+- 크로스모듈 → REQ-20250308-enterprise-ai-architecture-selection | requirements/REQ-20250308-enterprise-ai-architecture-selection.md
