@@ -22,3 +22,15 @@
 - cross-module 영향 → REQ-20260725-fi-internal-trade-key-mapping-approval
 - 마이그레이션 롤백 → REQ-20260725-fi-internal-trade-key-mapping-approval
 - 대량 조회 성능 → REQ-20260725-fi-internal-trade-key-mapping-approval
+- 표준 키 매핑 실행 승인 → REQ-20260725-fi-internal-trade-key-mapping-execution
+- 결산리포트 개선 실행 승인 → REQ-20260725-fi-internal-trade-key-mapping-execution
+- 미착상품 불일치 12건 → REQ-20260725-fi-internal-trade-key-mapping-execution
+- 환율차이 불일치 7건 → REQ-20260725-fi-internal-trade-key-mapping-execution
+- 검증 대상 19건 → REQ-20260725-fi-internal-trade-key-mapping-execution
+- 감사로그 → REQ-20260725-fi-internal-trade-key-mapping-execution
+- 권한·승인 → REQ-20260725-fi-internal-trade-key-mapping-execution
+- cross-module 인터페이스 → REQ-20260725-fi-internal-trade-key-mapping-execution
+- 시점별 재현성 검증 → REQ-20260725-fi-internal-trade-key-mapping-execution
+- 마이그레이션 검증 → REQ-20260725-fi-internal-trade-key-mapping-execution
+- 롤백 기준 → REQ-20260725-fi-internal-trade-key-mapping-execution
+- 요구사항-설계-테스트 추적 → REQ-20260725-fi-internal-trade-key-mapping-execution
