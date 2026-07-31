@@ -2,3 +2,12 @@
 - SD → REQ-SEED-1
 - 반품 → REQ-SEED-1
 - RE 오더 → REQ-SEED-1
+- SD → [REQ-20250308-sd-returns-re-order](requirements/REQ-20250308-sd-returns-re-order.md)
+- 반품 프로세스 → [REQ-20250308-sd-returns-re-order](requirements/REQ-20250308-sd-returns-re-order.md)
+- RE 오더 → [REQ-20250308-sd-returns-re-order](requirements/REQ-20250308-sd-returns-re-order.md)
+- 반품 입고 → [REQ-20250308-sd-returns-re-order](requirements/REQ-20250308-sd-returns-re-order.md)
+- 환불 → [REQ-20250308-sd-returns-re-order](requirements/REQ-20250308-sd-returns-re-order.md)
+- 대체 출하 → [REQ-20250308-sd-returns-re-order](requirements/REQ-20250308-sd-returns-re-order.md)
+- BBP → [REQ-20250308-sd-returns-re-order](requirements/REQ-20250308-sd-returns-re-order.md)
+- 기능정의서 → [REQ-20250308-sd-returns-re-order](requirements/REQ-20250308-sd-returns-re-order.md)
+- 테스트 시나리오 → [REQ-20250308-sd-returns-re-order](requirements/REQ-20250308-sd-returns-re-order.md)
