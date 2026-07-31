@@ -11,3 +11,13 @@
 - BBP → [REQ-20250308-sd-returns-re-order](requirements/REQ-20250308-sd-returns-re-order.md)
 - 기능정의서 → [REQ-20250308-sd-returns-re-order](requirements/REQ-20250308-sd-returns-re-order.md)
 - 테스트 시나리오 → [REQ-20250308-sd-returns-re-order](requirements/REQ-20250308-sd-returns-re-order.md)
+- MM → REQ-20250308-mm-mrp-safety-stock-fi-linkage | requirements/REQ-20250308-mm-mrp-safety-stock-fi-linkage.md
+- MRP → REQ-20250308-mm-mrp-safety-stock-fi-linkage | requirements/REQ-20250308-mm-mrp-safety-stock-fi-linkage.md
+- FI → REQ-20250308-mm-mrp-safety-stock-fi-linkage | requirements/REQ-20250308-mm-mrp-safety-stock-fi-linkage.md
+- 안전재고 → REQ-20250308-mm-mrp-safety-stock-fi-linkage | requirements/REQ-20250308-mm-mrp-safety-stock-fi-linkage.md
+- 재고부족 → REQ-20250308-mm-mrp-safety-stock-fi-linkage | requirements/REQ-20250308-mm-mrp-safety-stock-fi-linkage.md
+- 대손충당 → REQ-20250308-mm-mrp-safety-stock-fi-linkage | requirements/REQ-20250308-mm-mrp-safety-stock-fi-linkage.md
+- 재고평가손실 → REQ-20250308-mm-mrp-safety-stock-fi-linkage | requirements/REQ-20250308-mm-mrp-safety-stock-fi-linkage.md
+- MM-FI 연계 → REQ-20250308-mm-mrp-safety-stock-fi-linkage | requirements/REQ-20250308-mm-mrp-safety-stock-fi-linkage.md
+- 계정결정 → REQ-20250308-mm-mrp-safety-stock-fi-linkage | requirements/REQ-20250308-mm-mrp-safety-stock-fi-linkage.md
+- 통합테스트 → REQ-20250308-mm-mrp-safety-stock-fi-linkage | requirements/REQ-20250308-mm-mrp-safety-stock-fi-linkage.md
