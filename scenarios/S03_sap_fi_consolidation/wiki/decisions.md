@@ -1,2 +1,3 @@
 # Decisions (append-only)
 - [2026-07-25] REQ-SEED-1 | 김PM | SD 반품은 표준 RE 오더 타입 사용으로 결정 | keywords: SD,반품,RE 오더 → requirements/REQ-SEED-1.md
+- [2026-07-25] REQ-20260725-fi-internal-trade-key-mapping | 재무 최부장 | FI 연결결산 내부거래대사 키를 표준 매핑 구조로 통합하고 결산리포트 조회·확인 개선을 승인; 권한·감사통제·이력 재현성·마이그레이션·운영 성능 기준은 후속 관리 | keywords: FI 연결결산,내부거래대사,키 매핑,표준 매핑,결산리포트,대사결과,호환성,변경 이력,감사통제,마이그레이션,대량 조회 → requirements/REQ-20260725-fi-internal-trade-key-mapping.md
