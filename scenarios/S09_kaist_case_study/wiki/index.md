@@ -47,3 +47,13 @@
 - 근거 수준 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
 - 한계 고지 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
 - 추적성 → REQ-20260725-tesla-zara-supply-chain-demand-forecast
+- 산출물 승인 → REQ-20260725-tesla-zara-deliverable-approval
+- deliverable_patch → REQ-20260725-tesla-zara-deliverable-approval
+- Tesla·Zara 산출물 갱신 → REQ-20260725-tesla-zara-deliverable-approval
+- 공급망 통합 → REQ-20260725-tesla-zara-deliverable-approval
+- 5 Forces → REQ-20260725-tesla-zara-deliverable-approval
+- VRIO → REQ-20260725-tesla-zara-deliverable-approval
+- 근거 수준 → REQ-20260725-tesla-zara-deliverable-approval
+- 한계 고지 → REQ-20260725-tesla-zara-deliverable-approval
+- 추적성 → REQ-20260725-tesla-zara-deliverable-approval
+- cross-module → REQ-20260725-tesla-zara-deliverable-approval
