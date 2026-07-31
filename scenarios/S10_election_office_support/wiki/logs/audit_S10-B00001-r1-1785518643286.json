@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "S10-B00001-r1-1785518643286",
+    "mode": "bench",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-07-31T17:22:03.212Z",
+    "finished_at": "2026-07-31T17:24:03.286Z",
+    "duration_ms": 120074
+  },
+  "trigger": {
+    "source": "bench:S10:B00001",
+    "requestor": "관리계 주무관",
+    "received_at": "2026-07-31T17:22:03.212Z",
+    "scenario_id": "S10-B00001",
+    "domain": "선관위 사무보조"
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T17:22:03.212Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T17:22:03.212Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:S10:B00001",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T17:22:03.545Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "EXISTS"
+    },
+    {
+      "ts": "2026-07-31T17:22:03.821Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 3044
+    },
+    {
+      "ts": "2026-07-31T17:22:29.356Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T17:22:37.295Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T17:22:57.200Z",
+      "stage": "quality_review",
+      "actor": "auto(bench)",
+      "decision": "APPROVE"
+    },
+    {
+      "ts": "2026-07-31T17:23:16.056Z",
+      "stage": "devils_advocate",
+      "actor": "DA+MathThreshold",
+      "decision": "PASS",
+      "score": 5,
+      "escalated": false
+    },
+    {
+      "ts": "2026-07-31T17:23:16.074Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": "승인(bench auto)"
+    },
+    {
+      "ts": "2026-07-31T17:23:16.083Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "FINAL_APPROVE"
+    },
+    {
+      "ts": "2026-07-31T17:23:56.139Z",
+      "stage": "wiki_librarian",
+      "actor": "Wiki Librarian agent",
+      "decision": "ENTRY_OK",
+      "files": [
+        "requirements/REQ-20250308-election-support-escalation-approval-result.md",
+        "decisions.md",
+        "index.md",
+        "logs/runs.md"
+      ]
+    },
+    {
+      "ts": "2026-07-31T17:23:56.448Z",
+      "stage": "wiki_write_prepare",
+      "actor": "system",
+      "files": [
+        "requirements/REQ-20250308-election-support-escalation-approval-result.md(new)",
+        "decisions.md(update)",
+        "index.md(update)",
+        "logs/runs.md(update)"
+      ]
+    },
+    {
+      "ts": "2026-07-31T17:24:03.251Z",
+      "stage": "wiki_commit",
+      "actor": "GitHub Contents API",
+      "decision": "COMMITTED",
+      "files_committed": 4,
+      "files_failed": 0,
+      "hash": "a411612"
+    },
+    {
+      "ts": "2026-07-31T17:24:03.268Z",
+      "stage": "quality_assurance",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": ""
+    },
+    {
+      "ts": "2026-07-31T17:24:03.277Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 1
+    },
+    "semantic_audit": {
+      "attempts": 1
+    },
+    "devils_advocate": {
+      "attempts": 1,
+      "score": 5,
+      "verdict": "보완 권고: 승인권자·법적 근거·SLA·RACI·정보보호 통제를 확정하고 전체 산출물 일관성 검증 및 운영 리허설 후 진행하십시오."
+    },
+    "escalated_any": false
+  },
+  "deliverable": {
+    "req_id": "REQ-20250308-election-support-escalation-approval-result",
+    "requirement": "관리계·지도계 선거 사무 지원 절차와 민원·유권해석 에스컬레이션 기준을 승인 범위에 따라 산출물에 반영하고 후속 확정 항목을 관리한다.",
+    "keywords": [
+      "관리계",
+      "지도계",
+      "선거비용 실사",
+      "민원 대응",
+      "유권해석",
+      "에스컬레이션",
+      "승인권자",
+      "법적 근거",
+      "SLA",
+      "RACI",
+      "개인정보 보호",
+      "산출물 갱신",
+      "시행 전 검증"
+    ],
+    "wiki_files": [
+      "scenarios/S10_election_office_support/wiki/requirements/REQ-20250308-election-support-escalation-approval-result.md",
+      "scenarios/S10_election_office_support/wiki/decisions.md",
+      "scenarios/S10_election_office_support/wiki/index.md",
+      "scenarios/S10_election_office_support/wiki/logs/runs.md"
+    ],
+    "commit_hash": "a411612",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/a4116126b3959fedf835145b58cddef4deac1302"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
