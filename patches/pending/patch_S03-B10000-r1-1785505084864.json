@@ -1,0 +1,96 @@
+{
+  "schema": "deliverable_patch/v2",
+  "run_id": "S03-B10000-r1-1785505084864",
+  "ts": "2026-07-31T13:38:42.978Z",
+  "req_id": "REQ-20260725-fi-internal-trade-key-mapping-approval",
+  "requestor": "재무 최부장",
+  "source": "bench:S03:B10000",
+  "entry": "bench",
+  "deliverable_dir": "scenarios/S03_sap_fi_consolidation/deliverables",
+  "decision": "승인한다. 단, 적용 범위·시점별 재현성·권한통제·cross-module 영향·성능 및 마이그레이션·롤백 기준을 확정하여 추적표와 테스트에 반영한 후 진행한다.",
+  "summary": "내부거래대사 표준 키 매핑과 결산리포트 조회 개선을 설계·추적·테스트 산출물에 반영한다.",
+  "da_score": 5,
+  "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/7e085eee81cbdce9206739f9065fadaa3ae9df29",
+  "wiki_files": [
+    "scenarios/S03_sap_fi_consolidation/wiki/requirements/REQ-20260725-fi-internal-trade-key-mapping-approval.md",
+    "scenarios/S03_sap_fi_consolidation/wiki/decisions.md",
+    "scenarios/S03_sap_fi_consolidation/wiki/index.md",
+    "scenarios/S03_sap_fi_consolidation/wiki/logs/runs.md"
+  ],
+  "ops": [
+    {
+      "target": "docx",
+      "op": "append_changelog",
+      "bullets": [
+        "내부거래대사 키를 표준 매핑 구조로 통합하고 생성·수정·조회·유효기간·상태 및 변경 이력 관리 기준을 반영한다.",
+        "결산리포트에 대사 대상, 매핑 키, 대사 상태, 불일치 사유와 조치 상태를 조회·필터·정렬·상세 drill-down으로 확인하는 개선 내용을 반영한다.",
+        "기존 결산 결과 호환성·재현성, 권한통제, cross-module 영향, 성능, 마이그레이션·롤백 기준을 추적 및 테스트 대상으로 반영한다."
+      ],
+      "risks": [
+        "업무 기준과 시스템 식별 기준이 불명확하면 잘못된 키 매핑으로 대사결과가 왜곡될 수 있다.",
+        "기존 키 구조와 신규 매핑 구조의 호환성이 부족하면 진행 중이거나 과거의 연결결산 결과 재현에 영향을 줄 수 있다.",
+        "대량 결산 데이터와 복잡한 매핑 조건으로 결산리포트 응답 시간이 저하될 수 있다.",
+        "키 변경 및 매핑 이력 관리가 미흡하면 대사결과 추적성과 감사 대응력이 떨어질 수 있다.",
+        "중복·순환 매핑 또는 양사 간 키 불일치 예외 처리가 부족하면 미대사 건이 누락될 수 있다.",
+        "등록·변경·승인 권한, 감사로그, 마이그레이션·롤백 및 운영 성능 기준이 확정되지 않으면 운영 통제와 배포 안정성이 저하될 수 있다."
+      ],
+      "open_questions": [
+        "내부거래대사 키를 정의하는 업무 속성 조합은 무엇이며 법인·계정·거래유형·기간을 필수로 적용할 것인가?",
+        "신규 매핑 구조의 적용 범위를 신규 결산에만 둘 것인지, 진행 중 결산과 과거 결산 데이터까지 포함할 것인가?",
+        "키 매핑 등록·변경·승인 권한과 변경 이력 보존 기준은 무엇인가?",
+        "결산리포트의 우선 제공 지표와 필터 조건은 무엇이며 다운로드 기능이 필요한가?",
+        "미매핑·중복 매핑·불일치 발생 시 담당자 지정, 알림 및 재대사 지원을 어디까지 제공할 것인가?",
+        "결산리포트의 목표 응답 시간과 최대 조회 건수는 얼마인가?"
+      ],
+      "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/7e085eee81cbdce9206739f9065fadaa3ae9df29"
+    },
+    {
+      "target": "xlsx",
+      "op": "append_row",
+      "sheet": "RTM",
+      "values": [
+        "REQ-20260725-fi-internal-trade-key-mapping-approval",
+        "2026-07-31T22:38:29.715+09:00",
+        "재무 최부장",
+        "bench:S03:B10000",
+        "승인한다. 단, 적용 범위·시점별 재현성·권한통제·cross-module 영향·성능 및 마이그레이션·롤백 기준을 확정하여 추적표와 테스트에 반영한 후 진행한다.",
+        "분리 관리되는 내부거래대사 키를 표준 매핑 구조로 통합하고, 매핑 이력·예외·호환성 및 결산리포트 조회 개선을 반영한다.",
+        "FI 연결결산 기능정의서; 데이터 모델 및 인터페이스 명세; 결산리포트 화면/조회 설계서; 테스트 시나리오; 요구사항 추적표.xlsx; 산출물_설계서.docx; 보고_장표.pptx",
+        "modify",
+        "5",
+        "https://github.com/Abraxaspark91/n8n_termpjt/commit/7e085eee81cbdce9206739f9065fadaa3ae9df29"
+      ]
+    },
+    {
+      "target": "pptx",
+      "op": "append_changelog_slide",
+      "title": "변경 승인 반영: 표준 키 매핑 및 결산리포트 조회 개선",
+      "bullets": [
+        "내부거래대사 키를 표준 매핑 구조로 통합하고 생성·수정·조회·유효기간·상태·이력 기준을 정의",
+        "대사 대상·매핑 키·대사 상태·불일치 사유·조치 상태를 한 화면에서 조회",
+        "조회·필터·정렬·상세 drill-down 및 미대사·불일치 중심 조회 반영",
+        "기존 결산 결과 재현성, 권한통제, cross-module 영향, 성능, 마이그레이션·롤백 기준을 추적 및 테스트에 반영"
+      ]
+    },
+    {
+      "target": "docx",
+      "op": "append_after_heading",
+      "heading": "2.1 매핑 테이블 설계",
+      "text": "매핑 테이블은 표준 매핑키, 법인·계정·거래유형·기간 등 업무 식별 속성, 유효기간, 매핑 상태, 생성·수정·승인 권한과 변경 이력을 관리한다. 중복·미매핑·순환 매핑은 예외로 분리하고, 기존 로컬키 구조와의 호환성 및 마이그레이션·롤백 결과를 추적하여 과거 결산 결과의 재현성을 보장한다.",
+      "style": null
+    },
+    {
+      "target": "docx",
+      "op": "append_after_heading",
+      "heading": "3. 결산리포트 대사결과 확인 프로세스",
+      "text": "결산리포트는 대사 대상, 표준 매핑키, 대사 상태, 불일치 사유와 조치 상태를 한 화면에 제공하며 조회·필터·정렬과 상세 drill-down을 지원한다. 미대사·불일치 건 중심 조회, 대량 조회 성능 기준, 담당자 지정 및 재대사 처리 결과를 함께 관리한다.",
+      "style": null
+    },
+    {
+      "target": "pptx",
+      "op": "replace_text",
+      "match": "표준키 기준 자동매칭",
+      "new_text": "표준키 기준 자동매칭 및 대사 대상·매핑 키·대사 상태·불일치 사유·조치 상태 통합 조회"
+    }
+  ]
+}
