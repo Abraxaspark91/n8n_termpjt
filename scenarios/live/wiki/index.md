@@ -26,3 +26,10 @@
 - 개인정보 → REQ-20260725-SD-MM-FI-MRP-통합승인게이트
 - 운영전환 → REQ-20260725-SD-MM-FI-MRP-통합승인게이트
 - 승인 게이트 → REQ-20260725-SD-MM-FI-MRP-통합승인게이트
+- CO WBS 전환 보류 → REQ-20260730-co-wbs-pause-pp-routing-md-cleanup
+- 내부오더 임시운영 → REQ-20260730-co-wbs-pause-pp-routing-md-cleanup
+- PP 라우팅 표준화 → REQ-20260730-co-wbs-pause-pp-routing-md-cleanup
+- 자재 BOM 마스터데이터 정비 → REQ-20260730-co-wbs-pause-pp-routing-md-cleanup
+- 데이터 이관 및 롤백 → REQ-20260730-co-wbs-pause-pp-routing-md-cleanup
+- 회귀 테스트 및 운영 전환 게이트 → REQ-20260730-co-wbs-pause-pp-routing-md-cleanup
+- 감사추적 접근통제 고객공지 → REQ-20260730-co-wbs-pause-pp-routing-md-cleanup
