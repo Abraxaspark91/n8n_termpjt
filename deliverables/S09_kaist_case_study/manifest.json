@@ -1,0 +1,9 @@
+{
+  "schema": "deliverable_manifest/v1",
+  "scenario_id": "S09",
+  "docx": "Tesla_Zara_비교분석_보고서.docx",
+  "xlsx": "비교표_지표_시트.xlsx",
+  "pptx": "Tesla_Zara_발표_덱.pptx",
+  "rtm_sheet": "RTM",
+  "notes": "seed by claude-code"
+}
