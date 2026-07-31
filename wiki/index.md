@@ -55,3 +55,17 @@
 - 재고평가 → [REQ-20250308-sd-mm-fi-update-returns-641](requirements/REQ-20250308-sd-mm-fi-update-returns-641.md)
 - 크로스모듈 → [REQ-20250308-sd-mm-fi-update-returns-641](requirements/REQ-20250308-sd-mm-fi-update-returns-641.md)
 - 테스트 시나리오 → [REQ-20250308-sd-mm-fi-update-returns-641](requirements/REQ-20250308-sd-mm-fi-update-returns-641.md)
+- SD-FI → REQ-20250308-sd-fi-w102-kna1 | requirements/REQ-20250308-sd-fi-w102-kna1.md
+- billing → REQ-20250308-sd-fi-w102-kna1 | requirements/REQ-20250308-sd-fi-w102-kna1.md
+- 회계전표 → REQ-20250308-sd-fi-w102-kna1 | requirements/REQ-20250308-sd-fi-w102-kna1.md
+- 통합테스트 → REQ-20250308-sd-fi-w102-kna1 | requirements/REQ-20250308-sd-fi-w102-kna1.md
+- WRICEF → REQ-20250308-sd-fi-w102-kna1 | requirements/REQ-20250308-sd-fi-w102-kna1.md
+- W-102 → REQ-20250308-sd-fi-w102-kna1 | requirements/REQ-20250308-sd-fi-w102-kna1.md
+- KNA1 → REQ-20250308-sd-fi-w102-kna1 | requirements/REQ-20250308-sd-fi-w102-kna1.md
+- 고객 마스터 → REQ-20250308-sd-fi-w102-kna1 | requirements/REQ-20250308-sd-fi-w102-kna1.md
+- 인터페이스 매핑 → REQ-20250308-sd-fi-w102-kna1 | requirements/REQ-20250308-sd-fi-w102-kna1.md
+- 회귀검증 → REQ-20250308-sd-fi-w102-kna1 | requirements/REQ-20250308-sd-fi-w102-kna1.md
+- 재처리 → REQ-20250308-sd-fi-w102-kna1 | requirements/REQ-20250308-sd-fi-w102-kna1.md
+- 대사 → REQ-20250308-sd-fi-w102-kna1 | requirements/REQ-20250308-sd-fi-w102-kna1.md
+- 중복 전표 방지 → REQ-20250308-sd-fi-w102-kna1 | requirements/REQ-20250308-sd-fi-w102-kna1.md
+- 다음 릴리즈 → REQ-20250308-sd-fi-w102-kna1 | requirements/REQ-20250308-sd-fi-w102-kna1.md
