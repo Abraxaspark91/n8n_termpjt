@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "live-1785497347224",
+    "mode": "live",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-07-31T11:21:45.925Z",
+    "finished_at": "2026-07-31T11:29:07.224Z",
+    "duration_ms": 441299
+  },
+  "trigger": {
+    "source": "teams(demo digest)",
+    "requestor": "(Teams 24h digest)",
+    "received_at": "2026-07-31T11:21:45.925Z",
+    "scenario_id": null,
+    "domain": null
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T08:11:21.910Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T08:11:21.910Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:S01:B00000",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T08:11:22.194Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "EXISTS"
+    },
+    {
+      "ts": "2026-07-31T08:11:22.487Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 5042
+    },
+    {
+      "ts": "2026-07-31T08:11:40.261Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "FAIL",
+      "escalated": false,
+      "missing_count": 12
+    },
+    {
+      "ts": "2026-07-31T08:12:00.991Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T08:12:08.367Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T08:12:33.404Z",
+      "stage": "quality_review",
+      "actor": "auto(bench)",
+      "decision": "APPROVE"
+    },
+    {
+      "ts": "2026-07-31T08:12:53.296Z",
+      "stage": "devils_advocate",
+      "actor": "DA+MathThreshold",
+      "decision": "PASS",
+      "score": 5,
+      "escalated": false
+    },
+    {
+      "ts": "2026-07-31T08:12:53.318Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "FINAL_APPROVE"
+    },
+    {
+      "ts": "2026-07-31T08:13:37.318Z",
+      "stage": "wiki_librarian",
+      "actor": "Wiki Librarian agent",
+      "decision": "ENTRY_OK",
+      "files": [
+        "requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-result.md",
+        "decisions.md",
+        "index.md",
+        "logs/runs.md"
+      ]
+    },
+    {
+      "ts": "2026-07-31T08:13:37.612Z",
+      "stage": "wiki_write_prepare",
+      "actor": "system",
+      "files": [
+        "requirements/REQ-20250308-enterprise-ai-architecture-selection-execution-result.md(new)",
+        "decisions.md(update)",
+        "index.md(update)",
+        "logs/runs.md(update)"
+      ]
+    },
+    {
+      "ts": "2026-07-31T08:13:44.345Z",
+      "stage": "wiki_commit",
+      "actor": "GitHub Contents API",
+      "decision": "COMMITTED",
+      "files_committed": 4,
+      "files_failed": 0,
+      "hash": "b33f47e"
+    },
+    {
+      "ts": "2026-07-31T08:13:44.372Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    },
+    {
+      "ts": "2026-07-31T08:14:27.250Z",
+      "stage": "deliverables_patch_spec",
+      "actor": "Deliverable Patch Agent",
+      "valid": true,
+      "reasons": [],
+      "ops": 4,
+      "targeted": 1
+    },
+    {
+      "ts": "2026-07-31T11:29:07.184Z",
+      "stage": "quality_assurance",
+      "actor": "Human PM",
+      "decision": "APPROVE",
+      "note": "승인"
+    },
+    {
+      "ts": "2026-07-31T11:29:07.208Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 2
+    },
+    "semantic_audit": {
+      "attempts": 1
+    },
+    "devils_advocate": {
+      "attempts": 1,
+      "score": 5,
+      "verdict": "승인 게이트 통과 전 진행 보류를 유지하고, 미결정 업무 규칙·책임자·측정 가능한 합격 기준·감사 및 개인정보 증적을 확정한 뒤 진행을 권고한다."
+    },
+    "escalated_any": false
+  },
+  "deliverable": {
+    "req_id": "REQ-20260725-SD-MM-FI-MRP-통합승인게이트",
+    "requirement": "SD 반품, MM MRP·재고부족 알림, FI 승인 워크플로 및 교차 모듈 운영·컴플라이언스 산출물의 영향사항을 반영하되 승인 게이트 통과 전 개발·테스트·배포는 보류한다.",
+    "keywords": [
+      "SD",
+      "반품",
+      "RE 오더",
+      "MM",
+      "MRP",
+      "MD04",
+      "재고부족 알림",
+      "FI",
+      "승인 워크플로",
+      "직무분리",
+      "개인정보",
+      "감사로그",
+      "통합테스트",
+      "변경관리",
+      "릴리즈",
+      "운영전환",
+      "승인 게이트"
+    ],
+    "wiki_files": [
+      "scenarios/live/wiki/requirements/REQ-20260725-SD-MM-FI-MRP-통합승인게이트.md",
+      "scenarios/live/wiki/decisions.md",
+      "scenarios/live/wiki/index.md",
+      "scenarios/live/wiki/logs/runs.md"
+    ],
+    "commit_hash": "7ad54ea",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/7ad54eaba34b39daf406f6fe3449494cc3705018"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
