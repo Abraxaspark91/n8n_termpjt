@@ -1,0 +1,9 @@
+{
+  "schema": "deliverable_manifest/v1",
+  "scenario_id": "S05",
+  "docx": "AI_경비자동화_설계서.docx",
+  "xlsx": "규정매트릭스_OCR_시트.xlsx",
+  "pptx": "경비자동화_프로세스_덱.pptx",
+  "rtm_sheet": "RTM",
+  "notes": "seed by claude-code"
+}
