@@ -1,0 +1,90 @@
+{
+  "schema": "deliverable_patch/v2",
+  "run_id": "S03-B00001-r1-1785505932388",
+  "ts": "2026-07-31T13:52:52.880Z",
+  "req_id": "REQ-20260725-fi-internal-trade-key-mapping-approval-execution-confirmation",
+  "requestor": "재무 최부장",
+  "source": "bench:S03:B00001",
+  "entry": "bench",
+  "deliverable_dir": "scenarios/S03_sap_fi_consolidation/deliverables",
+  "decision": "7개 영향 산출물의 변경 및 DOCX·XLSX·PPTX 문서엔진 갱신 결과를 승인·기록한다. 적용 범위·기준 시점·권한·감사통제·인터페이스 계약·성능·마이그레이션·롤백 기준은 후속 확정 및 검증 증적 확보를 조건으로 추적한다.",
+  "summary": "FI 연결결산 내부거래대사 표준 키 매핑과 결산리포트 개선을 DOCX·XLSX·PPTX에 승인·기록하고 후속 검증 기준을 추적한다.",
+  "da_score": 5,
+  "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/5ed05cd82fe9a999487a096c8bfeaa3315960341",
+  "wiki_files": [
+    "scenarios/S03_sap_fi_consolidation/wiki/requirements/REQ-20260725-fi-internal-trade-key-mapping-approval-execution-confirmation.md",
+    "scenarios/S03_sap_fi_consolidation/wiki/decisions.md",
+    "scenarios/S03_sap_fi_consolidation/wiki/index.md",
+    "scenarios/S03_sap_fi_consolidation/wiki/logs/runs.md"
+  ],
+  "ops": [
+    {
+      "target": "docx",
+      "op": "append_changelog",
+      "bullets": [
+        "내부거래대사 키를 표준 매핑 구조로 통합하고 키 생성·수정·조회·유효기간·상태 및 변경 이력 관리 기준을 반영한다.",
+        "매핑 버전·기준 시점·기존 결산 데이터 호환성·결과 재현성·중복·미매핑·순환·양사 키 불일치 예외 및 마이그레이션 추적 기준을 반영한다.",
+        "결산리포트에 대사 대상·매핑 키·대사 상태·불일치 사유·조치 상태와 필터·정렬·미대사·불일치 중심 조회 및 상세 drill-down 요구를 반영한다.",
+        "권한·승인 통제·감사로그·cross-module 인터페이스·성능 수용기준·마이그레이션 검증 및 롤백 기준은 후속 확정과 검증 증적 확보 조건으로 추적한다."
+      ],
+      "risks": [
+        "기존 키 구조와 신규 매핑 구조의 호환성이 부족하면 진행 중·과거 결산 결과의 재현성이 저하될 수 있다.",
+        "중복·순환·양사 간 키 불일치 예외 처리와 대량 drill-down 조회가 부족하면 미대사 누락 또는 응답시간 저하가 발생할 수 있다.",
+        "권한·감사로그·인터페이스·마이그레이션 검증이 미흡하면 승인되지 않은 변경이나 배포 후 롤백 곤란이 발생할 수 있다."
+      ],
+      "open_questions": [
+        "필수 업무 속성 및 법인·계정·거래유형·기간별 키 구성 기준을 확정해야 한다.",
+        "신규·진행 중·과거 결산별 적용 범위와 기준 시점을 확정해야 한다.",
+        "권한·승인·감사로그 보존·성능·인터페이스 계약·마이그레이션·롤백 기준을 확정해야 한다."
+      ],
+      "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/5ed05cd82fe9a999487a096c8bfeaa3315960341"
+    },
+    {
+      "target": "xlsx",
+      "op": "append_row",
+      "sheet": "RTM",
+      "values": [
+        "REQ-20260725-fi-internal-trade-key-mapping-approval-execution-confirmation",
+        "2026-07-31T22:52:36.977+09:00",
+        "재무 최부장",
+        "bench:S03:B00001",
+        "7개 영향 산출물의 변경 및 DOCX·XLSX·PPTX 문서엔진 갱신 결과를 승인·기록한다. 적용 범위·기준 시점·권한·감사통제·인터페이스 계약·성능·마이그레이션·롤백 기준은 후속 확정 및 검증 증적 확보를 조건으로 추적한다.",
+        "FI 연결결산 내부거래대사 키를 표준 매핑 구조로 통합하고 결산리포트 조회·필터·정렬·drill-down 및 이력·호환성·재현성·예외·통제·마이그레이션 기준을 7개 영향 산출물에 동기화한다.",
+        "FI 연결결산 기능정의서; 데이터 모델 및 인터페이스 명세; 결산리포트 화면/조회 설계서; 테스트 시나리오; 산출물_설계서.docx; 요구사항_추적표.xlsx; 보고_장표.pptx",
+        "modify/add",
+        5,
+        "https://github.com/Abraxaspark91/n8n_termpjt/commit/5ed05cd82fe9a999487a096c8bfeaa3315960341"
+      ]
+    },
+    {
+      "target": "pptx",
+      "op": "append_changelog_slide",
+      "title": "변경 승인 및 후속 검증 기준",
+      "bullets": [
+        "내부거래대사 키를 표준 매핑 구조로 통합하고 매핑 버전·변경 이력·기준 시점·기존 결산 결과 호환성과 재현성을 관리",
+        "결산리포트에 대사 대상·매핑 키·상태·불일치 사유·조치 상태 및 미대사·불일치 중심 조회와 상세 drill-down 반영",
+        "정상·미매핑·중복·이력 변경·대량 조회·호환성·시점별 재현성 테스트와 권한·감사로그·인터페이스·성능·마이그레이션·롤백 기준을 후속 확정 및 검증"
+      ]
+    },
+    {
+      "target": "docx",
+      "op": "append_after_heading",
+      "heading": "2. 내부거래대사 키 매핑 구조",
+      "text": "표준 매핑 구조는 키 생성·수정·조회·유효기간·매핑 상태를 관리하고 매핑 버전, 변경 이력, 기준 시점, 기존 결산 데이터 호환성 및 진행 중·과거 결산 결과의 재현성을 보장해야 한다. 중복 매핑·미매핑·순환 매핑·양사 간 키 불일치 예외를 식별하고 마이그레이션 대상·검증 결과·실패 시 롤백 기준을 추적한다. 등록·변경은 권한과 승인을 거치며 감사로그와 cross-module 인터페이스 영향 및 계약 변경을 기록한다.",
+      "style": null
+    },
+    {
+      "target": "docx",
+      "op": "append_after_heading",
+      "heading": "3. 결산리포트 대사결과 확인 프로세스",
+      "text": "결산리포트는 대사 대상, 표준 매핑 키, 대사 상태, 불일치 사유 및 조치 상태를 통합 표시하고 조회·필터·정렬을 제공한다. 미대사·불일치 중심 조회와 상세 drill-down으로 원천 전표와 매핑 이력을 확인할 수 있어야 하며, 대량 조회에 대한 목표 응답 시간과 최대 조회 건수는 성능 수용기준으로 후속 확정한다.",
+      "style": null
+    },
+    {
+      "target": "pptx",
+      "op": "replace_text",
+      "match": "표준 대사키 정의",
+      "new_text": "표준 대사키 및 매핑 버전·기준 시점 정의, 변경 이력·유효기간·상태 관리"
+    }
+  ]
+}
