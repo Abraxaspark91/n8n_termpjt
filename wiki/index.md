@@ -21,3 +21,13 @@
 - MM-FI 연계 → REQ-20250308-mm-mrp-safety-stock-fi-linkage | requirements/REQ-20250308-mm-mrp-safety-stock-fi-linkage.md
 - 계정결정 → REQ-20250308-mm-mrp-safety-stock-fi-linkage | requirements/REQ-20250308-mm-mrp-safety-stock-fi-linkage.md
 - 통합테스트 → REQ-20250308-mm-mrp-safety-stock-fi-linkage | requirements/REQ-20250308-mm-mrp-safety-stock-fi-linkage.md
+- FI → REQ-20250308-fi-2step-approval ([요건](requirements/REQ-20250308-fi-2step-approval.md))
+- 전표 승인 → REQ-20250308-fi-2step-approval ([요건](requirements/REQ-20250308-fi-2step-approval.md))
+- 2단계 승인 → REQ-20250308-fi-2step-approval ([요건](requirements/REQ-20250308-fi-2step-approval.md))
+- 순차 승인 → REQ-20250308-fi-2step-approval ([요건](requirements/REQ-20250308-fi-2step-approval.md))
+- 내부감사 → REQ-20250308-fi-2step-approval ([요건](requirements/REQ-20250308-fi-2step-approval.md))
+- 반려 → REQ-20250308-fi-2step-approval ([요건](requirements/REQ-20250308-fi-2step-approval.md))
+- 재상신 → REQ-20250308-fi-2step-approval ([요건](requirements/REQ-20250308-fi-2step-approval.md))
+- 권한 통제 → REQ-20250308-fi-2step-approval ([요건](requirements/REQ-20250308-fi-2step-approval.md))
+- 감사 로그 → REQ-20250308-fi-2step-approval ([요건](requirements/REQ-20250308-fi-2step-approval.md))
+- 미결 전표 전환 → REQ-20250308-fi-2step-approval ([요건](requirements/REQ-20250308-fi-2step-approval.md))
