@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generated_at": "2026-07-31T17:25:03.473Z",
+    "generated_at": "2026-07-31T18:13:33.670Z",
     "total_runs": 60,
     "overall_success_rate": 0.95,
     "robust_cases": 57,
@@ -976,6 +976,32 @@
       "avg_recall": 1
     },
     {
+      "scenario_id": "S07-B00001",
+      "sid": "S07",
+      "domain": "투자 Dashboard",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        113330
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
       "scenario_id": "S07-B00010",
       "sid": "S07",
       "domain": "투자 Dashboard",
@@ -1082,32 +1108,6 @@
       "avg_recall": 1
     },
     {
-      "scenario_id": "S07-B00001",
-      "sid": "S07",
-      "domain": "투자 Dashboard",
-      "scenario_type": "B00001",
-      "branch_bits": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "k": 1,
-      "successes": 1,
-      "failures": {},
-      "durations": [
-        113330
-      ],
-      "recalls": [
-        1
-      ],
-      "rate": 1,
-      "robust": true,
-      "flaky": false,
-      "avg_recall": 1
-    },
-    {
       "scenario_id": "S08-B00000",
       "sid": "S08",
       "domain": "AI 저널 레코더 런칭",
@@ -1124,110 +1124,6 @@
       "failures": {},
       "durations": [
         129343
-      ],
-      "recalls": [
-        1
-      ],
-      "rate": 1,
-      "robust": true,
-      "flaky": false,
-      "avg_recall": 1
-    },
-    {
-      "scenario_id": "S08-B10000",
-      "sid": "S08",
-      "domain": "AI 저널 레코더 런칭",
-      "scenario_type": "B10000",
-      "branch_bits": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ],
-      "k": 1,
-      "successes": 1,
-      "failures": {},
-      "durations": [
-        137269
-      ],
-      "recalls": [
-        1
-      ],
-      "rate": 1,
-      "robust": true,
-      "flaky": false,
-      "avg_recall": 1
-    },
-    {
-      "scenario_id": "S08-B01000",
-      "sid": "S08",
-      "domain": "AI 저널 레코더 런칭",
-      "scenario_type": "B01000",
-      "branch_bits": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ],
-      "k": 1,
-      "successes": 1,
-      "failures": {},
-      "durations": [
-        218323
-      ],
-      "recalls": [
-        1
-      ],
-      "rate": 1,
-      "robust": true,
-      "flaky": false,
-      "avg_recall": 1
-    },
-    {
-      "scenario_id": "S08-B00100",
-      "sid": "S08",
-      "domain": "AI 저널 레코더 런칭",
-      "scenario_type": "B00100",
-      "branch_bits": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ],
-      "k": 1,
-      "successes": 1,
-      "failures": {},
-      "durations": [
-        168715
-      ],
-      "recalls": [
-        1
-      ],
-      "rate": 1,
-      "robust": true,
-      "flaky": false,
-      "avg_recall": 1
-    },
-    {
-      "scenario_id": "S08-B00010",
-      "sid": "S08",
-      "domain": "AI 저널 레코더 런칭",
-      "scenario_type": "B00010",
-      "branch_bits": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ],
-      "k": 1,
-      "successes": 1,
-      "failures": {},
-      "durations": [
-        179200
       ],
       "recalls": [
         1
@@ -1264,6 +1160,110 @@
       "avg_recall": 1
     },
     {
+      "scenario_id": "S08-B00010",
+      "sid": "S08",
+      "domain": "AI 저널 레코더 런칭",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        179200
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S08-B00100",
+      "sid": "S08",
+      "domain": "AI 저널 레코더 런칭",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        168715
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S08-B01000",
+      "sid": "S08",
+      "domain": "AI 저널 레코더 런칭",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        218323
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S08-B10000",
+      "sid": "S08",
+      "domain": "AI 저널 레코더 런칭",
+      "scenario_type": "B10000",
+      "branch_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        137269
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
       "scenario_id": "S09-B00000",
       "sid": "S09",
       "domain": "Biz Case Study(Tesla·Zara)",
@@ -1280,6 +1280,110 @@
       "failures": {},
       "durations": [
         140275
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S09-B00001",
+      "sid": "S09",
+      "domain": "Biz Case Study(Tesla·Zara)",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "k": 1,
+      "successes": 0,
+      "failures": {
+        "pipeline_crashed": 1
+      },
+      "durations": [],
+      "recalls": [
+        0
+      ],
+      "rate": 0,
+      "robust": false,
+      "flaky": false,
+      "avg_recall": 0
+    },
+    {
+      "scenario_id": "S09-B00010",
+      "sid": "S09",
+      "domain": "Biz Case Study(Tesla·Zara)",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        181365
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S09-B00100",
+      "sid": "S09",
+      "domain": "Biz Case Study(Tesla·Zara)",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        157266
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S09-B01000",
+      "sid": "S09",
+      "domain": "Biz Case Study(Tesla·Zara)",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        163054
       ],
       "recalls": [
         1
@@ -1318,110 +1422,6 @@
       "avg_recall": 1
     },
     {
-      "scenario_id": "S09-B01000",
-      "sid": "S09",
-      "domain": "Biz Case Study(Tesla·Zara)",
-      "scenario_type": "B01000",
-      "branch_bits": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ],
-      "k": 1,
-      "successes": 1,
-      "failures": {},
-      "durations": [
-        163054
-      ],
-      "recalls": [
-        1
-      ],
-      "rate": 1,
-      "robust": true,
-      "flaky": false,
-      "avg_recall": 1
-    },
-    {
-      "scenario_id": "S09-B00100",
-      "sid": "S09",
-      "domain": "Biz Case Study(Tesla·Zara)",
-      "scenario_type": "B00100",
-      "branch_bits": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ],
-      "k": 1,
-      "successes": 1,
-      "failures": {},
-      "durations": [
-        157266
-      ],
-      "recalls": [
-        1
-      ],
-      "rate": 1,
-      "robust": true,
-      "flaky": false,
-      "avg_recall": 1
-    },
-    {
-      "scenario_id": "S09-B00010",
-      "sid": "S09",
-      "domain": "Biz Case Study(Tesla·Zara)",
-      "scenario_type": "B00010",
-      "branch_bits": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ],
-      "k": 1,
-      "successes": 1,
-      "failures": {},
-      "durations": [
-        181365
-      ],
-      "recalls": [
-        1
-      ],
-      "rate": 1,
-      "robust": true,
-      "flaky": false,
-      "avg_recall": 1
-    },
-    {
-      "scenario_id": "S09-B00001",
-      "sid": "S09",
-      "domain": "Biz Case Study(Tesla·Zara)",
-      "scenario_type": "B00001",
-      "branch_bits": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "k": 1,
-      "successes": 0,
-      "failures": {
-        "pipeline_crashed": 1
-      },
-      "durations": [],
-      "recalls": [
-        0
-      ],
-      "rate": 0,
-      "robust": false,
-      "flaky": false,
-      "avg_recall": 0
-    },
-    {
       "scenario_id": "S10-B00000",
       "sid": "S10",
       "domain": "선관위 사무보조",
@@ -1448,74 +1448,22 @@
       "avg_recall": 1
     },
     {
-      "scenario_id": "S10-B10000",
+      "scenario_id": "S10-B00001",
       "sid": "S10",
       "domain": "선관위 사무보조",
-      "scenario_type": "B10000",
+      "scenario_type": "B00001",
       "branch_bits": [
-        1,
         0,
         0,
         0,
-        0
-      ],
-      "k": 1,
-      "successes": 1,
-      "failures": {},
-      "durations": [
-        170784
-      ],
-      "recalls": [
+        0,
         1
       ],
-      "rate": 1,
-      "robust": true,
-      "flaky": false,
-      "avg_recall": 1
-    },
-    {
-      "scenario_id": "S10-B01000",
-      "sid": "S10",
-      "domain": "선관위 사무보조",
-      "scenario_type": "B01000",
-      "branch_bits": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ],
       "k": 1,
       "successes": 1,
       "failures": {},
       "durations": [
-        156212
-      ],
-      "recalls": [
-        1
-      ],
-      "rate": 1,
-      "robust": true,
-      "flaky": false,
-      "avg_recall": 1
-    },
-    {
-      "scenario_id": "S10-B00100",
-      "sid": "S10",
-      "domain": "선관위 사무보조",
-      "scenario_type": "B00100",
-      "branch_bits": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ],
-      "k": 1,
-      "successes": 1,
-      "failures": {},
-      "durations": [
-        164327
+        120074
       ],
       "recalls": [
         1
@@ -1552,22 +1500,74 @@
       "avg_recall": 1
     },
     {
-      "scenario_id": "S10-B00001",
+      "scenario_id": "S10-B00100",
       "sid": "S10",
       "domain": "선관위 사무보조",
-      "scenario_type": "B00001",
+      "scenario_type": "B00100",
       "branch_bits": [
         0,
         0,
+        1,
         0,
-        0,
-        1
+        0
       ],
       "k": 1,
       "successes": 1,
       "failures": {},
       "durations": [
-        120074
+        164327
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S10-B01000",
+      "sid": "S10",
+      "domain": "선관위 사무보조",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        156212
+      ],
+      "recalls": [
+        1
+      ],
+      "rate": 1,
+      "robust": true,
+      "flaky": false,
+      "avg_recall": 1
+    },
+    {
+      "scenario_id": "S10-B10000",
+      "sid": "S10",
+      "domain": "선관위 사무보조",
+      "scenario_type": "B10000",
+      "branch_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "successes": 1,
+      "failures": {},
+      "durations": [
+        170784
       ],
       "recalls": [
         1
@@ -1954,6 +1954,13 @@
     },
     {
       "sid": "S07",
+      "factor": 4,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S07",
       "factor": 3,
       "k": 1,
       "successes": 1,
@@ -1981,29 +1988,8 @@
       "rate": 1
     },
     {
-      "sid": "S07",
+      "sid": "S08",
       "factor": 4,
-      "k": 1,
-      "successes": 1,
-      "rate": 1
-    },
-    {
-      "sid": "S08",
-      "factor": 0,
-      "k": 1,
-      "successes": 1,
-      "rate": 1
-    },
-    {
-      "sid": "S08",
-      "factor": 1,
-      "k": 1,
-      "successes": 1,
-      "rate": 1
-    },
-    {
-      "sid": "S08",
-      "factor": 2,
       "k": 1,
       "successes": 1,
       "rate": 1
@@ -2017,35 +2003,21 @@
     },
     {
       "sid": "S08",
-      "factor": 4,
-      "k": 1,
-      "successes": 1,
-      "rate": 1
-    },
-    {
-      "sid": "S09",
-      "factor": 0,
-      "k": 1,
-      "successes": 0,
-      "rate": 0
-    },
-    {
-      "sid": "S09",
-      "factor": 1,
-      "k": 1,
-      "successes": 1,
-      "rate": 1
-    },
-    {
-      "sid": "S09",
       "factor": 2,
       "k": 1,
       "successes": 1,
       "rate": 1
     },
     {
-      "sid": "S09",
-      "factor": 3,
+      "sid": "S08",
+      "factor": 1,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S08",
+      "factor": 0,
       "k": 1,
       "successes": 1,
       "rate": 1
@@ -2058,22 +2030,36 @@
       "rate": 0
     },
     {
-      "sid": "S10",
-      "factor": 0,
+      "sid": "S09",
+      "factor": 3,
       "k": 1,
       "successes": 1,
       "rate": 1
     },
     {
-      "sid": "S10",
+      "sid": "S09",
+      "factor": 2,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S09",
       "factor": 1,
       "k": 1,
       "successes": 1,
       "rate": 1
     },
     {
+      "sid": "S09",
+      "factor": 0,
+      "k": 1,
+      "successes": 0,
+      "rate": 0
+    },
+    {
       "sid": "S10",
-      "factor": 2,
+      "factor": 4,
       "k": 1,
       "successes": 1,
       "rate": 1
@@ -2087,7 +2073,21 @@
     },
     {
       "sid": "S10",
-      "factor": 4,
+      "factor": 2,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S10",
+      "factor": 1,
+      "k": 1,
+      "successes": 1,
+      "rate": 1
+    },
+    {
+      "sid": "S10",
+      "factor": 0,
       "k": 1,
       "successes": 1,
       "rate": 1
@@ -2099,11 +2099,11 @@
       "count": 1
     },
     {
-      "cause": "patch_spec_invalid",
+      "cause": "pipeline_crashed",
       "count": 1
     },
     {
-      "cause": "pipeline_crashed",
+      "cause": "patch_spec_invalid",
       "count": 1
     }
   ],
@@ -3478,6 +3478,40 @@
       }
     },
     {
+      "scenario_id": "S07-B00001",
+      "sid": "S07",
+      "domain": "투자 Dashboard",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 4,
+        "attempts": {
+          "r1": 1,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 4,
+        "patch_targeted": 1,
+        "duration_ms": 113330
+      }
+    },
+    {
       "scenario_id": "S07-B00010",
       "sid": "S07",
       "domain": "투자 Dashboard",
@@ -3628,40 +3662,6 @@
       }
     },
     {
-      "scenario_id": "S07-B00001",
-      "sid": "S07",
-      "domain": "투자 Dashboard",
-      "scenario_type": "B00001",
-      "branch_bits": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "repeat_idx": 1,
-      "repeats": 1,
-      "success": true,
-      "failures": [],
-      "metrics": {
-        "gold_recall": 1,
-        "hallucinated": [],
-        "leaked_decoys": [],
-        "entities_count": 4,
-        "attempts": {
-          "r1": 1,
-          "r2": 1,
-          "da": 1
-        },
-        "da_score": 5,
-        "escalated": false,
-        "patch_valid": true,
-        "patch_ops": 4,
-        "patch_targeted": 1,
-        "duration_ms": 113330
-      }
-    },
-    {
       "scenario_id": "S08-B00000",
       "sid": "S08",
       "domain": "AI 저널 레코더 런칭",
@@ -3693,142 +3693,6 @@
         "patch_ops": 6,
         "patch_targeted": 3,
         "duration_ms": 129343
-      }
-    },
-    {
-      "scenario_id": "S08-B10000",
-      "sid": "S08",
-      "domain": "AI 저널 레코더 런칭",
-      "scenario_type": "B10000",
-      "branch_bits": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ],
-      "repeat_idx": 1,
-      "repeats": 1,
-      "success": true,
-      "failures": [],
-      "metrics": {
-        "gold_recall": 1,
-        "hallucinated": [],
-        "leaked_decoys": [],
-        "entities_count": 6,
-        "attempts": {
-          "r1": 2,
-          "r2": 1,
-          "da": 1
-        },
-        "da_score": 5,
-        "escalated": false,
-        "patch_valid": true,
-        "patch_ops": 6,
-        "patch_targeted": 3,
-        "duration_ms": 137269
-      }
-    },
-    {
-      "scenario_id": "S08-B01000",
-      "sid": "S08",
-      "domain": "AI 저널 레코더 런칭",
-      "scenario_type": "B01000",
-      "branch_bits": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ],
-      "repeat_idx": 1,
-      "repeats": 1,
-      "success": true,
-      "failures": [],
-      "metrics": {
-        "gold_recall": 1,
-        "hallucinated": [],
-        "leaked_decoys": [],
-        "entities_count": 10,
-        "attempts": {
-          "r1": 4,
-          "r2": 3,
-          "da": 1
-        },
-        "da_score": 5,
-        "escalated": true,
-        "patch_valid": true,
-        "patch_ops": 6,
-        "patch_targeted": 3,
-        "duration_ms": 218323
-      }
-    },
-    {
-      "scenario_id": "S08-B00100",
-      "sid": "S08",
-      "domain": "AI 저널 레코더 런칭",
-      "scenario_type": "B00100",
-      "branch_bits": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ],
-      "repeat_idx": 1,
-      "repeats": 1,
-      "success": true,
-      "failures": [],
-      "metrics": {
-        "gold_recall": 1,
-        "hallucinated": [],
-        "leaked_decoys": [],
-        "entities_count": 7,
-        "attempts": {
-          "r1": 2,
-          "r2": 1,
-          "da": 1
-        },
-        "da_score": 5,
-        "escalated": false,
-        "patch_valid": true,
-        "patch_ops": 4,
-        "patch_targeted": 1,
-        "duration_ms": 168715
-      }
-    },
-    {
-      "scenario_id": "S08-B00010",
-      "sid": "S08",
-      "domain": "AI 저널 레코더 런칭",
-      "scenario_type": "B00010",
-      "branch_bits": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ],
-      "repeat_idx": 1,
-      "repeats": 1,
-      "success": true,
-      "failures": [],
-      "metrics": {
-        "gold_recall": 1,
-        "hallucinated": [],
-        "leaked_decoys": [],
-        "entities_count": 6,
-        "attempts": {
-          "r1": 2,
-          "r2": 1,
-          "da": 1
-        },
-        "da_score": 5,
-        "escalated": false,
-        "patch_valid": true,
-        "patch_ops": 4,
-        "patch_targeted": 1,
-        "duration_ms": 179200
       }
     },
     {
@@ -3866,6 +3730,142 @@
       }
     },
     {
+      "scenario_id": "S08-B00010",
+      "sid": "S08",
+      "domain": "AI 저널 레코더 런칭",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 6,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 4,
+        "patch_targeted": 1,
+        "duration_ms": 179200
+      }
+    },
+    {
+      "scenario_id": "S08-B00100",
+      "sid": "S08",
+      "domain": "AI 저널 레코더 런칭",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 7,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 4,
+        "patch_targeted": 1,
+        "duration_ms": 168715
+      }
+    },
+    {
+      "scenario_id": "S08-B01000",
+      "sid": "S08",
+      "domain": "AI 저널 레코더 런칭",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 10,
+        "attempts": {
+          "r1": 4,
+          "r2": 3,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": true,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 218323
+      }
+    },
+    {
+      "scenario_id": "S08-B10000",
+      "sid": "S08",
+      "domain": "AI 저널 레코더 런칭",
+      "scenario_type": "B10000",
+      "branch_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 6,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 137269
+      }
+    },
+    {
       "scenario_id": "S09-B00000",
       "sid": "S09",
       "domain": "Biz Case Study(Tesla·Zara)",
@@ -3897,6 +3897,140 @@
         "patch_ops": 5,
         "patch_targeted": 2,
         "duration_ms": 140275
+      }
+    },
+    {
+      "scenario_id": "S09-B00001",
+      "sid": "S09",
+      "domain": "Biz Case Study(Tesla·Zara)",
+      "scenario_type": "B00001",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": false,
+      "failures": [
+        "pipeline_crashed"
+      ],
+      "metrics": {
+        "gold_recall": 0,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 0,
+        "attempts": null,
+        "da_score": null,
+        "escalated": false,
+        "patch_valid": false,
+        "patch_ops": null,
+        "patch_targeted": null,
+        "duration_ms": null
+      }
+    },
+    {
+      "scenario_id": "S09-B00010",
+      "sid": "S09",
+      "domain": "Biz Case Study(Tesla·Zara)",
+      "scenario_type": "B00010",
+      "branch_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 8,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 181365
+      }
+    },
+    {
+      "scenario_id": "S09-B00100",
+      "sid": "S09",
+      "domain": "Biz Case Study(Tesla·Zara)",
+      "scenario_type": "B00100",
+      "branch_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 8,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 157266
+      }
+    },
+    {
+      "scenario_id": "S09-B01000",
+      "sid": "S09",
+      "domain": "Biz Case Study(Tesla·Zara)",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 12,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 163054
       }
     },
     {
@@ -3936,140 +4070,6 @@
       }
     },
     {
-      "scenario_id": "S09-B01000",
-      "sid": "S09",
-      "domain": "Biz Case Study(Tesla·Zara)",
-      "scenario_type": "B01000",
-      "branch_bits": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ],
-      "repeat_idx": 1,
-      "repeats": 1,
-      "success": true,
-      "failures": [],
-      "metrics": {
-        "gold_recall": 1,
-        "hallucinated": [],
-        "leaked_decoys": [],
-        "entities_count": 12,
-        "attempts": {
-          "r1": 2,
-          "r2": 1,
-          "da": 1
-        },
-        "da_score": 5,
-        "escalated": false,
-        "patch_valid": true,
-        "patch_ops": 6,
-        "patch_targeted": 3,
-        "duration_ms": 163054
-      }
-    },
-    {
-      "scenario_id": "S09-B00100",
-      "sid": "S09",
-      "domain": "Biz Case Study(Tesla·Zara)",
-      "scenario_type": "B00100",
-      "branch_bits": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ],
-      "repeat_idx": 1,
-      "repeats": 1,
-      "success": true,
-      "failures": [],
-      "metrics": {
-        "gold_recall": 1,
-        "hallucinated": [],
-        "leaked_decoys": [],
-        "entities_count": 8,
-        "attempts": {
-          "r1": 2,
-          "r2": 1,
-          "da": 1
-        },
-        "da_score": 5,
-        "escalated": false,
-        "patch_valid": true,
-        "patch_ops": 6,
-        "patch_targeted": 3,
-        "duration_ms": 157266
-      }
-    },
-    {
-      "scenario_id": "S09-B00010",
-      "sid": "S09",
-      "domain": "Biz Case Study(Tesla·Zara)",
-      "scenario_type": "B00010",
-      "branch_bits": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ],
-      "repeat_idx": 1,
-      "repeats": 1,
-      "success": true,
-      "failures": [],
-      "metrics": {
-        "gold_recall": 1,
-        "hallucinated": [],
-        "leaked_decoys": [],
-        "entities_count": 8,
-        "attempts": {
-          "r1": 2,
-          "r2": 1,
-          "da": 1
-        },
-        "da_score": 5,
-        "escalated": false,
-        "patch_valid": true,
-        "patch_ops": 6,
-        "patch_targeted": 3,
-        "duration_ms": 181365
-      }
-    },
-    {
-      "scenario_id": "S09-B00001",
-      "sid": "S09",
-      "domain": "Biz Case Study(Tesla·Zara)",
-      "scenario_type": "B00001",
-      "branch_bits": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "repeat_idx": 1,
-      "repeats": 1,
-      "success": false,
-      "failures": [
-        "pipeline_crashed"
-      ],
-      "metrics": {
-        "gold_recall": 0,
-        "hallucinated": [],
-        "leaked_decoys": [],
-        "entities_count": 0,
-        "attempts": null,
-        "da_score": null,
-        "escalated": false,
-        "patch_valid": false,
-        "patch_ops": null,
-        "patch_targeted": null,
-        "duration_ms": null
-      }
-    },
-    {
       "scenario_id": "S10-B00000",
       "sid": "S10",
       "domain": "선관위 사무보조",
@@ -4104,16 +4104,16 @@
       }
     },
     {
-      "scenario_id": "S10-B10000",
+      "scenario_id": "S10-B00001",
       "sid": "S10",
       "domain": "선관위 사무보조",
-      "scenario_type": "B10000",
+      "scenario_type": "B00001",
       "branch_bits": [
-        1,
         0,
         0,
         0,
-        0
+        0,
+        1
       ],
       "repeat_idx": 1,
       "repeats": 1,
@@ -4123,41 +4123,7 @@
         "gold_recall": 1,
         "hallucinated": [],
         "leaked_decoys": [],
-        "entities_count": 8,
-        "attempts": {
-          "r1": 2,
-          "r2": 1,
-          "da": 1
-        },
-        "da_score": 5,
-        "escalated": false,
-        "patch_valid": true,
-        "patch_ops": 6,
-        "patch_targeted": 3,
-        "duration_ms": 170784
-      }
-    },
-    {
-      "scenario_id": "S10-B01000",
-      "sid": "S10",
-      "domain": "선관위 사무보조",
-      "scenario_type": "B01000",
-      "branch_bits": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ],
-      "repeat_idx": 1,
-      "repeats": 1,
-      "success": true,
-      "failures": [],
-      "metrics": {
-        "gold_recall": 1,
-        "hallucinated": [],
-        "leaked_decoys": [],
-        "entities_count": 13,
+        "entities_count": 7,
         "attempts": {
           "r1": 1,
           "r2": 1,
@@ -4166,43 +4132,9 @@
         "da_score": 5,
         "escalated": false,
         "patch_valid": true,
-        "patch_ops": 4,
-        "patch_targeted": 1,
-        "duration_ms": 156212
-      }
-    },
-    {
-      "scenario_id": "S10-B00100",
-      "sid": "S10",
-      "domain": "선관위 사무보조",
-      "scenario_type": "B00100",
-      "branch_bits": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ],
-      "repeat_idx": 1,
-      "repeats": 1,
-      "success": true,
-      "failures": [],
-      "metrics": {
-        "gold_recall": 1,
-        "hallucinated": [],
-        "leaked_decoys": [],
-        "entities_count": 8,
-        "attempts": {
-          "r1": 3,
-          "r2": 2,
-          "da": 1
-        },
-        "da_score": 5,
-        "escalated": false,
-        "patch_valid": true,
-        "patch_ops": 4,
-        "patch_targeted": 1,
-        "duration_ms": 164327
+        "patch_ops": 5,
+        "patch_targeted": 2,
+        "duration_ms": 120074
       }
     },
     {
@@ -4240,16 +4172,16 @@
       }
     },
     {
-      "scenario_id": "S10-B00001",
+      "scenario_id": "S10-B00100",
       "sid": "S10",
       "domain": "선관위 사무보조",
-      "scenario_type": "B00001",
+      "scenario_type": "B00100",
       "branch_bits": [
         0,
         0,
+        1,
         0,
-        0,
-        1
+        0
       ],
       "repeat_idx": 1,
       "repeats": 1,
@@ -4259,7 +4191,41 @@
         "gold_recall": 1,
         "hallucinated": [],
         "leaked_decoys": [],
-        "entities_count": 7,
+        "entities_count": 8,
+        "attempts": {
+          "r1": 3,
+          "r2": 2,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 4,
+        "patch_targeted": 1,
+        "duration_ms": 164327
+      }
+    },
+    {
+      "scenario_id": "S10-B01000",
+      "sid": "S10",
+      "domain": "선관위 사무보조",
+      "scenario_type": "B01000",
+      "branch_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 13,
         "attempts": {
           "r1": 1,
           "r2": 1,
@@ -4268,9 +4234,43 @@
         "da_score": 5,
         "escalated": false,
         "patch_valid": true,
-        "patch_ops": 5,
-        "patch_targeted": 2,
-        "duration_ms": 120074
+        "patch_ops": 4,
+        "patch_targeted": 1,
+        "duration_ms": 156212
+      }
+    },
+    {
+      "scenario_id": "S10-B10000",
+      "sid": "S10",
+      "domain": "선관위 사무보조",
+      "scenario_type": "B10000",
+      "branch_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeat_idx": 1,
+      "repeats": 1,
+      "success": true,
+      "failures": [],
+      "metrics": {
+        "gold_recall": 1,
+        "hallucinated": [],
+        "leaked_decoys": [],
+        "entities_count": 8,
+        "attempts": {
+          "r1": 2,
+          "r2": 1,
+          "da": 1
+        },
+        "da_score": 5,
+        "escalated": false,
+        "patch_valid": true,
+        "patch_ops": 6,
+        "patch_targeted": 3,
+        "duration_ms": 170784
       }
     }
   ]
