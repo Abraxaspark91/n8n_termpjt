@@ -1,0 +1,9 @@
+{
+  "schema": "deliverable_manifest/v1",
+  "scenario_id": "S08",
+  "docx": "AI저널레코더_와디즈_기획서.docx",
+  "xlsx": "리워드구성_일정물량_시트.xlsx",
+  "pptx": "와디즈_펀딩페이지_덱.pptx",
+  "rtm_sheet": "RTM",
+  "notes": "seed by claude-code"
+}
