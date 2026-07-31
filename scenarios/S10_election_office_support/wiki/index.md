@@ -1,16 +1,5 @@
-- 선거비용 실사 보조 절차 갱신 → REQ-20250308-election-support-escalation-execution
-- 민원문의 대응 갱신 → REQ-20250308-election-support-escalation-execution
-- 유권해석 에스컬레이션 갱신 → REQ-20250308-election-support-escalation-execution
-- 업무분장 및 연계 기준 → REQ-20250308-election-support-escalation-execution
-- 3일 처리 원칙 → REQ-20250308-election-support-escalation-execution
-- 개인정보·민감정보 통제 → REQ-20250308-election-support-escalation-execution
-- 산출물 갱신 완료 → REQ-20250308-election-support-escalation-execution
-- 시행 전 검증 → REQ-20250308-election-support-escalation-execution
-- 선거비용 실사 보조 절차 승인 확인 → REQ-20250308-election-support-escalation-confirmation
-- 민원문의 대응 및 유권해석 에스컬레이션 승인 확인 → REQ-20250308-election-support-escalation-confirmation
-- 관리계·지도계 업무분장 및 연계 승인 확인 → REQ-20250308-election-support-escalation-confirmation
-- 처리기한 3일 원칙 후속 확정 → REQ-20250308-election-support-escalation-confirmation
-- 승인권자·법적 근거·RACI·SLA 후속 확정 → REQ-20250308-election-support-escalation-confirmation
-- 개인정보·민감정보 통제 후속 확정 → REQ-20250308-election-support-escalation-confirmation
-- deliverable_patch 및 GitHub Actions 실행 검증 → REQ-20250308-election-support-escalation-confirmation
-- 시행 전 전체 산출물 일관성 검증 → REQ-20250308-election-support-escalation-confirmation
+- 실행 결과 승인 및 후속 확정 관리 → REQ-20250308-election-support-escalation-approval-result
+- 신규 절차서·팀 채널 공지문 추가 승인 → REQ-20250308-election-support-escalation-approval-result
+- 통합 산출물 3종 수정 승인 → REQ-20250308-election-support-escalation-approval-result
+- 승인권자·법적 근거·SLA·RACI·정보보호 통제 후속 확정 → REQ-20250308-election-support-escalation-approval-result
+- 시행 전 전체 산출물 일관성 검증 및 운영 리허설 → REQ-20250308-election-support-escalation-approval-result
