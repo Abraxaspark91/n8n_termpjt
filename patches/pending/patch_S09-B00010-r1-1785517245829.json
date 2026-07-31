@@ -1,0 +1,93 @@
+{
+  "schema": "deliverable_patch/v2",
+  "run_id": "S09-B00010-r1-1785517245829",
+  "ts": "2026-07-31T17:01:23.586Z",
+  "req_id": "REQ-20260725-tesla-zara-deliverable-approval",
+  "requestor": "IMMS 조교",
+  "source": "bench:S09:B00010",
+  "entry": "bench",
+  "deliverable_dir": "scenarios/S09_kaist_case_study/deliverables",
+  "decision": "승인된 변경을 deliverable_patch 기반으로 관련 산출물에 반영한 것으로 기록하되, 비교 지표 정의·기준 시점·공개자료 출처·근거 수준·추적 ID와 컴플라이언스 및 일반화 한계 고지를 유지한다.",
+  "summary": "승인된 Tesla·Zara 공급망·수요예측 비교 변경과 근거·한계·cross-module 추적성을 관련 산출물에 반영한다.",
+  "da_score": 5,
+  "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/a0ec50f8e55f4f698d67205d91202b19082b53f7",
+  "wiki_files": [
+    "scenarios/S09_kaist_case_study/wiki/requirements/REQ-20260725-tesla-zara-deliverable-approval.md",
+    "scenarios/S09_kaist_case_study/wiki/decisions.md",
+    "scenarios/S09_kaist_case_study/wiki/index.md",
+    "scenarios/S09_kaist_case_study/wiki/logs/runs.md"
+  ],
+  "ops": [
+    {
+      "target": "docx",
+      "op": "append_changelog",
+      "bullets": [
+        "Tesla와 Zara의 수직계열화 수준, 핵심 활동 내부화 범위 및 외부 공급업체 의존도를 비교한다.",
+        "Tesla의 생산·배터리·소프트웨어 통합과 Zara의 빠른 생산·유통 통제 및 협력 네트워크를 대조한다.",
+        "수요예측 방식, 예측 정확도, 시장 반응 속도, 재고, 리드타임 및 제품 출시·대응 속도를 공통 비교 지표로 반영한다.",
+        "5 Forces와 VRIO를 적용해 공급망 통합 및 수요 대응 역량의 경쟁우위와 지속가능성을 평가한다.",
+        "비교표에 지표 정의, 기준 시점, 공개자료 출처 및 근거 수준을 명시하고 비공개 운영 데이터·알고리즘과 산업·제품 특성 차이에 따른 비교·일반화 한계를 고지한다.",
+        "설계서, 요구사항 추적표, 보고 장표 및 관련 cross-module의 변경 범위·영향 관계·추적 ID를 갱신한다."
+      ],
+      "risks": [
+        "기업별 공개자료의 범위와 기준 시점 차이로 수직계열화 및 수요예측 수준의 동등 비교가 어려울 수 있다.",
+        "세부 수요예측 알고리즘과 운영 데이터가 비공개여서 일부 결론이 정성적 추론에 의존할 수 있다.",
+        "Tesla와 Zara의 산업·제품 특성 차이로 비교 결과가 과도하게 일반화될 수 있다.",
+        "지표 정의나 출처가 불명확하면 예측 정확도, 재고, 리드타임 및 대응 속도 해석에 편향이 발생할 수 있다.",
+        "경영진 요약에서 비교 우위가 과도하게 단순화되지 않도록 근거 수준과 한계 고지를 유지해야 한다."
+      ],
+      "open_questions": [],
+      "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/a0ec50f8e55f4f698d67205d91202b19082b53f7"
+    },
+    {
+      "target": "xlsx",
+      "op": "append_row",
+      "sheet": "RTM",
+      "values": [
+        "REQ-20260725-tesla-zara-deliverable-approval",
+        "2026-08-01T02:01:09.958+09:00",
+        "IMMS 조교",
+        "bench:S09:B00010",
+        "승인된 변경을 deliverable_patch 기반으로 관련 산출물에 반영한 것으로 기록하되, 비교 지표 정의·기준 시점·공개자료 출처·근거 수준·추적 ID와 컴플라이언스 및 일반화 한계 고지를 유지한다.",
+        "Tesla·Zara 케이스 스터디에 수직계열화 기반 공급망 비교와 수요예측 차이 분석을 반영하고, 근거 수준·비교 한계·cross-module 추적성을 함께 갱신한다.",
+        "Tesla·Zara 케이스 스터디 문서; 케이스 스터디 분석 프레임; 산출물_설계서.docx; 요구사항_추적표.xlsx; 보고_장표.pptx",
+        "modify; modify; modify; modify; modify",
+        5,
+        "https://github.com/Abraxaspark91/n8n_termpjt/commit/a0ec50f8e55f4f698d67205d91202b19082b53f7"
+      ]
+    },
+    {
+      "target": "pptx",
+      "op": "append_changelog_slide",
+      "title": "변경 이력 · REQ-20260725-tesla-zara-deliverable-approval",
+      "bullets": [
+        "Tesla와 Zara의 수직계열화 수준, 핵심 활동 내부화 범위 및 외부 공급업체 의존도를 비교",
+        "Tesla의 생산·배터리·소프트웨어 통합과 Zara의 빠른 생산·유통 통제 및 협력 네트워크를 대조",
+        "수요예측 방식, 예측 정확도, 시장 반응 속도, 재고, 리드타임 및 제품 출시·대응 속도를 공통 지표로 반영",
+        "5 Forces·VRIO를 적용하고 지표 정의·기준 시점·공개자료 출처·근거 수준을 명시",
+        "비공개 운영 데이터·알고리즘 및 산업·제품 특성 차이에 따른 비교·일반화 한계와 컴플라이언스 고지를 유지",
+        "설계서·요구사항 추적표·보고 장표 및 cross-module 변경 범위·영향 관계·추적 ID를 갱신"
+      ]
+    },
+    {
+      "target": "docx",
+      "op": "append_after_heading",
+      "heading": "5. 시사점 및 한계",
+      "text": "이번 승인 변경의 추적 ID는 REQ-20260725-tesla-zara-deliverable-approval이다. 비교 지표는 정의, 기준 시점, 공개자료 출처 및 근거 수준을 함께 기록하며, 비공개 운영 데이터·알고리즘에 따른 정성적 분석과 Tesla·Zara의 산업·제품 특성 차이에 따른 비교 및 일반화 한계를 유지한다. 경영진 요약에는 컴플라이언스 검토와 근거 수준을 함께 고지한다.",
+      "style": null
+    },
+    {
+      "target": "xlsx",
+      "op": "update_by_req_id",
+      "req_id": "REQ-20260725-tesla-zara-deliverable-approval",
+      "column": "결정",
+      "value": "승인된 변경을 deliverable_patch 기반으로 관련 산출물에 반영한 것으로 기록하되, 비교 지표 정의·기준 시점·공개자료 출처·근거 수준·추적 ID와 컴플라이언스 및 일반화 한계 고지를 유지한다."
+    },
+    {
+      "target": "pptx",
+      "op": "replace_text",
+      "match": "비공개 운영 데이터·알고리즘 및 산업·제품 특성 차이에 따른 비교 한계, 경영진 메시지의 한계 고지와 컴플라이언스 검토를 반영",
+      "new_text": "비공개 운영 데이터·알고리즘 및 산업·제품 특성 차이에 따른 비교·일반화 한계, 지표 정의·기준 시점·공개자료 출처·근거 수준, 경영진 메시지의 한계 고지와 컴플라이언스 검토를 반영하고 추적 ID REQ-20260725-tesla-zara-deliverable-approval를 기록"
+    }
+  ]
+}
