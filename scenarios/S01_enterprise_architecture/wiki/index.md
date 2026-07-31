@@ -1,4 +1,14 @@
-# Keyword Index
-- SD → REQ-SEED-1
-- 반품 → REQ-SEED-1
-- RE 오더 → REQ-SEED-1
+- 전사 AI 아키텍처 → REQ-20250214-cto-ai-architecture-selection
+- AWS → REQ-20250214-cto-ai-architecture-selection
+- Azure → REQ-20250214-cto-ai-architecture-selection
+- GCP → REQ-20250214-cto-ai-architecture-selection
+- GPU Serving → REQ-20250214-cto-ai-architecture-selection
+- GPU 자체구축 → REQ-20250214-cto-ai-architecture-selection
+- 클라우드 GPU → REQ-20250214-cto-ai-architecture-selection
+- SAP HANA → REQ-20250214-cto-ai-architecture-selection
+- Oracle → REQ-20250214-cto-ai-architecture-selection
+- TCO → REQ-20250214-cto-ai-architecture-selection
+- 보안 → REQ-20250214-cto-ai-architecture-selection
+- 규정 준수 → REQ-20250214-cto-ai-architecture-selection
+- PoC → REQ-20250214-cto-ai-architecture-selection
+- 운영 책임 → REQ-20250214-cto-ai-architecture-selection
