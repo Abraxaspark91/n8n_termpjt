@@ -34,3 +34,16 @@
 - SD → REQ-20250308-sd-returns-re-order.md
 - Returns → REQ-20250308-sd-returns-re-order.md
 - RE Order Type → REQ-20250308-sd-returns-re-order.md
+- SD → [REQ-20250308-sd-mm-fi-update](requirements/REQ-20250308-sd-mm-fi-update.md)
+- 반품 → [REQ-20250308-sd-mm-fi-update](requirements/REQ-20250308-sd-mm-fi-update.md)
+- RE 오더 타입 → [REQ-20250308-sd-mm-fi-update](requirements/REQ-20250308-sd-mm-fi-update.md)
+- MM → [REQ-20250308-sd-mm-fi-update](requirements/REQ-20250308-sd-mm-fi-update.md)
+- MRP → [REQ-20250308-sd-mm-fi-update](requirements/REQ-20250308-sd-mm-fi-update.md)
+- 안전재고 → [REQ-20250308-sd-mm-fi-update](requirements/REQ-20250308-sd-mm-fi-update.md)
+- 재고부족 → [REQ-20250308-sd-mm-fi-update](requirements/REQ-20250308-sd-mm-fi-update.md)
+- FI → [REQ-20250308-sd-mm-fi-update](requirements/REQ-20250308-sd-mm-fi-update.md)
+- 전표 승인 → [REQ-20250308-sd-mm-fi-update](requirements/REQ-20250308-sd-mm-fi-update.md)
+- 2단계 승인 → [REQ-20250308-sd-mm-fi-update](requirements/REQ-20250308-sd-mm-fi-update.md)
+- 순차 승인 → [REQ-20250308-sd-mm-fi-update](requirements/REQ-20250308-sd-mm-fi-update.md)
+- 감사 로그 → [REQ-20250308-sd-mm-fi-update](requirements/REQ-20250308-sd-mm-fi-update.md)
+- 권한 통제 → [REQ-20250308-sd-mm-fi-update](requirements/REQ-20250308-sd-mm-fi-update.md)
