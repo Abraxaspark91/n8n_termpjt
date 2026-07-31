@@ -2,3 +2,12 @@
 - SD → REQ-SEED-1
 - 반품 → REQ-SEED-1
 - RE 오더 → REQ-SEED-1
+- CO-PA → REQ-20260725-marketing-funnel-copa
+- Marketing Funnel → REQ-20260725-marketing-funnel-copa
+- 기여손익 → REQ-20260725-marketing-funnel-copa
+- 판관비 → REQ-20260725-marketing-funnel-copa
+- 손익계산서 → REQ-20260725-marketing-funnel-copa
+- 수익성 분석 → REQ-20260725-marketing-funnel-copa
+- 리포팅 → REQ-20260725-marketing-funnel-copa
+- 배부 기준 → REQ-20260725-marketing-funnel-copa
+- 대사 → REQ-20260725-marketing-funnel-copa
