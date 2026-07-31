@@ -1,0 +1,98 @@
+[
+  {
+    "op": {
+      "target": "docx",
+      "op": "append_changelog",
+      "bullets": [
+        "CO-PA 리포트를 인지·고려·전환 단계 중심의 퍼널 손익 구조로 갱신한다.",
+        "매출, 매출원가, 단계별 직접비, 공통 판관비 배부액, 단계별 및 누적 기여손익을 리포트 항목에 반영한다.",
+        "광고선전비·판매촉진비의 직접비 및 공통비 구분, CO-PA 특성·값필드와 손익계산서 매핑, 조회 차원 및 대사·데이터 품질·권한·감사통제 테스트 기준을 후속 확정 과제로 기록한다."
+      ],
+      "risks": [
+        "Marketing Funnel 단계 정의와 기존 CO-PA 수익성 세그먼트가 불일치할 수 있다.",
+        "공통 판관비 배부 및 광고선전비·판매촉진비 분류 기준이 불명확하면 손익 비교 가능성이 저하될 수 있다.",
+        "누락·추정 데이터, 집계 기준 차이, 권한·컴플라이언스 및 감사통제 미흡으로 운영 리스크가 발생할 수 있다."
+      ],
+      "open_questions": [
+        "Marketing Funnel 표준 단계와 전환 판정 기준은 무엇인가?",
+        "직접비·공통비 구분 및 공통 판관비 배부 기준과 주기는 무엇인가?",
+        "기존 CO-PA와 신규 퍼널 손익의 병행 운영 기간, 대사 허용오차, 누락·추정 데이터 처리 기준은 무엇인가?",
+        "관련 시스템 인터페이스 검증 및 권한·컴플라이언스 통제 기준은 무엇인가?"
+      ],
+      "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/5c4bf0464eb8d39c56e55bbfcb6496a76e94b90c"
+    },
+    "result": "applied"
+  },
+  {
+    "op": {
+      "target": "xlsx",
+      "op": "append_row",
+      "sheet": "RTM",
+      "values": [
+        "REQ-20260725-marketing-funnel-copa-approval-confirmed",
+        "2026-07-31T23:09:51.896+09:00",
+        "경영관리 김PM",
+        "bench:S04:B00010",
+        "CO-PA 리포트 및 관련 산출물의 갱신 완료를 승인하고, 단계 정의·공통비 배부·대사·데이터 품질·권한·감사통제 기준은 후속 확정 과제로 관리한다.",
+        "CO-PA 리포트를 인지·고려·전환 단계별 매출·원가·직접비·공통비·기여손익 구조로 개편하고 설계서·추적표·경영 보고 장표를 갱신한다.",
+        "CO-PA 리포트 구조 정의서; Marketing Funnel 손익계산서 설계서; 단계별 기여손익 산출 로직 및 테스트 시나리오; 산출물_설계서.docx; 요구사항_추적표.xlsx; 보고_장표.pptx; LLM Wiki 및 GitHub 기록",
+        "modify/add",
+        5,
+        "https://github.com/Abraxaspark91/n8n_termpjt/commit/5c4bf0464eb8d39c56e55bbfcb6496a76e94b90c"
+      ]
+    },
+    "result": "applied"
+  },
+  {
+    "op": {
+      "target": "pptx",
+      "op": "append_changelog_slide",
+      "title": "변경 이력 — Marketing Funnel 단계별 CO-PA 손익",
+      "bullets": [
+        "CO-PA 리포트를 인지·고려·전환 단계 중심으로 재구성",
+        "매출·매출원가·단계별 직접비·공통 판관비·단계별 및 누적 기여손익 표시",
+        "광고선전비·판매촉진비의 직접비·공통비 구분과 공통비 하단 배치",
+        "기존 CO-PA 대사, 데이터 완전성, 누락·추정 데이터, 권한·감사통제 기준은 후속 확정 과제로 관리",
+        "변경 기록: REQ-20260725-marketing-funnel-copa-approval-confirmed / GitHub 커밋 5c4bf0464eb8d39c56e55bbfcb6496a76e94b90c"
+      ]
+    },
+    "result": "applied"
+  },
+  {
+    "op": {
+      "target": "docx",
+      "op": "replace_paragraph",
+      "match": "마케팅 퍼널은 인지(Awareness), 관심(Interest), 전환(Conversion), 유지(Retention)의 4단계로 정의한다.",
+      "new_text": "마케팅 퍼널은 인지(Awareness), 고려(Consideration), 전환(Conversion)의 3단계로 정의한다. 단계 간 전환 판정 기준과 표준 단계는 후속 확정 과제로 관리한다."
+    },
+    "result": "skipped: paragraph not found"
+  },
+  {
+    "op": {
+      "target": "docx",
+      "op": "append_after_heading",
+      "heading": "4. 리포트 화면 설계",
+      "text": "리포트는 인지·고려·전환 단계별로 매출, 매출원가, 단계별 직접비, 공통 판관비 배부액, 단계별 기여손익 및 단계 간 누적 기여손익을 표시한다. 광고선전비와 판매촉진비는 퍼널 단계별 직접비 또는 공통비로 구분하고 공통비는 기여이익 하단에 배치한다. CO-PA 특성·값필드와 손익계산서 항목 간 매핑 및 기간·조직·상품·서비스·고객·채널 조회 차원을 제공하며, 기존 CO-PA 손익과 신규 퍼널 손익의 대사 기준·데이터 완전성·누락 및 추정 데이터 처리·권한·컴플라이언스·cross-module 검증은 테스트 시나리오로 관리한다.",
+      "style": null
+    },
+    "result": "applied"
+  },
+  {
+    "op": {
+      "target": "pptx",
+      "op": "replace_text",
+      "match": "인지-관심-전환-유지 4단계",
+      "new_text": "인지·고려·전환 3단계"
+    },
+    "result": "applied"
+  },
+  {
+    "op": {
+      "target": "pptx",
+      "op": "replace_text",
+      "match": "퍼널×손익항목 매트릭스",
+      "new_text": "인지·고려·전환 단계별 매출·원가·직접비·공통비·기여손익 매트릭스"
+    },
+    "result": "applied"
+  }
+]

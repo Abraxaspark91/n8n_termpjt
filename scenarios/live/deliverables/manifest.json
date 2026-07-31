@@ -1,0 +1,7 @@
+{
+  "docx": "산출물_설계서.docx",
+  "xlsx": "요구사항_추적표.xlsx",
+  "pptx": "보고_장표.pptx",
+  "schema": "deliverable_manifest/v1",
+  "rtm_sheet": "RTM"
+}

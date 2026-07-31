@@ -17,5 +17,10 @@
 | 상세 | 채널별 매체비 집행현황 | CO-PA + 매체플랫폼 | 주 1회
 | 상세 | 캠페인별 전환율 | CRM | 일 1회
 | 예산 | 퍼널단계별 예산 대비 집행률 | CO-PA | 월 1회
-## Sheet: RTM (1행 × 10열)
+## Sheet: RTM (7행 × 10열)
 | req_id | 일시 | 요청자 | 소스 | 결정 | 요약 | 영향 산출물 | 변경유형
+| REQ-20260725-marketing-f | 2026-07-31T22:55:31.472+ | 경영관리 김PM | bench:S04:B00000 | 진행을 승인하고 CO-PA 리포트, Mark | Marketing Funnel 단계별 매출· | CO-PA 리포트 구조 정의서; Market | modify/add
+| REQ-20260725-marketing-f | 2026-07-31T23:12:45.254+ | 경영관리 김PM | bench:S04:B00001 | 승인 페이로드에 따라 CO-PA 리포트 및  | CO-PA 리포트를 Marketing Fun | CO-PA 리포트 구조 정의서; Market | modify/add
+| REQ-20260725-marketing-f | 2026-07-31T23:09:51.896+ | 경영관리 김PM | bench:S04:B00010 | CO-PA 리포트 및 관련 산출물의 갱신 완 | CO-PA 리포트를 인지·고려·전환 단계별  | CO-PA 리포트 구조 정의서; Market | modify/add
+| REQ-20260725-marketing-f | 2026-07-31T14:07:11.929Z | 경영관리 김PM | bench:S04:B00100 | CO-PA 리포트 개편 및 관련 설계서·추적 | 승인 페이로드에 따라 Marketing Fu | CO-PA 리포트 구조 정의서; Market | modify; add; add; modify
+…

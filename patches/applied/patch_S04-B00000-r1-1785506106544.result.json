@@ -1,0 +1,73 @@
+[
+  {
+    "op": {
+      "target": "docx",
+      "op": "append_changelog",
+      "bullets": [
+        "Marketing Funnel 단계별 매출·매출원가·직접비·배부 판관비를 구조화한 손익계산서 설계 반영",
+        "퍼널 단계별 기여손익 및 단계 간 누적 기여손익 비교 요건 추가",
+        "CO-PA 특성·값필드와 손익계산서 항목 매핑 기준 및 분석 차원별 출력 요건 반영",
+        "단계별 직접 귀속 판관비와 공통비 배부 항목의 구분 기준 반영"
+      ],
+      "risks": [
+        "Marketing Funnel 단계 정의가 기존 CO-PA 수익성 세그먼트와 불일치할 수 있음",
+        "공통 판관비 배부 기준이 불명확하면 단계별 기여손익의 신뢰성이 저하될 수 있음",
+        "CO-PA 비용 귀속 데이터와 퍼널 단계 정보가 불충분할 수 있음",
+        "기존 손익계산서와 신규 퍼널 손익계산서 간 집계 기준 차이가 발생할 수 있음"
+      ],
+      "open_questions": [
+        "Marketing Funnel의 표준 단계와 전환·귀속 기준 확정 필요",
+        "단계별 직접 귀속 판관비와 공통비 분류 기준 확정 필요",
+        "공통 판관비 배부 기준 확정 필요",
+        "기여손익 비용 범위와 영업이익 표시 수준 확정 필요",
+        "기존 CO-PA 리포트와의 병행 운영 및 금액 대사 기준 확정 필요"
+      ],
+      "wiki_commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/0895639a7f55226b6290110ec86338315d8fa5be"
+    },
+    "result": "applied"
+  },
+  {
+    "op": {
+      "target": "docx",
+      "op": "append_after_heading",
+      "heading": "4. 리포트 화면 설계",
+      "text": "Marketing Funnel 손익계산서는 인지·관심·전환·유지 단계별로 매출, 매출원가, 단계별 직접비, 공통 판관비 배부액을 차감하고 기여손익을 표시한다. 단계별 기여손익과 단계 간 누적 기여손익을 비교할 수 있도록 구성하며, CO-PA 특성 및 값필드와 손익계산서 항목 간 매핑 기준을 함께 관리한다. 판관비는 퍼널 단계에 직접 귀속되는 항목과 공통비 배부 항목으로 구분하고, 기간·조직·상품·서비스·고객·채널 차원별 조회와 기존 CO-PA 리포트와의 금액 대사를 지원한다.",
+      "style": null
+    },
+    "result": "applied"
+  },
+  {
+    "op": {
+      "target": "xlsx",
+      "op": "append_row",
+      "sheet": "RTM",
+      "values": [
+        "REQ-20260725-marketing-funnel-copa",
+        "2026-07-31T22:55:31.472+09:00",
+        "경영관리 김PM",
+        "bench:S04:B00000",
+        "진행을 승인하고 CO-PA 리포트, Marketing Funnel 손익계산서 설계서, 단계별 기여손익 로직·테스트 시나리오를 갱신한다. 퍼널 단계, 공통 판관비 배부, 기존 CO-PA 대사, 데이터 완전성·권한·컴플라이언스 기준은 후속 확정한다.",
+        "Marketing Funnel 단계별 매출·비용·기여손익과 CO-PA 매핑 및 판관비 배부 기준을 반영한다.",
+        "CO-PA 리포트 구조 정의서; Marketing Funnel 손익계산서 설계서; 단계별 기여손익 산출 로직 및 테스트 시나리오",
+        "modify/add",
+        5,
+        "https://github.com/Abraxaspark91/n8n_termpjt/commit/0895639a7f55226b6290110ec86338315d8fa5be"
+      ]
+    },
+    "result": "applied"
+  },
+  {
+    "op": {
+      "target": "pptx",
+      "op": "append_changelog_slide",
+      "title": "변경 이력: Marketing Funnel 단계별 기여손익",
+      "bullets": [
+        "단계별 매출·매출원가·직접비·배부 판관비 손익계산서 구조 반영",
+        "퍼널 단계별 및 누적 기여손익 비교 요건 추가",
+        "CO-PA 특성·값필드 매핑과 기간·조직·상품·고객·채널 분석 차원 반영",
+        "직접 귀속 판관비와 공통비 배부 기준 및 기존 리포트 대사 과제 명시"
+      ]
+    },
+    "result": "applied"
+  }
+]

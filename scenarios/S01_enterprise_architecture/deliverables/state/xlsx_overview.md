@@ -19,5 +19,10 @@
 | 라이선스 비용(코어당) | 고 | 중 | 중간 | 미정
 | 운영 인력 숙련도 | 낮음(신규) | 높음(기존) | 중간 | 미정
 …
-## Sheet: RTM (1행 × 10열)
+## Sheet: RTM (15행 × 10열)
 | req_id | 일시 | 요청자 | 소스 | 결정 | 요약 | 영향 산출물 | 변경유형
+| REQ-20250214-cto-ai-arch | 2026-07-31T21:00:03.286+ | CTO실 | bench:S01:B00000 | 비교·선정안과 관련 산출물 업데이트를 승인한 | AWS·Azure·GCP 클라우드, GPU  | 전사 AI 아키텍처 비교·선정안; AI Se | add,modify
+| REQ-20250214-cto-ai-arch | 2026-07-31T21:26:47.702+ | CTO실 | bench:S01:B00000 | AWS·Azure·GCP, GPU 자체구축· | AWS·Azure·GCP와 GPU 운영 방식 | 전사 AI 아키텍처 비교·선정안; AI Se | add,modify
+| REQ-20250214-cto-ai-arch | 2026-07-31T12:53:11.248Z | CTO실 | bench:S01:B00000 | AWS·Azure·GCP, GPU 자체구축· | 승인된 전사 AI 아키텍처 비교·선정, GP | 전사 AI 아키텍처 비교·선정안; AI Se | add; add; add; add; modi
+| REQ-20250214-cto-ai-arch | 2026-07-31T22:11:06.033+ | CTO실 | bench:S01:B00001 | 승인된 5개 영향 산출물과 기성 문서 3종의 | AWS·Azure·GCP 플랫폼, GPU 자 | 전사 AI 아키텍처 비교·선정안; AI Se | add/modify
+…
