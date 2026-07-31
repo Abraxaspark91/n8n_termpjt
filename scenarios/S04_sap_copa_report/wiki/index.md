@@ -1,15 +1,7 @@
-- 승인 실행 결과 → REQ-20260725-marketing-funnel-copa-approval-execution
-- 산출물 갱신 → REQ-20260725-marketing-funnel-copa-approval-execution
-- Marketing Funnel CO-PA 승인 → REQ-20260725-marketing-funnel-copa-approval-execution
-- 단계별 기여손익 승인 → REQ-20260725-marketing-funnel-copa-approval-execution
-- 공통 판관비 배부 후속 과제 → REQ-20260725-marketing-funnel-copa-approval-execution
-- 손익 대사 허용오차 → REQ-20260725-marketing-funnel-copa-approval-execution
-- deliverable_patch → REQ-20260725-marketing-funnel-copa-approval-execution
-- 권한·컴플라이언스 통제 → REQ-20260725-marketing-funnel-copa-approval-execution
-- cross-module 검증 → REQ-20260725-marketing-funnel-copa-approval-execution
 - 승인 실행 확정 → REQ-20260725-marketing-funnel-copa-approval-confirmed
 - Marketing Funnel CO-PA 개편 완료 → REQ-20260725-marketing-funnel-copa-approval-confirmed
 - 단계별 기여손익 산출 → REQ-20260725-marketing-funnel-copa-approval-confirmed
+- 누적 기여손익 손익계산서 → REQ-20260725-marketing-funnel-copa-approval-confirmed
 - 공통 판관비 배부 후속 확정 → REQ-20260725-marketing-funnel-copa-approval-confirmed
 - 손익 대사 및 데이터 품질 → REQ-20260725-marketing-funnel-copa-approval-confirmed
 - deliverable_patch 산출물 갱신 → REQ-20260725-marketing-funnel-copa-approval-confirmed
