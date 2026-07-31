@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "S08-B00000-r1-1785514975921",
+    "mode": "bench",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-07-31T16:20:46.578Z",
+    "finished_at": "2026-07-31T16:22:55.921Z",
+    "duration_ms": 129343
+  },
+  "trigger": {
+    "source": "bench:S08:B00000",
+    "requestor": "PO",
+    "received_at": "2026-07-31T16:20:46.578Z",
+    "scenario_id": "S08-B00000",
+    "domain": "AI 저널 레코더 런칭"
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T16:20:46.578Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T16:20:46.578Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:S08:B00000",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T16:20:46.867Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "SEEDING",
+      "files": [
+        "README.md",
+        "decisions.md",
+        "index.md",
+        "requirements/REQ-SEED-1.md",
+        "logs/runs.md"
+      ]
+    },
+    {
+      "ts": "2026-07-31T16:20:56.077Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 255
+    },
+    {
+      "ts": "2026-07-31T16:21:17.042Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "FAIL",
+      "escalated": false,
+      "missing_count": 1
+    },
+    {
+      "ts": "2026-07-31T16:21:35.126Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T16:21:44.236Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T16:21:58.094Z",
+      "stage": "quality_review",
+      "actor": "auto(bench)",
+      "decision": "APPROVE"
+    },
+    {
+      "ts": "2026-07-31T16:22:14.714Z",
+      "stage": "devils_advocate",
+      "actor": "DA+MathThreshold",
+      "decision": "PASS",
+      "score": 5,
+      "escalated": false
+    },
+    {
+      "ts": "2026-07-31T16:22:14.734Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": "승인(bench auto)"
+    },
+    {
+      "ts": "2026-07-31T16:22:14.743Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "FINAL_APPROVE"
+    },
+    {
+      "ts": "2026-07-31T16:22:48.681Z",
+      "stage": "wiki_librarian",
+      "actor": "Wiki Librarian agent",
+      "decision": "ENTRY_OK",
+      "files": [
+        "requirements/REQ-20250308-wadiz-journal-rewards-earlybird-story.md",
+        "decisions.md",
+        "index.md",
+        "logs/runs.md"
+      ]
+    },
+    {
+      "ts": "2026-07-31T16:22:48.990Z",
+      "stage": "wiki_write_prepare",
+      "actor": "system",
+      "files": [
+        "requirements/REQ-20250308-wadiz-journal-rewards-earlybird-story.md(new)",
+        "decisions.md(update)",
+        "index.md(update)",
+        "logs/runs.md(update)"
+      ]
+    },
+    {
+      "ts": "2026-07-31T16:22:55.855Z",
+      "stage": "wiki_commit",
+      "actor": "GitHub Contents API",
+      "decision": "COMMITTED",
+      "files_committed": 4,
+      "files_failed": 0,
+      "hash": "c128698"
+    },
+    {
+      "ts": "2026-07-31T16:22:55.899Z",
+      "stage": "quality_assurance",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": ""
+    },
+    {
+      "ts": "2026-07-31T16:22:55.911Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 2
+    },
+    "semantic_audit": {
+      "attempts": 1
+    },
+    "devils_advocate": {
+      "attempts": 1,
+      "score": 5,
+      "verdict": "진행은 가능하나, 원가·생산능력·데이터 처리 및 규제 검토와 근거 문서 연결을 완료한 후 리워드·얼리버드·스토리 페이지를 확정할 것을 권고한다."
+    },
+    "escalated_any": false
+  },
+  "deliverable": {
+    "req_id": "REQ-20250308-wadiz-journal-rewards-earlybird-story",
+    "requirement": "AI driven journal recorder의 와디즈 런칭을 위해 리워드 구성, 얼리버드 운영, 스토리 페이지 구조와 관련 산출물 업데이트를 승인한다.",
+    "keywords": [
+      "AI driven journal recorder",
+      "와디즈",
+      "크라우드펀딩 런칭",
+      "리워드 구성",
+      "얼리버드",
+      "재고 운영",
+      "스토리 페이지",
+      "AI 기능",
+      "개인정보 보호",
+      "생산·배송"
+    ],
+    "wiki_files": [
+      "scenarios/S08_wadiz_product_launch/wiki/requirements/REQ-20250308-wadiz-journal-rewards-earlybird-story.md",
+      "scenarios/S08_wadiz_product_launch/wiki/decisions.md",
+      "scenarios/S08_wadiz_product_launch/wiki/index.md",
+      "scenarios/S08_wadiz_product_launch/wiki/logs/runs.md"
+    ],
+    "commit_hash": "c128698",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/c128698c6376c118643d312a5ee69f7ed40832ad"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
