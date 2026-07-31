@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-apply_deliverable_patch.py — W3 산출물 동기화 엔진 v3 (GitHub Actions에서 실행)
+apply_deliverable_patch.py — W3 산출물 동기화 엔진 v4 (GitHub Actions에서 실행)
 
-v3 핵심: **시나리오별 산출물 디렉토리** 지원 + **파일명 비의존**.
+v4 핵심: 시나리오 루트(scenarios/<슬러그>/deliverables) 지원 + 전역 패치 큐(patches/) + 파일명 비의존.
 Claude Code(Sonnet)가 어떤 파일명·구조로 산출물을 만들어도 대응한다:
   1) <dir>/manifest.json 이 있으면 그 경로를 신뢰 (계약)
   2) 없으면 <dir> 안의 *.docx / *.xlsx / *.pptx 를 자동 탐색 (정렬 후 첫 파일)
@@ -37,8 +37,9 @@ from pptx.util import Inches, Pt as PPt
 
 ROOT = Path(__file__).resolve().parents[1]
 DELIV = ROOT / "deliverables"
-PENDING = DELIV / "patches" / "pending"
-APPLIED = DELIV / "patches" / "applied"
+PATCHES = ROOT / "patches"
+PENDING = PATCHES / "pending"
+APPLIED = PATCHES / "applied"
 
 RTM_HEADER = ["req_id", "일시", "요청자", "소스", "결정", "요약",
               "영향 산출물", "변경유형", "DA점수", "위키 커밋"]
@@ -322,13 +323,19 @@ def save_bundle(files, ctx):
 
 def export_state_all():
     n = 0
-    for d in sorted(p for p in DELIV.iterdir() if p.is_dir() and p.name not in ("patches",)):
+    cand = []
+    if DELIV.exists():
+        cand += [p for p in DELIV.iterdir() if p.is_dir() and p.name not in ("patches",)]
+    scen = ROOT / "scenarios"
+    if scen.exists():
+        cand += [p / "deliverables" for p in scen.iterdir() if (p / "deliverables").is_dir()]
+    for d in sorted(cand):
         if not ((d / "manifest.json").exists() or any(discover(d, e) for e in ("docx", "xlsx", "pptx"))):
             continue
         files, ctx = load_bundle(d)
         export_state(d, ctx["doc"], ctx["wb"], ctx["prs"])
         n += 1
-        print(f"state exported: {d.name}")
+        print(f"state exported: {d.relative_to(ROOT)}")
     print(f"export-state-all: {n} dir(s)")
 
 
@@ -363,8 +370,10 @@ def main() -> int:
         else:
             print(f"skip (unknown schema): {path.name}")
             continue
-        if not str(dirpath.resolve()).startswith(str(DELIV.resolve())) and dirpath != DELIV:
-            print(f"skip (dir outside deliverables/): {path.name}")
+        _ok = any(str(dirpath.resolve()).startswith(str((ROOT / pfx).resolve()))
+                  for pfx in ("scenarios", "deliverables")) or dirpath == DELIV
+        if not _ok:
+            print(f"skip (dir outside scenarios//deliverables/): {path.name}")
             continue
         if dirpath not in bundles:
             bundles[dirpath] = load_bundle(dirpath)
