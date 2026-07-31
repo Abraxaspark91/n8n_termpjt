@@ -1,2 +1,1 @@
-# Decisions (append-only)
-- [2026-07-25] REQ-SEED-1 | 김PM | SD 반품은 표준 RE 오더 타입 사용으로 결정 | keywords: SD,반품,RE 오더 → requirements/REQ-SEED-1.md
+- [2025-02-14] REQ-20250214-cto-ai-architecture-selection | CTO실 | AWS·Azure·GCP, GPU 자체구축·클라우드 임차, SAP HANA·Oracle 비교·선정안을 승인하되 비용·성능·규제 가정, 라이선스 검증, PoC 기준 및 운영 책임을 후속 관리 | keywords: 전사 AI 아키텍처,AWS,Azure,GCP,GPU Serving,GPU 자체구축,클라우드 GPU,SAP HANA,Oracle,TCO,보안,규정 준수,PoC,운영 책임 → requirements/REQ-20250214-cto-ai-architecture-selection.md
