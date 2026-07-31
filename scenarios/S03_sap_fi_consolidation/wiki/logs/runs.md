@@ -10,3 +10,4 @@
 - [2026-07-31T13:34:43.657Z] REQ-20260725-fi-internal-trade-key-mapping | source=bench:S03:B00000 | mode=bench | requestor=재무 최부장
 - [2026-07-31T13:37:57.238Z] REQ-20260725-fi-internal-trade-key-mapping-approval | source=bench:S03:B10000 | mode=bench | requestor=재무 최부장
 - [2026-07-31T13:41:32.048Z] REQ-20260725-fi-internal-trade-key-mapping-execution | source=bench:S03:B01000 | mode=bench | requestor=재무 최부장
+- [2026-07-31T13:44:56.282Z] REQ-20260725-fi-internal-trade-key-mapping-deliverable-sync | source=bench:S03:B00100 | mode=bench | requestor=재무 최부장
