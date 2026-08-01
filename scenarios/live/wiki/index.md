@@ -33,3 +33,13 @@
 - 데이터 이관 및 롤백 → REQ-20260730-co-wbs-pause-pp-routing-md-cleanup
 - 회귀 테스트 및 운영 전환 게이트 → REQ-20260730-co-wbs-pause-pp-routing-md-cleanup
 - 감사추적 접근통제 고객공지 → REQ-20260730-co-wbs-pause-pp-routing-md-cleanup
+- SD-FI 승인 실행 → REQ-20260725-SD-FI-KNA1-승인실행
+- billing 승인 실행 → REQ-20260725-SD-FI-KNA1-승인실행
+- 회계전표 승인 실행 → REQ-20260725-SD-FI-KNA1-승인실행
+- KNA1 승인 실행 → REQ-20260725-SD-FI-KNA1-승인실행
+- WRICEF W-102 승인 실행 → REQ-20260725-SD-FI-KNA1-승인실행
+- 통합테스트 3차 → REQ-20260725-SD-FI-KNA1-승인실행
+- 개인정보 검토 → REQ-20260725-SD-FI-KNA1-승인실행
+- 멱등성 및 중복 전표 방지 → REQ-20260725-SD-FI-KNA1-승인실행
+- 재처리 기준 → REQ-20260725-SD-FI-KNA1-승인실행
+- 다음 릴리즈 승인 게이트 → REQ-20260725-SD-FI-KNA1-승인실행
