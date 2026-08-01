@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "live-1785561382241",
+    "mode": "live",
+    "workflow": "W3 Agentic Organization v2",
+    "started_at": "2026-08-01T05:11:01.740Z",
+    "finished_at": "2026-08-01T05:16:22.241Z",
+    "duration_ms": 320501
+  },
+  "trigger": {
+    "source": "outlook(demo, 첨부파일 파싱됨)",
+    "requestor": "홍길동(고객사) <abraxaspark91@gmail.com>",
+    "received_at": "2026-08-01T05:11:01.740Z",
+    "scenario_id": null,
+    "domain": null
+  },
+  "stages": [
+    {
+      "ts": "2026-07-31T17:22:03.212Z",
+      "stage": "intake",
+      "actor": "system",
+      "detail": "run started"
+    },
+    {
+      "ts": "2026-07-31T17:22:03.212Z",
+      "stage": "intake_normalized",
+      "actor": "system",
+      "detail": {
+        "source": "bench:S10:B00001",
+        "mode": "bench"
+      }
+    },
+    {
+      "ts": "2026-07-31T17:22:03.545Z",
+      "stage": "wiki_bootstrap",
+      "actor": "GitHub",
+      "decision": "EXISTS"
+    },
+    {
+      "ts": "2026-07-31T17:22:03.821Z",
+      "stage": "wiki_context",
+      "actor": "GitHub(raw)",
+      "chars": 3044
+    },
+    {
+      "ts": "2026-07-31T17:22:29.356Z",
+      "stage": "contract_audit",
+      "actor": "Reviewer1+SchemaAuditTool",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T17:22:37.295Z",
+      "stage": "semantic_audit",
+      "actor": "Reviewer2",
+      "decision": "PASS",
+      "escalated": false,
+      "missing_count": 0
+    },
+    {
+      "ts": "2026-07-31T17:22:57.200Z",
+      "stage": "quality_review",
+      "actor": "auto(bench)",
+      "decision": "APPROVE"
+    },
+    {
+      "ts": "2026-07-31T17:23:16.056Z",
+      "stage": "devils_advocate",
+      "actor": "DA+MathThreshold",
+      "decision": "PASS",
+      "score": 5,
+      "escalated": false
+    },
+    {
+      "ts": "2026-07-31T17:23:16.074Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": "승인(bench auto)"
+    },
+    {
+      "ts": "2026-07-31T17:23:16.083Z",
+      "stage": "design_finalization",
+      "actor": "auto(bench)",
+      "decision": "FINAL_APPROVE"
+    },
+    {
+      "ts": "2026-07-31T17:23:56.139Z",
+      "stage": "wiki_librarian",
+      "actor": "Wiki Librarian agent",
+      "decision": "ENTRY_OK",
+      "files": [
+        "requirements/REQ-20250308-election-support-escalation-approval-result.md",
+        "decisions.md",
+        "index.md",
+        "logs/runs.md"
+      ]
+    },
+    {
+      "ts": "2026-07-31T17:23:56.448Z",
+      "stage": "wiki_write_prepare",
+      "actor": "system",
+      "files": [
+        "requirements/REQ-20250308-election-support-escalation-approval-result.md(new)",
+        "decisions.md(update)",
+        "index.md(update)",
+        "logs/runs.md(update)"
+      ]
+    },
+    {
+      "ts": "2026-07-31T17:24:03.251Z",
+      "stage": "wiki_commit",
+      "actor": "GitHub Contents API",
+      "decision": "COMMITTED",
+      "files_committed": 4,
+      "files_failed": 0,
+      "hash": "a411612"
+    },
+    {
+      "ts": "2026-07-31T17:24:03.268Z",
+      "stage": "quality_assurance",
+      "actor": "auto(bench)",
+      "decision": "APPROVE",
+      "note": ""
+    },
+    {
+      "ts": "2026-07-31T17:24:03.277Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    },
+    {
+      "ts": "2026-07-31T17:24:41.296Z",
+      "stage": "deliverables_patch_spec",
+      "actor": "Deliverable Patch Agent",
+      "valid": true,
+      "reasons": [],
+      "ops": 5,
+      "targeted": 2
+    },
+    {
+      "ts": "2026-08-01T05:16:22.213Z",
+      "stage": "quality_assurance",
+      "actor": "Human PM",
+      "decision": "APPROVE",
+      "note": "승인"
+    },
+    {
+      "ts": "2026-08-01T05:16:22.229Z",
+      "stage": "notify",
+      "actor": "Teams(mock)",
+      "decision": "SENT(simulated)"
+    }
+  ],
+  "gates": {
+    "contract_audit": {
+      "attempts": 1
+    },
+    "semantic_audit": {
+      "attempts": 1
+    },
+    "devils_advocate": {
+      "attempts": 1,
+      "score": 5,
+      "verdict": "보완 권고: 영향분석·필드 및 재처리 규칙·개인정보 검토·직무분리·승인 증적과 객관적 테스트 합격 기준을 확정하고 게이트 통과 후에만 릴리즈를 진행하라."
+    },
+    "escalated_any": false
+  },
+  "deliverable": {
+    "req_id": "REQ-20260725-SD-FI-KNA1-승인실행",
+    "requirement": "SD-FI billing→회계전표 인터페이스와 KNA1 신규 필드 변경을 다음 릴리즈 대상으로 반영하고 관련 산출물을 갱신한다.",
+    "keywords": [
+      "SD-FI",
+      "billing",
+      "회계전표",
+      "KNA1",
+      "WRICEF W-102",
+      "통합테스트",
+      "개인정보",
+      "접근권한",
+      "멱등성",
+      "재처리",
+      "승인 게이트",
+      "변경관리",
+      "릴리즈",
+      "REQ-SEED-1"
+    ],
+    "wiki_files": [
+      "scenarios/live/wiki/requirements/REQ-20260725-SD-FI-KNA1-승인실행.md",
+      "scenarios/live/wiki/decisions.md",
+      "scenarios/live/wiki/index.md",
+      "scenarios/live/wiki/logs/runs.md"
+    ],
+    "commit_hash": "1cf8195",
+    "commit_url": "https://github.com/Abraxaspark91/n8n_termpjt/commit/1cf819585db94f2f5a76072cb4643a99c11da201"
+  },
+  "notification": {
+    "channel": "teams",
+    "status": "mock_sent"
+  }
+}
